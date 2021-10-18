@@ -1,9 +1,21 @@
+* {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.align-right {
+  text-align: right;
+}
+.align-center {
+  text-align: center;
+}
 html,
 body {
   padding: 0;
   margin: 0;
 }
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   font: 16px Arial, Geneva, Helvetica, sans-serif;
 }
 header ul {
@@ -27,7 +39,7 @@ header ul li a:hover {
   background-color: #111111;
 }
 article {
-  margin: 30px 13% 10px 13%;
+  margin: 70px 13% 8% 13%;
 }
 h1 {
   font: 32px Arial, Geneva, Helvetica, sans-serif;
@@ -75,4 +87,163 @@ table tr:nth-child(even) {
   font: 0px Arial, Geneva, Helvetica, sans-serif;
   font-size: unset;
   font-style: italic;
+}
+.card {
+  width: 450px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+}
+.card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.card h3 {
+  margin: 0;
+}
+.card h4 {
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
+}
+.card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.race-card {
+  width: 450px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+  width: 800px;
+}
+.race-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.race-card h3 {
+  margin: 0;
+}
+.race-card h4 {
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
+}
+.race-card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.feat-card {
+  width: 450px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+}
+.feat-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.feat-card h3 {
+  margin: 0;
+}
+.feat-card h4 {
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
+}
+.feat-card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.feat-card .feat-prerequisite {
+  margin-top: 4px;
+}
+.spell-card {
+  width: 450px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+}
+.spell-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.spell-card h3 {
+  margin: 0;
+}
+.spell-card h4 {
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
+}
+.spell-card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.spell-card .spell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.spell-card .spell-header .spell-school {
+  color: gray;
+  font-size: 14px;
+}
+.spell-card .spell-header .tag {
+  font-variant: small-caps;
+  border-radius: 3px;
+  color: #f8f8f8;
+  padding: 0px 3px;
+  margin: 2px 0px;
+  font-size: small;
+  font-weight: bold;
+}
+.spell-card .spell-header .concentration-tag {
+  font-variant: small-caps;
+  border-radius: 3px;
+  color: #f8f8f8;
+  padding: 0px 3px;
+  margin: 2px 0px;
+  font-size: small;
+  font-weight: bold;
+  background-color: #e23225;
+}
+.spell-card .spell-header .ritual-tag {
+  font-variant: small-caps;
+  border-radius: 3px;
+  color: #f8f8f8;
+  padding: 0px 3px;
+  margin: 2px 0px;
+  font-size: small;
+  font-weight: bold;
+  background-color: #4668ff;
+}
+.spell-card .spell-specs {
+  display: flex;
+  justify-content: center;
+}
+.spell-card .spell-specs * {
+  text-align: center;
+  flex-basis: 50%;
+}
+.spell-card .spell-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
 }
