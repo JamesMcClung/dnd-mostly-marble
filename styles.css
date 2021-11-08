@@ -247,3 +247,6 @@ table tr:nth-child(even) {
   justify-content: space-between;
   font-size: 13px;
 }
+.redacted {
+  background-color: lightcoral;
+}
