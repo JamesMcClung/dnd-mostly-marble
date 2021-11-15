@@ -89,7 +89,7 @@ table tr:nth-child(even) {
   font-style: italic;
 }
 .card {
-  width: 450px;
+  width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -103,9 +103,17 @@ table tr:nth-child(even) {
 }
 .card h3 {
   margin: 0;
+  margin-bottom: -6px;
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
 }
 .card h4 {
+  margin: 0;
   font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.card h5 {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
   font-variant: small-caps;
   font-weight: bold;
   margin: 0;
@@ -115,7 +123,7 @@ table tr:nth-child(even) {
   margin-top: 0;
 }
 .race-card {
-  width: 450px;
+  width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -130,9 +138,17 @@ table tr:nth-child(even) {
 }
 .race-card h3 {
   margin: 0;
+  margin-bottom: -6px;
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
 }
 .race-card h4 {
+  margin: 0;
   font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.race-card h5 {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
   font-variant: small-caps;
   font-weight: bold;
   margin: 0;
@@ -141,8 +157,11 @@ table tr:nth-child(even) {
   margin-left: 0;
   margin-top: 0;
 }
+.race-card h3 {
+  font: 26px Arial, Geneva, Helvetica, sans-serif;
+}
 .feat-card {
-  width: 450px;
+  width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -156,9 +175,17 @@ table tr:nth-child(even) {
 }
 .feat-card h3 {
   margin: 0;
+  margin-bottom: -6px;
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
 }
 .feat-card h4 {
+  margin: 0;
   font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.feat-card h5 {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
   font-variant: small-caps;
   font-weight: bold;
   margin: 0;
@@ -170,8 +197,82 @@ table tr:nth-child(even) {
 .feat-card .feat-prerequisite {
   margin-top: 4px;
 }
+.bg-card {
+  width: 550px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+}
+.bg-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.bg-card h3 {
+  margin: 0;
+  margin-bottom: -6px;
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
+}
+.bg-card h4 {
+  margin: 0;
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.bg-card h5 {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
+}
+.bg-card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.bg-card .bg-prerequisite {
+  margin-top: 4px;
+}
+.item-card {
+  width: 550px;
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+}
+.item-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.item-card h3 {
+  margin: 0;
+  margin-bottom: -6px;
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
+}
+.item-card h4 {
+  margin: 0;
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.item-card h5 {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
+}
+.item-card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.item-card .item-metainfo {
+  margin-top: 4px;
+}
 .spell-card {
-  width: 450px;
+  width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -185,9 +286,17 @@ table tr:nth-child(even) {
 }
 .spell-card h3 {
   margin: 0;
+  margin-bottom: -6px;
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
 }
 .spell-card h4 {
+  margin: 0;
   font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.spell-card h5 {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
   font-variant: small-caps;
   font-weight: bold;
   margin: 0;
