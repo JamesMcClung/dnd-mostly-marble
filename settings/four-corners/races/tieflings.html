@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Tieflings
+    </title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="/index.html">DnD Home</a></li>
+            <li><a href="../../four-corners.html">Four Corners</a></li><li><a href="../races.html">Races</a></li><li><a href="tieflings.html">Tieflings</a></li>
+            <!-- e.g. <li><a href="four-corners.html">Four Corners</a></li> -->
+        </ul>
+    </header>
+
+
+    <article>
+        <h1 id="tieflings">Tieflings</h1>
+<p>A tiefling, which translates roughly to "low one" in Sonnern, is a cursed being. A child of any race may be born a tiefling, and virtually any parent would abandon such a child as soon as the curse became evident. Tieflings are shunned by most people due to prejudices and fears—which may be justified—concerning them. It is well-known that tiefling behave erratically, and many people believe that their supernatural visage and powers mark them as evil.</p>
+<h2 id="the-curse">The Curse</h2>
+<p>The Tiefling's Curse usually manifests as oddly colored skin, hair, and eyes, with the eyes being completely monochromatic. These traits may not appear until the tiefling child is a year old. In extreme cases, a tiefling can have horns, sharp teeth, claws instead of nails, slits for a nose, or even a tail; these traits appear much sooner, even before birth.</p>
+<p>The true impact of the Curse is mental, not physical. A tiefling gets impulses to act either chaotically or orderly, and feels discomfort from resisting these impulses. The impulses get stronger with age. When a tiefling fully succombs to the Curse, they act solely on these impulses for few years before entering a coma and ultimately dying.</p>
+<p>Some tieflings use magic to thwart the Curse and banish the impulses entirely. This comes at the cost of losing certain powers, but is certainly preferable to insanity.</p>
+<p>&lt;redacted></p>
+<h2 id="game-mechanics">Game Mechanics</h2>
+
+<div class="race-card">
+  <h3 id="tiefling">Tiefling</h3>
+  <p><strong><em>Abilities.</em></strong> Tieflings generally inherit the physical attributes of their parents. They often have rough childhoods and learn to be quick, cunning, or charismatic to survive.<p>
+  <p><strong><em>Age.</em></strong> All tieflings eventually succomb to strange illnesses of the mind caused by the Tiefling's Curse, reducing their lifespan to about two-thirds of what would otherwise be expected from their heritage.</p>
+  <p><strong><em>Alignment.</em></strong> Atrophic tiefling are supernaturally drawn to freedom and chaos, while infernal tieflings are discomforted by lies and broken laws. The vicious upbringing of many tieflings may exacerbate these tendencies. Some tieflings resist, although it takes constant effort and gets more difficult with age.</p>
+  <p><strong><em>Size.</em></strong> Your size is the size of your parents' race.</p>
+  <p><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+  <p><strong><em>Languages.</em></strong> You can speak, read, and write the one language of your choice.</p>
+  <p><strong><em>Darkvision.</em></strong> You have darkvision out to a range of 60 feet.</p>
+  <p><strong><em>Tiefling's Curse.</em></strong> The defining trait of all tieflings is their curse. Two manifestations of this curse are described in the Age and Alignment traits. It is also the source of your Leguleian Spells or Atrophic Spells trait. If <i>remove curse</i> is cast on you, the Curse ceases to affect you for 1 minute: you do not feel impulses towards chaos or order, you don't suffer from any mental illness caused by the Curse, and you cannot cast spells using Leguleian Spells or Atrophic Spells. If <i>remove curse</i> was cast at a higher level, the Curse is lifted for longer: 1 day at 5th or 6th level; 1 month at 7th or 8th level; or 1 year at 9th level.</p>
+  <h4 id="atrophic-tiefling">Atrophic Tiefling</h4><p><strong><em>Atrophic Resistance.</em></strong> You have resistance to necrotic damage.</p>
+  <p><strong><em>Atrophic Spells.</em></strong> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>inflict wounds</i> spell. When you reach 5th level, you learn the <i>crown of madness</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).
+<h4 id="leguleian-tiefling">Leguleian Tiefling</h4><p><strong><em>Leguleian Resistance.</em></strong> You have resistance to fire damage.</p>
+  <p><strong><em>Leguleian Spells.</em></strong> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>hellish rebuke</i> spell. When you reach 5th level, you learn the <i>zone of truth</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).
+</div>
+    </article>
+</body>
+
+</html>
+<script>
+function sortTable(table, col) {
+    // based on https://www.w3schools.com/howto/howto_js_sort_table.asp
+    let madeChanges = false;
+    let switching = true;
+    let sortAscending = true;
+    while (switching) {
+        switching = false;
+        let rows = table.rows;
+        // loop through all table rows except the first, which contains table headers
+        for (let i = 1; i < (rows.length - 1); i++) {
+            let current = rows[i].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
+            let next = rows[i + 1].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
+            if (current == next) {
+                continue
+            }
+            let inAscendingOrder;
+            if (isNaN(current)) {
+                inAscendingOrder = current < next;
+            } else {
+                inAscendingOrder = Number(current) < Number(next);
+            }
+            if (sortAscending != inAscendingOrder) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                madeChanges = true;
+            }
+        }
+        if (sortAscending && !madeChanges) {
+            sortAscending = false;
+            switching = true;
+        }
+    }
+    // manage symbols in table header that identify how it is sorted
+    const upSymbolCode = 9650, downSymbolCode = 9660;
+    for (let i = 0; i < table.rows[0].cells.length; i++) {
+        let cell = table.rows[0].getElementsByTagName("TH")[i]
+        let lastCharCode = cell.innerHTML.charCodeAt(cell.innerHTML.length - 1)
+        if (lastCharCode == upSymbolCode || lastCharCode == downSymbolCode) {
+            cell.innerHTML = cell.innerHTML.slice(0, -2) // remove 2 chars to include the space
+        }
+    }
+    table.rows[0].getElementsByTagName("TH")[col].innerHTML += ` &#${sortAscending ? downSymbolCode : upSymbolCode};`;
+}
+</script>

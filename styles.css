@@ -95,6 +95,12 @@ table th {
 table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+.sortableTable th {
+  cursor: default;
+}
+.sortableTable th:hover {
+  background-color: #111111;
+}
 .para-intro {
   font: 0px Arial, Geneva, Helvetica, sans-serif;
   font-size: unset;

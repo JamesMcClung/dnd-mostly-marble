@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>
+        Backgrounds
+    </title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 
@@ -41,7 +44,7 @@
 <div class="subheaded-card">
   <h3 id="high-elven-apprenticeship">High-Elven Apprenticeship</h3>
   
-  <p><p>You apprenticed under a High Elf wizard. You gain the following benefits:</p> <ul><li>You can speak, read, and write Elvish and one other language of your choice.</li> <li>You have proficiency in Arcana and a one-handed melee weapon of your choice.</li> <li>You know the <i>prestidigitation</i> and <i>blade ward</i> cantrips. After you cast <i>blade ward</i>, the first creature you deal damage to with a melee weapon or evocation spell before the end of your next turn takes an extra 1d8 force damage.</li></ul></p>
+  <p><p>You apprenticed under a High Elf wizard. You gain the following benefits:</p> <ul><li>You can speak, read, and write Elvish and one other language of your choice.</li> <li>You have proficiency in Arcana and a one-handed melee weapon of your choice.</li> <li>You know the <i>blade ward</i> cantrip. After you cast <i>blade ward</i>, the first creature you deal damage to with a melee weapon or evocation spell before the end of your next turn takes an extra 1d8 force damage.</li></ul></p>
 </div>
 
 <div class="subheaded-card">
@@ -117,3 +120,50 @@
 </div>
     </article>
 </body>
+
+</html>
+<script>
+function sortTable(table, col) {
+    // based on https://www.w3schools.com/howto/howto_js_sort_table.asp
+    let madeChanges = false;
+    let switching = true;
+    let sortAscending = true;
+    while (switching) {
+        switching = false;
+        let rows = table.rows;
+        // loop through all table rows except the first, which contains table headers
+        for (let i = 1; i < (rows.length - 1); i++) {
+            let current = rows[i].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
+            let next = rows[i + 1].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
+            if (current == next) {
+                continue
+            }
+            let inAscendingOrder;
+            if (isNaN(current)) {
+                inAscendingOrder = current < next;
+            } else {
+                inAscendingOrder = Number(current) < Number(next);
+            }
+            if (sortAscending != inAscendingOrder) {
+                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                switching = true;
+                madeChanges = true;
+            }
+        }
+        if (sortAscending && !madeChanges) {
+            sortAscending = false;
+            switching = true;
+        }
+    }
+    // manage symbols in table header that identify how it is sorted
+    const upSymbolCode = 9650, downSymbolCode = 9660;
+    for (let i = 0; i < table.rows[0].cells.length; i++) {
+        let cell = table.rows[0].getElementsByTagName("TH")[i]
+        let lastCharCode = cell.innerHTML.charCodeAt(cell.innerHTML.length - 1)
+        if (lastCharCode == upSymbolCode || lastCharCode == downSymbolCode) {
+            cell.innerHTML = cell.innerHTML.slice(0, -2) // remove 2 chars to include the space
+        }
+    }
+    table.rows[0].getElementsByTagName("TH")[col].innerHTML += ` &#${sortAscending ? downSymbolCode : upSymbolCode};`;
+}
+</script>
