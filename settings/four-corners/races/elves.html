@@ -134,7 +134,7 @@
   <p><strong><em>Languages.</em></strong> You can speak, read, and write Elvish and one Human language. Most Blessed Elves know Sonnern, the language used for most arcane study and the basis for the modern Elvish alphabet. You can also read and write the Old Script, in which each glyph is topologically unique.</p>
   <p><strong><em>Fleet of Foot.</em></strong> Your base walking speed increases to 35 feet.</p>
   <p><strong><em>Mask of the Wild.</em></strong> You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
-  <p><strong><em>Friend of Elks.</em></strong> You can speak Giant Elk. Giant elks share a home with Wood Elves in the hills of Verdania and respond to the call of a Wood Elf in need.</p>
+  <p><strong><em>Friend of Beasts.</em></strong> Through sounds and gestures, you can convey simple ideas to Medium and Large beasts, and understand their emotional state. You have advantage on Animal Handling checks made on such beasts.</p>
   <p><strong><em>Home in the Trees.</em></strong> Your good balance and strong fingers are suited for climbing high in trees. You have advantage on Athletics made to climb trees or other plants. You are also able to rest comfortably in trees without risk of falling.</p>
 <h4 id="sea-elf-maredrin">Sea Elf (Maredrin)</h4><p><strong><em>The King's Wish.</em></strong> You have a swimming speed of 30 feet, and you can breathe air and water.</p>
   <p><strong><em>Languages.</em></strong> You can speak, read, and write Marese and either Merrish or Tritonian. Marese is the native language of Maredrin, and many Maredrin have dealings with Merfolk or Tritons.</p>
@@ -153,48 +153,3 @@
 </body>
 
 </html>
-<script>
-function sortTable(table, col) {
-    // based on https://www.w3schools.com/howto/howto_js_sort_table.asp
-    let madeChanges = false;
-    let switching = true;
-    let sortAscending = true;
-    while (switching) {
-        switching = false;
-        let rows = table.rows;
-        // loop through all table rows except the first, which contains table headers
-        for (let i = 1; i < (rows.length - 1); i++) {
-            let current = rows[i].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
-            let next = rows[i + 1].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
-            if (current == next) {
-                continue
-            }
-            let inAscendingOrder;
-            if (isNaN(current)) {
-                inAscendingOrder = current < next;
-            } else {
-                inAscendingOrder = Number(current) < Number(next);
-            }
-            if (sortAscending != inAscendingOrder) {
-                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                switching = true;
-                madeChanges = true;
-            }
-        }
-        if (sortAscending && !madeChanges) {
-            sortAscending = false;
-            switching = true;
-        }
-    }
-    // manage symbols in table header that identify how it is sorted
-    const upSymbolCode = 9650, downSymbolCode = 9660;
-    for (let i = 0; i < table.rows[0].cells.length; i++) {
-        let cell = table.rows[0].getElementsByTagName("TH")[i]
-        let lastCharCode = cell.innerHTML.charCodeAt(cell.innerHTML.length - 1)
-        if (lastCharCode == upSymbolCode || lastCharCode == downSymbolCode) {
-            cell.innerHTML = cell.innerHTML.slice(0, -2) // remove 2 chars to include the space
-        }
-    }
-    table.rows[0].getElementsByTagName("TH")[col].innerHTML += ` &#${sortAscending ? downSymbolCode : upSymbolCode};`;
-}
-</script>

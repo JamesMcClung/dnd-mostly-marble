@@ -31,65 +31,19 @@
 
 <div class="race-card">
   <h3 id="tiefling">Tiefling</h3>
-  <p><strong><em>Abilities.</em></strong> Tieflings generally inherit the physical attributes of their parents. They often have rough childhoods and learn to be quick, cunning, or charismatic to survive.<p>
+  <p><strong><em>Abilities.</em></strong> Tieflings generally inherit the physical attributes of their parents. They often have rough childhoods and learn to be quick, cunning, or charismatic to survive.</p>
   <p><strong><em>Age.</em></strong> All tieflings eventually succomb to the Tiefling's Curse, reducing their lifespan to about two-thirds of what would otherwise be expected from their heritage.</p>
   <p><strong><em>Alignment.</em></strong> Atrophic tiefling are supernaturally drawn to freedom and chaos, while leguleian tieflings are discomforted by lies and broken laws. The vicious upbringing of many tieflings may exacerbate these tendencies. Some tieflings resist, although it takes constant effort and gets more difficult with age.</p>
-  <p><strong><em>Size.</em></strong> Your size is the size of your parents' race.</p>
-  <p><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
-  <p><strong><em>Languages.</em></strong> You can speak, read, and write the one language of your choice.</p>
+  <p><strong><em>Inherited Traits.</em></strong> Your size, base walking speed, and languages are inherited from your parents' race. You also inherit any trait that grants a climbing, swimming, or flying speed, or the ability to breathe underwater.</p>
   <p><strong><em>Darkvision.</em></strong> You have darkvision out to a range of 60 feet.</p>
-  <p><strong><em>Tiefling's Curse.</em></strong> All tieflings are cursed with strong urges and mental dissonances, as described in the Alignment section. It also grants certain powers, however. If <i>remove curse</i> is cast on you, the Curse is lifted for 1 minute. The lifting of the Curse has the following effects:</p> <ul><li>You do not feel impulses towards chaos or order.</li> <li>You do not feel discomfort when chaos or order is not upheld.</li> <li>You cannot cast spells using your Leguleian Spells or Atrophic Spells trait.</li></ul> <p>If <i>remove curse</i> was cast at a higher level, the Curse is lifted for longer: 1 day at 5th or 6th level, 1 month at 7th or 8th level, or 1 year at 9th level.</p>
+  <p><strong><em>Fiendish Soul.</em></strong> Your creature type is Humanoid, but you also register as a Fiend to abilities that detect fiends.</p>
+  <p><strong><em>Tiefling's Curse.</em></strong> All tieflings are cursed with strong urges and mental dissonances, as described in the Alignment section. It also grants certain powers, however. If <i>remove curse</i> is cast on you, the Curse is lifted from you for 1 minute. The lifting of the Curse has the following effects:</p> <ul><li>You do not feel impulses towards chaos or order.</li> <li>You do not feel discomfort when chaos or order is not upheld.</li> <li>You cannot cast spells using your Leguleian Spells or Atrophic Spells trait.</li></ul> <p>If <i>remove curse</i> was cast at a higher level, the Curse is lifted for longer: 1 day at 5th or 6th level, 1 month at 7th or 8th level, or 1 year at 9th level.</p>
   <h4 id="atrophic-tiefling">Atrophic Tiefling</h4><p><strong><em>Atrophic Resistance.</em></strong> You have resistance to necrotic damage.</p>
-  <p><strong><em>Atrophic Spells.</em></strong> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>inflict wounds</i> spell. When you reach 5th level, you learn the <i>crown of madness</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).
+  <p><strong><em>Atrophic Spells.</em></strong> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>inflict wounds</i> spell. When you reach 5th level, you learn the <i>crown of madness</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</p>
 <h4 id="leguleian-tiefling">Leguleian Tiefling</h4><p><strong><em>Leguleian Resistance.</em></strong> You have resistance to fire damage.</p>
-  <p><strong><em>Leguleian Spells.</em></strong> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>hellish rebuke</i> spell. When you reach 5th level, you learn the <i>zone of truth</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race).
+  <p><strong><em>Leguleian Spells.</em></strong> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>hellish rebuke</i> spell. When you reach 5th level, you learn the <i>zone of truth</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</p>
 </div>
     </article>
 </body>
 
 </html>
-<script>
-function sortTable(table, col) {
-    // based on https://www.w3schools.com/howto/howto_js_sort_table.asp
-    let madeChanges = false;
-    let switching = true;
-    let sortAscending = true;
-    while (switching) {
-        switching = false;
-        let rows = table.rows;
-        // loop through all table rows except the first, which contains table headers
-        for (let i = 1; i < (rows.length - 1); i++) {
-            let current = rows[i].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
-            let next = rows[i + 1].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
-            if (current == next) {
-                continue
-            }
-            let inAscendingOrder;
-            if (isNaN(current)) {
-                inAscendingOrder = current < next;
-            } else {
-                inAscendingOrder = Number(current) < Number(next);
-            }
-            if (sortAscending != inAscendingOrder) {
-                rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                switching = true;
-                madeChanges = true;
-            }
-        }
-        if (sortAscending && !madeChanges) {
-            sortAscending = false;
-            switching = true;
-        }
-    }
-    // manage symbols in table header that identify how it is sorted
-    const upSymbolCode = 9650, downSymbolCode = 9660;
-    for (let i = 0; i < table.rows[0].cells.length; i++) {
-        let cell = table.rows[0].getElementsByTagName("TH")[i]
-        let lastCharCode = cell.innerHTML.charCodeAt(cell.innerHTML.length - 1)
-        if (lastCharCode == upSymbolCode || lastCharCode == downSymbolCode) {
-            cell.innerHTML = cell.innerHTML.slice(0, -2) // remove 2 chars to include the space
-        }
-    }
-    table.rows[0].getElementsByTagName("TH")[col].innerHTML += ` &#${sortAscending ? downSymbolCode : upSymbolCode};`;
-}
-</script>
