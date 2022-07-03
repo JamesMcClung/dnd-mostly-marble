@@ -276,6 +276,10 @@ table tr:nth-child(even) {
   justify-content: space-between;
   font-size: 13px;
 }
-.redacted {
+del {
+  text-decoration: none;
+  background-color: lightcoral;
+}
+del * {
   background-color: lightcoral;
 }

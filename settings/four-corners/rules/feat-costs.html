@@ -21,315 +21,95 @@
 
     <article>
         <h1 id="feat-points">Feat Points</h1>
+
 <p>This is a WIP system to replace the usual method of acquiring feats.</p>
+
 <p>Players gain 2 feat points with each level, and may spend feat points at the end of a long rest or upon leveling up. A feat of median strength should have a cost of 8.</p>
+
 <p>Half-feats no longer grant ASIs. These feats are marked by a * below.</p>
+
 <p>Costs take training into consideration; feats that solely grant proficiency are less expensive.</p>
+
 <h6 id="feat-costs">Feat Costs</h6>
-<table id="sortableTable1" class="sortableTable">
-<thead>
-<tr>
-<th onclick="sortTable(sortableTable1,0)" align="left">Feat</th>
-<th onclick="sortTable(sortableTable1,1)" align="center">Cost</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">Actor</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Alert</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Athlete*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Charger</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Crossbow Expert</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Defensive Duelist</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Dual Wielder</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Dungeon Delver</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Durable*</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left">Elemental Adept</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Grappler</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Great Weapon Master</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Healer</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Heavily Armored*</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left">Heavy Armor Master*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Inspiring Leader</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Keen Mind*</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Lightly Armored*</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left">Linguist*</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="left">Lucky</td>
-<td align="center">12</td>
-</tr>
-<tr>
-<td align="left">Mage Slayer</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Magic Initiate</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Martial Adept</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Medium Armor Master</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Mobile</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Moderately Armored*</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left">Mounted Combatant</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Observant*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Polearm Master</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Resilient*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Ritual Caster</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Savage Attacker</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Sentinel</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Sharpshooter</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Shield Master</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Skilled</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Skulker</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="left">Spell Sniper</td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="left">Tavern Brawler*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Tough</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">War Caster</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Weapon Master*</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="left">Bountiful Luck</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Dragon Fear*</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Dragon Hide*</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Drow High Magic</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Dwarven Fortitude*</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Elven Accuracy*</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="left">Fade Away*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Fey Teleportation*</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Flames of Phlegethos*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Infernal Constitution*</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="left">Orcish Fury*</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="left">Prodigy</td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="left">Second Chance*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Squat Nimbleness*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Wood Elf Magic</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Svirfneblin Magic</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Artificer Initiate</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="left">Chef*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Crusher*</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Eldritch Adept</td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="left">Fey Touched*</td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="left">Fighting Initiate</td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="left">Gunner*</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Metamagic Adept</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Piercer*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Poisoner</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Shadow Touched*</td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="left">Skill Expert*</td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="left">Slasher*</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="left">Telekinetic*</td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="left">Telepathic*</td>
-<td align="center">5</td>
-</tr>
-</tbody>
-</table>
+<table id="sortableTable1" class="sortableTable"><thead>
+<tr><th align='left' onclick="sortTable(sortableTable1,0)">Feat</th><th align='center' onclick="sortTable(sortableTable1,1)">Cost</th></tr>
+</thead><tbody>
+<tr><td align='left'>Actor</td><td align='center'>4</td></tr>
+<tr><td align='left'>Alert</td><td align='center'>4</td></tr>
+<tr><td align='left'>Athlete*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Charger</td><td align='center'>4</td></tr>
+<tr><td align='left'>Crossbow Expert</td><td align='center'>6</td></tr>
+<tr><td align='left'>Defensive Duelist</td><td align='center'>10</td></tr>
+<tr><td align='left'>Dual Wielder</td><td align='center'>8</td></tr>
+<tr><td align='left'>Dungeon Delver</td><td align='center'>3</td></tr>
+<tr><td align='left'>Durable*</td><td align='center'>1</td></tr>
+<tr><td align='left'>Elemental Adept</td><td align='center'>3</td></tr>
+<tr><td align='left'>Grappler</td><td align='center'>8</td></tr>
+<tr><td align='left'>Great Weapon Master</td><td align='center'>10</td></tr>
+<tr><td align='left'>Healer</td><td align='center'>3</td></tr>
+<tr><td align='left'>Heavily Armored*</td><td align='center'>1</td></tr>
+<tr><td align='left'>Heavy Armor Master*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Inspiring Leader</td><td align='center'>6</td></tr>
+<tr><td align='left'>Keen Mind*</td><td align='center'>3</td></tr>
+<tr><td align='left'>Lightly Armored*</td><td align='center'>1</td></tr>
+<tr><td align='left'>Linguist*</td><td align='center'>2</td></tr>
+<tr><td align='left'>Lucky</td><td align='center'>12</td></tr>
+<tr><td align='left'>Mage Slayer</td><td align='center'>6</td></tr>
+<tr><td align='left'>Magic Initiate</td><td align='center'>8</td></tr>
+<tr><td align='left'>Martial Adept</td><td align='center'>8</td></tr>
+<tr><td align='left'>Medium Armor Master</td><td align='center'>6</td></tr>
+<tr><td align='left'>Mobile</td><td align='center'>8</td></tr>
+<tr><td align='left'>Moderately Armored*</td><td align='center'>1</td></tr>
+<tr><td align='left'>Mounted Combatant</td><td align='center'>8</td></tr>
+<tr><td align='left'>Observant*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Polearm Master</td><td align='center'>10</td></tr>
+<tr><td align='left'>Resilient*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Ritual Caster</td><td align='center'>6</td></tr>
+<tr><td align='left'>Savage Attacker</td><td align='center'>4</td></tr>
+<tr><td align='left'>Sentinel</td><td align='center'>10</td></tr>
+<tr><td align='left'>Sharpshooter</td><td align='center'>10</td></tr>
+<tr><td align='left'>Shield Master</td><td align='center'>8</td></tr>
+<tr><td align='left'>Skilled</td><td align='center'>3</td></tr>
+<tr><td align='left'>Skulker</td><td align='center'>5</td></tr>
+<tr><td align='left'>Spell Sniper</td><td align='center'>7</td></tr>
+<tr><td align='left'>Tavern Brawler*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Tough</td><td align='center'>6</td></tr>
+<tr><td align='left'>War Caster</td><td align='center'>10</td></tr>
+<tr><td align='left'>Weapon Master*</td><td align='center'>1</td></tr>
+<tr><td align='left'>Bountiful Luck</td><td align='center'>6</td></tr>
+<tr><td align='left'>Dragon Fear*</td><td align='center'>3</td></tr>
+<tr><td align='left'>Dragon Hide*</td><td align='center'>3</td></tr>
+<tr><td align='left'>Drow High Magic</td><td align='center'>8</td></tr>
+<tr><td align='left'>Dwarven Fortitude*</td><td align='center'>3</td></tr>
+<tr><td align='left'>Elven Accuracy*</td><td align='center'>5</td></tr>
+<tr><td align='left'>Fade Away*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Fey Teleportation*</td><td align='center'>3</td></tr>
+<tr><td align='left'>Flames of Phlegethos*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Infernal Constitution*</td><td align='center'>5</td></tr>
+<tr><td align='left'>Orcish Fury*</td><td align='center'>3</td></tr>
+<tr><td align='left'>Prodigy</td><td align='center'>7</td></tr>
+<tr><td align='left'>Second Chance*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Squat Nimbleness*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Wood Elf Magic</td><td align='center'>8</td></tr>
+<tr><td align='left'>Svirfneblin Magic</td><td align='center'>8</td></tr>
+<tr><td align='left'>Artificer Initiate</td><td align='center'>5</td></tr>
+<tr><td align='left'>Chef*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Crusher*</td><td align='center'>6</td></tr>
+<tr><td align='left'>Eldritch Adept</td><td align='center'>10</td></tr>
+<tr><td align='left'>Fey Touched*</td><td align='center'>6</td></tr>
+<tr><td align='left'>Fighting Initiate</td><td align='center'>7</td></tr>
+<tr><td align='left'>Gunner*</td><td align='center'>8</td></tr>
+<tr><td align='left'>Metamagic Adept</td><td align='center'>8</td></tr>
+<tr><td align='left'>Piercer*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Poisoner</td><td align='center'>4</td></tr>
+<tr><td align='left'>Shadow Touched*</td><td align='center'>5</td></tr>
+<tr><td align='left'>Skill Expert*</td><td align='center'>7</td></tr>
+<tr><td align='left'>Slasher*</td><td align='center'>4</td></tr>
+<tr><td align='left'>Telekinetic*</td><td align='center'>8</td></tr>
+<tr><td align='left'>Telepathic*</td><td align='center'>5</td></tr>
+</tbody></table>
+<script src='/js/sortTable.js'></script>
     </article>
 </body>
 
 </html>
-<script src='/js/sortTable.js'></script>
