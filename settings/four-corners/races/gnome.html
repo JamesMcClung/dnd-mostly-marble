@@ -98,7 +98,7 @@
 
 
 <div class="race-card">
-    <h3>Gnome</h3>
+    <h3 id="gnome">Gnome</h3>
     <p><b><i>Abilities.</i></b> Gnome physiology varies more than that of a typical race, but the majority of gnomes have deft hands and quick wits. Dexterity and Intelligence are most commonly high in gnomes, although rock gnomes exhibit impressive Strength and Constitution just as often.</p>
 <p><b><i>Age.</i></b> Gnomes mature quickly and reach adulthood by 18. They live about as long as humans but reach old age sooner, at age 60.</p>
 <p><b><i>Alignment.</i></b> Most gnomes are free-spirited and ambitious in their own way. This usually manifests as a chaotic tilt, but plenty of gnomes ardently hold to law or personal codes. There is so much variation that any alignment is likely.</p>
@@ -120,10 +120,10 @@
     <h4 id="rock-tinker-gnome">Rock (Tinker) Gnome</h4>
 <p><b><i>Language.</i></b> You can speak, read, and write one dialect of Gabrorian Gnomish. Gabrorian Gnomish has many dialects–more than one per city–and some are only barely mutually intelligible.</p>
 <p><b><i>Small but Sturdy.</i></b> You ignore the heavy property of weapons with which you are proficient.</p>
-<p><b><i>Alert to Magic.</i></b> You know the <i>identify</i> spell and can cast it as an action without material components a number of times equal to your Intelligence modifier (minimum once). You regain expended uses when you finish a long rest.</p>
+<p><b><i>Alert to Magic.</i></b> You know the <i>identify</i> spell and can cast it as an action without material components a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
 <h4 id="rot-gnome">Rot Gnome</h4>
 <p><b><i>Language.</i></b> You can speak, read, and write the Tiris Vale dialect of Gabrorian Gnomish. This dialect is extreme and incorporates lisps into some words, as Rot Gnomes often have speech impediments.</p>
-<p><b><i>Partially Undead.</i></b> You register as undead to abilities that detect undead, and healing that can't normally affect an undead creature restores half as many hit points to you.</p>
+<p><b><i>Partially Undead.</i></b> Your creature type is Humanoid, but you also register as an Undead to abilities that detect undead. Additionally, healing that can't normally affect an undead creature restores half as many hit points to you.</p>
 <p><b><i>Darkvision.</i></b> Your undead nature grants you darkvision out to a range of 60 feet.</p>
 <p><b><i>Undead Resilience.</i></b> You have advantage on saving throws against poison and disease, and you have resistance against poison and necrotic damage.</p>
 <p><b><i>Dead Flesh.</i></b> Some of your body is decayed and unfeeling. Whenever you take damage of a type other than radiant or psychic, reduce that damage by 1 after applying any resistances and vulnerabilities. However, your hit point maximum decreases by 1, and it decreases by 1 every time you gain a level. This cannot reduce your hit point maximum below 1.</p>
@@ -139,19 +139,19 @@
 <h4 id="forest-gnome">Forest Gnome</h4>
 <p><b><i>Language.</i></b> You can speak, read, and write either Verdanian Gnomish or a unique dialect of Fey Gnomish depending on whether you grew up in Verdania or Gabroria, respectively. Like Fey Gnomish, Verdanian Gnomish has many words in common with Sylvan.</p>
 <p><b><i>Speak with Small Beasts.</i></b> Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. You have advantage on Animal Handling checks made on such beasts.</p>
-<p><b><i>Natural Illusionist.</i></b> You know the <i>minor illusion</i> cantrip and can cast it without material components. Intelligence is your spellcasting ability for it.</p>
+<p><b><i>Natural Illusionist.</i></b> You know the <i>minor illusion</i> cantrip and can cast it without material components. Intelligence, Wisdom, or Charisma is your spellcasting ability for it (choose when you select this race).</p>
 </div>
 
 <h2 id="suggested-feat">Suggested Feat</h2>
 
 
 <div class="subheaded-card">
-    <h3>Beast Friends</h3>
+    <h3 id="beast-friends">Beast Friends</h3>
     <p class="card-subheader"><em>Prerequisite: Forest Gnome</em></p>
     <p class="card-subheader"><em>Cost: 6 feat points</em></p>
     <p>You gain the ability to make a special bond between yourself and a beast. The beast must be willing and Small or smaller. You can create the bond over the course of an hour, which may be during a short or long rest. You must be within 5 feet of the beast throughout the process as you bond with it. Afterwards, the beast gains the following benefits:</p>
 <ul><li>Whenever the beast finishes a short or long rest, it gains a number of temporary hit points equal to your level.
-</li><li>The beast learns a random spell on the Beast Spell table. It uses your Intelligence modifier as its spellcasting ability, it uses your level for cantrips, and it can cast the spell at will and without material components. If the spell requires verbal or somatic components, the beast's squeaks, tail wagging, or other behaviors are sufficient.
+</li><li>The beast learns a random spell on the Beast Spell table. It uses your Intelligence modifier as its spellcasting ability and your level for the purpose of cantrips. The beast can cast the spell at will unless otherwise specified, and it requires no material components. If the spell requires verbal or somatic components, the beast's squeaks, tail wagging, or other behaviors are sufficient.
 </li></ul>
 
 <p>You can have a number of bonded beasts equal to your Intelligence modifier (minimum one). If a beast dies, its bond breaks, and you regain the ability to bond a new beast 1 week after its death.</p>
@@ -185,7 +185,7 @@
 <tr><td align='center'>96</td><td align='left'><i>alter self</i></td></tr>
 <tr><td align='center'>97</td><td align='left'><i>invisibility</i> (1/day, self only)</td></tr>
 <tr><td align='center'>98</td><td align='left'><i>dragon's breath</i> (1/day, self only)</td></tr>
-<tr><td align='center'>99</td><td align='left'><i>fly</i> (1/day, self only)</td></tr>
+<tr><td align='center'>99</td><td align='left'><i>fly</i> (self only)</td></tr>
 <tr><td align='center'>00</td><td align='left'>Roll twice more, rerolling further 00s</td></tr>
 </tbody></table>
 </div>
@@ -194,7 +194,7 @@
 
 
 <div class="subheaded-card">
-    <h3>Gnomish Trade Training</h3>
+    <h3 id="gnomish-trade-training">Gnomish Trade Training</h3>
     
     <p>You know Gnomish secrets of alchemy or artifice. You can speak, read, and write a Gabrorian dialect of Gnomish, and pick one of the following benefits:</p>
 <ol type='a'><li>You have proficiency with tinker's tools, and have expertise in History for the purpose of Intelligence checks related to magical or technological devices.
