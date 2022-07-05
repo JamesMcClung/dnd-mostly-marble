@@ -43,17 +43,21 @@ article {
 }
 h1 {
   font: 32px Arial, Geneva, Helvetica, sans-serif;
-  padding: 2px;
+  padding-left: 4px;
   border-bottom: 3px solid #aaaaaa;
 }
 h2 {
   font: 24px Arial, Geneva, Helvetica, sans-serif;
-  padding: 2px;
+  padding-left: 2px;
   border-bottom: 2px solid #aaaaaa;
 }
 h3 {
   font: 20px Arial, Geneva, Helvetica, sans-serif;
   margin-bottom: -6px;
+}
+h4 {
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -10px;
 }
 .table-title {
   font: 16px Arial, Geneva, Helvetica, sans-serif;
@@ -277,10 +281,8 @@ table tr:nth-child(even) {
   font-size: 13px;
 }
 del {
+  display: block;
   text-decoration: none;
-  background-color: lightcoral;
-}
-del * {
   background-color: lightcoral;
 }
 h1::before,
@@ -295,4 +297,10 @@ h6::before {
   height: 75px;
   visibility: hidden;
   pointer-events: none;
+}
+blockquote {
+  background: #f8f8f8;
+  border-left: 10px solid #aaaaaa;
+  margin: 1.5em 10px;
+  padding: 0.1em 10px;
 }
