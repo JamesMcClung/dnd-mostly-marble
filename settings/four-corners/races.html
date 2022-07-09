@@ -28,7 +28,7 @@
 <table><thead>
 <tr><th align='left'>Major Race</th><th align='left'>Native Land</th><th align='left'>Native Language</th><th align='left'>Friends</th><th align='left'>Foes</th></tr>
 </thead><tbody>
-<tr><td align='left'><a href="races/human.html">Human</a></td><td align='left'>Ata</td><td align='left'>Common</td><td align='left'>Halflings</td><td align='left'>Orcs</td></tr>
+<tr><td align='left'><a href="races/human.html">Human</a></td><td align='left'>Ata</td><td align='left'>several</td><td align='left'>Halflings</td><td align='left'>Orcs</td></tr>
 <tr><td align='left'><a href="races/orc.html">Orc</a></td><td align='left'>Ata</td><td align='left'>Orcish</td><td align='left'>—</td><td align='left'>Enemy orcs</td></tr>
 <tr><td align='left'>Halfling</td><td align='left'>The Pyrmies</td><td align='left'>Hobbitish</td><td align='left'>Humans</td><td align='left'>—</td></tr>
 <tr><td align='left'><a href="races/dwarf.html">Dwarf</a></td><td align='left'>Gabroria</td><td align='left'>Dwarvish</td><td align='left'>Gnomes</td><td align='left'>Goblins</td></tr>
@@ -90,8 +90,7 @@
 <p><b><i>Darkvision.</i></b> Inheriting keen eyes from dragons, you have darkvision out to a range of 60 feet.</p>
 <p><b><i>Draconic Ancestry.</i></b> Your draconic heritage manifests in several ways based on your draconic hue. Pick one dragon type from the Draconic Ancestry table. Your choice affects your Breath Weapon and Damage Resistance traits.</p>
 
-<h4 id="draconic-ancestry">Draconic Ancestry</h4>
-<table><thead>
+<table><caption>Draconic Ancestry</caption><thead>
 <tr><th align='left'>Dragon Type</th><th align='left'>Damage Type</th><th align='left'>Breath Weapon</th></tr>
 </thead><tbody>
 <tr><td align='left'>Black</td><td align='left'>Acid</td><td align='left'>5 by 30 ft. line (Dex. save)</td></tr>
@@ -183,10 +182,10 @@
 <p>You may also choose to evoke fear or awe. If you do so, each creature within 10 feet of you that can see and hear you must make a Wisdom saving throw against your Glamour DC or be frightened (fear) or charmed (awe) until they can no longer see nor hear your Glamour, or until they take damage.</p>
 
 <p>When you use your Glamour in this way, it ends after 1 minute, and you cannot use Glamour again until you finish a short or long rest.</p>
-<p><b><i>Fey Ancestry.</i></b> Your creature type is Humanoid and Fey. You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
-<p><b><i>Fey Soul.</i></b> Your soul is tied to the Feywild. You age half as quickly in the Feywild, but you cannot cast spells or use magic outside of it.</p>
+<p><b><i>Fey Ancestry.</i></b> Your creature type is Humanoid, but you also register as Fey to abilities that detect fey. You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
+<p><b><i>Feybound.</i></b> Your soul is tied to the Feywild. You age half as quickly in the Feywild, but you cannot cast spells or use magic outside of it.</p>
 
-<p>Some Eladrin have found ways of severing their tie and restoring their ability to use magic. One way (but not the only way) you can accomplish this is with the <a href="/settings/four-corners/feats.html#recovered-soul">Recovered Soul</a> feat.</p>
+<p>Some Eladrin have found ways of severing their tie and restoring their ability to use magic. One way (but not the only way) you can accomplish this is with the <a href="/settings/four-corners/feats.html#severed-bonds">Severed Bonds</a> feat.</p>
 </div>
 
 <div class="race-card">
@@ -199,8 +198,7 @@
 <p><b><i>Gnome Cunning.</i></b> You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.</p>
 <p><b><i>Creative Spark.</i></b> Before you make an ability check, you can add 1d4 and subtract 2 from the result. The size of the die and the penalty increase as you reach higher levels, as shown in the Creative Spark Size table. You can use this feature a number of times equal to your Intelligence modifier (minimum 1), regaining expended uses after a long rest.</p>
 
-<h6 id="creative-spark-size">Creative Spark Size</h6>
-<table><thead>
+<table><caption>Creative Spark Size</caption><thead>
 <tr><th align='center'>Level</th><th align='center'>Die</th><th align='center'>Penalty</th></tr>
 </thead><tbody>
 <tr><td align='center'>1-4</td><td align='center'>1d4</td><td align='center'>-2</td></tr>
@@ -291,22 +289,26 @@
 <p><b><i>Divine Resistance.</i></b> You have resistance to necrotic damage and radiant damage.</p>
     <h4 id="theurgic-aasimar">Theurgic Aasimar</h4>
 <p><b><i>Theurgic Spells.</i></b> You know the <i>light</i> cantrip. When you reach 3rd level, you learn the <i>cure wounds</i> spell. When you reach 5th level, you learn the <i>calm emotions</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</p>
-<p><b><i>Theurgic Presence.</i></b> Starting at 3rd level, you can use an action to unleash the divine energy within yourself, causing your eyes to glimmer and a luminous halo to surround you. Your transformation lasts for 1 minute, until you end it as a bonus action, or until you are incapacitated. You gain the following benefits while transformed:</p>
-<ul><li>You shed bright light in a 10-foot radius and dim light for an additional 10 feet.
-</li><li>When a creature regains hit points in the bright light, you sense it and can cause the creature to heal additional hit points equal to your proficiency bonus.
-</li><li>You and your good-aligned allies in the bright light have advantage on Wisdom saving throws.
+<p><b><i>Theurgic Presence.</i></b> Starting at 3rd level, you can use an action to unleash the divine energy within yourself, causing your eyes to glimmer and a luminous halo to surround you. You create an aura out to a range of 15 feet with the following effects:</p>
+<ul><li>You shed bright light within the aura, and dim light for an additional 15 feet outside the aura.
+</li><li>When you or a non-evil ally regains hit points while in the aura and not in darkness, it regains additional hit points equal to your proficiency bonus. A creature can receive this extra healing no more than once per turn.
+</li><li>You and your good-aligned allies have advantage on Wisdom saving throws while in the aura and not in darkness.
 </li></ul>
 
-<p>You can use this trait a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
+<p>Your aura lasts for 1 minute. It ends early if you are knocked unconscious. You can also end it on your turn as a bonus action.</p>
+
+<p>You can activate your aura a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
 <h4 id="malefic-aasimar">Malefic Aasimar</h4>
 <p><b><i>Malefic Spells.</i></b> You know the <i>toll the dead</i> cantrip. When you reach 3rd level, you learn the <i>cause fear</i> spell. When you reach 5th level, you learn the <i>darkness</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</p>
-<p><b><i>Malefic Presence.</i></b> Starting at 3rd level, you can use an action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and dreadful shadows to dance around you. Your transformation lasts for 1 minute, until you end it as a bonus action, or until you are incapacitated. You gain the following benefits while transformed:</p>
-<ul><li>Bright light within 10 feet of you turns to dim light. Light that was already dim within 5 feet of you turns to darkness instead.
-</li><li>When a creature regains hit points in the dim light or darkness, you sense it and can cause the creature to heal fewer hit points equal to your proficiency bonus (minimum 0).
-</li><li>You and your evil-aligned allies in the dim light or darkness have advantage on Wisdom saving throws.
+<p><b><i>Malefic Presence.</i></b> Starting at 3rd level, you can use an action to unleash the divine energy within yourself, causing your eyes to turn into pools of darkness and dreadful shadows to dance around you. You create an aura out to a range of 15 feet with the following effects:</p>
+<ul><li>Bright light within the aura turns to dim light.
+</li><li>When a creature other than you takes damage while in the aura and not in bright light, it takes additional necrotic damage equal to half your proficiency bonus. A creature can take this damage no more than once per turn.
+</li><li>You and your evil-aligned allies have advantage on Wisdom saving throws while in the aura and not in bright light.
 </li></ul>
 
-<p>You can use this trait a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
+<p>Your aura lasts for 1 minute. It ends early if you are knocked unconscious. You can also end it on your turn as a bonus action.</p>
+
+<p>You can activate your aura a number of times equal to your proficiency bonus. You regain expended uses when you finish a long rest.</p>
 </div>
 
 <div class="race-card">

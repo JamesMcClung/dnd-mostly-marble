@@ -59,18 +59,6 @@ h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
   margin-bottom: -10px;
 }
-.table-title {
-  font: 16px Arial, Geneva, Helvetica, sans-serif;
-  font-variant: small-caps;
-  font-weight: bold;
-  margin: 0;
-}
-h6 {
-  font: 16px Arial, Geneva, Helvetica, sans-serif;
-  font-variant: small-caps;
-  font-weight: bold;
-  margin: 0;
-}
 .home-ref {
   padding: 2px 5px;
   color: white;
@@ -83,12 +71,12 @@ h6 {
 }
 table {
   margin: 20px auto;
+  margin-top: 0;
   border-collapse: collapse;
   border: 1px solid #aaaaaa;
 }
 table td,
 table th {
-  text-align: left;
   padding: 3px 30px 3px 5px;
 }
 table th {
@@ -98,6 +86,13 @@ table th {
 }
 table tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+table caption {
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
+  text-align: left;
+  font-variant: small-caps;
+  font-weight: bold;
+  margin: 0;
 }
 .sortableTable th {
   cursor: default;
