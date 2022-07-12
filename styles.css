@@ -106,7 +106,7 @@ table caption {
   font-style: italic;
 }
 .card {
-  width: 550px;
+  max-width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -135,13 +135,13 @@ table caption {
   margin-top: 0;
 }
 .race-card {
-  width: 550px;
+  max-width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px 20px;
   display: inline-block;
-  width: 800px;
+  max-width: 800px;
 }
 .race-card hr {
   margin: 0px;
@@ -168,7 +168,7 @@ table caption {
   font: 26px Arial, Geneva, Helvetica, sans-serif;
 }
 .subheaded-card {
-  width: 550px;
+  max-width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -200,7 +200,7 @@ table caption {
   margin-top: 4px;
 }
 .spell-card {
-  width: 550px;
+  max-width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
