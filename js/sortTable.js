@@ -14,7 +14,7 @@ function sortTable(table, col) {
                 continue
             }
             let inAscendingOrder;
-            if (isNaN(current)) {
+            if (isNaN(current) || isNaN(next)) {
                 inAscendingOrder = current < next;
             } else {
                 inAscendingOrder = Number(current) < Number(next);
