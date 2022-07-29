@@ -1,3 +1,13 @@
+function trimMostTags(innerHTML) {
+    while (innerHTML.trim().startsWith("<")) {
+        innerHTML = innerHTML.substring(innerHTML.indexOf(">") + 1);
+    }
+    if (innerHTML.includes("<")) {
+        innerHTML = innerHTML.substring(0, innerHTML.indexOf("<"))
+    }
+    return innerHTML.trim();
+}
+
 function sortTable(table, col) {
     // based on https://www.w3schools.com/howto/howto_js_sort_table.asp
     let madeChanges = false;
@@ -8,8 +18,8 @@ function sortTable(table, col) {
         let rows = table.rows;
         // loop through all table rows except the first, which contains table headers
         for (let i = 1; i < (rows.length - 1); i++) {
-            let current = rows[i].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
-            let next = rows[i + 1].getElementsByTagName("TD")[col].innerHTML.toLowerCase();
+            let current = trimMostTags(rows[i].children[col].innerHTML).toLowerCase();
+            let next = trimMostTags(rows[i + 1].children[col].innerHTML).toLowerCase();
             if (current == next) {
                 continue
             }
