@@ -1,1 +1,1 @@
-- bring back tiefling spells
+- add close button to popups

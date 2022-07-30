@@ -42,11 +42,23 @@
 <div class="race-card">
     <h3 id="tiefling">Tiefling</h3>
     <p><b><i>Abilities.</i></b> Tieflings generally inherit the physical attributes of their parents. They often have rough childhoods and learn to be quick, cunning, or charismatic to survive.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <p><b><i>Age.</i></b> All tieflings eventually succomb to the Tiefling's Curse, reducing their lifespan to about two-thirds of what would otherwise be expected from their heritage.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <p><b><i>Alignment.</i></b> Atrophic tiefling are supernaturally drawn to freedom and chaos, while leguleian tieflings are discomforted by lies and broken laws. The vicious upbringing of many tieflings may exacerbate these tendencies. Some tieflings resist, although it takes constant effort and gets more difficult with age.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <p><b><i>Inherited Traits.</i></b> Your size, base walking speed, and languages are inherited from your parents' race. You also inherit any trait that grants a climbing, swimming, or flying speed, or the ability to breathe underwater.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <p><b><i>Darkvision.</i></b> You have darkvision out to a range of 60 feet.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <p><b><i>Fiendish Soul.</i></b> Your creature type is Humanoid, but you also register as a Fiend to abilities that detect fiends.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <p><b><i>Tiefling's Curse.</i></b> You are cursed. The Curse manifests in the following ways, depending on your subrace:</p>
 <ul><li>You feel impulses towards chaos (Atrophic) or order (Leguleian).
 </li><li>You are discomforted when chaos (Atrophic) or order (Leguleian) is not upheld.
@@ -54,12 +66,18 @@
 </li></ul>
 
 <p>If <i>remove curse</i> is cast on you, the Curse is lifted from you for 1 minute, temporarily ending the above effects of the Curse. If <i>remove curse</i> was cast at a higher level, the Curse is lifted for longer: 1 day at 5th or 6th level, 1 month at 7th or 8th level, or 1 year at 9th level.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
     <h4 id="atrophic-tiefling">Atrophic Tiefling</h4>
 <p><b><i>Atrophic Resistance.</i></b> You have resistance to necrotic damage.</p>
 <p><b><i>Atrophic Spells.</i></b> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>inflict wounds</i> spell. When you reach 5th level, you learn the <i>crown of madness</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 <h4 id="leguleian-tiefling">Leguleian Tiefling</h4>
 <p><b><i>Leguleian Resistance.</i></b> You have resistance to fire damage.</p>
 <p><b><i>Leguleian Spells.</i></b> You know the <i>thaumaturgy</i> cantrip. When you reach 3rd level, you learn the <i>hellish rebuke</i> spell. When you reach 5th level, you learn the <i>zone of truth</i> spell. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 </div>
 
 <h2 id="suggested-feats">Suggested Feats</h2>
@@ -72,9 +90,111 @@
 <ul><li>You lose your Tiefling's Curse trait, but you retain your Atrophic Spells trait.
 </li><li>For you, <i>thaumaturgy</i> has a range of 150 feet, a duration of 10 minutes, and can be cast as a bonus action.
 </li><li>You can use Atrophic Spells to cast <i>inflict wounds</i> a number of times equal to your proficiency bonus, instead of once, per long rest.
-</li><li>When you cast <i>inflict wounds</i> with your Atrophic Spells trait and hit, you can cause the target to wither as part of the spell. At the end of each of the target's turns, it must succeed on a Constitution saving throw or take 1d10 necrotic damage. The withering ends on a successful save or after 1 minute.
-</li><li>When you cast <i>crown of madness</i> with your Atrophic Spells trait, you can target up to a number of creatures equal to your proficiency bonus, and you can use a single action or a bonus action to maintain control over all of them.
+</li><li>You can cast 
+<span class="tooltip withdrag" onclick="toggleDraggable(draggable154)">
+    <span class="tooltiplabel">
+        <i>withering wounds</i>
+    </span>
+    <div class="tooltiptext tooltipdiv" id="draggable154">
+        <div class="dragheader" id="draggable154header">
+            <div class="dragclosebutton" onclick="toggleDraggable(draggable154)">&times;</div>
+            <i>withering wounds</i>
+        </div>
+        <div class="dragcontent" id="draggable154content">
+            
+<div class="spell-card">
+    <div class="spell-header">
+        <div>
+            <h3 class="noHeaderID">Withering Wounds</h3>
+            <p class="spell-school"><em>1st-level necromancy</em></p>
+        </div>
+        <div class="align-right">
+            
+            
+            
+        </div>
+    </div>
+    <hr>
+    <div class="spell-specs">
+        <p><strong>Components</strong><br>S</p>
+        <p><strong>Duration</strong><br>Instantaneous</p>
+    </div>
+    <div class="spell-specs">
+        <p><strong>Casting Time</strong><br>1 action</p>
+        <p><strong>Range</strong><br>Touch</p>
+    </div>
+    <hr>
+    <p>Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage and begins to wither.</p>
+
+<p>While withering, the target must succeed on a Constitution saving throw at the end of each of its turns or take 1d10 necrotic damage. The withering ends on a successful save or after 1 minute. The spell also ends early if <i>remove curse</i> is cast on the target.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
+    
+    <hr>
+    <div class="spell-footer">
+        <p><strong>Available To</strong><br>Special</p>
+        <p class="align-right"><strong>Source</strong><br>Four Corners</p>
+    </div>
+</div>
+        </div>
+    </div>
+</span> instead of <i>hellish rebuke</i> with your Atrophic Spells trait.
+</li><li>You can cast 
+<span class="tooltip withdrag" onclick="toggleDraggable(draggable155)">
+    <span class="tooltiplabel">
+        <i>court of madness</i>
+    </span>
+    <div class="tooltiptext tooltipdiv" id="draggable155">
+        <div class="dragheader" id="draggable155header">
+            <div class="dragclosebutton" onclick="toggleDraggable(draggable155)">&times;</div>
+            <i>court of madness</i>
+        </div>
+        <div class="dragcontent" id="draggable155content">
+            
+<div class="spell-card">
+    <div class="spell-header">
+        <div>
+            <h3 class="noHeaderID">Court of Madness</h3>
+            <p class="spell-school"><em>2nd-level enchantment</em></p>
+        </div>
+        <div class="align-right">
+            <span class="concentration-tag">concentration</span>
+            
+            
+        </div>
+    </div>
+    <hr>
+    <div class="spell-specs">
+        <p><strong>Components</strong><br>V, S</p>
+        <p><strong>Duration</strong><br>Up to 1 minute</p>
+    </div>
+    <div class="spell-specs">
+        <p><strong>Casting Time</strong><br>1 action</p>
+        <p><strong>Range</strong><br>30 feet</p>
+    </div>
+    <hr>
+    <p>A number of humanoids up to your proficiency bonus of your choice that you can see within range must succeed on a Wisdom saving throw or become charmed by you for the duration. While a target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.</p>
+
+<p>A charmed target must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose.</p>
+
+<p>A target can act normally on its turn if you choose no creature or if none are within its reach.</p>
+
+<p>On your subsequent turns, you must use your action or bonus action to maintain control over the targets, or the spell ends. Also, a target can make a Wisdom saving throw at the end of each of its turns. On a successful save, the spell ends for that creature. The spell also ends early on a creature if <i>remove curse</i> is cast on it.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
+    
+    <hr>
+    <div class="spell-footer">
+        <p><strong>Available To</strong><br>Special</p>
+        <p class="align-right"><strong>Source</strong><br>Four Corners</p>
+    </div>
+</div>
+        </div>
+    </div>
+</span> instead of <i>crown of madness</i> with your Atrophic Spells trait.
 </li></ul>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 </div>
 
 <div class="subheaded-card">
@@ -84,9 +204,107 @@
 <ul><li>You lose your Tiefling's Curse trait, but you retain your Leguleian Spells trait.
 </li><li>For you, <i>thaumaturgy</i> has a range of 150 feet, a duration of 10 minutes, and can be cast as a bonus action.
 </li><li>You can use Leguleian Spells to cast <i>hellish rebuke</i> a number of times equal to your proficiency bonus, instead of once, per long rest.
-</li><li>When you cast <i>hellish rebuke</i> with your Atrophic Spells trait and the target fails its saving throw, you can place an interdiction on the target as part of the spell. While under the interdiction, the target cannot attack you or target you with harmful abilities or magical effects. The target may make a Charisma saving throw at the end of each of its turns. The interdiction ends on a successful save or after 1 minute.
-</li><li>When you cast <i>zone of truth</i> with your Leguleian Spells trait, you can also use Leguleian Spells to cast <i>command</i> at will targeting any number of creatures within the zone.
+</li><li>You can cast 
+<span class="tooltip withdrag" onclick="toggleDraggable(draggable156)">
+    <span class="tooltiplabel">
+        <i>hellish interdiction</i>
+    </span>
+    <div class="tooltiptext tooltipdiv" id="draggable156">
+        <div class="dragheader" id="draggable156header">
+            <div class="dragclosebutton" onclick="toggleDraggable(draggable156)">&times;</div>
+            <i>hellish interdiction</i>
+        </div>
+        <div class="dragcontent" id="draggable156content">
+            
+<div class="spell-card">
+    <div class="spell-header">
+        <div>
+            <h3 class="noHeaderID">Hellish Interdiction</h3>
+            <p class="spell-school"><em>1st-level abjuration</em></p>
+        </div>
+        <div class="align-right">
+            
+            
+            
+        </div>
+    </div>
+    <hr>
+    <div class="spell-specs">
+        <p><strong>Components</strong><br>V</p>
+        <p><strong>Duration</strong><br>1 round</p>
+    </div>
+    <div class="spell-specs">
+        <p><strong>Casting Time</strong><br>1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</p>
+        <p><strong>Range</strong><br>60 feet</p>
+    </div>
+    <hr>
+    <p>With a cold glare, hellish flames burst from the creature that damaged you. The creature must make a Charisma saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the creature also cannot attack you or target you with harmful abilities or magical effects until the start of your next turn.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
+    
+    <hr>
+    <div class="spell-footer">
+        <p><strong>Available To</strong><br>Special</p>
+        <p class="align-right"><strong>Source</strong><br>Four Corners</p>
+    </div>
+</div>
+        </div>
+    </div>
+</span> instead of <i>hellish rebuke</i> with your Leguleian Spells trait.
+</li><li>You can cast 
+<span class="tooltip withdrag" onclick="toggleDraggable(draggable157)">
+    <span class="tooltiplabel">
+        <i>zone of command</i>
+    </span>
+    <div class="tooltiptext tooltipdiv" id="draggable157">
+        <div class="dragheader" id="draggable157header">
+            <div class="dragclosebutton" onclick="toggleDraggable(draggable157)">&times;</div>
+            <i>zone of command</i>
+        </div>
+        <div class="dragcontent" id="draggable157content">
+            
+<div class="spell-card">
+    <div class="spell-header">
+        <div>
+            <h3 class="noHeaderID">Zone of Command</h3>
+            <p class="spell-school"><em>2nd-level enchantment</em></p>
+        </div>
+        <div class="align-right">
+            <span class="concentration-tag">concentration</span>
+            
+            
+        </div>
+    </div>
+    <hr>
+    <div class="spell-specs">
+        <p><strong>Components</strong><br>V, S</p>
+        <p><strong>Duration</strong><br>Up to 10 minutes</p>
+    </div>
+    <div class="spell-specs">
+        <p><strong>Casting Time</strong><br>1 action</p>
+        <p><strong>Range</strong><br>60 feet</p>
+    </div>
+    <hr>
+    <p>You create a magical zone to enforce your authority in a 10-foot-radius sphere centered on a point of your choice within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there must make a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether each creature succeeds or fails on its saving throw.</p>
+
+<p>An affected creature is aware of the spell and can thus avoid answering questions to which it would normally respond with a lie. Such a creature can be evasive in its answers as long as it remains within the boundaries of the truth.</p>
+
+<p>Addtionally, you can cast <i>command</i> at will targeting any number of creatures within the zone.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
+    
+    <hr>
+    <div class="spell-footer">
+        <p><strong>Available To</strong><br>Special</p>
+        <p class="align-right"><strong>Source</strong><br>Four Corners</p>
+    </div>
+</div>
+        </div>
+    </div>
+</span> instead of <i>zone of truth</i> with your Leguleian Spells trait.
 </li></ul>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 </div>
 
 <div class="subheaded-card">
@@ -103,7 +321,11 @@
 </li></ol>
 
 <p>You can take this feat multiple times. Each time you do, choose a different benefit.</p>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
 </div></div>
+<script src='/js/sortTable.js'></script>
+<script src='/js/drag.js'></script>
     </article>
 </body>
 

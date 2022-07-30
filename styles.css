@@ -310,12 +310,13 @@ blockquote {
 }
 .tooltip.withdrag {
   cursor: default;
+  border-style: none none dotted none;
+  border-color: #333333;
 }
 .tooltip.withdrag:hover {
-  border-style: none none dotted none;
-  border-color: black;
+  border-color: #111111;
 }
-.tooltip .tooltiptext {
+.tooltip > .tooltiptext {
   visibility: hidden;
   border-radius: 6px;
   padding: 5px 0;
@@ -323,18 +324,18 @@ blockquote {
   z-index: 1;
   cursor: auto;
 }
-.tooltip .tooltiptext.tooltipdiv {
+.tooltip > .tooltiptext.tooltipdiv {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.tooltip .tooltiptext.tooltipspan {
+.tooltip > .tooltiptext.tooltipspan {
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0.4em 0.7em;
 }
-.tooltip .tooltiplabel:hover + .tooltiptext,
-.tooltip:active .tooltiptext {
+.tooltip > .tooltiplabel:hover + .tooltiptext,
+.tooltip:active > .tooltiptext {
   visibility: visible;
 }
 .dragheader {
@@ -353,10 +354,21 @@ blockquote {
 .draggable {
   visibility: visible !important;
 }
-.draggable .dragheader {
+.draggable > .dragheader {
   cursor: move;
   visibility: visible;
 }
-.draggable .dragheader:hover {
+.draggable > .dragheader:hover {
   background-color: #111111;
+}
+.dragcontent > * {
+  max-height: 40vh;
+  overflow-y: auto;
+}
+.dragclosebutton {
+  float: right;
+  text-align: center;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
 }
