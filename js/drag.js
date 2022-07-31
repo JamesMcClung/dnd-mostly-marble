@@ -1,6 +1,26 @@
+function toggleFixedPosition(element, options = {}) {
+    if (options.event)
+        options.event.stopPropagation()
+    if (options.set == "fixed" || options.set != "absolute" && element.style.position != "fixed") {
+        var rect = element.getBoundingClientRect();
+        element.style.position = "fixed";
+        element.style.left = rect.left + "px";
+        element.style.top = rect.top + "px";
+        element.querySelector(".dragheader").querySelector(".dragbuttongroup").querySelector(".dragbuttonsticky").innerHTML = "&#9679;"
+    } else if (options.set == "absolute" || element.style.position != "absolute") {
+        element.style.position = "absolute";
+        element.style.left = element.offsetLeft + window.scrollX + "px";
+        element.style.top = element.offsetTop + window.scrollY + "px";
+        element.querySelector(".dragheader").querySelector(".dragbuttongroup").querySelector(".dragbuttonsticky").innerHTML = "&#9675;"
+    }
+}
+
 // based on https://www.w3schools.com/howto/howto_js_draggable.asp
-function toggleDraggable(element) {
+function toggleDraggable(element, options = {}) {
+    if (options.event)
+        options.event.stopPropagation();
     let lastCursorX, lastCursorY;
+    let offsetRight = -1, maxOffsetRight = -1;
     let moved = false;
     let header = document.getElementById(element.id + "header");
     let content = document.getElementById(element.id + "content");
@@ -10,21 +30,18 @@ function toggleDraggable(element) {
     if (header.onmousedown) {
         // deactivate draggability
         header.onmousedown = null;
+        toggleFixedPosition(element, { set: "absolute" });
         element.classList.remove("draggable");
         element.style.removeProperty("top");
         element.style.removeProperty("left");
+        element.style.removeProperty("right");
         if (content.style.visibility == "hidden") {
             toggleContentVisibility();
         }
-        element.style.position = "absolute";
     } else {
         // activate draggability
         header.onmousedown = beginDrag;
         element.classList.add("draggable");
-        var rect = element.getBoundingClientRect();
-        element.style.position = "fixed";
-        element.style.left = rect.left + "px"
-        element.style.top = rect.top + "px"
     }
 
     function toggleContentVisibility() {
@@ -58,8 +75,20 @@ function toggleDraggable(element) {
         var deltaY = e.clientY - lastCursorY;
         lastCursorX = e.clientX;
         lastCursorY = e.clientY;
+        var rect = element.getBoundingClientRect();
         element.style.top = (element.offsetTop + deltaY) + "px";
-        element.style.left = (element.offsetLeft + deltaX) + "px";
+        if (rect.left + deltaX <= 0 || (maxOffsetRight > 0 && offsetRight + deltaX < maxOffsetRight)) {
+            if (offsetRight < 0) {
+                offsetRight = maxOffsetRight = rect.right;
+            }
+            offsetRight += deltaX;
+            element.style.right = (screen.width - offsetRight) + "px";
+            element.style.removeProperty("left");
+        } else {
+            element.style.left = (rect.left + deltaX) + "px";
+            element.style.removeProperty("right");
+            offsetRight = maxOffsetRight = -1;
+        }
         moved |= deltaX != 0 || deltaY != 0;
     }
 

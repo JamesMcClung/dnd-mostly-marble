@@ -281,7 +281,7 @@ table caption {
   font-size: 13px;
 }
 .cardgroup {
-  column-width: 600px;
+  column-width: 500px;
   column-gap: 0;
 }
 del {
@@ -309,7 +309,7 @@ blockquote {
   padding: 0.1em 10px;
 }
 .tooltip.withdrag {
-  cursor: default;
+  cursor: pointer;
   border-style: none none dotted none;
   border-color: #333333;
 }
@@ -365,10 +365,15 @@ blockquote {
   max-height: 40vh;
   overflow-y: auto;
 }
-.dragclosebutton {
+.dragbuttongroup {
   float: right;
+  display: flex;
+  flex-direction: row;
+}
+.dragbutton {
   text-align: center;
-  width: 30px;
+  width: 20px;
+  margin-right: 5px;
   height: 20px;
   cursor: pointer;
 }
