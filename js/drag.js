@@ -24,6 +24,7 @@ function toggleDraggable(element, options = {}) {
     let moved = false;
     let header = document.getElementById(element.id + "header");
     let content = document.getElementById(element.id + "content");
+    let home = document.getElementById(element.id + "home");
 
     element.onclick = (e) => { sendToTop(); e.stopPropagation(); }
 
@@ -38,8 +39,13 @@ function toggleDraggable(element, options = {}) {
         if (content.style.visibility == "hidden") {
             toggleContentVisibility();
         }
+        home.append(element);
     } else {
         // activate draggability
+        var rect = element.getBoundingClientRect();
+        element.style.left = rect.left + window.scrollX + "px";
+        element.style.top = rect.top + window.scrollY + "px";
+        document.getElementsByTagName("article")[0].append(element);
         header.onmousedown = beginDrag;
         element.classList.add("draggable");
     }
@@ -55,10 +61,10 @@ function toggleDraggable(element, options = {}) {
     }
 
     function sendToTop() {
-        for (let ttt of document.getElementsByClassName("tooltiptext")) {
-            ttt.style.zIndex = 8
-        }
-        element.style.zIndex = 10
+        let scroll = content.firstElementChild.scrollTop;
+        document.getElementsByTagName("article")[0].append(element);
+        content.firstElementChild.scrollTop = scroll;
+
     }
 
     function beginDrag(e) {
@@ -85,7 +91,7 @@ function toggleDraggable(element, options = {}) {
             element.style.right = (screen.width - offsetRight) + "px";
             element.style.removeProperty("left");
         } else {
-            element.style.left = (rect.left + deltaX) + "px";
+            element.style.left = (element.offsetLeft + deltaX) + "px";
             element.style.removeProperty("right");
             offsetRight = maxOffsetRight = -1;
         }

@@ -39,7 +39,7 @@
 <tr><th align='left' onclick="sortTable(sortableTable1,0)">Feat</th><th align='center' onclick="sortTable(sortableTable1,1)">Cost</th><th align='left' onclick="sortTable(sortableTable1,2)">Prerequisites</th></tr>
 </thead><tbody>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable0)">
+<span class="tooltip withdrag" id="draggable0home" onclick="toggleDraggable(draggable0, options={event:event})">
     <span class="tooltiplabel">
         Actor
     </span>
@@ -67,7 +67,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable1)">
+<span class="tooltip withdrag" id="draggable1home" onclick="toggleDraggable(draggable1, options={event:event})">
     <span class="tooltiplabel">
         Alert
     </span>
@@ -96,7 +96,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable2)">
+<span class="tooltip withdrag" id="draggable2home" onclick="toggleDraggable(draggable2, options={event:event})">
     <span class="tooltiplabel">
         Artificer Initiate
     </span>
@@ -125,7 +125,7 @@
     </div>
 </span></td><td align='center'>5</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable3)">
+<span class="tooltip withdrag" id="draggable3home" onclick="toggleDraggable(draggable3, options={event:event})">
     <span class="tooltiplabel">
         Athlete
     </span>
@@ -155,7 +155,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable4)">
+<span class="tooltip withdrag" id="draggable4home" onclick="toggleDraggable(draggable4, options={event:event})">
     <span class="tooltiplabel">
         Bountiful Luck
     </span>
@@ -184,7 +184,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'>Halfling</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable5)">
+<span class="tooltip withdrag" id="draggable5home" onclick="toggleDraggable(draggable5, options={event:event})">
     <span class="tooltiplabel">
         Charger
     </span>
@@ -211,7 +211,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable6)">
+<span class="tooltip withdrag" id="draggable6home" onclick="toggleDraggable(draggable6, options={event:event})">
     <span class="tooltiplabel">
         Chef
     </span>
@@ -241,7 +241,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable7)">
+<span class="tooltip withdrag" id="draggable7home" onclick="toggleDraggable(draggable7, options={event:event})">
     <span class="tooltiplabel">
         Crossbow Expert
     </span>
@@ -270,7 +270,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable8)">
+<span class="tooltip withdrag" id="draggable8home" onclick="toggleDraggable(draggable8, options={event:event})">
     <span class="tooltiplabel">
         Crusher
     </span>
@@ -299,7 +299,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable9)">
+<span class="tooltip withdrag" id="draggable9home" onclick="toggleDraggable(draggable9, options={event:event})">
     <span class="tooltiplabel">
         Defensive Duelist
     </span>
@@ -324,7 +324,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'>Dexterity 13 or higher</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable10)">
+<span class="tooltip withdrag" id="draggable10home" onclick="toggleDraggable(draggable10, options={event:event})">
     <span class="tooltiplabel">
         Dragon Fear
     </span>
@@ -352,7 +352,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'>Dragonborn</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable11)">
+<span class="tooltip withdrag" id="draggable11home" onclick="toggleDraggable(draggable11, options={event:event})">
     <span class="tooltiplabel">
         Dragon Hide
     </span>
@@ -381,7 +381,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'>Dragonborn</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable12)">
+<span class="tooltip withdrag" id="draggable12home" onclick="toggleDraggable(draggable12, options={event:event})">
     <span class="tooltiplabel">
         Drow High Magic
     </span>
@@ -406,7 +406,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'>Elf (drow)</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable13)">
+<span class="tooltip withdrag" id="draggable13home" onclick="toggleDraggable(draggable13, options={event:event})">
     <span class="tooltiplabel">
         Dual Wielder
     </span>
@@ -435,7 +435,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable14)">
+<span class="tooltip withdrag" id="draggable14home" onclick="toggleDraggable(draggable14, options={event:event})">
     <span class="tooltiplabel">
         Dungeon Delver
     </span>
@@ -465,7 +465,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable15)">
+<span class="tooltip withdrag" id="draggable15home" onclick="toggleDraggable(draggable15, options={event:event})">
     <span class="tooltiplabel">
         Durable
     </span>
@@ -493,7 +493,7 @@
     </div>
 </span></td><td align='center'>1</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable16)">
+<span class="tooltip withdrag" id="draggable16home" onclick="toggleDraggable(draggable16, options={event:event})">
     <span class="tooltiplabel">
         Dwarven Fortitude
     </span>
@@ -521,7 +521,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'>Dwarf</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable17)">
+<span class="tooltip withdrag" id="draggable17home" onclick="toggleDraggable(draggable17, options={event:event})">
     <span class="tooltiplabel">
         Eldritch Adept
     </span>
@@ -548,7 +548,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'>Spellcasting or Pact Magic feature</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable18)">
+<span class="tooltip withdrag" id="draggable18home" onclick="toggleDraggable(draggable18, options={event:event})">
     <span class="tooltiplabel">
         Elemental Adept
     </span>
@@ -577,7 +577,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'>The ability to cast at least one spell</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable19)">
+<span class="tooltip withdrag" id="draggable19home" onclick="toggleDraggable(draggable19, options={event:event})">
     <span class="tooltiplabel">
         Elven Accuracy
     </span>
@@ -605,7 +605,7 @@
     </div>
 </span></td><td align='center'>5</td><td align='left'>Elf or half-elf</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable20)">
+<span class="tooltip withdrag" id="draggable20home" onclick="toggleDraggable(draggable20, options={event:event})">
     <span class="tooltiplabel">
         Fade Away
     </span>
@@ -633,7 +633,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'>Gnome</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable21)">
+<span class="tooltip withdrag" id="draggable21home" onclick="toggleDraggable(draggable21, options={event:event})">
     <span class="tooltiplabel">
         Fey Teleportation
     </span>
@@ -662,7 +662,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'>Elf (high)</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable22)">
+<span class="tooltip withdrag" id="draggable22home" onclick="toggleDraggable(draggable22, options={event:event})">
     <span class="tooltiplabel">
         Fey Touched
     </span>
@@ -690,7 +690,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable23)">
+<span class="tooltip withdrag" id="draggable23home" onclick="toggleDraggable(draggable23, options={event:event})">
     <span class="tooltiplabel">
         Fighting Initiate
     </span>
@@ -717,7 +717,7 @@
     </div>
 </span></td><td align='center'>7</td><td align='left'>Proficiency with a martial weapon</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable24)">
+<span class="tooltip withdrag" id="draggable24home" onclick="toggleDraggable(draggable24, options={event:event})">
     <span class="tooltiplabel">
         Flames of Phlegethos
     </span>
@@ -746,7 +746,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'>Tiefling</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable25)">
+<span class="tooltip withdrag" id="draggable25home" onclick="toggleDraggable(draggable25, options={event:event})">
     <span class="tooltiplabel">
         Gift of the Chromatic Dragon
     </span>
@@ -775,7 +775,7 @@
     </div>
 </span></td><td align='center'>7</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable26)">
+<span class="tooltip withdrag" id="draggable26home" onclick="toggleDraggable(draggable26, options={event:event})">
     <span class="tooltiplabel">
         Gift of the Gem Dragon
     </span>
@@ -804,7 +804,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable27)">
+<span class="tooltip withdrag" id="draggable27home" onclick="toggleDraggable(draggable27, options={event:event})">
     <span class="tooltiplabel">
         Gift of the Metallic Dragon
     </span>
@@ -833,7 +833,7 @@
     </div>
 </span></td><td align='center'>9</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable28)">
+<span class="tooltip withdrag" id="draggable28home" onclick="toggleDraggable(draggable28, options={event:event})">
     <span class="tooltiplabel">
         Grappler
     </span>
@@ -861,7 +861,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'>Strength 13 or higher</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable29)">
+<span class="tooltip withdrag" id="draggable29home" onclick="toggleDraggable(draggable29, options={event:event})">
     <span class="tooltiplabel">
         Great Weapon Master
     </span>
@@ -889,7 +889,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable30)">
+<span class="tooltip withdrag" id="draggable30home" onclick="toggleDraggable(draggable30, options={event:event})">
     <span class="tooltiplabel">
         Gunner
     </span>
@@ -918,7 +918,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable31)">
+<span class="tooltip withdrag" id="draggable31home" onclick="toggleDraggable(draggable31, options={event:event})">
     <span class="tooltiplabel">
         Healer
     </span>
@@ -946,7 +946,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable32)">
+<span class="tooltip withdrag" id="draggable32home" onclick="toggleDraggable(draggable32, options={event:event})">
     <span class="tooltiplabel">
         Heavily Armored
     </span>
@@ -974,7 +974,7 @@
     </div>
 </span></td><td align='center'>1</td><td align='left'>Proficiency with medium armor</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable33)">
+<span class="tooltip withdrag" id="draggable33home" onclick="toggleDraggable(draggable33, options={event:event})">
     <span class="tooltiplabel">
         Heavy Armor Master
     </span>
@@ -1002,7 +1002,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'>Proficiency with heavy armor</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable34)">
+<span class="tooltip withdrag" id="draggable34home" onclick="toggleDraggable(draggable34, options={event:event})">
     <span class="tooltiplabel">
         Infernal Constitution
     </span>
@@ -1031,7 +1031,7 @@
     </div>
 </span></td><td align='center'>5</td><td align='left'>Tiefling</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable35)">
+<span class="tooltip withdrag" id="draggable35home" onclick="toggleDraggable(draggable35, options={event:event})">
     <span class="tooltiplabel">
         Inspiring Leader
     </span>
@@ -1056,7 +1056,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'>Charisma 13 or higher</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable36)">
+<span class="tooltip withdrag" id="draggable36home" onclick="toggleDraggable(draggable36, options={event:event})">
     <span class="tooltiplabel">
         Keen Mind
     </span>
@@ -1086,7 +1086,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable37)">
+<span class="tooltip withdrag" id="draggable37home" onclick="toggleDraggable(draggable37, options={event:event})">
     <span class="tooltiplabel">
         Lightly Armored
     </span>
@@ -1114,7 +1114,7 @@
     </div>
 </span></td><td align='center'>1</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable38)">
+<span class="tooltip withdrag" id="draggable38home" onclick="toggleDraggable(draggable38, options={event:event})">
     <span class="tooltiplabel">
         Linguist
     </span>
@@ -1143,7 +1143,7 @@
     </div>
 </span></td><td align='center'>2</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable39)">
+<span class="tooltip withdrag" id="draggable39home" onclick="toggleDraggable(draggable39, options={event:event})">
     <span class="tooltiplabel">
         Lucky
     </span>
@@ -1175,7 +1175,7 @@
     </div>
 </span></td><td align='center'>12</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable40)">
+<span class="tooltip withdrag" id="draggable40home" onclick="toggleDraggable(draggable40, options={event:event})">
     <span class="tooltiplabel">
         Mage Slayer
     </span>
@@ -1204,7 +1204,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable41)">
+<span class="tooltip withdrag" id="draggable41home" onclick="toggleDraggable(draggable41, options={event:event})">
     <span class="tooltiplabel">
         Magic Initiate
     </span>
@@ -1233,7 +1233,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable42)">
+<span class="tooltip withdrag" id="draggable42home" onclick="toggleDraggable(draggable42, options={event:event})">
     <span class="tooltiplabel">
         Martial Adept
     </span>
@@ -1261,7 +1261,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable43)">
+<span class="tooltip withdrag" id="draggable43home" onclick="toggleDraggable(draggable43, options={event:event})">
     <span class="tooltiplabel">
         Medium Armor Master
     </span>
@@ -1289,7 +1289,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'>Proficiency with medium armor</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable44)">
+<span class="tooltip withdrag" id="draggable44home" onclick="toggleDraggable(draggable44, options={event:event})">
     <span class="tooltiplabel">
         Metamagic Adept
     </span>
@@ -1317,7 +1317,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'>Spellcasting or Pact Magic feature</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable45)">
+<span class="tooltip withdrag" id="draggable45home" onclick="toggleDraggable(draggable45, options={event:event})">
     <span class="tooltiplabel">
         Mobile
     </span>
@@ -1346,7 +1346,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable46)">
+<span class="tooltip withdrag" id="draggable46home" onclick="toggleDraggable(draggable46, options={event:event})">
     <span class="tooltiplabel">
         Moderately Armored
     </span>
@@ -1374,7 +1374,7 @@
     </div>
 </span></td><td align='center'>1</td><td align='left'>Proficiency with light armor</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable47)">
+<span class="tooltip withdrag" id="draggable47home" onclick="toggleDraggable(draggable47, options={event:event})">
     <span class="tooltiplabel">
         Mounted Combatant
     </span>
@@ -1403,7 +1403,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable48)">
+<span class="tooltip withdrag" id="draggable48home" onclick="toggleDraggable(draggable48, options={event:event})">
     <span class="tooltiplabel">
         Observant
     </span>
@@ -1432,7 +1432,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable49)">
+<span class="tooltip withdrag" id="draggable49home" onclick="toggleDraggable(draggable49, options={event:event})">
     <span class="tooltiplabel">
         Orcish Fury
     </span>
@@ -1461,7 +1461,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'>Half-orc</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable50)">
+<span class="tooltip withdrag" id="draggable50home" onclick="toggleDraggable(draggable50, options={event:event})">
     <span class="tooltiplabel">
         Piercer
     </span>
@@ -1490,7 +1490,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable51)">
+<span class="tooltip withdrag" id="draggable51home" onclick="toggleDraggable(draggable51, options={event:event})">
     <span class="tooltiplabel">
         Poisoner
     </span>
@@ -1519,7 +1519,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable52)">
+<span class="tooltip withdrag" id="draggable52home" onclick="toggleDraggable(draggable52, options={event:event})">
     <span class="tooltiplabel">
         Polearm Master
     </span>
@@ -1547,7 +1547,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable53)">
+<span class="tooltip withdrag" id="draggable53home" onclick="toggleDraggable(draggable53, options={event:event})">
     <span class="tooltiplabel">
         Prodigy
     </span>
@@ -1575,7 +1575,7 @@
     </div>
 </span></td><td align='center'>7</td><td align='left'>Half-elf, half-orc, or human</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable54)">
+<span class="tooltip withdrag" id="draggable54home" onclick="toggleDraggable(draggable54, options={event:event})">
     <span class="tooltiplabel">
         Resilient
     </span>
@@ -1603,7 +1603,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable55)">
+<span class="tooltip withdrag" id="draggable55home" onclick="toggleDraggable(draggable55, options={event:event})">
     <span class="tooltiplabel">
         Ritual Caster
     </span>
@@ -1632,7 +1632,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'>Intelligence or Wisdom 13 or higher</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable56)">
+<span class="tooltip withdrag" id="draggable56home" onclick="toggleDraggable(draggable56, options={event:event})">
     <span class="tooltiplabel">
         Savage Attacker
     </span>
@@ -1657,7 +1657,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable57)">
+<span class="tooltip withdrag" id="draggable57home" onclick="toggleDraggable(draggable57, options={event:event})">
     <span class="tooltiplabel">
         Second Chance
     </span>
@@ -1685,7 +1685,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'>Halfling</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable58)">
+<span class="tooltip withdrag" id="draggable58home" onclick="toggleDraggable(draggable58, options={event:event})">
     <span class="tooltiplabel">
         Sentinel
     </span>
@@ -1714,7 +1714,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable59)">
+<span class="tooltip withdrag" id="draggable59home" onclick="toggleDraggable(draggable59, options={event:event})">
     <span class="tooltiplabel">
         Shadow Touched
     </span>
@@ -1742,7 +1742,7 @@
     </div>
 </span></td><td align='center'>5</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable60)">
+<span class="tooltip withdrag" id="draggable60home" onclick="toggleDraggable(draggable60, options={event:event})">
     <span class="tooltiplabel">
         Sharpshooter
     </span>
@@ -1771,7 +1771,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable61)">
+<span class="tooltip withdrag" id="draggable61home" onclick="toggleDraggable(draggable61, options={event:event})">
     <span class="tooltiplabel">
         Shield Master
     </span>
@@ -1800,7 +1800,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable62)">
+<span class="tooltip withdrag" id="draggable62home" onclick="toggleDraggable(draggable62, options={event:event})">
     <span class="tooltiplabel">
         Skill Expert
     </span>
@@ -1829,7 +1829,7 @@
     </div>
 </span></td><td align='center'>7</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable63)">
+<span class="tooltip withdrag" id="draggable63home" onclick="toggleDraggable(draggable63, options={event:event})">
     <span class="tooltiplabel">
         Skilled
     </span>
@@ -1854,7 +1854,7 @@
     </div>
 </span></td><td align='center'>3</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable64)">
+<span class="tooltip withdrag" id="draggable64home" onclick="toggleDraggable(draggable64, options={event:event})">
     <span class="tooltiplabel">
         Skulker
     </span>
@@ -1883,7 +1883,7 @@
     </div>
 </span></td><td align='center'>5</td><td align='left'>Dexterity 13 or higher</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable65)">
+<span class="tooltip withdrag" id="draggable65home" onclick="toggleDraggable(draggable65, options={event:event})">
     <span class="tooltiplabel">
         Slasher
     </span>
@@ -1912,7 +1912,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable66)">
+<span class="tooltip withdrag" id="draggable66home" onclick="toggleDraggable(draggable66, options={event:event})">
     <span class="tooltiplabel">
         Spell Sniper
     </span>
@@ -1941,7 +1941,7 @@
     </div>
 </span></td><td align='center'>7</td><td align='left'>The ability to cast at least one spell</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable67)">
+<span class="tooltip withdrag" id="draggable67home" onclick="toggleDraggable(draggable67, options={event:event})">
     <span class="tooltiplabel">
         Squat Nimbleness
     </span>
@@ -1971,7 +1971,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'>Dwarf or a Small race</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable68)">
+<span class="tooltip withdrag" id="draggable68home" onclick="toggleDraggable(draggable68, options={event:event})">
     <span class="tooltiplabel">
         Svirfneblin Magic
     </span>
@@ -1996,7 +1996,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'>Gnome (deep)</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable69)">
+<span class="tooltip withdrag" id="draggable69home" onclick="toggleDraggable(draggable69, options={event:event})">
     <span class="tooltiplabel">
         Tavern Brawler
     </span>
@@ -2026,7 +2026,7 @@
     </div>
 </span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable70)">
+<span class="tooltip withdrag" id="draggable70home" onclick="toggleDraggable(draggable70, options={event:event})">
     <span class="tooltiplabel">
         Telekinetic
     </span>
@@ -2055,7 +2055,7 @@
     </div>
 </span></td><td align='center'>8</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable71)">
+<span class="tooltip withdrag" id="draggable71home" onclick="toggleDraggable(draggable71, options={event:event})">
     <span class="tooltiplabel">
         Telepathic
     </span>
@@ -2084,7 +2084,7 @@
     </div>
 </span></td><td align='center'>5</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable72)">
+<span class="tooltip withdrag" id="draggable72home" onclick="toggleDraggable(draggable72, options={event:event})">
     <span class="tooltiplabel">
         Tough
     </span>
@@ -2109,7 +2109,7 @@
     </div>
 </span></td><td align='center'>6</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable73)">
+<span class="tooltip withdrag" id="draggable73home" onclick="toggleDraggable(draggable73, options={event:event})">
     <span class="tooltiplabel">
         War Caster
     </span>
@@ -2138,7 +2138,7 @@
     </div>
 </span></td><td align='center'>10</td><td align='left'>The ability to cast at least one spell</td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable74)">
+<span class="tooltip withdrag" id="draggable74home" onclick="toggleDraggable(draggable74, options={event:event})">
     <span class="tooltiplabel">
         Weapon Master
     </span>
@@ -2166,7 +2166,7 @@
     </div>
 </span></td><td align='center'>1</td><td align='left'></td></tr>
 <tr><td align='left'>
-<span class="tooltip withdrag" onclick="toggleDraggable(draggable75)">
+<span class="tooltip withdrag" id="draggable75home" onclick="toggleDraggable(draggable75, options={event:event})">
     <span class="tooltiplabel">
         Wood Elf Magic
     </span>

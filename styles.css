@@ -242,7 +242,7 @@ table caption {
   font-variant: small-caps;
   border-radius: 3px;
   color: #f8f8f8;
-  padding: 0px 3px;
+  padding: 3px;
   margin: 2px 0px;
   font-size: small;
   font-weight: bold;
@@ -251,7 +251,7 @@ table caption {
   font-variant: small-caps;
   border-radius: 3px;
   color: #f8f8f8;
-  padding: 0px 3px;
+  padding: 3px;
   margin: 2px 0px;
   font-size: small;
   font-weight: bold;
@@ -261,7 +261,7 @@ table caption {
   font-variant: small-caps;
   border-radius: 3px;
   color: #f8f8f8;
-  padding: 0px 3px;
+  padding: 3px;
   margin: 2px 0px;
   font-size: small;
   font-weight: bold;
@@ -278,7 +278,7 @@ table caption {
 .spell-card .spell-footer {
   display: flex;
   justify-content: space-between;
-  font-size: 13px;
+  font-size: 14px;
 }
 .cardgroup {
   column-width: 500px;
@@ -316,7 +316,7 @@ blockquote {
 .tooltip.withdrag:hover {
   border-color: #111111;
 }
-.tooltip > .tooltiptext {
+.tooltiptext {
   visibility: hidden;
   border-radius: 6px;
   padding: 5px 0;
@@ -324,18 +324,18 @@ blockquote {
   z-index: 1;
   cursor: auto;
 }
-.tooltip > .tooltiptext.tooltipdiv {
+.tooltiptext.tooltipdiv {
   display: flex;
   flex-direction: column;
   align-items: stretch;
 }
-.tooltip > .tooltiptext.tooltipspan {
+.tooltiptext.tooltipspan {
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0.4em 0.7em;
 }
-.tooltip > .tooltiplabel:hover + .tooltiptext,
-.tooltip:active > .tooltiptext {
+.tooltiplabel:hover + .tooltiptext,
+:active > .tooltiptext {
   visibility: visible;
 }
 .dragheader {
