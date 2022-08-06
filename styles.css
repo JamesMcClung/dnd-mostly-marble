@@ -60,6 +60,12 @@ h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
   margin-bottom: -10px;
 }
+h1,
+h2,
+h3,
+h4 {
+  scroll-margin-top: 55px;
+}
 .home-ref {
   padding: 2px 5px;
   color: white;
@@ -293,14 +299,6 @@ del {
 del,
 .del {
   background-color: lightcoral !important;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  scroll-margin-top: 75px;
 }
 blockquote {
   background: #f8f8f8;
