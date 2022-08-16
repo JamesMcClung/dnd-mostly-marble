@@ -55,6 +55,25 @@ h2 {
 h3 {
   font: 20px Arial, Geneva, Helvetica, sans-serif;
   margin-bottom: -6px;
+  border-bottom: 1px solid #aaaaaa;
+}
+details {
+  margin-bottom: 18px;
+  position: relative;
+}
+details > summary {
+  font: 20px Arial, Geneva, Helvetica, sans-serif;
+  margin-bottom: -8px;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px;
+  padding-left: 6px;
+  color: white;
+  background-color: #333333;
+  border-radius: 4px;
+}
+details > summary:hover {
+  background-color: #111111;
 }
 h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
@@ -63,7 +82,8 @@ h4 {
 h1,
 h2,
 h3,
-h4 {
+h4,
+details {
   scroll-margin-top: 55px;
 }
 .home-ref {
@@ -107,13 +127,16 @@ table caption {
 .sortableTable > thead > tr > th:hover {
   background-color: #111111;
 }
+.p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .para-intro {
   font: 0px Arial, Geneva, Helvetica, sans-serif;
   font-size: unset;
   font-style: italic;
 }
 .card {
-  max-width: 550px;
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -126,125 +149,117 @@ table caption {
   color: transparent;
   border-radius: 1px;
 }
-.card h3 {
-  margin: 0;
-  margin-bottom: -6px;
-  font: 22px Arial, Geneva, Helvetica, sans-serif;
-}
-.card h4 {
-  margin: 0;
-  font: 18px Arial, Geneva, Helvetica, sans-serif;
-  margin-bottom: -8px;
-  border-bottom: 2px solid #aaaaaa;
-}
-.card table {
-  margin-left: 0;
-  margin-top: 0;
-}
-.race-card {
-  max-width: 550px;
-  margin: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 20px 20px;
-  display: inline-block;
-  max-width: 800px;
-}
-.race-card hr {
-  margin: 0px;
-  background-color: lightgray;
-  color: transparent;
-  border-radius: 1px;
-}
-.race-card h3 {
-  margin: 0;
-  margin-bottom: -6px;
-  font: 22px Arial, Geneva, Helvetica, sans-serif;
-}
-.race-card h4 {
-  margin: 0;
-  font: 18px Arial, Geneva, Helvetica, sans-serif;
-  margin-bottom: -8px;
-  border-bottom: 2px solid #aaaaaa;
-}
-.race-card table {
-  margin-left: 0;
-  margin-top: 0;
-}
-.race-card h3 {
-  font: 26px Arial, Geneva, Helvetica, sans-serif;
-}
-.subheaded-card {
-  max-width: 550px;
-  margin: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 20px 20px;
-  display: inline-block;
-}
-.subheaded-card hr {
-  margin: 0px;
-  background-color: lightgray;
-  color: transparent;
-  border-radius: 1px;
-}
-.subheaded-card h3 {
-  margin: 0;
-  margin-bottom: -6px;
-  font: 22px Arial, Geneva, Helvetica, sans-serif;
-}
-.subheaded-card h4 {
-  margin: 0;
-  font: 18px Arial, Geneva, Helvetica, sans-serif;
-  margin-bottom: -8px;
-  border-bottom: 2px solid #aaaaaa;
-}
-.subheaded-card table {
-  margin-left: 0;
-  margin-top: 0;
-}
-.subheaded-card .card-subheader {
+.card .card-subheader {
   margin-top: 10px;
 }
-.spell-card {
-  max-width: 550px;
+.small-card {
   margin: 10px;
   background-color: #f8f8f8;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 20px 20px;
   display: inline-block;
+  max-width: 550px;
 }
-.spell-card hr {
+.small-card hr {
   margin: 0px;
   background-color: lightgray;
   color: transparent;
   border-radius: 1px;
 }
-.spell-card h3 {
+.small-card .card-subheader {
+  margin-top: 10px;
+}
+.small-card h1 {
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
+  border: initial;
+  padding: initial;
   margin: 0;
   margin-bottom: -6px;
-  font: 22px Arial, Geneva, Helvetica, sans-serif;
 }
-.spell-card h4 {
-  margin: 0;
+.small-card h2 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin: unset;
   margin-bottom: -8px;
   border-bottom: 2px solid #aaaaaa;
 }
-.spell-card table {
+.small-card table {
   margin-left: 0;
   margin-top: 0;
 }
-.spell-card .spell-header {
+.medium-card {
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+  display: inline-block;
+  max-width: 550px;
+  max-width: 800px;
+}
+.medium-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.medium-card .card-subheader {
+  margin-top: 10px;
+}
+.medium-card h1 {
+  font: 22px Arial, Geneva, Helvetica, sans-serif;
+  border: initial;
+  padding: initial;
+  margin: 0;
+  margin-bottom: -6px;
+}
+.medium-card h2 {
+  font: 18px Arial, Geneva, Helvetica, sans-serif;
+  margin: unset;
+  margin-bottom: -8px;
+  border-bottom: 2px solid #aaaaaa;
+}
+.medium-card table {
+  margin-left: 0;
+  margin-top: 0;
+}
+.medium-card h1 {
+  font: 26px Arial, Geneva, Helvetica, sans-serif;
+}
+.big-card {
+  margin: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px 20px;
+  display: inline-block;
+  max-width: 1100px;
+}
+.big-card hr {
+  margin: 0px;
+  background-color: lightgray;
+  color: transparent;
+  border-radius: 1px;
+}
+.big-card .card-subheader {
+  margin-top: 10px;
+}
+.big-card h1 {
+  padding: initial;
+  border: initial;
+  margin-top: -5px;
+}
+.source-subheader {
+  font-style: italic;
+  color: #aaaaaa;
+}
+.spell-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.spell-card .spell-header .spell-school {
+.spell-header .spell-school {
   color: gray;
   font-size: 14px;
 }
-.spell-card .spell-header .tag {
+.spell-header .tag {
   font-variant: small-caps;
   border-radius: 3px;
   color: #f8f8f8;
@@ -253,7 +268,7 @@ table caption {
   font-size: small;
   font-weight: bold;
 }
-.spell-card .spell-header .concentration-tag {
+.spell-header .concentration-tag {
   font-variant: small-caps;
   border-radius: 3px;
   color: #f8f8f8;
@@ -263,7 +278,7 @@ table caption {
   font-weight: bold;
   background-color: #e23225;
 }
-.spell-card .spell-header .ritual-tag {
+.spell-header .ritual-tag {
   font-variant: small-caps;
   border-radius: 3px;
   color: #f8f8f8;
@@ -273,15 +288,15 @@ table caption {
   font-weight: bold;
   background-color: #4668ff;
 }
-.spell-card .spell-specs {
+.spell-specs {
   display: flex;
   justify-content: center;
 }
-.spell-card .spell-specs * {
+.spell-specs * {
   text-align: center;
   flex-basis: 50%;
 }
-.spell-card .spell-footer {
+.spell-footer {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
@@ -289,6 +304,44 @@ table caption {
 .cardgroup {
   column-width: 500px;
   column-gap: 0;
+}
+.multicol {
+  column-width: 500px;
+  column-gap: 1em;
+}
+.multicol > * {
+  float: inline-start;
+}
+.nobreak {
+  break-inside: avoid;
+}
+.nobreak > h1,
+.nobreak > h2,
+.nobreak > h3,
+.nobreak > h4,
+.nobreak > h5,
+.nobreak > h6 {
+  margin-top: 0;
+}
+.classlist {
+  column-width: 220px;
+  column-gap: 2em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.classlist a {
+  text-decoration: none;
+  color: black;
+}
+.classlist li {
+  break-inside: avoid;
+}
+.classlist > li {
+  font: 20px Arial, Geneva, Helvetica, sans-serif;
+}
+.classlist > li ul {
+  font-size: initial;
 }
 del {
   text-decoration: none;
@@ -308,8 +361,7 @@ blockquote {
 }
 .tooltip.withdrag {
   cursor: pointer;
-  border-style: none none dotted none;
-  border-color: #333333;
+  border-bottom: 2px dotted #333333;
 }
 .tooltip.withdrag:hover {
   border-color: #111111;
@@ -359,8 +411,13 @@ blockquote {
 .draggable > .dragheader:hover {
   background-color: #111111;
 }
-.dragcontent > * {
+.dragcontent > .small-card {
   max-height: 40vh;
+  overflow-y: auto;
+}
+.dragcontent > .medium-card,
+.dragcontent > .big-card {
+  max-height: 80vh;
   overflow-y: auto;
 }
 .dragbuttongroup {
