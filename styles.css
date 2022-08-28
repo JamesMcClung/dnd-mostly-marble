@@ -432,3 +432,7 @@ blockquote {
   height: 20px;
   cursor: pointer;
 }
+footer {
+  text-align: center;
+  color: #aaaaaa;
+}
