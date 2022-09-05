@@ -1,70 +1,87 @@
-function toggleFixedPosition(element, options = {}) {
+window.onload = function () {
+    const popups = document.getElementsByClassName("popup");
+    for (let popup of popups)
+        sendToTop(popup);
+}
+
+function getClientCoords(element) {
+    return element.getBoundingClientRect();
+}
+
+function getPageCoords(element) {
+    let box = element.getBoundingClientRect();
+
+    return {
+        top: box.top + window.pageYOffset,
+        right: box.right + window.pageXOffset,
+        bottom: box.bottom + window.pageYOffset,
+        left: box.left + window.pageXOffset
+    };
+}
+
+function setElementTopLeft(element, coords) {
+    element.style.left = coords.left + "px";
+    element.style.top = coords.top + "px";
+}
+
+function toggleFixedPosition(popup, options = {}) {
     if (options.event)
         options.event.stopPropagation()
-    if (options.set == "fixed" || options.set != "absolute" && element.style.position != "fixed") {
-        var rect = element.getBoundingClientRect();
-        element.style.position = "fixed";
-        element.style.left = rect.left + "px";
-        element.style.top = rect.top + "px";
-        element.querySelector(".dragheader").querySelector(".dragbuttongroup").querySelector(".dragbuttonsticky").innerHTML = "&#9679;"
-    } else if (options.set == "absolute" || element.style.position != "absolute") {
-        element.style.position = "absolute";
-        element.style.left = element.offsetLeft + window.scrollX + "px";
-        element.style.top = element.offsetTop + window.scrollY + "px";
-        element.querySelector(".dragheader").querySelector(".dragbuttongroup").querySelector(".dragbuttonsticky").innerHTML = "&#9675;"
+    if (options.set == "fixed" || options.set != "absolute" && popup.style.position != "fixed") {
+        let coords = getClientCoords(popup);
+        popup.style.position = "fixed";
+        setElementTopLeft(popup, coords);
+        popup.querySelector(".popupHeader").querySelector(".popupHeaderButtongroup").querySelector(".popupHeaderButtonSticky").innerHTML = "&#9679;"
+    } else if (options.set == "absolute" || popup.style.position != "absolute") {
+        let coords = getPageCoords(popup);
+        popup.style.position = "absolute";
+        setElementTopLeft(popup, coords);
+        popup.querySelector(".popupHeader").querySelector(".popupHeaderButtongroup").querySelector(".popupHeaderButtonSticky").innerHTML = "&#9675;"
     }
 }
 
+function sendToTop(popup) {
+    let content = popup.querySelector(".popupContent");
+    let scroll = content.firstElementChild.scrollTop;
+    document.getElementsByTagName("article")[0].append(popup);
+    content.firstElementChild.scrollTop = scroll;
+}
+
 // based on https://www.w3schools.com/howto/howto_js_draggable.asp
-function toggleDraggable(element, options = {}) {
+function toggleDragEnabled(popup, options = {}) {
     if (options.event)
         options.event.stopPropagation();
     let lastCursorX, lastCursorY;
     let offsetRight = -1, maxOffsetRight = -1;
     let moved = false;
-    let header = document.getElementById(element.id + "header");
-    let content = document.getElementById(element.id + "content");
-    let home = document.getElementById(element.id + "home");
+    let header = popup.querySelector(".popupHeader");
+    let anchor = document.getElementById(popup.id + "Anchor");
 
-    element.onclick = (e) => { sendToTop(); e.stopPropagation(); }
+    popup.onclick = (e) => { sendToTop(popup); e.stopPropagation(); }
 
     if (header.onmousedown) {
         // deactivate draggability
         header.onmousedown = null;
-        toggleFixedPosition(element, { set: "absolute" });
-        element.classList.remove("draggable");
-        element.style.removeProperty("top");
-        element.style.removeProperty("left");
-        element.style.removeProperty("right");
-        if (content.style.visibility == "hidden") {
-            toggleContentVisibility();
-        }
-        home.append(element);
+        toggleFixedPosition(popup, { set: "absolute" });
+        popup.classList.remove("dragEnabled");
+        popup.classList.remove("isCollapsed");
+        let anchorCoords = getPageCoords(anchor);
+        setElementTopLeft(popup, { left: anchorCoords.left, top: anchorCoords.bottom });
+        popup.style.removeProperty("right");
     } else {
         // activate draggability
-        var rect = element.getBoundingClientRect();
-        element.style.left = rect.left + window.scrollX + "px";
-        element.style.top = rect.top + window.scrollY + "px";
-        document.getElementsByTagName("article")[0].append(element);
+        setElementTopLeft(popup, getPageCoords(popup));
+        sendToTop(popup);
         header.onmousedown = beginDrag;
-        element.classList.add("draggable");
+        popup.classList.add("dragEnabled");
     }
 
     function toggleContentVisibility() {
-        if (content.style.visibility == "hidden") {
-            content.style.removeProperty("visibility")
-            element.style.pointerEvents = "auto";
+        if (popup.classList.contains("isCollapsed")) {
+            popup.classList.remove("isCollapsed")
         } else {
-            content.style.visibility = "hidden";
-            element.style.pointerEvents = "none";
+            popup.classList.add("isCollapsed")
         }
-    }
-
-    function sendToTop() {
-        let scroll = content.firstElementChild.scrollTop;
-        document.getElementsByTagName("article")[0].append(element);
-        content.firstElementChild.scrollTop = scroll;
-
     }
 
     function beginDrag(e) {
@@ -73,7 +90,7 @@ function toggleDraggable(element, options = {}) {
         header.onmouseup = endDrag;
         document.onmouseup = endDrag;
         document.onmousemove = doDrag;
-        sendToTop(e);
+        sendToTop(popup);
     }
 
     function doDrag(e) {
@@ -81,18 +98,18 @@ function toggleDraggable(element, options = {}) {
         var deltaY = e.clientY - lastCursorY;
         lastCursorX = e.clientX;
         lastCursorY = e.clientY;
-        var rect = element.getBoundingClientRect();
-        element.style.top = (element.offsetTop + deltaY) + "px";
-        if (rect.left + deltaX <= 0 || (maxOffsetRight > 0 && offsetRight + deltaX < maxOffsetRight)) {
+        let coords = getClientCoords(popup);
+        popup.style.top = (popup.offsetTop + deltaY) + "px";
+        if (coords.left + deltaX <= 0 || (maxOffsetRight > 0 && offsetRight + deltaX < maxOffsetRight)) {
             if (offsetRight < 0) {
-                offsetRight = maxOffsetRight = rect.right;
+                offsetRight = maxOffsetRight = coords.right;
             }
             offsetRight += deltaX;
-            element.style.right = (screen.width - offsetRight) + "px";
-            element.style.removeProperty("left");
+            popup.style.right = (screen.width - offsetRight) + "px";
+            popup.style.removeProperty("left");
         } else {
-            element.style.left = (element.offsetLeft + deltaX) + "px";
-            element.style.removeProperty("right");
+            popup.style.left = (popup.offsetLeft + deltaX) + "px";
+            popup.style.removeProperty("right");
             offsetRight = maxOffsetRight = -1;
         }
         moved |= deltaX != 0 || deltaY != 0;
@@ -107,4 +124,18 @@ function toggleDraggable(element, options = {}) {
         }
         moved = false;
     }
+}
+
+function showPopup(popup) {
+    sendToTop(popup);
+
+    popup.classList.add("visible");
+    if (!popup.classList.contains("dragEnabled")) {
+        let anchorCoords = getPageCoords(document.getElementById(popup.id + "Anchor"));
+        setElementTopLeft(popup, { left: anchorCoords.left, top: anchorCoords.bottom });
+    }
+}
+
+function hidePopup(popup) {
+    popup.classList.remove("visible");
 }

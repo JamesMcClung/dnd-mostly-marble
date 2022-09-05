@@ -59,7 +59,6 @@ h3 {
 }
 details {
   margin-bottom: 18px;
-  position: relative;
 }
 details > summary {
   font: 20px Arial, Geneva, Helvetica, sans-serif;
@@ -96,36 +95,54 @@ details {
 .home-ref:hover {
   background-color: #111111;
 }
-table {
-  margin: 20px auto;
-  margin-top: 0;
+.tableAndCaption {
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  max-width: 100%;
+}
+.tableAndCaption table {
   border-collapse: collapse;
   border: 1px solid #aaaaaa;
 }
-table td,
-table th {
+.tableAndCaption table td,
+.tableAndCaption table th {
   padding: 3px 30px 3px 5px;
 }
-table th {
+.tableAndCaption table th {
+  white-space: nowrap;
   font: 16px Arial, Geneva, Helvetica, sans-serif;
   background-color: #333333;
   color: white;
 }
-table tr:nth-child(even) {
+.tableAndCaption table tr:nth-child(even) {
   background-color: #f2f2f2;
 }
-table caption {
+.tableAndCaption .caption {
   font: 16px Arial, Geneva, Helvetica, sans-serif;
   text-align: left;
   font-variant: small-caps;
   font-weight: bold;
-  margin: 0;
 }
 .sortableTable > thead > tr > th {
   cursor: default;
 }
 .sortableTable > thead > tr > th:hover {
   background-color: #111111;
+}
+.scrollableTableWrapper {
+  overflow-y: auto;
+  height: 60vh;
+  border: 1px solid #aaaaaa;
+}
+.scrollableTableWrapper > table {
+  width: 100%;
+  border: none;
+}
+.scrollableTableWrapper > table > thead > tr {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .p {
   margin-top: 10px;
@@ -182,7 +199,7 @@ table caption {
   margin-bottom: -8px;
   border-bottom: 2px solid #aaaaaa;
 }
-.small-card table {
+.small-card .tableAndCaption {
   margin-left: 0;
   margin-top: 0;
 }
@@ -217,7 +234,7 @@ table caption {
   margin-bottom: -8px;
   border-bottom: 2px solid #aaaaaa;
 }
-.medium-card table {
+.medium-card .tableAndCaption {
   margin-left: 0;
   margin-top: 0;
 }
@@ -359,78 +376,89 @@ blockquote {
   margin: 1.5em 10px;
   padding: 0.1em 10px;
 }
-.tooltip.withdrag {
+.tooltipWrapper:hover > .tooltip,
+.tooltipWrapper:active > .tooltip {
+  display: block;
+}
+.tooltip {
+  border-radius: 6px;
+  padding: 0.4em 0.7em;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: auto;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+.popupAnchor {
   cursor: pointer;
   border-bottom: 2px dotted #333333;
 }
-.tooltip.withdrag:hover {
+.popupAnchor:hover {
   border-color: #111111;
 }
-.tooltiptext {
-  visibility: hidden;
+.popup {
   border-radius: 6px;
   padding: 5px 0;
-  position: absolute;
-  z-index: 1;
   cursor: auto;
-}
-.tooltiptext.tooltipdiv {
-  display: flex;
   flex-direction: column;
   align-items: stretch;
+  z-index: 1;
+  display: none;
+  position: absolute;
 }
-.tooltiptext.tooltipspan {
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 0.4em 0.7em;
+.popup.visible {
+  display: flex !important;
 }
-.tooltiplabel:hover + .tooltiptext,
-:active > .tooltiptext {
+.popup.dragEnabled {
+  display: flex !important;
+}
+.popup.dragEnabled > .popupHeader {
+  cursor: move;
   visibility: visible;
 }
-.dragheader {
-  z-index: 10;
+.popup.dragEnabled > .popupHeader:hover {
+  background-color: #111111;
+}
+.popup .popupHeader {
   padding: 5px 0px;
-  margin: 0 10px -18px 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #333333;
   color: white;
   text-align: center;
   font: 16px Arial, Geneva, Helvetica, sans-serif;
-  visibility: hidden;
   pointer-events: visible;
   user-select: none;
+  margin: 0 10px -18px 10px;
+  z-index: 10;
+  visibility: hidden;
 }
-.draggable {
-  visibility: visible !important;
-}
-.draggable > .dragheader {
-  cursor: move;
-  visibility: visible;
-}
-.draggable > .dragheader:hover {
-  background-color: #111111;
-}
-.dragcontent > .small-card {
-  max-height: 40vh;
-  overflow-y: auto;
-}
-.dragcontent > .medium-card,
-.dragcontent > .big-card {
-  max-height: 80vh;
-  overflow-y: auto;
-}
-.dragbuttongroup {
+.popup .popupHeader .popupHeaderButtongroup {
   float: right;
   display: flex;
   flex-direction: row;
 }
-.dragbutton {
+.popup .popupHeader .popupHeaderButtongroup .popupHeaderButton {
   text-align: center;
-  width: 20px;
-  margin-right: 5px;
-  height: 20px;
   cursor: pointer;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.popup.isCollapsed {
+  pointer-events: none;
+}
+.popup.isCollapsed > .popupContent {
+  visibility: hidden;
+}
+.popup .popupContent > .small-card {
+  overflow-y: auto;
+  max-height: 40vh;
+}
+.popup .popupContent > .medium-card,
+.popup .popupContent > .big-card {
+  overflow-y: auto;
+  max-height: 80vh;
 }
 footer {
   text-align: center;

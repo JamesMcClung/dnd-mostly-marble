@@ -25,7 +25,7 @@
 <div class='p'>The major races include Humans, Halflings, Dwarves, Gnomes, and Elves. Each of these races lays claim to a significant <a href="world.html">area of land</a>, which the other major races (more or less) respect. The table below lists each major race and some details about them. Though they hold no land, Tieflings, Aasimar, and Genasi are also listed below by virtue of being descendents of the major races. Hybrid races, such as half-Orcs and half-Elves (though more exist), are not listed. Note that "foes" are to be killed on sight; less intense feuds, such as that between Dwarves and Elves, are not considered.</div>
 
 
-<table><thead>
+<div class='tableAndCaption'><table><thead>
 <tr><th align='left'>Major Race</th><th align='left'>Native Land</th><th align='left'>Native Language</th><th align='left'>Friends</th><th align='left'>Foes</th></tr>
 </thead><tbody>
 <tr><td align='left'><a href="races/human.html">Human</a></td><td align='left'>Ata</td><td align='left'>several</td><td align='left'>Halflings</td><td align='left'>Orcs</td></tr>
@@ -40,11 +40,11 @@
 <tr><td align='left'><a href="races/tiefling.html">Tiefling</a></td><td align='left'>—</td><td align='left'>varies</td><td align='left'>—</td><td align='left'>—</td></tr>
 <tr><td align='left'><a href="races/aasimar.html">Aasimar</a></td><td align='left'>—</td><td align='left'>varies</td><td align='left'>—</td><td align='left'>—</td></tr>
 <tr><td align='left'><a href="races/genasi.html">Genasi</a></td><td align='left'>—</td><td align='left'>varies</td><td align='left'>—</td><td align='left'>—</td></tr>
-</tbody></table>
+</tbody></table></div>
 
 <div class='p'>All other races are considered minor races. They either are nomadic or settled on land claimed by a more powerful race. The table below lists all the minor races.</div>
 
-<table><thead>
+<div class='tableAndCaption'><table><thead>
 <tr><th align='left'>Minor Race</th><th align='left'>Native Land</th><th align='left'>Native Language</th><th align='left'>Friends</th><th align='left'>Foes</th></tr>
 </thead><tbody>
 <tr><td align='left'><a href="races/goblin.html">Goblin</a></td><td align='left'>Gabroria</td><td align='left'>Goblish, Deep Goblish</td><td align='left'>—</td><td align='left'>Dwarves, Gnomes</td></tr>
@@ -61,7 +61,7 @@
 <tr><td align='left'>Merrow</td><td align='left'>shallows</td><td align='left'>Merish</td><td align='left'>—</td><td align='left'>Merfolk</td></tr>
 <tr><td align='left'>Kuo-Toa</td><td align='left'>underwater caves</td><td align='left'>Undercommon</td><td align='left'>—</td><td align='left'>—</td></tr>
 <tr><td align='left'>Sahuagin</td><td align='left'>deep sea</td><td align='left'>Huagish</td><td align='left'>—</td><td align='left'>Sea Elves</td></tr>
-</tbody></table>
+</tbody></table></div>
 
 <div class='p'>There are more races, including Gith, Pixies, Sprites, Satyrs, Lizardfolk, Yuan-ti, Grung, Bugbears, and Shifters. These races are either too isolated, too few in number, or too timid to have any impact beyond their immediate territory (if any). Some of these races have yet to be discovered.</div>
 
@@ -90,7 +90,7 @@
 <div class='p'><b><i>Darkvision.</i></b> Inheriting keen eyes from dragons, you have darkvision out to a range of 60 feet.</div>
 <div class='p'><b><i>Draconic Ancestry.</i></b> Your draconic heritage manifests in several ways based on your draconic hue. Pick one dragon type from the Draconic Ancestry table. Your choice affects your Breath Weapon and Damage Resistance traits.</div>
 
-<table><caption>Draconic Ancestry</caption><thead>
+<div class='tableAndCaption'><span class='caption'>Draconic Ancestry</span><table><thead>
 <tr><th align='left'>Dragon Type</th><th align='left'>Damage Type</th><th align='left'>Breath Weapon</th></tr>
 </thead><tbody>
 <tr><td align='left'>Black</td><td align='left'>Acid</td><td align='left'>5 by 30 ft. line (Dex. save)</td></tr>
@@ -103,7 +103,7 @@
 <tr><td align='left'>Iron</td><td align='left'>Lightning</td><td align='left'>15 ft. cone (Con. save)</td></tr>
 <tr><td align='left'>Lead</td><td align='left'>Poison</td><td align='left'>15 ft. cone (Con. save)</td></tr>
 <tr><td align='left'>Silver</td><td align='left'>Cold</td><td align='left'>15 ft. cone (Con. save)</td></tr>
-</tbody></table>
+</tbody></table></div>
 <div class='p'><b><i>Breath Weapon.</i></b> You can accumulate elemental energy within yourself and unleash it with your breath. You have a number of breath weapon dice equal to 2 + half your level, which are d6s. As a bonus action, you can roll and expend any number of these dice and force each creature in your breath weapon area to make a saving throw. The shape, saving throw, and damage type are determined by your Draconic Ancestry. The DC is 8 + your proficiency bonus + your Strength or Constitution modifier (your choice). A creature takes damage equal the number rolled on the expended dice on a failed save, or half as much on a success.</div>
 
 <div class='p'>You regain all expended breath weapon dice at the end of a short or long rest.</div>
@@ -314,17 +314,16 @@
     <h2 id="air-genasi">Air Genasi</h2>
 <div class='p'><b><i>Air Resistances.</i></b> You have resistance to thunder damage and to bludgeoning damage inflicted by wind.</div>
 <div class='p'><b><i>Soul of Air.</i></b> You know the <i>gust</i> cantrip. You can learn additional spells from this trait if you take the 
-<span class="tooltip withdrag" id="draggable274home" onclick="toggleDraggable(draggable274, options={event:event})">
-    <span class="tooltiplabel">Air Genasi Magic</span>
-    <div class="tooltiptext tooltipdiv" id="draggable274">
-        <div class="dragheader" id="draggable274header">
-            <div class="dragbuttongroup" onmousedown="event.stopPropagation()">
-                <div class="dragbutton dragbuttonsticky" onclick="toggleFixedPosition(draggable274, options={event:event})">&#9675;</div>
-                <div class="dragbutton dragbuttonclose" onclick="toggleDraggable(draggable274, options={event:event})">&times;</div>
-            </div>Air Genasi Magic
-        </div>
-        <div class="dragcontent" id="draggable274content">
-            
+<span class="popupAnchor" id="popup2680Anchor" onclick="toggleDragEnabled(popup2680, options={event:event})" onmouseover="showPopup(popup2680)" onmouseout="hidePopup(popup2680)">Air Genasi Magic</span>
+<div class="popup" id="popup2680">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2680, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2680, options={event:event})">&times;</div>
+        </div>Air Genasi Magic
+    </div>
+    <div class="popupContent">
+        
 <div class="small-card">
     <h1 class="noHeaderID">Air Genasi Magic</h1>
     <div class="p card-subheader"><em>Prerequisite: Genasi (air)<br>Cost: 2 feat points</em></div>
@@ -332,7 +331,7 @@
 
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
-<table><caption>Air Genasi Spells</caption><thead>
+<div class='tableAndCaption'><span class='caption'>Air Genasi Spells</span><table><thead>
 <tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><i>feather fall, zephyr strike</i></td></tr>
@@ -340,11 +339,10 @@
 <tr><td align='center'>7</td><td align='left'><i>fly</i> (self only), <i>wind wall</i></td></tr>
 <tr><td align='center'>9</td><td align='left'><i>freedom of movement, storm sphere</i></td></tr>
 <tr><td align='center'>11</td><td align='left'><i>cone of cold, control winds</i></td></tr>
-</tbody></table>
+</tbody></table></div>
 </div>
-        </div>
     </div>
-</span> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
+</div> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
 <div class='p'><b><i>Jet Boost.</i></b> As a bonus action, you can propel yourself in a straight line in any direction a number of feet equal to 5 times your proficiency bonus. This motion does not provoke opportunity attacks.</div>
 <div class='p'><b><i>Unending Breath.</i></b> You can hold your breath indefinitely while you're not incapacitated.</div>
 <div class='p'><b><i>Aerial Grace.</i></b> As a bonus action, you can begin to focus on the air around and use it to guide your movement. While you are in air, unencumbered, and maintain concentration, as if on a spell, you gain the following benefits:</div>
@@ -355,17 +353,16 @@
 <h2 id="earth-genasi">Earth Genasi</h2>
 <div class='p'><b><i>Earth Resistances.</i></b> You have resistance to lightning damage and to bludgeoning damage inflicted by earth.</div>
 <div class='p'><b><i>Soul of Earth.</i></b> You know the <i>mold earth</i> cantrip. You can learn additional spells from this trait if you take the 
-<span class="tooltip withdrag" id="draggable275home" onclick="toggleDraggable(draggable275, options={event:event})">
-    <span class="tooltiplabel">Earth Genasi Magic</span>
-    <div class="tooltiptext tooltipdiv" id="draggable275">
-        <div class="dragheader" id="draggable275header">
-            <div class="dragbuttongroup" onmousedown="event.stopPropagation()">
-                <div class="dragbutton dragbuttonsticky" onclick="toggleFixedPosition(draggable275, options={event:event})">&#9675;</div>
-                <div class="dragbutton dragbuttonclose" onclick="toggleDraggable(draggable275, options={event:event})">&times;</div>
-            </div>Earth Genasi Magic
-        </div>
-        <div class="dragcontent" id="draggable275content">
-            
+<span class="popupAnchor" id="popup2681Anchor" onclick="toggleDragEnabled(popup2681, options={event:event})" onmouseover="showPopup(popup2681)" onmouseout="hidePopup(popup2681)">Earth Genasi Magic</span>
+<div class="popup" id="popup2681">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2681, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2681, options={event:event})">&times;</div>
+        </div>Earth Genasi Magic
+    </div>
+    <div class="popupContent">
+        
 <div class="small-card">
     <h1 class="noHeaderID">Earth Genasi Magic</h1>
     <div class="p card-subheader"><em>Prerequisite: Genasi (earth)<br>Cost: 2 feat points</em></div>
@@ -373,7 +370,7 @@
 
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
-<table><caption>Earth Genasi Spells</caption><thead>
+<div class='tableAndCaption'><span class='caption'>Earth Genasi Spells</span><table><thead>
 <tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><i>catapult</i> (stone/earth only), <i>earth tremor</i></td></tr>
@@ -381,11 +378,10 @@
 <tr><td align='center'>7</td><td align='left'><i>erupting earth, meld into stone</i></td></tr>
 <tr><td align='center'>9</td><td align='left'><i>stone shape, stoneskin</i></td></tr>
 <tr><td align='center'>11</td><td align='left'><i>transmute rock, wall of stone</i></td></tr>
-</tbody></table>
+</tbody></table></div>
 </div>
-        </div>
     </div>
-</span> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
+</div> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
 <div class='p'><b><i>Stonewalker.</i></b> You ignore difficult terrain made of earth or stone.</div>
 <div class='p'><b><i>Defensive Pillars.</i></b> When you are on the ground and you would be hit by a ranged attack or fail a Dexterity saving throw from a source you can see, you can use your reaction to gain half cover against the triggering effect, potentially causing the attack to miss or the saving throw to succeed. Doing so takes a great amount of sudden focus; if you are concentrating when you use this reaction, you lose concentration.</div>
 <div class='p'><b><i>Earthen Strength.</i></b> As a bonus action, you can begin to focus on the earth beneath you and tap into its strength and stability. While you are on the ground and maintain concentration, as if on a spell, you gain the following benefits:</div>
@@ -396,17 +392,16 @@
 <h2 id="fire-genasi">Fire Genasi</h2>
 <div class='p'><b><i>Fire Resistance.</i></b> You have resistance to fire damage.</div>
 <div class='p'><b><i>Soul of Fire.</i></b> You know the <i>control flames</i> cantrip. You can learn additional spells from this trait if you take the 
-<span class="tooltip withdrag" id="draggable276home" onclick="toggleDraggable(draggable276, options={event:event})">
-    <span class="tooltiplabel">Fire Genasi Magic</span>
-    <div class="tooltiptext tooltipdiv" id="draggable276">
-        <div class="dragheader" id="draggable276header">
-            <div class="dragbuttongroup" onmousedown="event.stopPropagation()">
-                <div class="dragbutton dragbuttonsticky" onclick="toggleFixedPosition(draggable276, options={event:event})">&#9675;</div>
-                <div class="dragbutton dragbuttonclose" onclick="toggleDraggable(draggable276, options={event:event})">&times;</div>
-            </div>Fire Genasi Magic
-        </div>
-        <div class="dragcontent" id="draggable276content">
-            
+<span class="popupAnchor" id="popup2682Anchor" onclick="toggleDragEnabled(popup2682, options={event:event})" onmouseover="showPopup(popup2682)" onmouseout="hidePopup(popup2682)">Fire Genasi Magic</span>
+<div class="popup" id="popup2682">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2682, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2682, options={event:event})">&times;</div>
+        </div>Fire Genasi Magic
+    </div>
+    <div class="popupContent">
+        
 <div class="small-card">
     <h1 class="noHeaderID">Fire Genasi Magic</h1>
     <div class="p card-subheader"><em>Prerequisite: Genasi (fire)<br>Cost: 2 feat points</em></div>
@@ -414,7 +409,7 @@
 
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
-<table><caption>Fire Genasi Spells</caption><thead>
+<div class='tableAndCaption'><span class='caption'>Fire Genasi Spells</span><table><thead>
 <tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><i>burning hands, searing smite</i></td></tr>
@@ -422,11 +417,10 @@
 <tr><td align='center'>7</td><td align='left'><i>Ashardalon's stride, Melf's minute meteors</i></td></tr>
 <tr><td align='center'>9</td><td align='left'><i>fire shield</i> (warm only), <i>wall of fire</i></td></tr>
 <tr><td align='center'>11</td><td align='left'><i>fireball, immolation</i></td></tr>
-</tbody></table>
+</tbody></table></div>
 </div>
-        </div>
     </div>
-</span> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
+</div> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
 <div class='p'><b><i>Flameburst.</i></b> You have a ranged spell attack. The attack has a range of 30 feet. You are proficient with it, and you use the ability you chose for your Soul of Fire trait for its attack and damage rolls. Its damage is fire, and its damage die is a d6.</div>
 <div class='p'><b><i>Disperse Heat.</i></b> When you would take fire damage, you can use your reaction to become immune to the triggering fire damage. Doing so takes a great amount of sudden focus; if you are concentrating when you use this reaction, you lose concentration.</div>
 <div class='p'><b><i>Fiery Brilliance.</i></b> As a bonus action, you can let fire consume and invigorate you. While you maintain concentration, as if on a spell, you gain the following benefits:</div>
@@ -437,17 +431,16 @@
 <h2 id="water-genasi">Water Genasi</h2>
 <div class='p'><b><i>Water Resistance.</i></b> You have resistance to acid damage and to bludgeoning damage inflicted by water.</div>
 <div class='p'><b><i>Soul of Water.</i></b> You know the <i>shape water</i> cantrip. You can learn additional spells from this trait if you take the 
-<span class="tooltip withdrag" id="draggable277home" onclick="toggleDraggable(draggable277, options={event:event})">
-    <span class="tooltiplabel">Water Genasi Magic</span>
-    <div class="tooltiptext tooltipdiv" id="draggable277">
-        <div class="dragheader" id="draggable277header">
-            <div class="dragbuttongroup" onmousedown="event.stopPropagation()">
-                <div class="dragbutton dragbuttonsticky" onclick="toggleFixedPosition(draggable277, options={event:event})">&#9675;</div>
-                <div class="dragbutton dragbuttonclose" onclick="toggleDraggable(draggable277, options={event:event})">&times;</div>
-            </div>Water Genasi Magic
-        </div>
-        <div class="dragcontent" id="draggable277content">
-            
+<span class="popupAnchor" id="popup2683Anchor" onclick="toggleDragEnabled(popup2683, options={event:event})" onmouseover="showPopup(popup2683)" onmouseout="hidePopup(popup2683)">Water Genasi Magic</span>
+<div class="popup" id="popup2683">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2683, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2683, options={event:event})">&times;</div>
+        </div>Water Genasi Magic
+    </div>
+    <div class="popupContent">
+        
 <div class="small-card">
     <h1 class="noHeaderID">Water Genasi Magic</h1>
     <div class="p card-subheader"><em>Prerequisite: Genasi (water)<br>Cost: 2 feat points</em></div>
@@ -455,7 +448,7 @@
 
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
-<table><caption>Water Genasi Spells</caption><thead>
+<div class='tableAndCaption'><span class='caption'>Water Genasi Spells</span><table><thead>
 <tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><i>fog cloud, ice knife</i></td></tr>
@@ -463,11 +456,10 @@
 <tr><td align='center'>7</td><td align='left'><i>tidal wave, wall of water</i></td></tr>
 <tr><td align='center'>9</td><td align='left'><i>blight, control water</i></td></tr>
 <tr><td align='center'>11</td><td align='left'><i>antilife shell, maelstrom</i></td></tr>
-</tbody></table>
+</tbody></table></div>
 </div>
-        </div>
     </div>
-</span> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
+</div> feat. You can cast each of these spells once with this trait and regain the ability to do so when you finish a long rest. Constitution, Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait (choose when you select this race), and you require no material components when you do so.</div>
 <div class='p'><b><i>Waterborn.</i></b> You can breathe water, and you have a swmiming speed of 30 feet.</div>
 <div class='p'><b><i>Natural Healer.</i></b> As an action, you can touch a creature and allow it to spend 1 hit die, roll it, and regain hit points equal to the result (its Constitution modifier is not added). This action has no effect on undead or constructs.</div>
 <div class='p'><b><i>Aquatic Serenity.</i></b> As a bonus action, you can begin attuning yourself to the water within and around you. While you maintain concentration, as if on a spell, you gain the following benefits:</div>
