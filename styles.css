@@ -98,8 +98,7 @@ details {
 .tableAndCaption {
   margin-left: auto;
   margin-right: auto;
-  width: max-content;
-  max-width: 100%;
+  width: fit-content;
 }
 .tableAndCaption table {
   border-collapse: collapse;
@@ -131,12 +130,11 @@ details {
   background-color: #111111;
 }
 .scrollableTableWrapper {
-  overflow-y: auto;
+  overflow-y: scroll;
   height: 60vh;
   border: 1px solid #aaaaaa;
 }
 .scrollableTableWrapper > table {
-  width: 100%;
   border: none;
 }
 .scrollableTableWrapper > table > thead > tr {
