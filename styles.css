@@ -109,7 +109,6 @@ details {
   padding: 3px 30px 3px 5px;
 }
 .tableAndCaption table th {
-  white-space: nowrap;
   font: 16px Arial, Geneva, Helvetica, sans-serif;
   background-color: #333333;
   color: white;
