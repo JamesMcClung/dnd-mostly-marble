@@ -32,13 +32,59 @@
 
 <div class='p'><b><i>Unarmed Strike.</i></b> You punch, kick, or otherwise strike at an opponent with your body. On a hit, you deal 1d1 bludgeoning, piercing, or slashing damage as appropriate. Unarmed strikes count as simple light melee weapons.</div>
 
-<div class='p'><b><i>Grapple.</i></b> You attempt to grab an opponent with a free hand. On a hit, the target must succeed on a Strength saving throw or be <a href="conditions.html#grapple">grappled</a> by you.</div>
+<div class='p'><b><i>Grapple.</i></b> You attempt to grab an opponent with a free hand. On a hit, the target must succeed on a Strength saving throw or be <span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">grappled</span> by you, with you as the <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor3)" onmouseout="hidePopup(popup1)">grappling</span> creature.</div>
 
 <div class='p'><b><i>Push.</i></b> You attempt to push an opponent. On a hit, the target must succeed on a Strength saving throw or be pushed up to 5 feet away from you.</div>
 
 <div class='p'><b><i>Pull.</i></b> You attempt to pull an opponent with a free hand. On a hit, the target must succeed on a Strength saving throw or be pulled up to 5 feet closer to you.</div>
 
 <div class='p'><b><i>Trip.</i></b> You attempt to knock an opponent prone. On a hit, the target must succeed on a Strength saving throw or fall prone.</div>
+<div class="popup" id="popup1">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup1, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup1, options={event:event})">&times;</div>
+        </div>grappling
+    </div>
+    <div class="popupContent">
+        
+    <div class="small-card">
+        <h1 class="noHeaderID">Grappling</h1>
+        <div class='p'>While you are grappling another creature (the <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">grappled</span> creature), you experience the following effects:</div>
+
+<ul><li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.
+</li><li>You have disadvantage on attack rolls against a target other than the grappled creature.
+</li><li>When you move on your turn, you drag the grappled creature with you.
+</li></ul>
+
+<div class='p'>You can end the grapple at any time, no action required. The grapple also ends if you become incapacitated or if the grappled creature is no longer in your reach.</div>
+    </div>
+    </div>
+</div>
+
+<div class="popup" id="popup0">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup0, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup0, options={event:event})">&times;</div>
+        </div>grappled
+    </div>
+    <div class="popupContent">
+        
+    <div class="small-card">
+        <h1 class="noHeaderID">Grappled</h1>
+        <div class='p'>While you are grappled by another creature (the <span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">grappling</span> creature), you experience the following effects:</div>
+
+<ul><li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.
+</li><li>You have disadvantage on attack rolls against a target other than the grappling creature.
+</li><li>When you move on your turn, you drag the grappling creature with you.
+</li></ul>
+
+<div class='p'>As an action, you can repeat the saving throw against the grapple, ending the grapple on a success.</div>
+    </div>
+    </div>
+</div>
+<script src='/js/drag.js'></script>
     </article>
 
     <footer>

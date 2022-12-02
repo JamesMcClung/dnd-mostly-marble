@@ -319,6 +319,10 @@ details {
   column-width: 500px;
   column-gap: 0;
 }
+.cardgroup > .small-card,
+.cardgroup > .medium-card {
+  width: 100%;
+}
 .multicol {
   column-width: 500px;
   column-gap: 1em;

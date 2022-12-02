@@ -82,7 +82,7 @@
 <h2 id="wood-orc">Wood Orc</h2>
 <div class='p'><b><i>Forest Camouflage.</i></b> You have advantage on Stealth checks made to hide in vegetation.</div>
 <h2 id="great-orc">Great Orc</h2>
-<div class='p'><b><i>Powerful Build.</i></b> You count as one size larger than your actual size for the purpose of <a href="/settings/four-corners/rules/conditions.html#grapple">grappling</a>, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
+<div class='p'><b><i>Powerful Build.</i></b> You count as one size larger than your actual size for the purpose of <span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">grappling</span>, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
 <div class='p'><b><i>Siegebreaker.</i></b> Your unarmed attacks deal 1d8 bludgeoning damage, or 1d12 bludgeoning damage against a target that is at least one size larger than you. Your melee weapon attacks do double damage to objects and structures.</div>
 </div>
 
@@ -107,6 +107,52 @@
 </li><li>Choose one of the following terrains: arctic, underground, or taiga. When you make a Survival check in that terrain, you can treat a d20 roll of 9 or lower as a 10.
 </li></ul>
 </div></div>
+<div class="popup" id="popup1">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup1, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup1, options={event:event})">&times;</div>
+        </div>grappled
+    </div>
+    <div class="popupContent">
+        
+    <div class="small-card">
+        <h1 class="noHeaderID">Grappled</h1>
+        <div class='p'>While you are grappled by another creature (the <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">grappling</span> creature), you experience the following effects:</div>
+
+<ul><li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.
+</li><li>You have disadvantage on attack rolls against a target other than the grappling creature.
+</li><li>When you move on your turn, you drag the grappling creature with you.
+</li></ul>
+
+<div class='p'>As an action, you can repeat the saving throw against the grapple, ending the grapple on a success.</div>
+    </div>
+    </div>
+</div>
+
+<div class="popup" id="popup0">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup0, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup0, options={event:event})">&times;</div>
+        </div>grappling
+    </div>
+    <div class="popupContent">
+        
+    <div class="small-card">
+        <h1 class="noHeaderID">Grappling</h1>
+        <div class='p'>While you are grappling another creature (the <span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">grappled</span> creature), you experience the following effects:</div>
+
+<ul><li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.
+</li><li>You have disadvantage on attack rolls against a target other than the grappled creature.
+</li><li>When you move on your turn, you drag the grappled creature with you.
+</li></ul>
+
+<div class='p'>You can end the grapple at any time, no action required. The grapple also ends if you become incapacitated or if the grappled creature is no longer in your reach.</div>
+    </div>
+    </div>
+</div>
+<script src='/js/drag.js'></script>
     </article>
 
     <footer>

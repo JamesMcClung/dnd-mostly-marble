@@ -41,10 +41,13 @@ function toggleFixedPosition(popup, options = {}) {
 }
 
 function sendToTop(popup) {
-    let content = popup.querySelector(".popupContent");
-    let scroll = content.firstElementChild.scrollTop;
-    document.getElementsByTagName("article")[0].append(popup);
-    content.firstElementChild.scrollTop = scroll;
+    let article = document.getElementsByTagName("article")[0];
+    if (article.lastChild !== popup) {
+        let content = popup.querySelector(".popupContent");
+        let scroll = content.firstElementChild.scrollTop;
+        article.append(popup);
+        content.firstElementChild.scrollTop = scroll;
+    }
 }
 
 // based on https://www.w3schools.com/howto/howto_js_draggable.asp
@@ -55,7 +58,6 @@ function toggleDragEnabled(popup, options = {}) {
     let offsetRight = -1, maxOffsetRight = -1;
     let moved = false;
     let header = popup.querySelector(".popupHeader");
-    let anchor = document.getElementById(popup.id + "Anchor");
 
     popup.onclick = (e) => { sendToTop(popup); e.stopPropagation(); }
 
@@ -65,6 +67,7 @@ function toggleDragEnabled(popup, options = {}) {
         toggleFixedPosition(popup, { set: "absolute" });
         popup.classList.remove("dragEnabled");
         popup.classList.remove("isCollapsed");
+        let anchor = options.event.target;
         let anchorCoords = getPageCoords(anchor);
         setElementTopLeft(popup, { left: anchorCoords.left, top: anchorCoords.bottom });
         popup.style.removeProperty("right");
@@ -126,12 +129,12 @@ function toggleDragEnabled(popup, options = {}) {
     }
 }
 
-function showPopup(popup) {
+function showPopup(popup, anchor) {
     sendToTop(popup);
 
     popup.classList.add("visible");
     if (!popup.classList.contains("dragEnabled")) {
-        let anchorCoords = getPageCoords(document.getElementById(popup.id + "Anchor"));
+        let anchorCoords = getPageCoords(anchor);
         setElementTopLeft(popup, { left: anchorCoords.left, top: anchorCoords.bottom });
     }
 }
