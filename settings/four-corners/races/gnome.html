@@ -160,7 +160,7 @@
 <tr><td align='center'>73-76</td><td align='left'><span class="popupAnchor" id="anchor16" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor16)" onmouseout="hidePopup(popup16)"><i>vicious mockery</i></span> (3/day)</td></tr>
 <tr><td align='center'>77-79</td><td align='left'><span class="popupAnchor" id="anchor17" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor17)" onmouseout="hidePopup(popup17)"><i>sanctuary</i></span> (self only)</td></tr>
 <tr><td align='center'>80-82</td><td align='left'><span class="popupAnchor" id="anchor18" onclick="toggleDragEnabled(popup18, options={event:event})" onmouseover="showPopup(popup18, anchor18)" onmouseout="hidePopup(popup18)"><i>expeditious retreat</i></span> (1/day)</td></tr>
-<tr><td align='center'>83-85</td><td align='left'><span class="popupAnchor" id="anchor19" onclick="toggleDragEnabled(popup19, options={event:event})" onmouseover="showPopup(popup19, anchor19)" onmouseout="hidePopup(popup19)"><i>hunter's mark</i></span> (1/day)</td></tr>
+<tr><td align='center'>83-85</td><td align='left'><span class="popupAnchor" id="anchor19" onclick="toggleDragEnabled(popup19, options={event:event})" onmouseover="showPopup(popup19, anchor19)" onmouseout="hidePopup(popup19)"><i>hex</i></span> (1/day)</td></tr>
 <tr><td align='center'>86-87</td><td align='left'><span class="popupAnchor" id="anchor20" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor20)" onmouseout="hidePopup(popup20)"><i>cause fear</i></span> (1/day)</td></tr>
 <tr><td align='center'>88-89</td><td align='left'><span class="popupAnchor" id="anchor21" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor21)" onmouseout="hidePopup(popup21)"><i>thunderwave</i></span> (1/day)</td></tr>
 <tr><td align='center'>90-91</td><td align='left'><span class="popupAnchor" id="anchor22" onclick="toggleDragEnabled(popup22, options={event:event})" onmouseover="showPopup(popup22, anchor22)" onmouseout="hidePopup(popup22)"><i>cure wounds</i></span> (1/day)</td></tr>
@@ -1068,15 +1068,15 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup19, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup19, options={event:event})">&times;</div>
-        </div>_hunter's mark_
+        </div>_hex_
     </div>
     <div class="popupContent">
         
 <div class="small-card">
     <div class="spell-header">
         <div>
-            <h1 class="noHeaderID">Hunter's Mark</h1>
-            <div class="p spell-school"><em>1st-level divination</em></div>
+            <h1 class="noHeaderID">Hex</h1>
+            <div class="p spell-school"><em>1st-level enchantment</em></div>
         </div>
         <div class="align-right">
             <span class="concentration-tag">concentration</span>
@@ -1086,7 +1086,7 @@
     </div>
     <hr>
     <div class="spell-specs">
-        <div class='p'><strong>Components</strong><br>V</div>
+        <div class='p'><strong>Components</strong><br>V, S, M (the petrified eye of a newt)</div>
         <div class='p'><strong>Duration</strong><br>Up to 1 hour</div>
     </div>
     <div class="spell-specs">
@@ -1094,11 +1094,15 @@
         <div class='p'><strong>Range</strong><br>90 feet</div>
     </div>
     <hr>
-    <div class='p'>You choose a creature you can see within range and mystically mark it as your quarry. Until the spell ends, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Wisdom (Perception) or Wisdom (Survival) check you make to find it. If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to mark a new creature.</div>
+    <div class='p'>You place a curse on a creature that you can see within range. Until the spell ends, you deals an extra 1d6 necrotic damage to the target whenever you hit it with an attack. Also choose one ability when you cast the spell. The target has disadvantage on ability checks made with the chosen ability.</div>
+
+<div class='p'>If the target drops to 0 hit points before this spell ends, you can use a bonus action on a subsequent turn of yours to curse a new creature.</div>
+
+<div class='p'>A <i>remove curse</i> cast on the target ends this spell early.</div>
     <div class='p'><b>At Higher Levels.</b> When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your concentration on the spell for up to 24 hours.</div>
     <hr>
     <div class="spell-footer">
-        <div class='p'><strong>Available To</strong><br>Ranger</div>
+        <div class='p'><strong>Available To</strong><br>Warlock</div>
         <div class="p align-right"><strong>Source</strong><br>PHB</div>
     </div>
 </div>
