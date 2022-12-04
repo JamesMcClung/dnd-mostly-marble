@@ -8,7 +8,7 @@ function setDarkMode(dark, preference) {
     if (preference === newTheme) {
         localStorage.removeItem('theme');
     } else {
-        localStorage.setItem('theme', preference);
+        localStorage.setItem('theme', newTheme);
     }
     document.querySelector('html').dataset.theme = newTheme;
 };
