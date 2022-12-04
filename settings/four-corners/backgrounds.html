@@ -6,6 +6,7 @@
     <title>
         Backgrounds
     </title>
+    <script src="/js/darkmode.js"></script>
     <link rel="stylesheet" href="/styles.css">
 </head>
 
@@ -16,6 +17,7 @@
             <li><a href="../four-corners.html">Four Corners</a></li><li><a href="backgrounds.html">Backgrounds</a></li>
             <!-- e.g. <li><a href="four-corners.html">Four Corners</a></li> -->
         </ul>
+        <button id="button-dark-mode" , onclick="toggleDarkMode()">Dark Mode</button>
     </header>
 
 
@@ -236,7 +238,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup0, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup0, options={event:event})">&times;</div>
-        </div>_blade ward_
+        </div><i>blade ward</i>
     </div>
     <div class="popupContent">
         
@@ -278,7 +280,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup1, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup1, options={event:event})">&times;</div>
-        </div>_druidcraft_
+        </div><i>druidcraft</i>
     </div>
     <div class="popupContent">
         
@@ -326,7 +328,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2, options={event:event})">&times;</div>
-        </div>_shillelagh_
+        </div><i>shillelagh</i>
     </div>
     <div class="popupContent">
         
@@ -455,7 +457,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup7, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup7, options={event:event})">&times;</div>
-        </div>_arms of Hadar_
+        </div><i>arms of Hadar</i>
     </div>
     <div class="popupContent">
         
@@ -497,7 +499,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup8, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup8, options={event:event})">&times;</div>
-        </div>_augury_
+        </div><i>augury</i>
     </div>
     <div class="popupContent">
         
@@ -549,7 +551,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup9, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup9, options={event:event})">&times;</div>
-        </div>_hunger of Hadar_
+        </div><i>hunger of Hadar</i>
     </div>
     <div class="popupContent">
         
@@ -593,7 +595,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup10, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup10, options={event:event})">&times;</div>
-        </div>_Evard's black tentacles_
+        </div><i>Evard's black tentacles</i>
     </div>
     <div class="popupContent">
         
@@ -639,7 +641,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup11, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup11, options={event:event})">&times;</div>
-        </div>_contact other plane_
+        </div><i>contact other plane</i>
     </div>
     <div class="popupContent">
         
@@ -683,7 +685,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup12, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup12, options={event:event})">&times;</div>
-        </div>_primal savagery_
+        </div><i>primal savagery</i>
     </div>
     <div class="popupContent">
         
@@ -727,7 +729,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup13, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup13, options={event:event})">&times;</div>
-        </div>_thaumaturgy_
+        </div><i>thaumaturgy</i>
     </div>
     <div class="popupContent">
         
@@ -779,7 +781,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup14, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup14, options={event:event})">&times;</div>
-        </div>_speak with animals_
+        </div><i>speak with animals</i>
     </div>
     <div class="popupContent">
         
@@ -821,7 +823,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup15, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup15, options={event:event})">&times;</div>
-        </div>_move earth_
+        </div><i>move earth</i>
     </div>
     <div class="popupContent">
         
@@ -871,7 +873,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup16, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup16, options={event:event})">&times;</div>
-        </div>_earth tremor_
+        </div><i>earth tremor</i>
     </div>
     <div class="popupContent">
         
@@ -913,7 +915,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup17, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup17, options={event:event})">&times;</div>
-        </div>_cause fear_
+        </div><i>cause fear</i>
     </div>
     <div class="popupContent">
         
@@ -955,7 +957,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup18, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup18, options={event:event})">&times;</div>
-        </div>_darkness_
+        </div><i>darkness</i>
     </div>
     <div class="popupContent">
         
@@ -1001,7 +1003,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup19, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup19, options={event:event})">&times;</div>
-        </div>_fear_
+        </div><i>fear</i>
     </div>
     <div class="popupContent">
         
@@ -1045,7 +1047,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup20, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup20, options={event:event})">&times;</div>
-        </div>_shadow of Moil_
+        </div><i>shadow of Moil</i>
     </div>
     <div class="popupContent">
         
@@ -1089,7 +1091,7 @@
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
             <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup21, options={event:event})">&#9675;</div>
             <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup21, options={event:event})">&times;</div>
-        </div>_commune_
+        </div><i>commune</i>
     </div>
     <div class="popupContent">
         

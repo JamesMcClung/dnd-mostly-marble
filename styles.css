@@ -1,6 +1,44 @@
 * {
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
+:root[data-theme="light"] {
+  --default-bg: #f6f6f6;
+  --default-text: #000000;
+  --dark-bg: #333333;
+  --dark-bg-hover: #111111;
+  --dark-bg-text: #eeeeee;
+  --light-bg: #efefef;
+  --light-border: #aaaaaa;
+  --card-bg: #f8f8f8;
+  --card-hr: #d3d3d3;
+  --spell-subtitle: #808080;
+  --box-shadow-1: rgba(0, 0, 0, 0.2);
+  --box-shadow-2: rgba(0, 0, 0, 0.19);
+  --anchor-border: #333333;
+  --anchor-border-hover: #111111;
+  --concentration-tag: #e23225;
+  --ritual-tag: #4668ff;
+  --del: #f08080;
+}
+:root[data-theme="dark"] {
+  --default-bg: #1a1a1a;
+  --default-text: #dddddd;
+  --dark-bg: #333;
+  --dark-bg-hover: #444;
+  --dark-bg-text: #bbbbbb;
+  --light-bg: #1f1f1f;
+  --light-border: #666666;
+  --card-bg: #1f1f1f;
+  --card-hr: #2c2c2c;
+  --spell-subtitle: #7f7f7f;
+  --box-shadow-1: rgba(0, 0, 0, 0.2);
+  --box-shadow-2: rgba(0, 0, 0, 0.19);
+  --anchor-border: #bbb;
+  --anchor-border-hover: #ddd;
+  --concentration-tag: #d22215;
+  --ritual-tag: #3658df;
+  --del: #783030;
+}
 .align-right {
   text-align: right;
 }
@@ -11,6 +49,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--default-bg);
+  color: var(--default-text);
 }
 header {
   position: fixed;
@@ -18,26 +58,38 @@ header {
   width: 100%;
   z-index: 50;
   font: 16px Arial, Geneva, Helvetica, sans-serif;
+  display: flex;
+  background-color: var(--dark-bg);
 }
 header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
+  flex-grow: 1;
 }
 header ul li {
   float: left;
 }
 header ul li a {
   display: block;
-  color: white;
+  color: var(--dark-bg-text);
   text-align: center;
   padding: 16px;
   text-decoration: none;
 }
 header ul li a:hover {
-  background-color: #111111;
+  background-color: var(--dark-bg-hover);
+}
+header #button-dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-bg-text);
+  border: none;
+  font: 16px Arial, Geneva, Helvetica, sans-serif;
+  padding: 16px;
+}
+header #button-dark-mode:hover {
+  background-color: var(--dark-bg-hover);
 }
 article {
   margin: 70px 13% 8% 13%;
@@ -45,17 +97,17 @@ article {
 h1 {
   font: 32px Arial, Geneva, Helvetica, sans-serif;
   padding-left: 4px;
-  border-bottom: 3px solid #aaaaaa;
+  border-bottom: 3px solid var(--light-border);
 }
 h2 {
   font: 24px Arial, Geneva, Helvetica, sans-serif;
   padding-left: 2px;
-  border-bottom: 2px solid #aaaaaa;
+  border-bottom: 2px solid var(--light-border);
 }
 h3 {
   font: 20px Arial, Geneva, Helvetica, sans-serif;
   margin-bottom: -6px;
-  border-bottom: 1px solid #aaaaaa;
+  border-bottom: 1px solid var(--light-border);
 }
 details {
   margin-bottom: 18px;
@@ -67,12 +119,12 @@ details > summary {
   user-select: none;
   padding: 2px;
   padding-left: 6px;
-  color: white;
-  background-color: #333333;
+  color: var(--dark-bg-text);
+  background-color: var(--dark-bg);
   border-radius: 4px;
 }
 details > summary:hover {
-  background-color: #111111;
+  background-color: var(--dark-bg-hover);
 }
 h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
@@ -87,13 +139,13 @@ details {
 }
 .home-ref {
   padding: 2px 5px;
-  color: white;
+  color: var(--dark-bg-text);
   text-decoration: none;
-  background-color: #333333;
+  background-color: var(--dark-bg);
   border-radius: 5px;
 }
 .home-ref:hover {
-  background-color: #111111;
+  background-color: var(--dark-bg-hover);
 }
 .tableAndCaption {
   margin-left: auto;
@@ -102,7 +154,7 @@ details {
 }
 .tableAndCaption table {
   border-collapse: collapse;
-  border: 1px solid #aaaaaa;
+  border: 1px solid var(--light-border);
 }
 .tableAndCaption table td,
 .tableAndCaption table th {
@@ -110,11 +162,14 @@ details {
 }
 .tableAndCaption table th {
   font: 16px Arial, Geneva, Helvetica, sans-serif;
-  background-color: #333333;
-  color: white;
+  background-color: var(--dark-bg);
+  color: var(--dark-bg-text);
 }
 .tableAndCaption table tr:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: var(--light-bg);
+}
+.tableAndCaption table tr:nth-child(odd) {
+  background-color: var(--default-bg);
 }
 .tableAndCaption .caption {
   font: 16px Arial, Geneva, Helvetica, sans-serif;
@@ -126,12 +181,12 @@ details {
   cursor: default;
 }
 .sortableTable > thead > tr > th:hover {
-  background-color: #111111;
+  background-color: var(--dark-bg-hover);
 }
 .scrollableTableWrapper {
   overflow-y: scroll;
   height: 60vh;
-  border: 1px solid #aaaaaa;
+  border: 1px solid var(--light-border);
 }
 .scrollableTableWrapper > table {
   border: none;
@@ -152,14 +207,14 @@ details {
 }
 .card {
   margin: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 20px 20px;
   display: inline-block;
 }
 .card hr {
   margin: 0px;
-  background-color: lightgray;
+  background-color: var(--card-hr);
   color: transparent;
   border-radius: 1px;
 }
@@ -168,15 +223,15 @@ details {
 }
 .small-card {
   margin: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 20px 20px;
   display: inline-block;
   max-width: 550px;
 }
 .small-card hr {
   margin: 0px;
-  background-color: lightgray;
+  background-color: var(--card-hr);
   color: transparent;
   border-radius: 1px;
 }
@@ -194,7 +249,7 @@ details {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
   margin: unset;
   margin-bottom: -8px;
-  border-bottom: 2px solid #aaaaaa;
+  border-bottom: 2px solid var(--light-border);
 }
 .small-card .tableAndCaption {
   margin-left: 0;
@@ -202,8 +257,8 @@ details {
 }
 .medium-card {
   margin: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 20px 20px;
   display: inline-block;
   max-width: 550px;
@@ -211,7 +266,7 @@ details {
 }
 .medium-card hr {
   margin: 0px;
-  background-color: lightgray;
+  background-color: var(--card-hr);
   color: transparent;
   border-radius: 1px;
 }
@@ -229,7 +284,7 @@ details {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
   margin: unset;
   margin-bottom: -8px;
-  border-bottom: 2px solid #aaaaaa;
+  border-bottom: 2px solid var(--light-border);
 }
 .medium-card .tableAndCaption {
   margin-left: 0;
@@ -240,15 +295,15 @@ details {
 }
 .big-card {
   margin: 10px;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 20px 20px;
   display: inline-block;
   max-width: 1100px;
 }
 .big-card hr {
   margin: 0px;
-  background-color: lightgray;
+  background-color: var(--card-hr);
   color: transparent;
   border-radius: 1px;
 }
@@ -262,7 +317,7 @@ details {
 }
 .source-subheader {
   font-style: italic;
-  color: #aaaaaa;
+  color: var(--light-border);
 }
 .spell-header {
   display: flex;
@@ -270,13 +325,13 @@ details {
   align-items: center;
 }
 .spell-header .spell-school {
-  color: gray;
+  color: var(--spell-subtitle);
   font-size: 14px;
 }
 .spell-header .tag {
   font-variant: small-caps;
   border-radius: 3px;
-  color: #f8f8f8;
+  color: var(--card-bg);
   padding: 3px;
   margin: 2px 0px;
   font-size: small;
@@ -285,22 +340,22 @@ details {
 .spell-header .concentration-tag {
   font-variant: small-caps;
   border-radius: 3px;
-  color: #f8f8f8;
+  color: var(--card-bg);
   padding: 3px;
   margin: 2px 0px;
   font-size: small;
   font-weight: bold;
-  background-color: #e23225;
+  background-color: var(--concentration-tag);
 }
 .spell-header .ritual-tag {
   font-variant: small-caps;
   border-radius: 3px;
-  color: #f8f8f8;
+  color: var(--card-bg);
   padding: 3px;
   margin: 2px 0px;
   font-size: small;
   font-weight: bold;
-  background-color: #4668ff;
+  background-color: var(--ritual-tag);
 }
 .spell-specs {
   display: flex;
@@ -350,7 +405,7 @@ details {
 }
 .classlist a {
   text-decoration: none;
-  color: black;
+  color: var(--default-text);
 }
 .classlist li {
   break-inside: avoid;
@@ -369,11 +424,11 @@ del {
 }
 del,
 .del {
-  background-color: lightcoral !important;
+  background-color: var(--del) !important;
 }
 blockquote {
-  background: #f8f8f8;
-  border-left: 10px solid #aaaaaa;
+  background: var(--card-bg);
+  border-left: 10px solid var(--light-border);
   margin: 1.5em 10px;
   padding: 0.1em 10px;
 }
@@ -384,8 +439,8 @@ blockquote {
 .tooltip {
   border-radius: 6px;
   padding: 0.4em 0.7em;
-  background-color: #f8f8f8;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   cursor: auto;
   position: absolute;
   z-index: 1;
@@ -393,10 +448,10 @@ blockquote {
 }
 .popupAnchor {
   cursor: pointer;
-  border-bottom: 2px dotted #333333;
+  border-bottom: 2px dotted var(--anchor-border);
 }
 .popupAnchor:hover {
-  border-color: #111111;
+  border-color: var(--anchor-border-hover);
 }
 .popup {
   border-radius: 6px;
@@ -419,13 +474,13 @@ blockquote {
   visibility: visible;
 }
 .popup.dragEnabled > .popupHeader:hover {
-  background-color: #111111;
+  background-color: var(--dark-bg-hover);
 }
 .popup .popupHeader {
   padding: 5px 0px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #333333;
-  color: white;
+  box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
+  background-color: var(--dark-bg);
+  color: var(--dark-bg-text);
   text-align: center;
   font: 16px Arial, Geneva, Helvetica, sans-serif;
   pointer-events: visible;
@@ -463,5 +518,5 @@ blockquote {
 }
 footer {
   text-align: center;
-  color: #aaaaaa;
+  color: var(--light-border);
 }
