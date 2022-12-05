@@ -38,7 +38,7 @@
 
 
 <div class='tableAndCaption'><span class='caption'>Feat Costs</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable1" class="sortableTable"><thead>
-<tr><th align='left' onclick="sortTable(sortableTable1,0)">Feat &#9660;</th><th align='center' onclick="sortTable(sortableTable1,1)">Cost</th><th align='left' onclick="sortTable(sortableTable1,2)">Prerequisites</th></tr>
+<tr><th align='left' onclick="sortTable(sortableTable1,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,0,event)">S</button> <span class='col-title'>Feat</span><input class='displaynone searchbar' id='searchbar1_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,0,searchbar1_0)"></input><span class='sorticon'> &#9660;</span></th><th align='center' onclick="sortTable(sortableTable1,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,1,event)">S</button> <span class='col-title'>Cost</span><input class='displaynone searchbar' id='searchbar1_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,1,searchbar1_1)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,2,event)">S</button> <span class='col-title'>Prerequisites</span><input class='displaynone searchbar' id='searchbar1_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,2,searchbar1_2)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='left'><span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">Actor</span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'><span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">Alert</span></td><td align='center'>4</td><td align='left'></td></tr>
@@ -119,6 +119,7 @@
 </tbody></table></div></div>
 
 <script src='/js/sortTable.js'></script>
+<script src='/js/search.js'></script>
 <div class="popup" id="popup0">
     <div class="popupHeader">
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">

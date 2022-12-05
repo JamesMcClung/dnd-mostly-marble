@@ -29,7 +29,7 @@
     <h1 id="ranger">Ranger</h1>
     <div class='p source-subheader'>Source: Player's Handbook, Tasha's Cauldron of Everything, Four Corners</div>
     <div class='tableAndCaption'><span class='caption'>The Ranger</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='center'>Proficiency Bonus</th><th align='left'>Features</th><th align='center'>Spells Known</th><th align='center'>1st</th><th align='center'>2nd</th><th align='center'>3rd</th><th align='center'>4th</th><th align='center'>5th</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='center'><span class='col-title'>Proficiency Bonus</span></th><th align='left'><span class='col-title'>Features</span></th><th align='center'><span class='col-title'>Spells Known</span></th><th align='center'><span class='col-title'>1st</span></th><th align='center'><span class='col-title'>2nd</span></th><th align='center'><span class='col-title'>3rd</span></th><th align='center'><span class='col-title'>4th</span></th><th align='center'><span class='col-title'>5th</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1st</td><td align='center'>+2</td><td align='left'>Canny, Favored Enemy, Natural Explorer</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td></tr>
 <tr><td align='center'>2nd</td><td align='center'>+2</td><td align='left'>Hunter's Mark, Fighting Style, Spellcasting</td><td align='center'>2</td><td align='center'>2</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td></tr>
@@ -202,7 +202,7 @@
 
 
 <div class='tableAndCaption'><span class='caption'>Ranger Spells</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable1" class="sortableTable"><thead>
-<tr><th align='center' onclick="sortTable(sortableTable1,0)">Level &#9660;</th><th align='left' onclick="sortTable(sortableTable1,1)">Name</th><th align='center' onclick="sortTable(sortableTable1,2)">Ritual</th><th align='center' onclick="sortTable(sortableTable1,3)">Concentration</th><th align='left' onclick="sortTable(sortableTable1,4)">School</th><th align='left' onclick="sortTable(sortableTable1,5)">Domain</th></tr>
+<tr><th align='center' onclick="sortTable(sortableTable1,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,0,event)">S</button> <span class='col-title'>Level</span><input class='displaynone searchbar' id='searchbar1_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,0,searchbar1_0)"></input><span class='sorticon'> &#9660;</span></th><th align='left' onclick="sortTable(sortableTable1,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,1,event)">S</button> <span class='col-title'>Name</span><input class='displaynone searchbar' id='searchbar1_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,1,searchbar1_1)"></input><span class='sorticon'></span></th><th align='center' onclick="sortTable(sortableTable1,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,2,event)">S</button> <span class='col-title'>Ritual</span><input class='displaynone searchbar' id='searchbar1_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,2,searchbar1_2)"></input><span class='sorticon'></span></th><th align='center' onclick="sortTable(sortableTable1,3)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,3,event)">S</button> <span class='col-title'>Concentration</span><input class='displaynone searchbar' id='searchbar1_3' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,3,searchbar1_3)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,4)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,4,event)">S</button> <span class='col-title'>School</span><input class='displaynone searchbar' id='searchbar1_4' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,4,searchbar1_4)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,5)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,5,event)">S</button> <span class='col-title'>Domain</span><input class='displaynone searchbar' id='searchbar1_5' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,5,searchbar1_5)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1st</td><td align='left'><span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">Absorb Elements</span></td><td align='center'></td><td align='center'></td><td align='left'>Abjuration</td><td align='left'></td></tr>
 <tr><td align='center'>1st</td><td align='left'><span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">Alarm</span></td><td align='center'>R</td><td align='center'></td><td align='left'>Abjuration</td><td align='left'></td></tr>
@@ -322,7 +322,7 @@
 <div class='p'>You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.</div>
 
 <div class='tableAndCaption'><span class='caption'>Primal Awareness Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Ranger Level</th><th align='left'>Spell</th></tr>
+<tr><th align='center'><span class='col-title'>Ranger Level</span></th><th align='left'><span class='col-title'>Spell</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3rd</td><td align='left'><span class="popupAnchor" id="anchor72" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor72)" onmouseout="hidePopup(popup16)"><i>speak with animals</i></span></td></tr>
 <tr><td align='center'>5th</td><td align='left'><span class="popupAnchor" id="anchor73" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor73)" onmouseout="hidePopup(popup21)"><i>beast sense</i></span></td></tr>
@@ -395,6 +395,7 @@
     
 </div>
 <script src='/js/sortTable.js'></script>
+<script src='/js/search.js'></script>
 <div class="popup" id="popup0">
     <div class="popupHeader">
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
@@ -1991,7 +1992,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>11 (+0)</td><td align='center'>16 (+3)</td><td align='center'>4 (-3)</td><td align='center'>14 (+2)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -2672,7 +2673,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>16 (+3)</td><td align='center'>14 (+2)</td><td align='center'>14 (+2)</td><td align='center'>11 (+0)</td><td align='center'>16 (+3)</td></tr>
 </tbody></table></div></div>
@@ -3237,7 +3238,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>15 (+2)</td><td align='center'>17 (+3)</td><td align='center'>4 (-3)</td><td align='center'>10 (+0)</td><td align='center'>16 (+3)</td></tr>
 </tbody></table></div></div>
@@ -3665,7 +3666,7 @@
         <div class='p'>When you take the Search Action, you make a Wisdom Check to discern something that isn't obvious. The Search table suggests which Skills are applicable when you take this Action, depending on what you're trying to detect.</div>
 
 <div class='tableAndCaption'><span class='caption'>Search</span><div class='tableWrapper'><table><thead>
-<tr><th align='left'>Skill</th><th align='left'>Thing to Detect</th></tr>
+<tr><th align='left'><span class='col-title'>Skill</span></th><th align='left'><span class='col-title'>Thing to Detect</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Insight</td><td align='left'>Creature's state of mind</td></tr>
 <tr><td align='left'>Medicine</td><td align='left'>Creature's ailment</td></tr>

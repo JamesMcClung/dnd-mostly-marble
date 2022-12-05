@@ -19,10 +19,13 @@
   --concentration-tag: #e23225;
   --ritual-tag: #4668ff;
   --del: #f08080;
+  --link: #2668cf;
+  --link-visited: #a35cd7;
+  color-scheme: light;
 }
 :root[data-theme="dark"] {
   --default-bg: #1a1a1a;
-  --default-text: #dddddd;
+  --default-text: #cdcdcd;
   --dark-bg: #333;
   --dark-bg-hover: #444;
   --dark-bg-text: #bbbbbb;
@@ -38,6 +41,9 @@
   --concentration-tag: #d22215;
   --ritual-tag: #3658df;
   --del: #783030;
+  --link: #50a0cd;
+  --link-visited: #aa78cd;
+  color-scheme: dark;
 }
 .align-right {
   text-align: right;
@@ -73,7 +79,7 @@ header ul li {
   display: flex;
 }
 header ul li a {
-  color: var(--dark-bg-text);
+  color: var(--dark-bg-text) !important;
   text-align: center;
   padding: 16px;
   text-decoration: none;
@@ -141,6 +147,12 @@ h4,
 details {
   scroll-margin-top: 55px;
 }
+a {
+  color: var(--link);
+}
+a:visited {
+  color: var(--link-visited);
+}
 .home-ref {
   padding: 2px 5px;
   color: var(--dark-bg-text);
@@ -174,7 +186,7 @@ details {
 }
 .tableAndCaption .tableWrapper table td,
 .tableAndCaption .tableWrapper table th {
-  padding: 3px 30px 3px 5px;
+  padding: 3px 1em 3px 0.5em;
 }
 .tableAndCaption .tableWrapper table th {
   font: 16px Arial, Geneva, Helvetica, sans-serif;
@@ -198,6 +210,39 @@ details {
 }
 .sortableTable > thead > tr > th:hover {
   background-color: var(--dark-bg-hover);
+}
+.displaynone {
+  display: none;
+}
+.displaynone0 {
+  display: none;
+}
+.displaynone1 {
+  display: none;
+}
+.displaynone2 {
+  display: none;
+}
+.displaynone3 {
+  display: none;
+}
+.displaynone4 {
+  display: none;
+}
+.displaynone5 {
+  display: none;
+}
+.displaynone6 {
+  display: none;
+}
+.displaynone7 {
+  display: none;
+}
+.displaynone8 {
+  display: none;
+}
+.displaynone9 {
+  display: none;
 }
 .p {
   margin-top: 10px;

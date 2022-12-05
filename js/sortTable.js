@@ -101,11 +101,11 @@ function sortTable(table, col) {
     // manage symbols in table header that identify how it is sorted
     const upSymbolCode = 9650, downSymbolCode = 9660;
     for (let i = 0; i < table.rows[0].cells.length; i++) {
-        let cell = table.rows[0].getElementsByTagName("th")[i]
-        let lastCharCode = cell.innerHTML.charCodeAt(cell.innerHTML.length - 1)
-        if (lastCharCode == upSymbolCode || lastCharCode == downSymbolCode) {
-            cell.innerHTML = cell.innerHTML.slice(0, -2) // remove 2 chars to include the space
+        let iconSpan = table.rows[0].getElementsByTagName("th")[i].getElementsByClassName("sorticon")[0];
+        if (i == col) {
+            iconSpan.innerHTML = ` &#${initialSortOrder > 0 ? upSymbolCode : downSymbolCode};`;
+        } else {
+            iconSpan.innerHTML = "";
         }
     }
-    table.rows[0].getElementsByTagName("th")[col].innerHTML += ` &#${initialSortOrder > 0 ? upSymbolCode : downSymbolCode};`;
 }

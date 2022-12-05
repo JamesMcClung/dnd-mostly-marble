@@ -29,7 +29,7 @@
     <h1 id="druid">Druid</h1>
     <div class='p source-subheader'>Source: Player's Handbook, Tasha's Cauldron of Everything, Four Corners</div>
     <div class='tableAndCaption'><span class='caption'>The Druid</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='center'>Proficiency Bonus</th><th align='left'>Features</th><th align='center'>Cantrips Known</th><th align='center'>1st</th><th align='center'>2nd</th><th align='center'>3rd</th><th align='center'>4th</th><th align='center'>5th</th><th align='center'>6th</th><th align='center'>7th</th><th align='center'>8th</th><th align='center'>9th</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='center'><span class='col-title'>Proficiency Bonus</span></th><th align='left'><span class='col-title'>Features</span></th><th align='center'><span class='col-title'>Cantrips Known</span></th><th align='center'><span class='col-title'>1st</span></th><th align='center'><span class='col-title'>2nd</span></th><th align='center'><span class='col-title'>3rd</span></th><th align='center'><span class='col-title'>4th</span></th><th align='center'><span class='col-title'>5th</span></th><th align='center'><span class='col-title'>6th</span></th><th align='center'><span class='col-title'>7th</span></th><th align='center'><span class='col-title'>8th</span></th><th align='center'><span class='col-title'>9th</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1st</td><td align='center'>+2</td><td align='left'>Druidic, Spellcasting</td><td align='center'>2</td><td align='center'>2</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td></tr>
 <tr><td align='center'>2nd</td><td align='center'>+2</td><td align='left'>Wild Shape, Wild Companion, Druid Circle</td><td align='center'>2</td><td align='center'>3</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td></tr>
@@ -118,7 +118,7 @@
 
 
 <div class='tableAndCaption'><span class='caption'>Druid Spells</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable1" class="sortableTable"><thead>
-<tr><th align='center' onclick="sortTable(sortableTable1,0)">Level &#9660;</th><th align='left' onclick="sortTable(sortableTable1,1)">Name</th><th align='center' onclick="sortTable(sortableTable1,2)">Ritual</th><th align='center' onclick="sortTable(sortableTable1,3)">Concentration</th><th align='left' onclick="sortTable(sortableTable1,4)">School</th><th align='left' onclick="sortTable(sortableTable1,5)">Domain</th></tr>
+<tr><th align='center' onclick="sortTable(sortableTable1,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,0,event)">S</button> <span class='col-title'>Level</span><input class='displaynone searchbar' id='searchbar1_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,0,searchbar1_0)"></input><span class='sorticon'> &#9660;</span></th><th align='left' onclick="sortTable(sortableTable1,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,1,event)">S</button> <span class='col-title'>Name</span><input class='displaynone searchbar' id='searchbar1_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,1,searchbar1_1)"></input><span class='sorticon'></span></th><th align='center' onclick="sortTable(sortableTable1,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,2,event)">S</button> <span class='col-title'>Ritual</span><input class='displaynone searchbar' id='searchbar1_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,2,searchbar1_2)"></input><span class='sorticon'></span></th><th align='center' onclick="sortTable(sortableTable1,3)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,3,event)">S</button> <span class='col-title'>Concentration</span><input class='displaynone searchbar' id='searchbar1_3' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,3,searchbar1_3)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,4)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,4,event)">S</button> <span class='col-title'>School</span><input class='displaynone searchbar' id='searchbar1_4' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,4,searchbar1_4)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,5)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,5,event)">S</button> <span class='col-title'>Domain</span><input class='displaynone searchbar' id='searchbar1_5' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,5,searchbar1_5)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>Cantrip</td><td align='left'><span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">Control Flames</span></td><td align='center'></td><td align='center'></td><td align='left'>Transmutation</td><td align='left'></td></tr>
 <tr><td align='center'>Cantrip</td><td align='left'><span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">Create Bonfire</span></td><td align='center'></td><td align='center'>C</td><td align='left'>Conjuration</td><td align='left'></td></tr>
@@ -306,7 +306,7 @@
 <div class='p'>Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or a swimming speed.</div>
 
 <div class='tableAndCaption'><span class='caption'>Beast Shapes</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='center'>Max. CR</th><th align='left'>Limitations</th><th align='left'>Example</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='center'><span class='col-title'>Max. CR</span></th><th align='left'><span class='col-title'>Limitations</span></th><th align='left'><span class='col-title'>Example</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2nd</td><td align='center'>1/4</td><td align='left'>No flying or swimming speed</td><td align='left'>Wolf</td></tr>
 <tr><td align='center'>4th</td><td align='center'>1/2</td><td align='left'>No flying speed</td><td align='left'>Crocodile</td></tr>
@@ -323,7 +323,7 @@
 
 
 <div class='tableAndCaption'><span class='caption'>Beasts</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable2" class="sortableTable"><thead>
-<tr><th align='center' onclick="sortTable(sortableTable2,0)">CR &#9660;</th><th align='left' onclick="sortTable(sortableTable2,1)">Name</th><th align='left' onclick="sortTable(sortableTable2,2)">Size</th><th align='right' onclick="sortTable(sortableTable2,3)">HP</th><th align='right' onclick="sortTable(sortableTable2,4)">AC</th><th align='right' onclick="sortTable(sortableTable2,5)">Speed</th><th align='right' onclick="sortTable(sortableTable2,6)">Swim</th><th align='right' onclick="sortTable(sortableTable2,7)">Fly</th></tr>
+<tr><th align='center' onclick="sortTable(sortableTable2,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,0,event)">S</button> <span class='col-title'>CR</span><input class='displaynone searchbar' id='searchbar2_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,0,searchbar2_0)"></input><span class='sorticon'> &#9660;</span></th><th align='left' onclick="sortTable(sortableTable2,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,1,event)">S</button> <span class='col-title'>Name</span><input class='displaynone searchbar' id='searchbar2_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,1,searchbar2_1)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable2,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,2,event)">S</button> <span class='col-title'>Size</span><input class='displaynone searchbar' id='searchbar2_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,2,searchbar2_2)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,3)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,3,event)">S</button> <span class='col-title'>HP</span><input class='displaynone searchbar' id='searchbar2_3' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,3,searchbar2_3)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,4)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,4,event)">S</button> <span class='col-title'>AC</span><input class='displaynone searchbar' id='searchbar2_4' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,4,searchbar2_4)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,5)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,5,event)">S</button> <span class='col-title'>Speed</span><input class='displaynone searchbar' id='searchbar2_5' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,5,searchbar2_5)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,6)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,6,event)">S</button> <span class='col-title'>Swim</span><input class='displaynone searchbar' id='searchbar2_6' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,6,searchbar2_6)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,7)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,7,event)">S</button> <span class='col-title'>Fly</span><input class='displaynone searchbar' id='searchbar2_7' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,7,searchbar2_7)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>0</td><td align='left'><span class="popupAnchor" id="anchor182" onclick="toggleDragEnabled(popup176, options={event:event})" onmouseover="showPopup(popup176, anchor182)" onmouseout="hidePopup(popup176)">Baboon</span></td><td align='left'>Small</td><td align='right'>3</td><td align='right'>12</td><td align='right'>30</td><td align='right'></td><td align='right'></td></tr>
 <tr><td align='center'>0</td><td align='left'><span class="popupAnchor" id="anchor183" onclick="toggleDragEnabled(popup177, options={event:event})" onmouseover="showPopup(popup177, anchor183)" onmouseout="hidePopup(popup177)">Badger</span></td><td align='left'>Tiny</td><td align='right'>3</td><td align='right'>10</td><td align='right'>20</td><td align='right'></td><td align='right'></td></tr>
@@ -446,7 +446,7 @@
 <div class='p'>You can cast one of your regional spells once without expending a spell slot. Once you do so, you cannot cast a regional spell in this way again until you finish a long rest.</div>
 
 <div class='tableAndCaption'><span class='caption'>Regional Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='left'>Biome</th><th align='left'>2nd-Level Druid</th><th align='left'>3rd-Level Druid</th><th align='left'>5th-Level Druid</th><th align='left'>7th-Level Druid</th><th align='left'>9th-Level Druid</th></tr>
+<tr><th align='left'><span class='col-title'>Biome</span></th><th align='left'><span class='col-title'>2nd-Level Druid</span></th><th align='left'><span class='col-title'>3rd-Level Druid</span></th><th align='left'><span class='col-title'>5th-Level Druid</span></th><th align='left'><span class='col-title'>7th-Level Druid</span></th><th align='left'><span class='col-title'>9th-Level Druid</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Arctic</td><td align='left'><span class="popupAnchor" id="anchor263" onclick="toggleDragEnabled(popup253, options={event:event})" onmouseover="showPopup(popup253, anchor263)" onmouseout="hidePopup(popup253)"><i>armor of Agathys</i></span></td><td align='left'><span class="popupAnchor" id="anchor264" onclick="toggleDragEnabled(popup254, options={event:event})" onmouseover="showPopup(popup254, anchor264)" onmouseout="hidePopup(popup254)"><i>Rime's binding ice</i></span></td><td align='left'><span class="popupAnchor" id="anchor265" onclick="toggleDragEnabled(popup80, options={event:event})" onmouseover="showPopup(popup80, anchor265)" onmouseout="hidePopup(popup80)"><i>sleet storm</i></span></td><td align='left'><span class="popupAnchor" id="anchor266" onclick="toggleDragEnabled(popup108, options={event:event})" onmouseover="showPopup(popup108, anchor266)" onmouseout="hidePopup(popup108)"><i>ice storm</i></span></td><td align='left'><span class="popupAnchor" id="anchor267" onclick="toggleDragEnabled(popup121, options={event:event})" onmouseover="showPopup(popup121, anchor267)" onmouseout="hidePopup(popup121)"><i>cone of cold</i></span></td></tr>
 <tr><td align='left'>Coast/Water</td><td align='left'><span class="popupAnchor" id="anchor268" onclick="toggleDragEnabled(popup38, options={event:event})" onmouseover="showPopup(popup38, anchor268)" onmouseout="hidePopup(popup38)"><i>thunderwave</i></span></td><td align='left'><span class="popupAnchor" id="anchor269" onclick="toggleDragEnabled(popup255, options={event:event})" onmouseover="showPopup(popup255, anchor269)" onmouseout="hidePopup(popup255)"><i>mirror image</i></span></td><td align='left'><span class="popupAnchor" id="anchor270" onclick="toggleDragEnabled(popup86, options={event:event})" onmouseover="showPopup(popup86, anchor270)" onmouseout="hidePopup(popup86)"><i>water breathing</i></span></td><td align='left'><span class="popupAnchor" id="anchor271" onclick="toggleDragEnabled(popup94, options={event:event})" onmouseover="showPopup(popup94, anchor271)" onmouseout="hidePopup(popup94)"><i>control water</i></span></td><td align='left'><span class="popupAnchor" id="anchor272" onclick="toggleDragEnabled(popup256, options={event:event})" onmouseover="showPopup(popup256, anchor272)" onmouseout="hidePopup(popup256)"><i>scrying</i></span></td></tr>
@@ -485,7 +485,7 @@
 <div class='p'>Some or all of these planes may not exist in your world, and there may be other planes not listed below. In all cases, your DM decides which set of regional spells applies to a given plane. For example, in the Forgotten Realms, the fifth layer of the Nine Hells is frozen over; therefore, your DM might rule that its associated set of regional spells is the Arctic set.</div>
 
 <div class='tableAndCaption'><span class='caption'>Planar Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='left'>Plane</th><th align='left'>2nd-Level Druid</th><th align='left'>3rd-Level Druid</th><th align='left'>5th-Level Druid</th><th align='left'>7th-Level Druid</th><th align='left'>9th-Level Druid</th></tr>
+<tr><th align='left'><span class='col-title'>Plane</span></th><th align='left'><span class='col-title'>2nd-Level Druid</span></th><th align='left'><span class='col-title'>3rd-Level Druid</span></th><th align='left'><span class='col-title'>5th-Level Druid</span></th><th align='left'><span class='col-title'>7th-Level Druid</span></th><th align='left'><span class='col-title'>9th-Level Druid</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Astral Sea</td><td align='left'><span class="popupAnchor" id="anchor315" onclick="toggleDragEnabled(popup271, options={event:event})" onmouseover="showPopup(popup271, anchor315)" onmouseout="hidePopup(popup271)"><i>bless</i></span></td><td align='left'><span class="popupAnchor" id="anchor316" onclick="toggleDragEnabled(popup56, options={event:event})" onmouseover="showPopup(popup56, anchor316)" onmouseout="hidePopup(popup56)"><i>lesser restoration</i></span></td><td align='left'><span class="popupAnchor" id="anchor317" onclick="toggleDragEnabled(popup272, options={event:event})" onmouseover="showPopup(popup272, anchor317)" onmouseout="hidePopup(popup272)"><i>remove curse</i></span></td><td align='left'><span class="popupAnchor" id="anchor318" onclick="toggleDragEnabled(popup95, options={event:event})" onmouseover="showPopup(popup95, anchor318)" onmouseout="hidePopup(popup95)"><i>divination</i></span></td><td align='left'><span class="popupAnchor" id="anchor319" onclick="toggleDragEnabled(popup273, options={event:event})" onmouseover="showPopup(popup273, anchor319)" onmouseout="hidePopup(popup273)"><i>flame strike</i></span></td></tr>
 <tr><td align='left'>Elemental Chaos</td><td align='left'><span class="popupAnchor" id="anchor320" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor320)" onmouseout="hidePopup(popup17)"><i>absorb elements</i></span></td><td align='left'><span class="popupAnchor" id="anchor321" onclick="toggleDragEnabled(popup274, options={event:event})" onmouseover="showPopup(popup274, anchor321)" onmouseout="hidePopup(popup274)"><i>Aganazzar's scorcher</i></span></td><td align='left'><span class="popupAnchor" id="anchor322" onclick="toggleDragEnabled(popup73, options={event:event})" onmouseover="showPopup(popup73, anchor322)" onmouseout="hidePopup(popup73)"><i>erupting earth</i></span></td><td align='left'><span class="popupAnchor" id="anchor323" onclick="toggleDragEnabled(popup265, options={event:event})" onmouseover="showPopup(popup265, anchor323)" onmouseout="hidePopup(popup265)"><i>storm sphere</i></span></td><td align='left'><span class="popupAnchor" id="anchor324" onclick="toggleDragEnabled(popup128, options={event:event})" onmouseover="showPopup(popup128, anchor324)" onmouseout="hidePopup(popup128)"><i>maelstrom</i></span></td></tr>
@@ -561,6 +561,7 @@
     
 </div>
 <script src='/js/sortTable.js'></script>
+<script src='/js/search.js'></script>
 <div class="popup" id="popup0">
     <div class="popupHeader">
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
@@ -785,7 +786,7 @@
     <hr>
     <div class="spell-footer">
         <div class='p'><strong>Available To</strong><br>Artificer, cleric, druid</div>
-        <div class="p align-right"><strong>Source</strong><br>1DnD</div>
+        <div class="p align-right"><strong>Source</strong><br>OneDnD</div>
     </div>
 </div>
     </div>
@@ -1145,7 +1146,7 @@
     <hr>
     <div class="spell-footer">
         <div class='p'><strong>Available To</strong><br>Artificer, cleric, druid</div>
-        <div class="p align-right"><strong>Source</strong><br>1DnD</div>
+        <div class="p align-right"><strong>Source</strong><br>OneDnD</div>
     </div>
 </div>
     </div>
@@ -3423,7 +3424,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>11 (+0)</td><td align='center'>16 (+3)</td><td align='center'>4 (-3)</td><td align='center'>14 (+2)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -4241,7 +4242,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>16 (+3)</td><td align='center'>14 (+2)</td><td align='center'>14 (+2)</td><td align='center'>11 (+0)</td><td align='center'>16 (+3)</td></tr>
 </tbody></table></div></div>
@@ -4662,7 +4663,7 @@
 <div class='p'>An affected target can't take reactions and must roll a d10 at the start of each of its turns to determine its behavior for that turn.</div>
 
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'>d10</th><th align='left'>Behavior</th></tr>
+<tr><th align='center'><span class='col-title'>d10</span></th><th align='left'><span class='col-title'>Behavior</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>The creature uses all its movement to move in a random direction. To determine the direction, roll a d8 and assign a direction to each die face. The creature doesn't take an action this turn.</td></tr>
 <tr><td align='center'>2-6</td><td align='left'>The creature doesn't move or take actions this turn.</td></tr>
@@ -5085,7 +5086,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>5 (-3)</td><td align='center'>14 (+2)</td><td align='center'>12 (+1)</td><td align='center'>1 (-5)</td><td align='center'>7 (-2)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -5133,7 +5134,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>16 (+3)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -5184,7 +5185,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>10 (+0)</td><td align='center'>1 (-5)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -5232,7 +5233,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>13 (+1)</td><td align='center'>15 (+2)</td><td align='center'>1 (-5)</td><td align='center'>9 (-1)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -5724,7 +5725,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>15 (+2)</td><td align='center'>17 (+3)</td><td align='center'>4 (-3)</td><td align='center'>10 (+0)</td><td align='center'>16 (+3)</td></tr>
 </tbody></table></div></div>
@@ -6536,7 +6537,7 @@
 <div class='p'>The magic fashions a new body for the creature to inhabit, which likely causes the creature's race to change. The DM rolls a d100 and consults the following table to determine what form the creature takes when restored to life, or the DM chooses a form.</div>
 
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'>d100</th><th align='left'>Race</th></tr>
+<tr><th align='center'><span class='col-title'>d100</span></th><th align='left'><span class='col-title'>Race</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>01-04</td><td align='left'>Dragonborn</td></tr>
 <tr><td align='center'>05-13</td><td align='left'>Dwarf, hill</td></tr>
@@ -6585,7 +6586,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>19 (+4)</td><td align='center'>14 (+2)</td><td align='center'>17 (+3)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>14 (+2)</td></tr>
 </tbody></table></div></div>
@@ -6969,7 +6970,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>19 (+4)</td><td align='center'>6 (-2)</td><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>10 (+0)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -8219,7 +8220,7 @@
 <div class='p'>When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.</div>
 
 <div class='tableAndCaption'><span class='caption'>Precipitation</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Stage</th><th align='left'>Condition</th></tr>
+<tr><th align='center'><span class='col-title'>Stage</span></th><th align='left'><span class='col-title'>Condition</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>Clear</td></tr>
 <tr><td align='center'>2</td><td align='left'>Light clouds</td></tr>
@@ -8229,7 +8230,7 @@
 </tbody></table></div></div>
 
 <div class='tableAndCaption'><span class='caption'>Temperature</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Stage</th><th align='left'>Condition</th></tr>
+<tr><th align='center'><span class='col-title'>Stage</span></th><th align='left'><span class='col-title'>Condition</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>Unbearable heat</td></tr>
 <tr><td align='center'>2</td><td align='left'>Hot</td></tr>
@@ -8240,7 +8241,7 @@
 </tbody></table></div></div>
 
 <div class='tableAndCaption'><span class='caption'>Wind</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Stage</th><th align='left'>Condition</th></tr>
+<tr><th align='center'><span class='col-title'>Stage</span></th><th align='left'><span class='col-title'>Condition</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>Calm</td></tr>
 <tr><td align='center'>2</td><td align='left'>Moderate wind</td></tr>
@@ -8712,7 +8713,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>8 (-1)</td><td align='center'>14 (+2)</td><td align='center'>11 (+0)</td><td align='center'>4 (-3)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -8760,7 +8761,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>4 (-3)</td><td align='center'>11 (+0)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -8808,7 +8809,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>15 (+2)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -8857,7 +8858,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3 (-4)</td><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -8905,7 +8906,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>10 (+0)</td><td align='center'>1 (-5)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td></tr>
 </tbody></table></div></div>
@@ -8953,7 +8954,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>11 (+0)</td><td align='center'>16 (+3)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>14 (+2)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9001,7 +9002,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>6 (-2)</td><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>2 (-4)</td><td align='center'>14 (+2)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -9049,7 +9050,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1 (-5)</td><td align='center'>13 (+1)</td><td align='center'>8 (-1)</td><td align='center'>1 (-5)</td><td align='center'>8 (-1)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9097,7 +9098,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>8 (-1)</td><td align='center'>10 (+0)</td><td align='center'>12 (+1)</td><td align='center'>1 (-5)</td><td align='center'>7 (-2)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9145,7 +9146,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>12 (+1)</td><td align='center'>10 (+0)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9194,7 +9195,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>5 (-3)</td><td align='center'>16 (+3)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td><td align='center'>14 (+2)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -9242,7 +9243,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>11 (+0)</td><td align='center'>13 (+1)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9290,7 +9291,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>8 (-1)</td><td align='center'>15 (+2)</td><td align='center'>11 (+0)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -9339,7 +9340,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>10 (+0)</td><td align='center'>1 (-5)</td><td align='center'>8 (-1)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9387,7 +9388,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>4 (-3)</td><td align='center'>15 (+2)</td><td align='center'>11 (+0)</td><td align='center'>3 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9438,7 +9439,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3 (-4)</td><td align='center'>13 (+1)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -9487,7 +9488,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>16 (+3)</td><td align='center'>9 (-1)</td><td align='center'>1 (-5)</td><td align='center'>7 (-2)</td><td align='center'>2 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9536,7 +9537,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>9 (-1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9584,7 +9585,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>14 (+2)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -9632,7 +9633,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>8 (-1)</td><td align='center'>1 (-5)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9680,7 +9681,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1 (-5)</td><td align='center'>12 (+1)</td><td align='center'>8 (-1)</td><td align='center'>1 (-5)</td><td align='center'>10 (+0)</td><td align='center'>2 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9727,7 +9728,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>14 (+2)</td><td align='center'>8 (-1)</td><td align='center'>1 (-5)</td><td align='center'>10 (+0)</td><td align='center'>2 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9777,7 +9778,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>7 (-2)</td><td align='center'>10 (+0)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9826,7 +9827,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3 (-4)</td><td align='center'>16 (+3)</td><td align='center'>8 (-1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -9874,7 +9875,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>6 (-2)</td><td align='center'>14 (+2)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td><td align='center'>14 (+2)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9923,7 +9924,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>16 (+3)</td><td align='center'>8 (-1)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>8 (-1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -9971,7 +9972,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>13 (+1)</td><td align='center'>13 (+1)</td><td align='center'>6 (-2)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -10020,7 +10021,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>4 (-3)</td><td align='center'>18 (+4)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10068,7 +10069,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>15 (+2)</td><td align='center'>11 (+0)</td><td align='center'>1 (-5)</td><td align='center'>9 (-1)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -10116,7 +10117,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>7 (-2)</td><td align='center'>15 (+2)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10171,7 +10172,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>11 (+0)</td><td align='center'>16 (+3)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td><td align='center'>12 (+1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10219,7 +10220,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>14 (+2)</td><td align='center'>12 (+1)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -10267,7 +10268,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>10 (+0)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10316,7 +10317,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2 (-4)</td><td align='center'>16 (+3)</td><td align='center'>11 (+0)</td><td align='center'>1 (-5)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -10364,7 +10365,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -10412,7 +10413,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>12 (+1)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10460,7 +10461,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>11 (+0)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>9 (-1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10509,7 +10510,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>14 (+2)</td><td align='center'>12 (+1)</td><td align='center'>1 (-5)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -10558,7 +10559,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10650,7 +10651,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10699,7 +10700,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>10 (+0)</td><td align='center'>15 (+2)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10747,7 +10748,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>10 (+0)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -10795,7 +10796,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>16 (+3)</td><td align='center'>10 (+0)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -10844,7 +10845,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>10 (+0)</td><td align='center'>15 (+2)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -10894,7 +10895,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>16 (+3)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -10943,7 +10944,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>12 (+1)</td><td align='center'>13 (+1)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -10995,7 +10996,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>12 (+1)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11051,7 +11052,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>15 (+2)</td><td align='center'>12 (+1)</td><td align='center'>8 (-1)</td><td align='center'>13 (+1)</td><td align='center'>10 (+0)</td></tr>
 </tbody></table></div></div>
@@ -11100,7 +11101,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>10 (+0)</td><td align='center'>18 (+4)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -11148,7 +11149,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>12 (+1)</td><td align='center'>16 (+3)</td><td align='center'>13 (+1)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11198,7 +11199,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11246,7 +11247,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11295,7 +11296,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td><td align='center'>14 (+2)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11345,7 +11346,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>12 (+1)</td><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>2 (-4)</td><td align='center'>9 (-1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11393,7 +11394,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>16 (+3)</td><td align='center'>10 (+0)</td><td align='center'>12 (+1)</td><td align='center'>2 (-4)</td><td align='center'>11 (+0)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11441,7 +11442,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11489,7 +11490,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11538,7 +11539,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>6 (-2)</td><td align='center'>14 (+2)</td><td align='center'>13 (+1)</td><td align='center'>4 (-3)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11588,7 +11589,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>12 (+1)</td><td align='center'>15 (+2)</td><td align='center'>12 (+1)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11637,7 +11638,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>16 (+3)</td><td align='center'>14 (+2)</td><td align='center'>14 (+2)</td><td align='center'>6 (-2)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11687,7 +11688,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11737,7 +11738,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11785,7 +11786,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>17 (+3)</td><td align='center'>11 (+0)</td><td align='center'>12 (+1)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11834,7 +11835,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>12 (+1)</td><td align='center'>15 (+2)</td><td align='center'>11 (+0)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11883,7 +11884,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>14 (+2)</td><td align='center'>13 (+1)</td><td align='center'>13 (+1)</td><td align='center'>1 (-5)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -11932,7 +11933,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>18 (+4)</td><td align='center'>12 (+1)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -11980,7 +11981,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>19 (+4)</td><td align='center'>10 (+0)</td><td align='center'>16 (+3)</td><td align='center'>2 (-4)</td><td align='center'>13 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -12030,7 +12031,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>15 (+2)</td><td align='center'>14 (+2)</td><td align='center'>4 (-3)</td><td align='center'>12 (+1)</td><td align='center'>6 (-2)</td></tr>
 </tbody></table></div></div>
@@ -12080,7 +12081,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>17 (+3)</td><td align='center'>15 (+2)</td><td align='center'>15 (+2)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -12129,7 +12130,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>16 (+3)</td><td align='center'>17 (+3)</td><td align='center'>13 (+1)</td><td align='center'>8 (-1)</td><td align='center'>14 (+2)</td><td align='center'>10 (+0)</td></tr>
 </tbody></table></div></div>
@@ -12179,7 +12180,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>16 (+3)</td><td align='center'>14 (+2)</td><td align='center'>14 (+2)</td><td align='center'>2 (-4)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -12227,7 +12228,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>17 (+3)</td><td align='center'>13 (+1)</td><td align='center'>13 (+1)</td><td align='center'>4 (-3)</td><td align='center'>10 (+0)</td><td align='center'>4 (-3)</td></tr>
 </tbody></table></div></div>
@@ -12278,7 +12279,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>13 (+1)</td><td align='center'>13 (+1)</td><td align='center'>2 (-4)</td><td align='center'>10 (+0)</td><td align='center'>3 (-4)</td></tr>
 </tbody></table></div></div>
@@ -12330,7 +12331,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>15 (+2)</td><td align='center'>10 (+0)</td><td align='center'>15 (+2)</td><td align='center'>6 (-2)</td><td align='center'>12 (+1)</td><td align='center'>7 (-2)</td></tr>
 </tbody></table></div></div>
@@ -12381,7 +12382,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>17 (+3)</td><td align='center'>15 (+2)</td><td align='center'>13 (+1)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>8 (-1)</td></tr>
 </tbody></table></div></div>
@@ -12433,7 +12434,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>17 (+3)</td><td align='center'>15 (+2)</td><td align='center'>14 (+2)</td><td align='center'>3 (-4)</td><td align='center'>12 (+1)</td><td align='center'>8 (-1)</td></tr>
 </tbody></table></div></div>
@@ -12631,7 +12632,7 @@
     <div class='p'>You can see and hear a particular creature you choose that is on the same plane of existence as you. The target must make a Wisdom saving throw, which is modified by how well you know the target and the sort of physical connection you have to it. If a target knows you're casting this spell, it can fail the saving throw voluntarily if it wants to be observed.</div>
 
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='left'>Knowledge</th><th align='center'>Save Modifier</th></tr>
+<tr><th align='left'><span class='col-title'>Knowledge</span></th><th align='center'><span class='col-title'>Save Modifier</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Secondhand (you have heard of the target)</td><td align='center'>+5</td></tr>
 <tr><td align='left'>Firsthand (you have met the target)</td><td align='center'>+0</td></tr>
@@ -12639,7 +12640,7 @@
 </tbody></table></div></div>
 
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='left'>Connection</th><th align='center'>Save Modifier</th></tr>
+<tr><th align='left'><span class='col-title'>Connection</span></th><th align='center'><span class='col-title'>Save Modifier</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Likeness or picture</td><td align='center'>-2</td></tr>
 <tr><td align='left'>Possession or garment</td><td align='center'>-4</td></tr>
@@ -14177,7 +14178,7 @@
     </div>
     
 <div class='tableAndCaption'><div class='tableWrapper'><table><thead>
-<tr><th align='center'><b>STR</b></th><th align='center'><b>DEX</b></th><th align='center'><b>CON</b></th><th align='center'><b>INT</b></th><th align='center'><b>WIS</b></th><th align='center'><b>CHA</b></th></tr>
+<tr><th align='center'><span class='col-title'><b>STR</b></span></th><th align='center'><span class='col-title'><b>DEX</b></span></th><th align='center'><span class='col-title'><b>CON</b></span></th><th align='center'><span class='col-title'><b>INT</b></span></th><th align='center'><span class='col-title'><b>WIS</b></span></th><th align='center'><span class='col-title'><b>CHA</b></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>13 (+1)</td><td align='center'>6 (-2)</td><td align='center'>16 (+3)</td><td align='center'>3 (-4)</td><td align='center'>6 (-2)</td><td align='center'>5 (-3)</td></tr>
 </tbody></table></div></div>

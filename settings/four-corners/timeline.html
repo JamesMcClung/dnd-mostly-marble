@@ -26,7 +26,7 @@
 
 
 <div class='tableAndCaption'><div class='tableWrapper'><table id="sortableTable1" class="sortableTable timeline"><thead>
-<tr><th align='center' onclick="sortTable(sortableTable1,0)">Date &#9660;</th><th align='left' onclick="sortTable(sortableTable1,1)">Location</th><th align='left' onclick="sortTable(sortableTable1,2)">Description</th></tr>
+<tr><th align='center' onclick="sortTable(sortableTable1,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,0,event)">S</button> <span class='col-title'>Date</span><input class='displaynone searchbar' id='searchbar1_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,0,searchbar1_0)"></input><span class='sorticon'> &#9660;</span></th><th align='left' onclick="sortTable(sortableTable1,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,1,event)">S</button> <span class='col-title'>Location</span><input class='displaynone searchbar' id='searchbar1_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,1,searchbar1_1)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,2,event)">S</button> <span class='col-title'>Description</span><input class='displaynone searchbar' id='searchbar1_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,2,searchbar1_2)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr id='200'><td align='center'>105</td><td align='left'>Gabroria</td><td align='left'>First group of <a href="races/salamander.html">salamanders</a> discovered.</td></tr>
 <tr id='100'><td align='center'>36</td><td align='left'>Ice Plains</td><td align='left'>Leviathan is bound at Ocean's End.</td></tr>
@@ -44,6 +44,7 @@
 </tbody></table></div></div>
 
 <script src='/js/sortTable.js'></script>
+<script src='/js/search.js'></script>
     </article>
 
     <footer>

@@ -28,7 +28,7 @@
 
 
 <div class='tableAndCaption'><span class='caption'>Feat Costs</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable1" class="sortableTable"><thead>
-<tr><th align='left' onclick="sortTable(sortableTable1,0)">Feat &#9660;</th><th align='center' onclick="sortTable(sortableTable1,1)">Cost</th><th align='left' onclick="sortTable(sortableTable1,2)">Prerequisites</th></tr>
+<tr><th align='left' onclick="sortTable(sortableTable1,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,0,event)">S</button> <span class='col-title'>Feat</span><input class='displaynone searchbar' id='searchbar1_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,0,searchbar1_0)"></input><span class='sorticon'> &#9660;</span></th><th align='center' onclick="sortTable(sortableTable1,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,1,event)">S</button> <span class='col-title'>Cost</span><input class='displaynone searchbar' id='searchbar1_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,1,searchbar1_1)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,2,event)">S</button> <span class='col-title'>Prerequisites</span><input class='displaynone searchbar' id='searchbar1_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,2,searchbar1_2)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='left'><span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">Actor</span></td><td align='center'>4</td><td align='left'></td></tr>
 <tr><td align='left'><span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">Air Genasi Magic</span></td><td align='center'>2</td><td align='left'>Genasi (air)</td></tr>
@@ -144,7 +144,7 @@
 <div class='p'>You can have a number of bonded beasts equal to your Intelligence modifier (minimum one). If a beast dies, its bond breaks, and you regain the ability to bond a new beast 1 week after its death.</div>
 
 <div class='tableAndCaption'><span class='caption'>Beast Spell</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>d100</th><th align='left'>Spell</th></tr>
+<tr><th align='center'><span class='col-title'>d100</span></th><th align='left'><span class='col-title'>Spell</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>01-06</td><td align='left'><span class="popupAnchor" id="anchor149" onclick="toggleDragEnabled(popup23, options={event:event})" onmouseover="showPopup(popup23, anchor149)" onmouseout="hidePopup(popup23)"><i>dancing lights</i></span></td></tr>
 <tr><td align='center'>07-12</td><td align='left'><span class="popupAnchor" id="anchor150" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor150)" onmouseout="hidePopup(popup24)"><i>druidcraft</i></span></td></tr>
@@ -194,7 +194,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Air Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor175" onclick="toggleDragEnabled(popup2, options={event:event})" onmouseover="showPopup(popup2, anchor175)" onmouseout="hidePopup(popup2)"><i>feather fall</i></span>, <span class="popupAnchor" id="anchor176" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor176)" onmouseout="hidePopup(popup3)"><i>zephyr strike</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor177" onclick="toggleDragEnabled(popup4, options={event:event})" onmouseover="showPopup(popup4, anchor177)" onmouseout="hidePopup(popup4)"><i>gust of wind</i></span>, <span class="popupAnchor" id="anchor178" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor178)" onmouseout="hidePopup(popup5)"><i>warding wind</i></span></td></tr>
@@ -212,7 +212,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Earth Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor185" onclick="toggleDragEnabled(popup57, options={event:event})" onmouseover="showPopup(popup57, anchor185)" onmouseout="hidePopup(popup57)"><i>catapult</i></span> (stone/earth only), <span class="popupAnchor" id="anchor186" onclick="toggleDragEnabled(popup58, options={event:event})" onmouseover="showPopup(popup58, anchor186)" onmouseout="hidePopup(popup58)"><i>earth tremor</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor187" onclick="toggleDragEnabled(popup59, options={event:event})" onmouseover="showPopup(popup59, anchor187)" onmouseout="hidePopup(popup59)"><i>Maximilian's earthen grasp</i></span>, <span class="popupAnchor" id="anchor188" onclick="toggleDragEnabled(popup44, options={event:event})" onmouseover="showPopup(popup44, anchor188)" onmouseout="hidePopup(popup44)"><i>spider climb</i></span> (self only, on stone/earth)</td></tr>
@@ -230,7 +230,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Fire Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor195" onclick="toggleDragEnabled(popup70, options={event:event})" onmouseover="showPopup(popup70, anchor195)" onmouseout="hidePopup(popup70)"><i>burning hands</i></span>, <span class="popupAnchor" id="anchor196" onclick="toggleDragEnabled(popup71, options={event:event})" onmouseover="showPopup(popup71, anchor196)" onmouseout="hidePopup(popup71)"><i>searing smite</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor197" onclick="toggleDragEnabled(popup72, options={event:event})" onmouseover="showPopup(popup72, anchor197)" onmouseout="hidePopup(popup72)"><i>Aganazzar's scorcher</i></span>, <span class="popupAnchor" id="anchor198" onclick="toggleDragEnabled(popup73, options={event:event})" onmouseover="showPopup(popup73, anchor198)" onmouseout="hidePopup(popup73)"><i>flame blade</i></span></td></tr>
@@ -248,7 +248,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Water Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor205" onclick="toggleDragEnabled(popup133, options={event:event})" onmouseover="showPopup(popup133, anchor205)" onmouseout="hidePopup(popup133)"><i>fog cloud</i></span>, <span class="popupAnchor" id="anchor206" onclick="toggleDragEnabled(popup134, options={event:event})" onmouseover="showPopup(popup134, anchor206)" onmouseout="hidePopup(popup134)"><i>ice knife</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor207" onclick="toggleDragEnabled(popup135, options={event:event})" onmouseover="showPopup(popup135, anchor207)" onmouseout="hidePopup(popup135)"><i>lesser restoration</i></span>, <span class="popupAnchor" id="anchor208" onclick="toggleDragEnabled(popup136, options={event:event})" onmouseover="showPopup(popup136, anchor208)" onmouseout="hidePopup(popup136)"><i>Rime's binding ice</i></span></td></tr>
@@ -333,6 +333,7 @@
     <div class='p'>You are unusually bulky. You count as one size larger than your actual size for the purpose of <span class="popupAnchor" id="anchor219" onclick="toggleDragEnabled(popup106, options={event:event})" onmouseover="showPopup(popup106, anchor219)" onmouseout="hidePopup(popup106)">grappling</span>, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
 </div></div>
 <script src='/js/sortTable.js'></script>
+<script src='/js/search.js'></script>
 <div class="popup" id="popup0">
     <div class="popupHeader">
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
@@ -823,7 +824,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Air Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup2, options={event:event})" onmouseover="showPopup(popup2, anchor2)" onmouseout="hidePopup(popup2)"><i>feather fall</i></span>, <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor3)" onmouseout="hidePopup(popup3)"><i>zephyr strike</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor4" onclick="toggleDragEnabled(popup4, options={event:event})" onmouseover="showPopup(popup4, anchor4)" onmouseout="hidePopup(popup4)"><i>gust of wind</i></span>, <span class="popupAnchor" id="anchor5" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor5)" onmouseout="hidePopup(popup5)"><i>warding wind</i></span></td></tr>
@@ -2311,7 +2312,7 @@
 <div class='p'>You can have a number of bonded beasts equal to your Intelligence modifier (minimum one). If a beast dies, its bond breaks, and you regain the ability to bond a new beast 1 week after its death.</div>
 
 <div class='tableAndCaption'><span class='caption'>Beast Spell</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>d100</th><th align='left'>Spell</th></tr>
+<tr><th align='center'><span class='col-title'>d100</span></th><th align='left'><span class='col-title'>Spell</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>01-06</td><td align='left'><span class="popupAnchor" id="anchor23" onclick="toggleDragEnabled(popup23, options={event:event})" onmouseover="showPopup(popup23, anchor23)" onmouseout="hidePopup(popup23)"><i>dancing lights</i></span></td></tr>
 <tr><td align='center'>07-12</td><td align='left'><span class="popupAnchor" id="anchor24" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor24)" onmouseout="hidePopup(popup24)"><i>druidcraft</i></span></td></tr>
@@ -2928,7 +2929,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Earth Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor58" onclick="toggleDragEnabled(popup57, options={event:event})" onmouseover="showPopup(popup57, anchor58)" onmouseout="hidePopup(popup57)"><i>catapult</i></span> (stone/earth only), <span class="popupAnchor" id="anchor59" onclick="toggleDragEnabled(popup58, options={event:event})" onmouseover="showPopup(popup58, anchor59)" onmouseout="hidePopup(popup58)"><i>earth tremor</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor60" onclick="toggleDragEnabled(popup59, options={event:event})" onmouseover="showPopup(popup59, anchor60)" onmouseout="hidePopup(popup59)"><i>Maximilian's earthen grasp</i></span>, <span class="popupAnchor" id="anchor61" onclick="toggleDragEnabled(popup44, options={event:event})" onmouseover="showPopup(popup44, anchor61)" onmouseout="hidePopup(popup44)"><i>spider climb</i></span> (self only, on stone/earth)</td></tr>
@@ -3456,7 +3457,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Fire Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor72" onclick="toggleDragEnabled(popup70, options={event:event})" onmouseover="showPopup(popup70, anchor72)" onmouseout="hidePopup(popup70)"><i>burning hands</i></span>, <span class="popupAnchor" id="anchor73" onclick="toggleDragEnabled(popup71, options={event:event})" onmouseover="showPopup(popup71, anchor73)" onmouseout="hidePopup(popup71)"><i>searing smite</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor74" onclick="toggleDragEnabled(popup72, options={event:event})" onmouseover="showPopup(popup72, anchor74)" onmouseout="hidePopup(popup72)"><i>Aganazzar's scorcher</i></span>, <span class="popupAnchor" id="anchor75" onclick="toggleDragEnabled(popup73, options={event:event})" onmouseover="showPopup(popup73, anchor75)" onmouseout="hidePopup(popup73)"><i>flame blade</i></span></td></tr>
@@ -5026,7 +5027,7 @@
 <div class='p'>To qualify for a spell, your level must be at least as high as the level shown in the table, and you must already know at least one spell from each lower level.</div>
 
 <div class='tableAndCaption'><span class='caption'>Water Genasi Spells</span><div class='tableWrapper'><table><thead>
-<tr><th align='center'>Level</th><th align='left'>Spell Options</th></tr>
+<tr><th align='center'><span class='col-title'>Level</span></th><th align='left'><span class='col-title'>Spell Options</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>3</td><td align='left'><span class="popupAnchor" id="anchor137" onclick="toggleDragEnabled(popup133, options={event:event})" onmouseover="showPopup(popup133, anchor137)" onmouseout="hidePopup(popup133)"><i>fog cloud</i></span>, <span class="popupAnchor" id="anchor138" onclick="toggleDragEnabled(popup134, options={event:event})" onmouseover="showPopup(popup134, anchor138)" onmouseout="hidePopup(popup134)"><i>ice knife</i></span></td></tr>
 <tr><td align='center'>5</td><td align='left'><span class="popupAnchor" id="anchor139" onclick="toggleDragEnabled(popup135, options={event:event})" onmouseover="showPopup(popup135, anchor139)" onmouseout="hidePopup(popup135)"><i>lesser restoration</i></span>, <span class="popupAnchor" id="anchor140" onclick="toggleDragEnabled(popup136, options={event:event})" onmouseover="showPopup(popup136, anchor140)" onmouseout="hidePopup(popup136)"><i>Rime's binding ice</i></span></td></tr>
