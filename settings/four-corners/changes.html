@@ -24,6 +24,66 @@
     <article>
         <h1 id="changes">Changes</h1>
 
+<h2 id="v190">v1.9.0</h2>
+<div class='p'>Mirrored several changes from <a href="https://rezia.dndreference.com/changes">Rezia</a> versions 0.15.1-3 (Felling Blow, Provoke, Taunt, Frighten, taunted).</div>
+
+<div class='p'>Game:</div>
+<ul><li><a href="glossary.html#actions">Actions</a>:
+<ul><li>Added Taunt and Frighten actions, which apply taunted and frightened conditions
+</li></ul>
+</li><li><a href="glossary.html#conditions">Conditions</a>: formally added taunted, which makes you want to attack a particular creature
+</li><li><a href="glossary.html#special-attacks">Attacks</a>:
+<ul><li>Moved unarmed attacks to glossary; removed "attacks" page
+</li><li>Grapple attack doesn't allow an up-front saving throw anymore
+</li></ul>
+</li><li>Fighter <a href="classes/fighter.html#maneuvers">maneuvers</a>:
+<ul><li>Tweaked Grappling Strike to work with new grapple. Just add maneuver die to attack roll.
+</li><li>Replace Great Weapon Fighting's Brace maneuver with new Felling Blow maneuver, which gives extra attack if target is killed
+</li><li>Added Provoke maneuver, a mass taunt that can give temp hp
+</li></ul>
+</li><li><a href="feats.html">Feats</a>: removed Great Weapon Master and Sharpshooter
+<ul><li>The extra damage and ignoring all downsides to ranged attacks were fundamentally broken, but GWM's extra attack lives on as the Felling Blow maneuver
+</li></ul>
+</li><li><a href="classes/ranger.html">Ranger</a> changes, again:
+<ul><li>Moved advantage on Perception checks from Hunter's Mark to Favored Enemy
+</li><li>Hunter's Mark:
+<ul><li>Your quarry now counts as one of your favored enemies
+</li><li>Damage scales with level, from d4 to d10
+</li><li>Free reuse you see your quarry die, but no longer free against your favored enemies
+</li><li>Ends when you finish a long rest
+</li></ul>
+</li><li>Spellcasting: made prepared spellcaster. Gives ~3 extra spells per level.
+</li><li>Can't change favored enemy/terrain until level 4, with new Adaptable feature
+<ul><li>You only need to study a new option the first time you choose it
+</li></ul>
+</li><li>Replaced Vanish (Hide as bonus action, and good at hiding in favored terrain) with Nature's Assurance: add Wisdom mod to concentration saves, or auto succeed in your favored terrain
+</li><li>Feral Senses: require you to at least be able to smell, hear, or see
+</li><li>Foe Slayer: instead of +1d10 damage to favored enemies, gives advantage on attacks vs. your quarry and any favored foe in your favored terrain. Becomes triple advantage if you already had advantage.
+</li><li>Hunter subclass:
+<ul><li>Renamed to Wild Hunter
+</li><li>Added Hunter spells
+</li><li>Master Tracker: also allows you to swap your initiative with quarry
+</li><li>Hunter's Pursuit: instead of giving weird opportunity attack, gives advantage on next attack and add Hunter's Mark die to damage against any creature that moves away from you
+</li><li>Hunter's Insight: moved to Monster Slayer, replaced with Hindering Strikes which makes Hunter's Mark die reduce target's speed
+</li><li>Reacquire Target: made moot by Hunter's Mark changes, replaced with Relentless Tactics which lets you add Hunter's Mark die to damage vs slower creatures
+</li><li>Singular Quarry: used to reduce damage from nonquarry, replaced by Hunter's Senses and Apex Predator
+<ul><li>Hunter's Senses: always know where quarry is within 90 feet of you
+</li><li>Apex Predator: favored enemies can't crit you or have advantage on attacks against you
+</li></ul>
+</li></ul>
+</li><li>Added subclasses: Monster Slayer, Horizon Walker, Primeval Guardian
+</li></ul>
+</li></ul>
+
+
+<div class='p'>Website:</div>
+<ul><li>Table search features:
+<ul><li>Start search with "$" to search within popups (e.g. "$fire damage"). Implemented in a hacky way with some weird behavior.
+</li><li>Press escape to close searchbar
+</li><li>Pressing button automatically focuses searchbar
+</li></ul>
+</li></ul>
+
 <h2 id="v184">v1.8.4</h2>
 <div class='p'>Website:</div>
 <ul><li>Dark mode improvements
@@ -193,7 +253,7 @@
 </li><li>Added <a href="feats.html#powerful-build">Powerful Build</a> as feat
 <ul><li>Also reworded Powerful Build to reflect new grapple changes
 </li></ul>
-</li><li><a href="rules/attacking.html#unarmed-attack">Unarmed attack</a> DCs are now determined by passive Athletics
+</li><li><a href="glossary.html#special-attacks">Unarmed attack</a> DCs are now determined by passive Athletics
 </li></ul>
 
 <h2 id="v154">v1.5.4</h2>
@@ -215,7 +275,7 @@
 <ul><li>Rework/simplify grappling
 </li><li>Add slowed condition, for future use
 </li></ul>
-</li><li><a href="rules/attacking.html#unarmed-attack">Unarmed attack</a> DCs are now an Athletics check instead of static 8 + prof + Str
+</li><li><a href="glossary.html#special-attacks">Unarmed attack</a> DCs are now an Athletics check instead of static 8 + prof + Str
 </li></ul>
 
 <div class='p'>Lore:</div>
@@ -255,7 +315,7 @@
 </li><li>Define "<a href="rules.html#adjacent">adjacent</a>", though it isn't used anywhere yet
 </li><li>Add <a href="rules.html#flanking">flanking</a>
 </li><li>Replace Charger feat with <a href="rules.html#charging">charge action</a>
-</li><li>Tentative rework of <a href="rules/attacking.html#unarmed-attacks">unarmed attacks</a> and <a href="glossary.html#grappling">grappling</a>
+</li><li>Tentative rework of <a href="glossary.html#special-attacks">unarmed attacks</a> and <a href="glossary.html#grappling">grappling</a>
 </li></ul>
 </li><li><a href="races/orc.html">Orc</a> rebalancing:
 <ul><li>Protective Instincts temp hp: 5 + level -> 1d8 + Con mod

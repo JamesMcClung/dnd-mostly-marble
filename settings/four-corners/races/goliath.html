@@ -90,6 +90,44 @@
 </li><li>When you use a rock as an improvised thrown weapon, its damage die is a d8 instead of a d4.
 </li></ul>
 </div>
+<div class="popup" id="popup2">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2, options={event:event})">&times;</div>
+        </div>grapple
+    </div>
+    <div class="popupContent">
+        
+    <div class="small-card">
+        <h1 class="noHeaderID">Grapple</h1>
+        <div class="p card-subheader"><em>Melee weapon attack</em></div>
+        <div class='p'>You attempt to grab an opponent with a free hand. On a hit, the target is <span class="popupAnchor" id="anchor4" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor4)" onmouseout="hidePopup(popup1)">grappled</span> by you, with you as the <span class="popupAnchor" id="anchor5" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor5)" onmouseout="hidePopup(popup0)">grappling</span> creature. The escape DC is equal to your passive Athletics score.</div>
+    </div>
+    </div>
+</div>
+
+<div class="popup" id="popup3">
+    <div class="popupHeader">
+        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup3, options={event:event})">&#9675;</div>
+            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup3, options={event:event})">&times;</div>
+        </div>attack
+    </div>
+    <div class="popupContent">
+        
+    <div class="small-card">
+        <h1 class="noHeaderID">Attack</h1>
+        
+        <div class='p'>When you take the Attack action, you make one weapon attack. See the <a href="/settings/four-corners/glossary.html#special-attacks">special attacks</a> section for additional options.</div>
+
+<div class='p'>You can equip or unequip one weapon before or after each attack you make as part of this action, even if the attack is unarmed.</div>
+
+<div class='p'>If you move on your turn, you can use some or all of that movement to move between the attacks of this action if you have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action.</div>
+    </div>
+    </div>
+</div>
+
 <div class="popup" id="popup1">
     <div class="popupHeader">
         <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
@@ -101,6 +139,7 @@
         
     <div class="small-card">
         <h1 class="noHeaderID">Grappled</h1>
+        
         <div class='p'>While you are grappled by another creature (the <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">grappling</span> creature), you experience the following effects:</div>
 
 <ul><li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.
@@ -108,7 +147,9 @@
 </li><li>When you move on your turn, you drag the grappling creature with you.
 </li></ul>
 
-<div class='p'>As an action, you can repeat the saving throw against the grapple, ending the grapple on a success.</div>
+<div class='p'>As an action, you can make a saving throw against the grapple, ending the grapple on a success.</div>
+
+<div class='p'>This condition can be commonly applied via the <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup2, options={event:event})" onmouseover="showPopup(popup2, anchor3)" onmouseout="hidePopup(popup2)">grapple</span> special <span class="popupAnchor" id="anchor6" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor6)" onmouseout="hidePopup(popup3)">attack</span>.</div>
     </div>
     </div>
 </div>
@@ -124,6 +165,7 @@
         
     <div class="small-card">
         <h1 class="noHeaderID">Grappling</h1>
+        
         <div class='p'>While you are grappling another creature (the <span class="popupAnchor" id="anchor1" onclick="toggleDragEnabled(popup1, options={event:event})" onmouseover="showPopup(popup1, anchor1)" onmouseout="hidePopup(popup1)">grappled</span> creature), you experience the following effects:</div>
 
 <ul><li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.
@@ -131,7 +173,9 @@
 </li><li>When you move on your turn, you drag the grappled creature with you.
 </li></ul>
 
-<div class='p'>You can end the grapple at any time, no action required. The grapple also ends if you become incapacitated or if the grappled creature is no longer in your reach.</div>
+<div class='p'>You can end the grapple at any time, no action required. The grapple also ends if you become incapacitated or if the grappled creature is no longer within your reach.</div>
+
+<div class='p'>This condition is commonly acquired via the <span class="popupAnchor" id="anchor7" onclick="toggleDragEnabled(popup2, options={event:event})" onmouseover="showPopup(popup2, anchor7)" onmouseout="hidePopup(popup2)">grapple</span> special <span class="popupAnchor" id="anchor8" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor8)" onmouseout="hidePopup(popup3)">attack</span>.</div>
     </div>
     </div>
 </div>
