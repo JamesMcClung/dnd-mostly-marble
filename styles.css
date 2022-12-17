@@ -7,9 +7,11 @@
   --dark-bg: #333333;
   --dark-bg-hover: #111111;
   --dark-bg-text: #eeeeee;
-  --light-bg: #efefef;
+  --light-bg1: #efefef;
+  --light-bg2: #f8f8f8;
   --light-border: #aaaaaa;
   --card-bg: #f8f8f8;
+  --blockquote-bg: #efefef;
   --card-hr: #d3d3d3;
   --spell-subtitle: #808080;
   --box-shadow-1: rgba(0, 0, 0, 0.2);
@@ -29,9 +31,11 @@
   --dark-bg: #333;
   --dark-bg-hover: #444;
   --dark-bg-text: #bbbbbb;
-  --light-bg: #1f1f1f;
+  --light-bg1: #202020;
+  --light-bg2: #1a1a1a;
   --light-border: #666666;
   --card-bg: #1f1f1f;
+  --blockquote-bg: #252525;
   --card-hr: #2c2c2c;
   --spell-subtitle: #7f7f7f;
   --box-shadow-1: rgba(0, 0, 0, 0.2);
@@ -138,7 +142,7 @@ details > summary:hover {
 }
 h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
-  margin-bottom: -10px;
+  margin-bottom: -8px;
 }
 h1,
 h2,
@@ -194,10 +198,10 @@ a:visited {
   color: var(--dark-bg-text);
 }
 .tableAndCaption .tableWrapper table tr:nth-child(even) {
-  background-color: var(--light-bg);
+  background-color: var(--light-bg1);
 }
 .tableAndCaption .tableWrapper table tr:nth-child(odd) {
-  background-color: var(--default-bg);
+  background-color: var(--light-bg2);
 }
 .tableAndCaption .caption {
   font: 16px Arial, Geneva, Helvetica, sans-serif;
@@ -259,6 +263,7 @@ a:visited {
   box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 1em;
   break-inside: avoid;
+  display: inline-block;
 }
 .card hr {
   margin: 0px;
@@ -275,6 +280,7 @@ a:visited {
   box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 1em;
   break-inside: avoid;
+  display: inline-block;
   max-width: 550px;
 }
 .small-card hr {
@@ -309,6 +315,7 @@ a:visited {
   box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 1em;
   break-inside: avoid;
+  display: inline-block;
   max-width: 550px;
   max-width: 800px;
 }
@@ -347,6 +354,7 @@ a:visited {
   box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   padding: 1em;
   break-inside: avoid;
+  display: inline-block;
   max-width: 1100px;
 }
 .big-card hr {
@@ -475,10 +483,14 @@ del,
   background-color: var(--del) !important;
 }
 blockquote {
-  background: var(--card-bg);
+  background: var(--blockquote-bg);
   border-left: 10px solid var(--light-border);
-  margin: 1.5em 10px;
-  padding: 0.1em 10px;
+  margin: 10px;
+  padding: 0 10px;
+  display: inline-block;
+}
+blockquote h4 {
+  margin-top: 10px;
 }
 .tooltipWrapper:hover > .tooltip,
 .tooltipWrapper:active > .tooltip {
