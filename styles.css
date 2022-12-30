@@ -21,6 +21,7 @@
   --concentration-tag: #e23225;
   --ritual-tag: #4668ff;
   --del: #f08080;
+  --tooltip-fill: #b3eaff;
   --link: #2668cf;
   --link-visited: #a35cd7;
   color-scheme: light;
@@ -45,6 +46,7 @@
   --concentration-tag: #d22215;
   --ritual-tag: #3658df;
   --del: #783030;
+  --tooltip-fill: #126a84;
   --link: #50a0cd;
   --link-visited: #aa78cd;
   color-scheme: dark;
@@ -494,12 +496,19 @@ blockquote h4 {
 }
 .tooltipWrapper:hover > .tooltip,
 .tooltipWrapper:active > .tooltip {
-  display: block;
+  display: inline-block;
+}
+.tooltipAnchor {
+  background-color: var(--tooltip-fill);
+  border-radius: 3px;
+  padding: 1px 2px;
+  cursor: help;
 }
 .tooltip {
   border-radius: 6px;
   padding: 0.4em 0.7em;
   background-color: var(--card-bg);
+  border: 1px solid var(--default-text);
   box-shadow: 0 4px 8px 0 var(--box-shadow-1), 0 6px 20px 0 var(--box-shadow-2);
   cursor: auto;
   position: absolute;
