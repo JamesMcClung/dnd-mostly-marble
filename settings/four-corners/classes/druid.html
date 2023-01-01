@@ -28,7 +28,7 @@
 <div class="big-card">
     <h1 id="druid">Druid</h1>
     <div class='p source-subheader'>Source: Player's Handbook, Tasha's Cauldron of Everything, Four Corners</div>
-    <div class='tableAndCaption'><span class='caption'>The Druid</span><div class='tableWrapper'><table><thead>
+    <div class='tableAndCaption'><span class='caption' id='the-druid'>The Druid</span><div class='tableWrapper'><table><thead>
 <tr><th align='center'><span class='col-title'>Level</span></th><th align='center'><span class='col-title'>Proficiency Bonus</span></th><th align='left'><span class='col-title'>Features</span></th><th align='center'><span class='col-title'>Cantrips Known</span></th><th align='center'><span class='col-title'>1st</span></th><th align='center'><span class='col-title'>2nd</span></th><th align='center'><span class='col-title'>3rd</span></th><th align='center'><span class='col-title'>4th</span></th><th align='center'><span class='col-title'>5th</span></th><th align='center'><span class='col-title'>6th</span></th><th align='center'><span class='col-title'>7th</span></th><th align='center'><span class='col-title'>8th</span></th><th align='center'><span class='col-title'>9th</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1st</td><td align='center'>+2</td><td align='left'>Druidic, Spellcasting</td><td align='center'>2</td><td align='center'>2</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td><td align='center'>—</td></tr>
@@ -117,7 +117,7 @@
 <div class='p'><b><i>Spellcasting Focus.</i></b> You can use a druidic focus as a spellcasting focus for your druid spells.</div>
 
 
-<div class='tableAndCaption'><span class='caption'>Druid Spells</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable1" class="sortableTable"><thead>
+<div class='tableAndCaption'><span class='caption' id='druid-spells'>Druid Spells</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable1" class="sortableTable"><thead>
 <tr><th align='center' onclick="sortTable(sortableTable1,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,0,event)">S</button> <span class='col-title'>Level</span><input class='displaynone searchbar' id='searchbar1_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,0,searchbar1_0,event)"></input><span class='sorticon'> &#9660;</span></th><th align='left' onclick="sortTable(sortableTable1,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,1,event)">S</button> <span class='col-title'>Name</span><input class='displaynone searchbar' id='searchbar1_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,1,searchbar1_1,event)"></input><span class='sorticon'></span></th><th align='center' onclick="sortTable(sortableTable1,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,2,event)">S</button> <span class='col-title'>Ritual</span><input class='displaynone searchbar' id='searchbar1_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,2,searchbar1_2,event)"></input><span class='sorticon'></span></th><th align='center' onclick="sortTable(sortableTable1,3)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,3,event)">S</button> <span class='col-title'>Concentration</span><input class='displaynone searchbar' id='searchbar1_3' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,3,searchbar1_3,event)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,4)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,4,event)">S</button> <span class='col-title'>School</span><input class='displaynone searchbar' id='searchbar1_4' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,4,searchbar1_4,event)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable1,5)"><button class='searchbutton' onclick="toggleSearch(sortableTable1,5,event)">S</button> <span class='col-title'>Domain</span><input class='displaynone searchbar' id='searchbar1_5' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable1,5,searchbar1_5,event)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>Cantrip</td><td align='left'><span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">Control Flames</span></td><td align='center'></td><td align='center'></td><td align='left'>Transmutation</td><td align='left'></td></tr>
@@ -305,7 +305,7 @@
 
 <div class='p'>Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn't have a flying or a swimming speed.</div>
 
-<div class='tableAndCaption'><span class='caption'>Beast Shapes</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='beast-shapes'>Beast Shapes</span><div class='tableWrapper'><table><thead>
 <tr><th align='center'><span class='col-title'>Level</span></th><th align='center'><span class='col-title'>Max. CR</span></th><th align='left'><span class='col-title'>Limitations</span></th><th align='left'><span class='col-title'>Example</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>2nd</td><td align='center'>1/4</td><td align='left'>No flying or swimming speed</td><td align='left'>Wolf</td></tr>
@@ -322,7 +322,7 @@
 </li></ul>
 
 
-<div class='tableAndCaption'><span class='caption'>Beasts</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable2" class="sortableTable"><thead>
+<div class='tableAndCaption'><span class='caption' id='beasts'>Beasts</span><div class='tableWrapper scrollableTableWrapper'><table id="sortableTable2" class="sortableTable"><thead>
 <tr><th align='center' onclick="sortTable(sortableTable2,0)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,0,event)">S</button> <span class='col-title'>CR</span><input class='displaynone searchbar' id='searchbar2_0' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,0,searchbar2_0,event)"></input><span class='sorticon'> &#9660;</span></th><th align='left' onclick="sortTable(sortableTable2,1)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,1,event)">S</button> <span class='col-title'>Name</span><input class='displaynone searchbar' id='searchbar2_1' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,1,searchbar2_1,event)"></input><span class='sorticon'></span></th><th align='left' onclick="sortTable(sortableTable2,2)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,2,event)">S</button> <span class='col-title'>Size</span><input class='displaynone searchbar' id='searchbar2_2' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,2,searchbar2_2,event)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,3)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,3,event)">S</button> <span class='col-title'>HP</span><input class='displaynone searchbar' id='searchbar2_3' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,3,searchbar2_3,event)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,4)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,4,event)">S</button> <span class='col-title'>AC</span><input class='displaynone searchbar' id='searchbar2_4' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,4,searchbar2_4,event)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,5)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,5,event)">S</button> <span class='col-title'>Speed</span><input class='displaynone searchbar' id='searchbar2_5' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,5,searchbar2_5,event)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,6)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,6,event)">S</button> <span class='col-title'>Swim</span><input class='displaynone searchbar' id='searchbar2_6' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,6,searchbar2_6,event)"></input><span class='sorticon'></span></th><th align='right' onclick="sortTable(sortableTable2,7)"><button class='searchbutton' onclick="toggleSearch(sortableTable2,7,event)">S</button> <span class='col-title'>Fly</span><input class='displaynone searchbar' id='searchbar2_7' autocomplete="off" onclick="consumeEvent(event)" onkeyup="updateFilter(sortableTable2,7,searchbar2_7,event)"></input><span class='sorticon'></span></th></tr>
 </thead><tbody>
 <tr><td align='center'>0</td><td align='left'><span class="popupAnchor" id="anchor182" onclick="toggleDragEnabled(popup176, options={event:event})" onmouseover="showPopup(popup176, anchor182)" onmouseout="hidePopup(popup176)">Baboon</span></td><td align='left'>Small</td><td align='right'>3</td><td align='right'>12</td><td align='right'>30</td><td align='right'></td><td align='right'></td></tr>
@@ -445,7 +445,7 @@
 
 <div class='p'>You can cast one of your regional spells once without expending a spell slot. Once you do so, you cannot cast a regional spell in this way again until you finish a long rest.</div>
 
-<div class='tableAndCaption'><span class='caption'>Regional Spells</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='regional-spells'>Regional Spells</span><div class='tableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Biome</span></th><th align='left'><span class='col-title'>2nd-Level Druid</span></th><th align='left'><span class='col-title'>3rd-Level Druid</span></th><th align='left'><span class='col-title'>5th-Level Druid</span></th><th align='left'><span class='col-title'>7th-Level Druid</span></th><th align='left'><span class='col-title'>9th-Level Druid</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Arctic</td><td align='left'><span class="popupAnchor" id="anchor263" onclick="toggleDragEnabled(popup253, options={event:event})" onmouseover="showPopup(popup253, anchor263)" onmouseout="hidePopup(popup253)"><i>armor of Agathys</i></span></td><td align='left'><span class="popupAnchor" id="anchor264" onclick="toggleDragEnabled(popup254, options={event:event})" onmouseover="showPopup(popup254, anchor264)" onmouseout="hidePopup(popup254)"><i>Rime's binding ice</i></span></td><td align='left'><span class="popupAnchor" id="anchor265" onclick="toggleDragEnabled(popup80, options={event:event})" onmouseover="showPopup(popup80, anchor265)" onmouseout="hidePopup(popup80)"><i>sleet storm</i></span></td><td align='left'><span class="popupAnchor" id="anchor266" onclick="toggleDragEnabled(popup108, options={event:event})" onmouseover="showPopup(popup108, anchor266)" onmouseout="hidePopup(popup108)"><i>ice storm</i></span></td><td align='left'><span class="popupAnchor" id="anchor267" onclick="toggleDragEnabled(popup121, options={event:event})" onmouseover="showPopup(popup121, anchor267)" onmouseout="hidePopup(popup121)"><i>cone of cold</i></span></td></tr>
@@ -484,7 +484,7 @@
 
 <div class='p'>Some or all of these planes may not exist in your world, and there may be other planes not listed below. In all cases, your DM decides which set of regional spells applies to a given plane. For example, in the Forgotten Realms, the fifth layer of the Nine Hells is frozen over; therefore, your DM might rule that its associated set of regional spells is the Arctic set.</div>
 
-<div class='tableAndCaption'><span class='caption'>Planar Spells</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='planar-spells'>Planar Spells</span><div class='tableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Plane</span></th><th align='left'><span class='col-title'>2nd-Level Druid</span></th><th align='left'><span class='col-title'>3rd-Level Druid</span></th><th align='left'><span class='col-title'>5th-Level Druid</span></th><th align='left'><span class='col-title'>7th-Level Druid</span></th><th align='left'><span class='col-title'>9th-Level Druid</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Astral Sea</td><td align='left'><span class="popupAnchor" id="anchor315" onclick="toggleDragEnabled(popup271, options={event:event})" onmouseover="showPopup(popup271, anchor315)" onmouseout="hidePopup(popup271)"><i>bless</i></span></td><td align='left'><span class="popupAnchor" id="anchor316" onclick="toggleDragEnabled(popup56, options={event:event})" onmouseover="showPopup(popup56, anchor316)" onmouseout="hidePopup(popup56)"><i>lesser restoration</i></span></td><td align='left'><span class="popupAnchor" id="anchor317" onclick="toggleDragEnabled(popup272, options={event:event})" onmouseover="showPopup(popup272, anchor317)" onmouseout="hidePopup(popup272)"><i>remove curse</i></span></td><td align='left'><span class="popupAnchor" id="anchor318" onclick="toggleDragEnabled(popup95, options={event:event})" onmouseover="showPopup(popup95, anchor318)" onmouseout="hidePopup(popup95)"><i>divination</i></span></td><td align='left'><span class="popupAnchor" id="anchor319" onclick="toggleDragEnabled(popup273, options={event:event})" onmouseover="showPopup(popup273, anchor319)" onmouseout="hidePopup(popup273)"><i>flame strike</i></span></td></tr>
@@ -5556,13 +5556,13 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Transformed</h1>
-        
-        <div class='p'>While transformed into a creature, you experience the following effects:</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Transformed</h1>
+    
+    <div class='p'>While transformed into a creature, you experience the following effects:</div>
 
 <ul><li>Your game statistics are replaced by the statistics of the creature, including hit points, Hit Dice, and mental ability scores. You retain your alignment and personality. If the creature has any legendary or lair actions, you can't use them.
-</li><li>You are limited in the actions you can perform by the nature of your new form. You can't speak, cast spells, or take any other action that requires hands or speech, unless your new form is capable of such actions. Transforming doesn't break your concentration on a spell you've already cast, however, nor prevent you from taking actions that are part of a spell that you've already cast.
+</li><li>You are limited in the actions you can perform by the nature of your new form. You can't speak, cast spells, or take any other action that requires hands or speech, unless your new form is capable of such actions. Transforming doesn't break your <a href="/settings/four-corners/glossary.html#concentration">concentration</a> on a spell you've already cast, however, nor prevent you from taking actions that are part of a spell that you've already cast.
 </li><li>Your equipment melds into your new form and has no effect.
 </li></ul>
 
@@ -5574,7 +5574,7 @@
 </li></ul>
 
 <div class='p'>No matter what you were transformed into, the transformation ends if you die, drop to 0 hit points, or are transformed again. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</div>
-    </div>
+</div>
     </div>
 </div>
 
@@ -8220,7 +8220,7 @@
 
 <div class='p'>When you change the weather conditions, find a current condition on the following tables and change its stage by one, up or down. When changing the wind, you can change its direction.</div>
 
-<div class='tableAndCaption'><span class='caption'>Precipitation</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='precipitation'>Precipitation</span><div class='tableWrapper'><table><thead>
 <tr><th align='center'><span class='col-title'>Stage</span></th><th align='left'><span class='col-title'>Condition</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>Clear</td></tr>
@@ -8230,7 +8230,7 @@
 <tr><td align='center'>5</td><td align='left'>Torrential rain, driving hail, or blizzard</td></tr>
 </tbody></table></div></div>
 
-<div class='tableAndCaption'><span class='caption'>Temperature</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='temperature'>Temperature</span><div class='tableWrapper'><table><thead>
 <tr><th align='center'><span class='col-title'>Stage</span></th><th align='left'><span class='col-title'>Condition</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>Unbearable heat</td></tr>
@@ -8241,7 +8241,7 @@
 <tr><td align='center'>6</td><td align='left'>Arctic cold</td></tr>
 </tbody></table></div></div>
 
-<div class='tableAndCaption'><span class='caption'>Wind</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='wind'>Wind</span><div class='tableWrapper'><table><thead>
 <tr><th align='center'><span class='col-title'>Stage</span></th><th align='left'><span class='col-title'>Condition</span></th></tr>
 </thead><tbody>
 <tr><td align='center'>1</td><td align='left'>Calm</td></tr>

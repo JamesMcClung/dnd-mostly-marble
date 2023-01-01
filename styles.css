@@ -150,7 +150,8 @@ h1,
 h2,
 h3,
 h4,
-details {
+details,
+.caption {
   scroll-margin-top: 55px;
 }
 a {

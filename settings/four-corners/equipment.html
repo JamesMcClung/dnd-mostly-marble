@@ -27,7 +27,7 @@
 <h2 id="weapons">Weapons</h2>
 
 
-<div class='tableAndCaption'><span class='caption'>Weapons</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='weapons'>Weapons</span><div class='tableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Name</span></th><th align='right'><span class='col-title'>Cost</span></th><th align='left'><span class='col-title'>Damage</span></th><th align='right'><span class='col-title'>Weight</span></th><th align='left'><span class='col-title'>Properties</span></th></tr>
 </thead><tbody>
 <tr><td align='left'><i>Simple Melee Weapons</i></td><td align='right'></td><td align='left'></td><td align='right'></td><td align='left'></td></tr>
@@ -95,7 +95,7 @@
 <h2 id="armor-and-shields">Armor and Shields</h2>
 
 
-<div class='tableAndCaption'><span class='caption'>Armor</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='armor'>Armor</span><div class='tableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Name</span></th><th align='right'><span class='col-title'>Cost</span></th><th align='left'><span class='col-title'>Armor Class (AC)</span></th><th align='right'><span class='col-title'>Weight</span></th><th align='left'><span class='col-title'>Properties</span></th></tr>
 </thead><tbody>
 <tr><td align='left'><i>Light Armor</i></td><td align='right'></td><td align='left'></td><td align='right'></td><td align='left'></td></tr>
@@ -139,21 +139,21 @@
 
 <div class='p'><b><i>Doff.</i></b> This is the time it takes to take off armor. If you have help, reduce this time by half.</div>
 
-<div class='tableAndCaption'><span class='caption'>Donning and Doffing Armor</span><div class='tableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='donning-and-doffing-armor'>Donning and Doffing Armor</span><div class='tableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Category</span></th><th align='left'><span class='col-title'>Don</span></th><th align='left'><span class='col-title'>Doff</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Light armor</td><td align='left'>1 minute</td><td align='left'>1 minute</td></tr>
 <tr><td align='left'>Medium armor</td><td align='left'>5 minutes</td><td align='left'>1 minute</td></tr>
 <tr><td align='left'>Heavy armor</td><td align='left'>10 minutes</td><td align='left'>5 minutes</td></tr>
-<tr><td align='left'>Light shield</td><td align='left'>—</td><td align='left'>—</td></tr>
+<tr><td align='left'>Light shield</td><td align='left'>1 minor action</td><td align='left'>1 minor action</td></tr>
 <tr><td align='left'>Medium shield</td><td align='left'>1 standard action</td><td align='left'>1 standard action</td></tr>
-<tr><td align='left'>Heavy shield</td><td align='left'>1 standard action</td><td align='left'>1 standard action</td></tr>
+<tr><td align='left'>Heavy shield</td><td align='left'>1 major action</td><td align='left'>1 major action</td></tr>
 </tbody></table></div></div>
 
 <h2 id="adventuring-gear">Adventuring Gear</h2>
 
 
-<div class='tableAndCaption'><span class='caption'>Adventuring Gear</span><div class='tableWrapper scrollableTableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='adventuring-gear'>Adventuring Gear</span><div class='tableWrapper scrollableTableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Item</span></th><th align='right'><span class='col-title'>Cost</span></th><th align='right'><span class='col-title'>Weight</span></th><th align='left'><span class='col-title'>Capacity</span></th></tr>
 </thead><tbody>
 <tr><td align='left'>Abacus</td><td align='right'>2 gp</td><td align='right'>2 lb.</td><td align='left'>—</td></tr>
@@ -284,7 +284,7 @@
 <h2 id="tools">Tools</h2>
 
 
-<div class='tableAndCaption'><span class='caption'>Tools</span><div class='tableWrapper scrollableTableWrapper'><table><thead>
+<div class='tableAndCaption'><span class='caption' id='tools'>Tools</span><div class='tableWrapper scrollableTableWrapper'><table><thead>
 <tr><th align='left'><span class='col-title'>Item</span></th><th align='right'><span class='col-title'>Cost</span></th><th align='right'><span class='col-title'>Weight</span></th></tr>
 </thead><tbody>
 <tr><td align='left'><span class="popupAnchor" id="anchor174" onclick="toggleDragEnabled(popup76, options={event:event})" onmouseover="showPopup(popup76, anchor174)" onmouseout="hidePopup(popup76)"><i>Artisan's tools</i></span></td><td align='right'></td><td align='right'></td></tr>
@@ -339,15 +339,15 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Offhand Attack</h1>
-        <div class="p card-subheader"><em>Cost: 1 AP </em></div>
-        <div class='p'>When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't attack with the same weapon with the Attack and Offhand Attack actions on a turn.</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Offhand Attack</h1>
+    <div class="p card-subheader"><em>Cost: 1 AP </em></div>
+    <div class='p'>When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't attack with the same weapon with the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions on a turn.</div>
 
 <div class='p'>You can equip or unequip one weapon before or after each attack you make as part of this action, even if the attack is unarmed.</div>
 
 <div class='p'>If you move on your turn, you can use some or all of that movement to move between the attacks of this action if you have a feature, such as Flurry of Blows, that gives you more than one attack as part of this action.</div>
-    </div>
+</div>
     </div>
 </div>
 
@@ -529,10 +529,10 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Grappling</h1>
-        
-        <div class='p'>While you are grappling another creature (the <span class="popupAnchor" id="anchor28" onclick="toggleDragEnabled(popup11, options={event:event})" onmouseover="showPopup(popup11, anchor28)" onmouseout="hidePopup(popup11)">grappled</span> creature), you experience the following effects:</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Grappling</h1>
+    
+    <div class='p'>While you are grappling another creature (the <span class="popupAnchor" id="anchor28" onclick="toggleDragEnabled(popup11, options={event:event})" onmouseover="showPopup(popup11, anchor28)" onmouseout="hidePopup(popup11)">grappled</span> creature), you experience the following effects:</div>
 
 <ul><li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.
 </li><li>When you move on your turn, you drag the grappled creature with you.
@@ -541,7 +541,7 @@
 <div class='p'>You can end the grapple at any time, no action required. The grapple also ends if you become incapacitated or if the grappled creature is no longer within your reach.</div>
 
 <div class='p'>This condition is commonly acquired via the <span class="popupAnchor" id="anchor29" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor29)" onmouseout="hidePopup(popup13)">grapple</span> attack.</div>
-    </div>
+</div>
     </div>
 </div>
 
@@ -554,10 +554,10 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Grappled</h1>
-        
-        <div class='p'>While you are grappled by another creature (the <span class="popupAnchor" id="anchor27" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor27)" onmouseout="hidePopup(popup12)">grappling</span> creature), you experience the following effects:</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Grappled</h1>
+    
+    <div class='p'>While you are grappled by another creature (the <span class="popupAnchor" id="anchor27" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor27)" onmouseout="hidePopup(popup12)">grappling</span> creature), you experience the following effects:</div>
 
 <ul><li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.
 </li><li>When you move on your turn, you drag the grappling creature with you.
@@ -566,7 +566,7 @@
 <div class='p'>As a standard action, you can make a saving throw against the grapple, ending the grapple on a success.</div>
 
 <div class='p'>This condition can be commonly applied via the <span class="popupAnchor" id="anchor33" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor33)" onmouseout="hidePopup(popup13)">grapple</span> attack.</div>
-    </div>
+</div>
     </div>
 </div>
 
@@ -627,11 +627,11 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Crawl</h1>
-        
-        <div class='p'>Crawling lets you move while <span class="popupAnchor" id="anchor43" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor43)" onmouseout="hidePopup(popup17)">prone</span>. Crawling costs 1 extra foot of movement for each foot traveled.</div>
-    </div>
+<div class="small-card">
+    <h1 class="noHeaderID">Crawl</h1>
+    
+    <div class='p'>Crawling lets you move while <span class="popupAnchor" id="anchor43" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor43)" onmouseout="hidePopup(popup17)">prone</span>. Crawling costs 1 extra foot of movement for each foot traveled.</div>
+</div>
     </div>
 </div>
 
@@ -644,11 +644,11 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Falling</h1>
-        
-        <div class='p'>At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands <span class="popupAnchor" id="anchor45" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor45)" onmouseout="hidePopup(popup17)">prone</span>, unless it avoids taking damage from the fall.</div>
-    </div>
+<div class="small-card">
+    <h1 class="noHeaderID">Falling</h1>
+    
+    <div class='p'>At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands <span class="popupAnchor" id="anchor45" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor45)" onmouseout="hidePopup(popup17)">prone</span>, unless it avoids taking damage from the fall.</div>
+</div>
     </div>
 </div>
 
@@ -661,17 +661,17 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Incapacitated</h1>
-        
-        <div class='p'>While incapacitated, you experience the following effects:</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Incapacitated</h1>
+    
+    <div class='p'>While incapacitated, you experience the following effects:</div>
 
 <ul><li>You can't take actions or reactions.
-</li><li>Your concentration is broken and you can't regain concentration.
+</li><li>Your <a href="/settings/four-corners/glossary.html#concentration">concentration</a> is broken and you can't regain concentration.
 </li><li>You can't speak.
 </li><li>You have disadvantage on initiative checks.
 </li></ul>
-    </div>
+</div>
     </div>
 </div>
 
@@ -684,10 +684,10 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Unconscious</h1>
-        
-        <div class='p'>While unconscious, you experience the following effects:</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Unconscious</h1>
+    
+    <div class='p'>While unconscious, you experience the following effects:</div>
 
 <ul><li>You are <span class="popupAnchor" id="anchor47" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor47)" onmouseout="hidePopup(popup21)">incapacitated</span>, can't move, and are unaware of your surroundings.
 </li><li>You drop whatever you're holding and fall <span class="popupAnchor" id="anchor48" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor48)" onmouseout="hidePopup(popup17)">prone</span>.
@@ -695,7 +695,7 @@
 </li><li>Attack rolls against you have advantage.
 </li><li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.
 </li></ul>
-    </div>
+</div>
     </div>
 </div>
 
@@ -731,10 +731,10 @@
     </div>
     <div class="popupContent">
         
-    <div class="small-card">
-        <h1 class="noHeaderID">Prone</h1>
-        
-        <div class='p'>While prone, you experience the following effects:</div>
+<div class="small-card">
+    <h1 class="noHeaderID">Prone</h1>
+    
+    <div class='p'>While prone, you experience the following effects:</div>
 
 <ul><li>Your only movement option is to <span class="popupAnchor" id="anchor42" onclick="toggleDragEnabled(popup18, options={event:event})" onmouseover="showPopup(popup18, anchor42)" onmouseout="hidePopup(popup18)">crawl</span>, unless you stand up and thereby end the condition.
 </li><li>You have disadvantage on attack rolls.
@@ -744,7 +744,7 @@
 <div class='p'>Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
 
 <div class='p'>This condition is commonly caused by <span class="popupAnchor" id="anchor44" onclick="toggleDragEnabled(popup19, options={event:event})" onmouseover="showPopup(popup19, anchor44)" onmouseout="hidePopup(popup19)">falling</span>, falling <span class="popupAnchor" id="anchor46" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor46)" onmouseout="hidePopup(popup20)">unconscious</span>, and the <span class="popupAnchor" id="anchor49" onclick="toggleDragEnabled(popup22, options={event:event})" onmouseover="showPopup(popup22, anchor49)" onmouseout="hidePopup(popup22)">trip</span> attack.</div>
-    </div>
+</div>
     </div>
 </div>
 
@@ -809,7 +809,7 @@
         
 <div class="small-card">
         <h1 class="noHeaderID">Heavy</h1>
-        <div class='p'>Small creatures have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small creature to use effectively.</div>
+        <div class='p'>Heavy weapons hit harder, but can be difficult to wield. When you score a critical hit with a heavy weapon, you can add an additional weapon damage die to the damage roll. However, <span class="tooltipWrapper"><span class="tooltipAnchor">Small creatures</span><span class="tooltip">Except those with the <a href="/settings/four-corners/feats.html#powerful-build">Powerful Build</a> feat</span></span> have disadvantage on attack rolls with heavy weapons.</div>
 </div>
     </div>
 </div>
