@@ -20,6 +20,7 @@
   --anchor-border-hover: #111111;
   --concentration-tag: #e23225;
   --ritual-tag: #4668ff;
+  --tag-text: #eeeeee;
   --del: #f08080;
   --tooltip-fill: #b3eaff;
   --link: #2668cf;
@@ -45,6 +46,7 @@
   --anchor-border-hover: #ddd;
   --concentration-tag: #d22215;
   --ritual-tag: #3658df;
+  --tag-text: #e3e3e3;
   --del: #783030;
   --tooltip-fill: #126a84;
   --link: #50a0cd;
@@ -63,6 +65,9 @@ body {
   margin: 0;
   background-color: var(--default-bg);
   color: var(--default-text);
+}
+i > i {
+  font-style: normal;
 }
 header {
   position: sticky;
@@ -387,31 +392,28 @@ a:visited {
   color: var(--spell-subtitle);
   font-size: 14px;
 }
-.spell-header .tag {
+.tag {
   font-variant: small-caps;
-  border-radius: 3px;
-  color: var(--card-bg);
-  padding: 3px;
-  margin: 2px 0px;
+  border-radius: 10px;
+  color: var(--tag-text);
+  padding: 0 5px 2px 5px;
   font-size: small;
   font-weight: bold;
 }
-.spell-header .concentration-tag {
+.concentration-tag {
   font-variant: small-caps;
-  border-radius: 3px;
-  color: var(--card-bg);
-  padding: 3px;
-  margin: 2px 0px;
+  border-radius: 10px;
+  color: var(--tag-text);
+  padding: 0 5px 2px 5px;
   font-size: small;
   font-weight: bold;
   background-color: var(--concentration-tag);
 }
-.spell-header .ritual-tag {
+.ritual-tag {
   font-variant: small-caps;
-  border-radius: 3px;
-  color: var(--card-bg);
-  padding: 3px;
-  margin: 2px 0px;
+  border-radius: 10px;
+  color: var(--tag-text);
+  padding: 0 5px 2px 5px;
   font-size: small;
   font-weight: bold;
   background-color: var(--ritual-tag);

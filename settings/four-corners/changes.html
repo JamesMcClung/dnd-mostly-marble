@@ -24,6 +24,17 @@
     <article>
         <h1 id="changes">Changes</h1>
 
+<h2 id="v198">v1.9.8</h2>
+<div class='p'>Website:</div>
+<ul><li>Class tables now have links to class features (see e.g. <a href="classes/ranger.html#the-ranger">ranger</a>)
+</li><li>Cleaned up spell tags (which now appear in spell tables)
+</li><li>Fixed popup search in tables (e.g. searching for "concentrationritual" does not match all spells with those tags)
+</li><li>Table search now supports regex, with <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions">JavaScript syntax</a>
+<ul><li>For example, "/\bfire\b/i" would search for the word "fire" and be case-insensitive
+</li><li>Can combine this with popup searches, e.g. "$/(fire|thunder) damage/i"
+</li></ul>
+</li></ul>
+
 <h2 id="v197">v1.9.7</h2>
 <div class='p'>Game:</div>
 <ul><li><a href="spells.html">Spells</a>:

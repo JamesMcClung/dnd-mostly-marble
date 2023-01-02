@@ -1,6 +1,6 @@
 window.onload = function () {
     const popups = document.getElementsByClassName("popup");
-    for (let popup of popups)
+    for (const popup of popups)
         sendToTop(popup);
 }
 
@@ -9,7 +9,7 @@ function getClientCoords(element) {
 }
 
 function getPageCoords(element) {
-    let box = element.getBoundingClientRect();
+    const box = element.getBoundingClientRect();
 
     return {
         top: box.top + window.pageYOffset,
@@ -28,12 +28,12 @@ function toggleFixedPosition(popup, options = {}) {
     if (options.event)
         options.event.stopPropagation()
     if (options.set == "fixed" || options.set != "absolute" && popup.style.position != "fixed") {
-        let coords = getClientCoords(popup);
+        const coords = getClientCoords(popup);
         popup.style.position = "fixed";
         setElementTopLeft(popup, coords);
         popup.querySelector(".popupHeader").querySelector(".popupHeaderButtongroup").querySelector(".popupHeaderButtonSticky").innerHTML = "&#9679;"
     } else if (options.set == "absolute" || popup.style.position != "absolute") {
-        let coords = getPageCoords(popup);
+        const coords = getPageCoords(popup);
         popup.style.position = "absolute";
         setElementTopLeft(popup, coords);
         popup.querySelector(".popupHeader").querySelector(".popupHeaderButtongroup").querySelector(".popupHeaderButtonSticky").innerHTML = "&#9675;"
@@ -41,10 +41,10 @@ function toggleFixedPosition(popup, options = {}) {
 }
 
 function sendToTop(popup) {
-    let article = document.getElementsByTagName("article")[0];
+    const article = document.getElementsByTagName("article")[0];
     if (article.lastChild !== popup) {
-        let content = popup.querySelector(".popupContent");
-        let scroll = content.firstElementChild.scrollTop;
+        const content = popup.querySelector(".popupContent");
+        const scroll = content.firstElementChild.scrollTop;
         article.append(popup);
         content.firstElementChild.scrollTop = scroll;
     }
@@ -57,7 +57,7 @@ function toggleDragEnabled(popup, options = {}) {
     let lastCursorX, lastCursorY;
     let offsetRight = -1, maxOffsetRight = -1;
     let moved = false;
-    let header = popup.querySelector(".popupHeader");
+    const header = popup.querySelector(".popupHeader");
 
     popup.onclick = (e) => { sendToTop(popup); e.stopPropagation(); }
 
@@ -67,8 +67,8 @@ function toggleDragEnabled(popup, options = {}) {
         toggleFixedPosition(popup, { set: "absolute" });
         popup.classList.remove("dragEnabled");
         popup.classList.remove("isCollapsed");
-        let anchor = options.event.target;
-        let anchorCoords = getPageCoords(anchor);
+        const anchor = options.event.target;
+        const anchorCoords = getPageCoords(anchor);
         setElementTopLeft(popup, { left: anchorCoords.left, top: anchorCoords.bottom });
         popup.style.removeProperty("right");
     } else {
@@ -101,7 +101,7 @@ function toggleDragEnabled(popup, options = {}) {
         var deltaY = e.clientY - lastCursorY;
         lastCursorX = e.clientX;
         lastCursorY = e.clientY;
-        let coords = getClientCoords(popup);
+        const coords = getClientCoords(popup);
         popup.style.top = (popup.offsetTop + deltaY) + "px";
         if (coords.left + deltaX <= 0 || (maxOffsetRight > 0 && offsetRight + deltaX < maxOffsetRight)) {
             if (offsetRight < 0) {
@@ -134,7 +134,7 @@ function showPopup(popup, anchor) {
 
     popup.classList.add("visible");
     if (!popup.classList.contains("dragEnabled")) {
-        let anchorCoords = getPageCoords(anchor);
+        const anchorCoords = getPageCoords(anchor);
         setElementTopLeft(popup, { left: anchorCoords.left, top: anchorCoords.bottom });
     }
 }

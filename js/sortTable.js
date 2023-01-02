@@ -41,7 +41,7 @@ function swapRows(rows, smallerIdx, greaterIdx) {
 function getInitialSortOrder(rows, col) {
     let initialSortOrder = 0;
     for (let i = 1; i < rows.length - 1; i++) {
-        let thisSortOrder = getOrder(getComparableContent(rows, col, i), getComparableContent(rows, col, i + 1));
+        const thisSortOrder = getOrder(getComparableContent(rows, col, i), getComparableContent(rows, col, i + 1));
         if (thisSortOrder * initialSortOrder < 0)
             return 0;
         initialSortOrder |= thisSortOrder;
@@ -70,7 +70,7 @@ function quicksort_partition(rows, col, leftIdx, rightIdx) {
     const pivotVal = getComparableContent(rows, col, initialPivotIdx);
 
     for (let i = leftIdx; i < rightIdx; i++) {
-        let orderWrtPivot = getOrder(getComparableContent(rows, col, i), pivotVal)
+        const orderWrtPivot = getOrder(getComparableContent(rows, col, i), pivotVal)
         if (orderWrtPivot >= 0) {
             tbody.insertBefore(rows[i], rows[finalPivotIdx++]);
         }
@@ -101,7 +101,7 @@ function sortTable(table, col) {
     // manage symbols in table header that identify how it is sorted
     const upSymbolCode = 9650, downSymbolCode = 9660;
     for (let i = 0; i < table.rows[0].cells.length; i++) {
-        let iconSpan = table.rows[0].getElementsByTagName("th")[i].getElementsByClassName("sorticon")[0];
+        const iconSpan = table.rows[0].getElementsByTagName("th")[i].getElementsByClassName("sorticon")[0];
         if (i == col) {
             iconSpan.innerHTML = ` &#${initialSortOrder > 0 ? upSymbolCode : downSymbolCode};`;
         } else {
