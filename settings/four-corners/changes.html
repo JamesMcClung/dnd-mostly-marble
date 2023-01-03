@@ -24,6 +24,58 @@
     <article>
         <h1 id="changes">Changes</h1>
 
+<h2 id="v1100">v1.10.0</h2>
+<div class='p'>Game:</div>
+<ul><li><a href="classes/monk.html">Monk</a> overhaul:
+<ul><li>Ki -> <span class="tooltipWrapper"><span class="tooltipAnchor">Stances</span><span class="tooltip">The goal is for the monk to be very dynamic, but comes at the cost of complexity: it may be difficult to remember what stances give what benefits, especially at higher levels. The monk will be changed if this slows down combat decision-making too much.</span></span>
+<ul><li>3 basic stances: 
+<ul><li>Flurry of Blows: make 2 unarmed strikes with Offhand Attack instead of 1
+</li><li>Patient Defense: gives <span class="tooltipWrapper"><span class="tooltipAnchor">blindsight</span><span class="tooltip">Blindsight is defensive: it negates flanking and advantage from invisible attackers</span></span> and lets you Dodge for 1 AP
+</li><li>Step of the Wind: don't provoke OAs and get bonus to speed and jump distance
+</li></ul>
+</li><li>Activate 1 stance per turn; can't activate same stance twice in a row
+</li><li>Stances affect higher level features
+</li></ul>
+</li><li>Monk Distance: extract the distance from Unarmored Movement and use it in various places
+</li><li>Deflect Missiles: followup attack is free, but requires Patient Defense (which also makes initial deflection not cost a reaction)
+</li><li>Ki-Fueled Attack: removed, since it does nothing with current Offhand Attack rules
+</li><li>Slow Fall: doesn't require reaction in Step of the Wind
+</li><li>Quickened Healing: reworked to be like fighter's Second Wind, but heals Martial Arts die + Wis mod
+</li><li>Stunning Strikes: reworked. In Flurry of Blows stance, melee weapon attacks give stun points instead of stunning outright. 1 point dazes, 2-3 stuns, 4+ paralyzes
+</li><li>Focused Aim -> Sweeping Wind: can end Step of the Wind to get retroactive +5 bonus to attack roll
+</li><li>Ki-Empowered Strikes: removed, since <span class="tooltipWrapper"><span class="tooltipAnchor">nothing in this setting has resistance to nonmagical b/p/s damage.</span><span class="tooltip"> This is due to the philosophy that arbitrary milestone checks, such as requiring a magic weapon to deal damage, is poor game design.</span></span>
+</li><li>Stillness of Mind: can also end taunt
+</li><li>Diamond Soul: still gives prof in all saves, but instead of reroll failed save, lets you ignore dazed/stunned/paralyzed on your turn
+</li><li>Timeless Body: effectively unchanged, but in new context of formalized old age
+</li><li>Empty Body: adds Empty Body stance instead of minute-long effect for 4 ki. End stance and lose it for the day to cast <i>astral projection</i> instead of spending 8 ki.
+</li><li>Perfect Self: instead of giving ki points, lets you repeat Flurry of Blows/Patient Defense/Step of the Wind indefinitely.
+</li><li><a href="classes/monk.html#way-of-the-four-elements">Way of the Four Elements</a> overhaul:
+<ul><li>Elemental Stances: can infuse stances with an element; can't choose same element two turns in a row
+<ul><li>Air: gain fly speed (x2 if Step of the Wind)
+</li><li>Earth: gain tremorsense and reaction to gain half cover (3/4 cover and x2 tremorsense if Patient Defense)
+</li><li>Fire: gain ranged spell attack to replace unarmed strike (x2 range if flurry of blows)
+</li><li>Water: swim speed and end stance to heal; can't heal same creature more than once per rest
+</li></ul>
+</li><li>Elemental Deflection: end stance to take half damage from elemental damage
+</li><li>Elemental Eruption: end stance and lose element for the day to cast 5th level spell
+</li><li>Elemental Harmony: can infuse a stance with multiple elements
+</li></ul>
+</li></ul>
+</li><li><a href="spells.html">Spells</a>:
+<ul><li>Buff <i>staggering smite</i>: now dazes instead of blocking reactions (net effect is target has -1 AP)
+</li></ul>
+</li><li><a href="glossary.html">Glossary</a>:
+<ul><li>Added opportunity attack
+</li><li>Tremorsense negates flanked
+</li></ul>
+</li><li>Formerly define "<a href="equipment.html#unarmed-attack">unarmed attack</a>"
+</li></ul>
+
+<div class='p'>Website:</div>
+<ul><li>Added a bunch of links/popups (popups are added when the details of a thing are actually needed)
+</li><li>Added ids to rows of weapon and armor tables (so you can link to them)
+</li></ul>
+
 <h2 id="v198">v1.9.8</h2>
 <div class='p'>Website:</div>
 <ul><li>Class tables now have links to class features (see e.g. <a href="classes/ranger.html#the-ranger">ranger</a>)

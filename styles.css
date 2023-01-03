@@ -1,5 +1,6 @@
 * {
   font-family: "Helvetica Neue", Arial, sans-serif;
+  scroll-margin-top: 55px;
 }
 :root[data-theme="light"] {
   --default-bg: #f6f6f6;
@@ -150,14 +151,6 @@ details > summary:hover {
 h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;
   margin-bottom: -8px;
-}
-h1,
-h2,
-h3,
-h4,
-details,
-.caption {
-  scroll-margin-top: 55px;
 }
 a {
   color: var(--link);
