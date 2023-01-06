@@ -21,6 +21,7 @@
   --anchor-border-hover: #111111;
   --concentration-tag: #e23225;
   --ritual-tag: #4668ff;
+  --attunement-tag: #c50ac2;
   --tag-text: #eeeeee;
   --del: #f08080;
   --tooltip-fill: #b3eaff;
@@ -47,6 +48,7 @@
   --anchor-border-hover: #ddd;
   --concentration-tag: #d22215;
   --ritual-tag: #3658df;
+  --attunement-tag: #b309b0;
   --tag-text: #e3e3e3;
   --del: #783030;
   --tooltip-fill: #126a84;
@@ -410,6 +412,15 @@ a:visited {
   font-size: small;
   font-weight: bold;
   background-color: var(--ritual-tag);
+}
+.attunement-tag {
+  font-variant: small-caps;
+  border-radius: 10px;
+  color: var(--tag-text);
+  padding: 0 5px 2px 5px;
+  font-size: small;
+  font-weight: bold;
+  background-color: var(--attunement-tag);
 }
 .spell-specs {
   display: flex;
