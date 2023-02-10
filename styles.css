@@ -577,6 +577,12 @@ blockquote h4 {
   width: 20px;
   height: 20px;
 }
+.popup .popupHeader .popupHeaderButtongroup .popupHeaderButton a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
 .popup.isCollapsed {
   pointer-events: none;
 }
