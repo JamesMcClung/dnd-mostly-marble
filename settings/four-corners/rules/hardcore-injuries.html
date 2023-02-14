@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Hardcore Injuries
-    </title>
-    <script src="/js/darkmode.js"></script>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-
-<body>
-    <header>
-        <ul>
-            <li><a href="/index.html">DnD Home</a></li>
-            <li><a href="../../four-corners.html">Four Corners</a></li><li><a href="../rules.html">Rules</a></li><li><a href="hardcore-injuries.html">Hardcore Injuries</a></li>
-            <!-- e.g. <li><a href="four-corners.html">Four Corners</a></li> -->
-        </ul>
-        <button id="button-dark-mode" , onclick="toggleDarkMode()">Dark Mode</button>
-    </header>
-
-
-    <article>
-        <h1 id="hardcore-injuries">Hardcore Injuries</h1>
-<blockquote>
-<div class="p">This is a work-in-progress optional rule. It is intended to add gritty realism to combat. See <a href="simple-injuries.html">simple injuries</a> for a simpler variant.</div>
-</blockquote>
-<div class="p">When damage reduces you to 0 hit points, or when you take damage while you have 0 hit points, make a Constitution saving throw. The DC is equal to the excess damage you took (excess damage = total damage - your hit points before taking damage). On a failed save, you suffer a lasting injury randomly determined by the amount and type of excess damage you took, as shown on the Injuries by Damage table below. If the damage comprised multiple damage types, you only suffer one injury, chosen randomly from the possible injuries.</div>
-<div class="tableAndCaption">
-    <span class="caption" id="injuries-by-damage">Injuries by Damage</span>
-    <div class="tableWrapper">
-        <table>
-            <thead>
-                <tr><th align="left"><span class="col-title">Damage Type</span></th><th align="left"><span class="col-title">1+ Damage (Tier 1)</span></th><th align="left"><span class="col-title">15+ Damage (Tier 2)</span></th><th align="left"><span class="col-title">30+ Damage (Tier 3)</span></th><th align="left"><span class="col-title">45+ Damage (Tier 4)</span></th></tr>
-            </thead>
-            <tbody>
-                <tr><td align="left">Bludgeoning</td><td align="left">Concussion, limb damage</td><td align="left">Broken neck, destroyed limb</td><td align="left">—</td><td align="left">Crushed skull</td></tr>
-                <tr><td align="left">Piercing</td><td align="left">Eye damage, organ damage</td><td align="left">Destroyed limb</td><td align="left">Disembowelment</td><td align="left">—</td></tr>
-                <tr><td align="left">Slashing</td><td align="left">Ear damage, limb damage</td><td align="left">Destroyed limb</td><td align="left">Disembowelment</td><td align="left">Decapitation</td></tr>
-                <tr><td align="left">Acid</td><td align="left">Eye damage, facial scarring</td><td align="left">Third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">—</td></tr>
-                <tr><td align="left">Cold</td><td align="left">Limb damage</td><td align="left">Third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">—</td></tr>
-                <tr><td align="left">Fire</td><td align="left">Facial scarring, limb damage</td><td align="left">Battleshock, third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">—</td></tr>
-                <tr><td align="left">Force</td><td align="left">Concussion, organ damage</td><td align="left">Coma</td><td align="left">—</td><td align="left">Soul damage</td></tr>
-                <tr><td align="left">Lightning</td><td align="left">Limb damage, organ damage</td><td align="left">Battleshock, third-degree burn</td><td align="left">Stopped heart</td><td align="left">—</td></tr>
-                <tr><td align="left">Necrotic</td><td align="left">Limb damage, organ damage</td><td align="left">Destroyed limb</td><td align="left">Total organ failure</td><td align="left">Soul damage</td></tr>
-                <tr><td align="left">Psychic</td><td align="left">Concussion</td><td align="left">Coma</td><td align="left">—</td><td align="left">Soul damage</td></tr>
-                <tr><td align="left">Poison</td><td align="left">Organ damage</td><td align="left">Destroyed limb</td><td align="left">Total organ failure</td><td align="left">—</td></tr>
-                <tr><td align="left">Radiant</td><td align="left">Eye damage</td><td align="left">Third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">Soul damage</td></tr>
-                <tr><td align="left">Thunder</td><td align="left">Concussion, ear damage</td><td align="left">Battleshock</td><td align="left">Stopped heart</td><td align="left">—</td></tr>
-            </tbody>
-        </table>
-    </div>
-</div>
-<blockquote>
-<div class="p">For example, suppose Joshua has 14 hit points and a paladin smites him, dealing 12 slashing and 18 radiant damage. He is reduced to 0 hit points with 16 excess  slashing and radiant damage; the exact amounts of each damage type do not matter. Joshua must succeed on a DC 16 Constitution saving throw or else sustain a random injury. The possible injuries are ear damage, limb damage, or destroyed limb from slashing; or eye damage or third-degree burn from radiant.</div>
-</blockquote>
-<h3 id="saving-throws">Saving Throws</h3>
-<div class="p">If an injury forces you to make a saving throw, the DC is equal to the amount of excess damage that caused the injury.</div>
-<h3 id="healing-an-injury">Healing an Injury</h3>
-<div class="p">If you receive magical healing on a single turn equal to or exceeding the excess damage that caused an injury, the injury is healed. If a part of your body is out of place, it must be returned to its proper location first.</div>
-<div class="p">Other effects that heal wounds or injuries function as normal and can heal lasting injuries.</div>
-<h2 id="tier-1-injuries">Tier 1 Injuries</h2>
-<div class="p"><i>"You'll get over it."</i></div>
-<div class="p"><b><i>Concussion.</i></b> You have disadvantage on Intelligence checks and Constitution saving throws made to maintain concentration.</div>
-<div class="p"><b><i>Ear Damage.</i></b> You are deaf in one ear, chosen randomly. You have disadvantage on sound-based Perception checks. If you sustain this injury on all of your ears, you are deafened.</div>
-<div class="p"><b><i>Eye Damage.</i></b> You are blind in one eye, chosen randomly. You have disadvantage on sight-based Perception checks. If you sustain this injury on all of your eyes, you are blind.</div>
-<div class="p"><b><i>Facial Scarring.</i></b> You have disadvantage on Persuasion checks and advantage on Intimidation checks while the scar shows. You do not gain this benefit against a creature that is immune to fear or that has advantage on saving throws against fear.</div>
-<div class="p"><b><i>Limb Damage.</i></b> One of your limbs, randomly determined, is seriously wounded. You have disadvantage on any attack roll or ability check that uses that limb. If the limb is a leg, your walking speed is halved. If the limb is a wing, you lose the ability to fly.</div>
-<div class="p"><b><i>Organ Damage.</i></b> At the end of each minute after sustaining this injury, you must succeed on a Constitution saving throw or become poisoned.</div>
-<h2 id="tier-2-injuries">Tier 2 Injuries</h2>
-<div class="p"><i>"You may die."</i></div>
-<div class="p"><b><i>Battleshock.</i></b> Each time you sense someone take damage of the type that inflicted this injury, you must succeed on a Wisdom saving throw or become paralyzed until the end of your next turn.</div>
-<div class="p"><b><i>Broken Neck.</i></b> You cannot move your body below your neck, causing the following effects:</div>
-<ul>
-    <li>You can't move or take any action that requires the use of your body below your neck.</li>
-    <li>You drop whatever you're holding and fall prone.</li>
-    <li>You automatically fail Strength and Dexterity saving throws.</li>
-    <li>Attack rolls against you have advantage.</li>
-    <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
-</ul>
-<div class="p"><b><i>Coma.</i></b> You fall unconscious and cannot wake up.</div>
-<div class="p"><b><i>Destroyed Limb.</i></b> One of your limbs, randomly determined, is severed or otherwise rendered unusable. You cannot use that limb for any attack roll or ability check. If the limb is a leg, your walking speed is 0. If the limb is a wing, you lose the ability to fly. If you have no usable arms, you have disadvantage on Strength and Dexterity saving throws. If you have no usable limbs at all, you automatically fail Strength and Dexterity saving throws.</div>
-<div class="p"><b><i>Third-Degree Burn.</i></b> You are vulnerable to acid, cold, fire, necrotic, and radiant damage.</div>
-<h2 id="tier-3-injuries">Tier 3 Injuries</h2>
-<div class="p"><i>"You will die."</i></div>
-<div class="p"><b><i>Disembowelment.</i></b> Your organs fall out of your body. You take 1 damage at the start of each of your turns, and if you travel more than 5 feet on a turn, you die.</div>
-<div class="p"><b><i>Fourth-Degree Burn.</i></b> Your skin sloughs off, exposing damaged muscle. You are vulnerable to all damage except psychic and take 1 damage at the start of each of your turns.</div>
-<div class="p"><b><i>Stopped Heart.</i></b> You immediately begin suffocating. This injury ends if you take lightning damage.</div>
-<div class="p"><b><i>Total Organ Failure.</i></b> At the start of each of your turns, you become poisoned and take 1 damage.</div>
-<h2 id="tier-4-injuries">Tier 4 Injuries</h2>
-<div class="p"><i>"You are dead."</i></div>
-<div class="p"><b><i>Crushed Skull.</i></b> Your skull and brain are flattened. You die.</div>
-<div class="p"><b><i>Decapitation.</i></b> You are relieved of your head. You die.</div>
-<div class="p"><b><i>Soul Damage.</i></b> Your very soul is damaged. You die and lose 1 level. If this would reduce your level to 0, your soul is permanently destroyed.</div>
-    </article>
-
-    <footer>
-        This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
-    </footer>
-</body>
-
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hardcore Injuries</title>
+        <script src="/js/darkmode.js"></script>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><a href="/official.html" class="del">Official</a><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners/rules.html">Rules</a><div class="dropdown-content"><a href="/settings/four-corners/rules/hardcore-injuries.html">Hardcore Injuries</a><a href="/settings/four-corners/rules/simple-injuries.html">Simple Injuries</a><a href="/settings/four-corners/rules/soulcasting.html">Soulcasting</a><a href="/settings/four-corners/rules/supplies.html">Supplies</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners/rules/hardcore-injuries.html">Hardcore Injuries</a><div class="dropdown-content"></div></div>
+            </div>
+            <button id="button-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
+        </header>
+        <article>
+            <h1 id="hardcore-injuries">Hardcore Injuries</h1>
+            <blockquote>
+            <div class="p">This is a work-in-progress optional rule. It is intended to add gritty realism to combat. See <a href="simple-injuries.html">simple injuries</a> for a simpler variant.</div>
+            </blockquote>
+            <div class="p">When damage reduces you to 0 hit points, or when you take damage while you have 0 hit points, make a Constitution saving throw. The DC is equal to the excess damage you took (excess damage = total damage - your hit points before taking damage). On a failed save, you suffer a lasting injury randomly determined by the amount and type of excess damage you took, as shown on the Injuries by Damage table below. If the damage comprised multiple damage types, you only suffer one injury, chosen randomly from the possible injuries.</div>
+            <div class="tableAndCaption">
+                <span class="caption" id="injuries-by-damage">Injuries by Damage</span>
+                <div class="tableWrapper">
+                    <table>
+                        <thead>
+                            <tr><th align="left"><span class="col-title">Damage Type</span></th><th align="left"><span class="col-title">1+ Damage (Tier 1)</span></th><th align="left"><span class="col-title">15+ Damage (Tier 2)</span></th><th align="left"><span class="col-title">30+ Damage (Tier 3)</span></th><th align="left"><span class="col-title">45+ Damage (Tier 4)</span></th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td align="left">Bludgeoning</td><td align="left">Concussion, limb damage</td><td align="left">Broken neck, destroyed limb</td><td align="left">—</td><td align="left">Crushed skull</td></tr>
+                            <tr><td align="left">Piercing</td><td align="left">Eye damage, organ damage</td><td align="left">Destroyed limb</td><td align="left">Disembowelment</td><td align="left">—</td></tr>
+                            <tr><td align="left">Slashing</td><td align="left">Ear damage, limb damage</td><td align="left">Destroyed limb</td><td align="left">Disembowelment</td><td align="left">Decapitation</td></tr>
+                            <tr><td align="left">Acid</td><td align="left">Eye damage, facial scarring</td><td align="left">Third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">—</td></tr>
+                            <tr><td align="left">Cold</td><td align="left">Limb damage</td><td align="left">Third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">—</td></tr>
+                            <tr><td align="left">Fire</td><td align="left">Facial scarring, limb damage</td><td align="left">Battleshock, third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">—</td></tr>
+                            <tr><td align="left">Force</td><td align="left">Concussion, organ damage</td><td align="left">Coma</td><td align="left">—</td><td align="left">Soul damage</td></tr>
+                            <tr><td align="left">Lightning</td><td align="left">Limb damage, organ damage</td><td align="left">Battleshock, third-degree burn</td><td align="left">Stopped heart</td><td align="left">—</td></tr>
+                            <tr><td align="left">Necrotic</td><td align="left">Limb damage, organ damage</td><td align="left">Destroyed limb</td><td align="left">Total organ failure</td><td align="left">Soul damage</td></tr>
+                            <tr><td align="left">Psychic</td><td align="left">Concussion</td><td align="left">Coma</td><td align="left">—</td><td align="left">Soul damage</td></tr>
+                            <tr><td align="left">Poison</td><td align="left">Organ damage</td><td align="left">Destroyed limb</td><td align="left">Total organ failure</td><td align="left">—</td></tr>
+                            <tr><td align="left">Radiant</td><td align="left">Eye damage</td><td align="left">Third-degree burn</td><td align="left">Fourth-degree burn</td><td align="left">Soul damage</td></tr>
+                            <tr><td align="left">Thunder</td><td align="left">Concussion, ear damage</td><td align="left">Battleshock</td><td align="left">Stopped heart</td><td align="left">—</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <blockquote>
+            <div class="p">For example, suppose Joshua has 14 hit points and a paladin smites him, dealing 12 slashing and 18 radiant damage. He is reduced to 0 hit points with 16 excess  slashing and radiant damage; the exact amounts of each damage type do not matter. Joshua must succeed on a DC 16 Constitution saving throw or else sustain a random injury. The possible injuries are ear damage, limb damage, or destroyed limb from slashing; or eye damage or third-degree burn from radiant.</div>
+            </blockquote>
+            <h3 id="saving-throws">Saving Throws</h3>
+            <div class="p">If an injury forces you to make a saving throw, the DC is equal to the amount of excess damage that caused the injury.</div>
+            <h3 id="healing-an-injury">Healing an Injury</h3>
+            <div class="p">If you receive magical healing on a single turn equal to or exceeding the excess damage that caused an injury, the injury is healed. If a part of your body is out of place, it must be returned to its proper location first.</div>
+            <div class="p">Other effects that heal wounds or injuries function as normal and can heal lasting injuries.</div>
+            <h2 id="tier-1-injuries">Tier 1 Injuries</h2>
+            <div class="p"><i>"You'll get over it."</i></div>
+            <div class="p"><b><i>Concussion.</i></b> You have disadvantage on Intelligence checks and Constitution saving throws made to maintain concentration.</div>
+            <div class="p"><b><i>Ear Damage.</i></b> You are deaf in one ear, chosen randomly. You have disadvantage on sound-based Perception checks. If you sustain this injury on all of your ears, you are deafened.</div>
+            <div class="p"><b><i>Eye Damage.</i></b> You are blind in one eye, chosen randomly. You have disadvantage on sight-based Perception checks. If you sustain this injury on all of your eyes, you are blind.</div>
+            <div class="p"><b><i>Facial Scarring.</i></b> You have disadvantage on Persuasion checks and advantage on Intimidation checks while the scar shows. You do not gain this benefit against a creature that is immune to fear or that has advantage on saving throws against fear.</div>
+            <div class="p"><b><i>Limb Damage.</i></b> One of your limbs, randomly determined, is seriously wounded. You have disadvantage on any attack roll or ability check that uses that limb. If the limb is a leg, your walking speed is halved. If the limb is a wing, you lose the ability to fly.</div>
+            <div class="p"><b><i>Organ Damage.</i></b> At the end of each minute after sustaining this injury, you must succeed on a Constitution saving throw or become poisoned.</div>
+            <h2 id="tier-2-injuries">Tier 2 Injuries</h2>
+            <div class="p"><i>"You may die."</i></div>
+            <div class="p"><b><i>Battleshock.</i></b> Each time you sense someone take damage of the type that inflicted this injury, you must succeed on a Wisdom saving throw or become paralyzed until the end of your next turn.</div>
+            <div class="p"><b><i>Broken Neck.</i></b> You cannot move your body below your neck, causing the following effects:</div>
+            <ul>
+                <li>You can't move or take any action that requires the use of your body below your neck.</li>
+                <li>You drop whatever you're holding and fall prone.</li>
+                <li>You automatically fail Strength and Dexterity saving throws.</li>
+                <li>Attack rolls against you have advantage.</li>
+                <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
+            </ul>
+            <div class="p"><b><i>Coma.</i></b> You fall unconscious and cannot wake up.</div>
+            <div class="p"><b><i>Destroyed Limb.</i></b> One of your limbs, randomly determined, is severed or otherwise rendered unusable. You cannot use that limb for any attack roll or ability check. If the limb is a leg, your walking speed is 0. If the limb is a wing, you lose the ability to fly. If you have no usable arms, you have disadvantage on Strength and Dexterity saving throws. If you have no usable limbs at all, you automatically fail Strength and Dexterity saving throws.</div>
+            <div class="p"><b><i>Third-Degree Burn.</i></b> You are vulnerable to acid, cold, fire, necrotic, and radiant damage.</div>
+            <h2 id="tier-3-injuries">Tier 3 Injuries</h2>
+            <div class="p"><i>"You will die."</i></div>
+            <div class="p"><b><i>Disembowelment.</i></b> Your organs fall out of your body. You take 1 damage at the start of each of your turns, and if you travel more than 5 feet on a turn, you die.</div>
+            <div class="p"><b><i>Fourth-Degree Burn.</i></b> Your skin sloughs off, exposing damaged muscle. You are vulnerable to all damage except psychic and take 1 damage at the start of each of your turns.</div>
+            <div class="p"><b><i>Stopped Heart.</i></b> You immediately begin suffocating. This injury ends if you take lightning damage.</div>
+            <div class="p"><b><i>Total Organ Failure.</i></b> At the start of each of your turns, you become poisoned and take 1 damage.</div>
+            <h2 id="tier-4-injuries">Tier 4 Injuries</h2>
+            <div class="p"><i>"You are dead."</i></div>
+            <div class="p"><b><i>Crushed Skull.</i></b> Your skull and brain are flattened. You die.</div>
+            <div class="p"><b><i>Decapitation.</i></b> You are relieved of your head. You die.</div>
+            <div class="p"><b><i>Soul Damage.</i></b> Your very soul is damaged. You die and lose 1 level. If this would reduce your level to 0, your soul is permanently destroyed.</div>
+        </article>
+        <footer>
+            This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+        </footer>
+    </body>
 </html>

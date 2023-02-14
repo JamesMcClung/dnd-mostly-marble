@@ -1,52 +1,40 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DnD Home</title>
-    <script src="/js/darkmode.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <header>
-        <ul>
-            <li><a href="index.html">DnD Home</a></li>
-        </ul>
-        <button id="button-dark-mode" , onclick="toggleDarkMode()">Dark Mode</button>
-    </header>
-
-    <article>
-        <h1>James' DnD Wiki</h1>
-        <p>Where I put all my notes (since June 2021).</p>
-
-        <h2>Rules & Systems</h2>
-        <p>Setting-agnostic rules.</p>
-
-        <h3><a href="rules/feat-points.html" class="home-ref">&rarr;</a> Feat Points</h3>
-        <p>A replacement for the usual method of acquiring feats.</p>
-
-        <h3><a href="rules/action-points.html" class="home-ref">&rarr;</a> Action Points</h3>
-        <p>A replacement of the action/bonus action system to alleviate bonus action conflict.</p>
-
-        &lt;redacted>
-
-        <h2>Settings</h2>
-        <p>These are all the worlds I've created, in varying detail. Not all of my notes have been moved here.</p>
-
-        <h3>Laurelei/Minwe</h3>
-        <p>A standard fantasy world. The city-states of the northern Laurelei had just begun to explore Minwe, the land south of a vast desert. That's when a war broke out between dragons, and many gods rose to power and fell from it in the chaos. The world is now on a path to recovery.</p>
-
-        <h3>Eris</h3>
-        <p>A shielded city within a jungle full of hostile spirits is the last sanctuary for the humanoid races. The wild was not always so dangerous; centuries ago, people were free to travel all over the land, but the spirit-led apocalypse decimated the old cities and it is unclear whether any other pockets of civilization survived.</p>
-
-        <h3><a href="settings/four-corners.html" class="home-ref">&rarr;</a> Four Corners</h3>
-        <p>A world where the Primordials have (mostly) been tamed, intercontinental trade is in full swing, and otherworldly beings exert their influence.</p>
-    </article>
-
-    <footer>
-        This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
-    </footer>
-</body>
-
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <script src="/js/darkmode.js"></script>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><a href="/official.html" class="del">Official</a><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                
+            </div>
+            <button id="button-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
+        </header>
+        <article>
+            <h1 id="james-dnd-wiki">James' DnD Wiki</h1>
+            <div class="p">Where I put all my notes (since June 2021).</div>
+            <h2 id="rules-systems">Rules & Systems</h2>
+            <div class="p">Setting-agnostic rules.</div>
+            <h3 id="feat-pointsrulesfeat-pointshtml"><a href="rules/feat-points.html">Feat Points</a></h3>
+            <div class="p">A replacement for the usual method of acquiring feats.</div>
+            <h3 id="action-pointsrulesaction-pointshtml"><a href="rules/action-points.html">Action Points</a></h3>
+            <div class="p">A replacement of the action/bonus action system to alleviate bonus action conflict.</div>
+            &lt;redacted>
+            <h2 id="settings">Settings</h2>
+            <div class="p">These are all the worlds I've created, in varying detail. Not all of my notes have been moved here.</div>
+            <h3 id="laureleiminwe">Laurelei/Minwe</h3>
+            <div class="p">A standard fantasy world. The city-states of the northern Laurelei had just begun to explore Minwe, the land south of a vast desert. That's when a war broke out between dragons, and many gods rose to power and fell from it in the chaos. The world is now on a path to recovery.</div>
+            <h3 id="eris">Eris</h3>
+            <div class="p">A shielded city within a jungle full of hostile spirits is the last sanctuary for the humanoid races. The wild was not always so dangerous; centuries ago, people were free to travel all over the land, but the spirit-led apocalypse decimated the old cities and it is unclear whether any other pockets of civilization survived.</div>
+            <h3 id="four-cornerssettingsfour-cornershtml"><a href="settings/four-corners.html">Four Corners</a></h3>
+            <div class="p">A world where the Primordials have (mostly) been tamed, intercontinental trade is in full swing, and otherworldly beings exert their influence.</div>
+        </article>
+        <footer>
+            This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+        </footer>
+    </body>
 </html>

@@ -1,123 +1,116 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Orc
-    </title>
-    <script src="/js/darkmode.js"></script>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-
-<body>
-    <header>
-        <ul>
-            <li><a href="/index.html">DnD Home</a></li>
-            <li><a href="../../four-corners.html">Four Corners</a></li><li><a href="../races.html">Races</a></li><li><a href="orc.html">Orc</a></li>
-            <!-- e.g. <li><a href="four-corners.html">Four Corners</a></li> -->
-        </ul>
-        <button id="button-dark-mode" , onclick="toggleDarkMode()">Dark Mode</button>
-    </header>
-
-
-    <article>
-        <h1 id="orc">Orc</h1>
-<div class="p">Orcish society is as unforgiving as the land they call home. Clans frequently skirmish with each other over control of scarce resources in the Atan northlands, and blood feuds drive clans to fight for no other reason than mutual hatred. Within most clans, orcs behave completely differently: almost any orc would give up his or her life to protect the clan, and honor has an important place in clan customs.</div>
-<div class="p">Despite the importance of honor, orcs do not have honorifics. Even the chief is not treated any differently from other orcs. Many outsiders perceive orcs' frankness and indecorousness as rudeness or insult.</div>
-<h2 id="threefold-people">Threefold People</h2>
-<div class="p">There are three primary superclans of orcs. The <i>Dej Khov</i> or "Ice" Orcs along the northernmost shores spend half the year on the ice plains hunting for seals. The <i>Qhov Tsua</i> or "Cave" Orcs live underground, either in tunnels dug through permafrost or in the expansive cave networks of the northern mountains. In between are the <i>Ntoo</i> or "Wood" Orcs, who live in the boreal forests.</div>
-<div class="p">Each superclan has a king of sorts called a Khan. Every fifth winter, the chiefs of each clan from a given superclan gather at a sacred place known only to chiefs. There, the chiefs determine who is to be Khan. This meeting is called <i>Lub rooj sib tham ntawm Cov Thawj Coj</i> or "Chiefsmoot". If the existing Khan is deemed to have acted dishonorably or against the interests of the superclan, the chiefs may select a new Khan to replace him. In such cases, the previous Khan does not return from Chiefsmoot and is never spoken of again.</div>
-<div class="p">Despite having no direct authority, a Khan serves a handful of functions. A Khan belongs to no clan and fighting is prohibited in a Khan's presence, and he can therefore serve as a diplomat between feuding clans. (To orcs it is usually preferable to simply continue the feud.) He also speaks on behalf of the entire superclan when dealing with the other two Khans. Most importantly, only a Khan is permitted to travel to the hidden realm of the Great Orcs to trade offerings for favor and revelations.</div>
-<h2 id="the-great-orcs">The Great Orcs</h2>
-<div class="p">Outside of the ice, cave, and wood orcs are the great orcs. These hulking brutes are the religious leaders of orckind. They preside from a place called <i>Tsev Fuabtais Loj</i>, which translates literally to Great Castle. The location of Tsev Fuabtais Loj is unknown to all but the Khans, and little is known of the great orcs except what is gleaned of them from old stories about human-orc wars.</div>
-<div class="p">It is believed that many fantastical magical items are kept at Tsev Fuabtais Loj. No human treasure hunter has ever found the place (and no orc would try).</div>
-&lt;redacted>
-<h2 id="physical-appearance">Physical Appearance</h2>
-<div class="p">All orcs have mottled skin, protruding lower tusks, thick hair, and coarse features.</div>
-<ul>
-    <li>Wood orcs have marbled skin of dark green and brown.</li>
-    <li>Cave orcs have dark gray skin and nearly solid black eyes. They are the shortest type of orc by nearly a foot on average.</li>
-    <li>Ice orcs have pale skin with a blue tint.</li>
-    <li>Great orcs have splotchy skin of gray and off-white. They are the tallest and bulkiest by far, standing a head taller than most other orcs without exception. They are also prone to physical deformities due to a history of inbreeding.</li>
-</ul>
-<h2 id="orcs-and-humans">Orcs and Humans</h2>
-<div class="p">Humans largely believe orcs are monsters and are treated as such. This is due to a number of reasons, including their capacity for violence, apparent lack of manners, and scary appearance.</div>
-<div class="p">In a way, orcs agree with the humans. Orcs are far more suspicious and hateful of enemy clans than of humans. Most orcs are just wary of humans.</div>
-<h2 id="game-mechanics">Game Mechanics</h2>
-<div class="medium-card">
-    <h1 id="orc">Orc</h1>
-    <div class="p"><b><i>Abilities.</i></b> Orcs are a hardy and strong-willed people, and have a high average Strength, Constitution, and Charisma.</div>
-    <div class="p"><b><i>Age.</i></b> Many orcs die young due to their harsh homeland and fighting, reaching maturity at 15 years. Your <a href="/settings/four-corners/glossary.html#old-age">old age</a> threshold is 65 years, with an aging rate of 5 years.</div>
-    <div class="p"><b><i>Alignment.</i></b> Orcish society consists of close-knit clans in a state of mutual suspicion. Within a clan, orcs display fierce loyalty and have a strong sense of honor. Howewver, to rival clan members, orcs are pitiless and brutal. In general, orcs are capable of any moral extreme depending on the circumstances.</div>
-    <div class="p"><b><i>Languages.</i></b> You can speak, read, and write your clan's dialect of Orcish.</div>
-    <div class="p"><b><i>Size.</i></b> Your size is Medium.</div>
-    <div class="p"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</div>
-    <div class="p"><b><i>Relentless Endurance.</i></b> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</div>
-    <div class="p"><b><i>Protective Instincts.</i></b> When an ally you can see takes damage, you can use your reaction to gain temporary hit points equal to 1d8 + your Constitution modifier and move up to your speed towards that ally.</div>
-    <div class="p">Once you use this feature, you can use neither it nor Aggressive Instincts until you finish a short rest.</div>
-    <div class="p"><b><i>Aggressive Instincts.</i></b> When a creature you can see becomes bloodied, you can use your reaction to move up to your speed towards that creature and gain advantage on the first attack you make against it before the end of your next turn. If the attack hits, it deals extra damage equal to your level.</div>
-    <div class="p">Once you use this feature, you can use neither it nor Protective Instincts until you finish a short rest.</div>
-    <h2 id="cave-orc">Cave Orc</h2>
-    <div class="p"><b><i>Darkvision.</i></b> You have darkvision out to a range of 60 feet.</div>
-    <h2 id="ice-orc">Ice Orc</h2>
-    <div class="p"><b><i>Cold Resistance.</i></b> You have resistance to cold damage.</div>
-    <h2 id="wood-orc">Wood Orc</h2>
-    <div class="p"><b><i>Forest Camouflage.</i></b> You have advantage on Stealth checks made to hide in vegetation.</div>
-    <h2 id="great-orc">Great Orc</h2>
-    <div class="p"><b><i>Powerful Build.</i></b> You count as one size larger than your actual size for the purpose of <span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">grappling</span>, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
-    <div class="p"><b><i>Siegebreaker.</i></b> Your unarmed attacks deal 1d8 bludgeoning damage, or 1d12 bludgeoning damage against a target that is at least one size larger than you. Your melee weapon attacks do double damage to objects and structures.</div>
-</div>
-<h2 id="suggested-backgrounds">Suggested Backgrounds</h2>
-<div class="cardgroup">
-    <div class="small-card">
-        <h1 id="orc-combat-training">Orc Combat Training</h1>
-        <div class="p card-subheader"><i>Prerequisite: The ability to speak Orcish</i></div>
-        <div class="p">You were taught to fight in the manner of orc bloodragers. You gain the following benefits:</div>
-        <ul>
-            <li>You have proficiency in Intimidation.</li>
-            <li>Choose any number of the following weapons: unarmed strike, club, greatclub, mace, battleaxe, flail, greataxe, maul, morningstar, and/or warhammer. You are proficient with the chosen weapon.</li>
-            <li>When you score a critical hit with a melee weapon attack using one of the chosen weapons, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</li>
-        </ul>
-    </div>
-    <div class="small-card">
-        <h1 id="orc-survival-training">Orc Survival Training</h1>
-        <div class="p card-subheader"><i>Prerequisite: The ability to speak Orcish</i></div>
-        <div class="p">You learned to survive as orcs do in the northern hinterlands of Ata. You gain the following benefits:</div>
-        <ul>
-            <li>You have proficiency in Survival and one of the following skills of your choice: Athletics, Nature, Perception, or Stealth.</li>
-            <li>Choose one of the following terrains: arctic, underground, or taiga. When you make a Survival check in that terrain, you can treat a d20 roll of 9 or lower as a 10.</li>
-        </ul>
-    </div>
-</div>
-<div class="popup" id="popup0">
-    <div class="popupHeader">
-        <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-            <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#grappling">&raquo;</a></div>
-            <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup0, options={event:event})">&#9675;</div>
-            <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup0, options={event:event})">&times;</div>
-        </div>
-        grappling
-    </div>
-    <div class="popupContent">
-        <div class="small-card">
-            <h1 class="noHeaderID">Grappling</h1>
-            <div class="p">While you are grappling another creature (the <a href="/settings/four-corners/glossary.html#grappled">grappled</a> creature), you experience the following effects:</div>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orc</title>
+        <script src="/js/darkmode.js"></script>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><a href="/official.html" class="del">Official</a><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners/races.html">Races</a><div class="dropdown-content"><a href="/settings/four-corners/races/aasimar.html">Aasimar</a><a href="/settings/four-corners/races/changeling.html">Changeling</a><a href="/settings/four-corners/races/dragonborn.html">Dragonborn</a><a href="/settings/four-corners/races/dwarf.html">Dwarf</a><a href="/settings/four-corners/races/elf.html">Elf</a><a href="/settings/four-corners/races/genasi.html">Genasi</a><a href="/settings/four-corners/races/gnome.html">Gnome</a><a href="/settings/four-corners/races/goblin.html">Goblin</a><a href="/settings/four-corners/races/goliath.html">Goliath</a><a href="/settings/four-corners/races/human.html">Human</a><a href="/settings/four-corners/races/orc.html">Orc</a><a href="/settings/four-corners/races/salamander.html">Salamander</a><a href="/settings/four-corners/races/tiefling.html">Tiefling</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners/races/orc.html">Orc</a><div class="dropdown-content"></div></div>
+            </div>
+            <button id="button-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
+        </header>
+        <article>
+            <h1 id="orc">Orc</h1>
+            <div class="p">Orcish society is as unforgiving as the land they call home. Clans frequently skirmish with each other over control of scarce resources in the Atan northlands, and blood feuds drive clans to fight for no other reason than mutual hatred. Within most clans, orcs behave completely differently: almost any orc would give up his or her life to protect the clan, and honor has an important place in clan customs.</div>
+            <div class="p">Despite the importance of honor, orcs do not have honorifics. Even the chief is not treated any differently from other orcs. Many outsiders perceive orcs' frankness and indecorousness as rudeness or insult.</div>
+            <h2 id="threefold-people">Threefold People</h2>
+            <div class="p">There are three primary superclans of orcs. The <i>Dej Khov</i> or "Ice" Orcs along the northernmost shores spend half the year on the ice plains hunting for seals. The <i>Qhov Tsua</i> or "Cave" Orcs live underground, either in tunnels dug through permafrost or in the expansive cave networks of the northern mountains. In between are the <i>Ntoo</i> or "Wood" Orcs, who live in the boreal forests.</div>
+            <div class="p">Each superclan has a king of sorts called a Khan. Every fifth winter, the chiefs of each clan from a given superclan gather at a sacred place known only to chiefs. There, the chiefs determine who is to be Khan. This meeting is called <i>Lub rooj sib tham ntawm Cov Thawj Coj</i> or "Chiefsmoot". If the existing Khan is deemed to have acted dishonorably or against the interests of the superclan, the chiefs may select a new Khan to replace him. In such cases, the previous Khan does not return from Chiefsmoot and is never spoken of again.</div>
+            <div class="p">Despite having no direct authority, a Khan serves a handful of functions. A Khan belongs to no clan and fighting is prohibited in a Khan's presence, and he can therefore serve as a diplomat between feuding clans. (To orcs it is usually preferable to simply continue the feud.) He also speaks on behalf of the entire superclan when dealing with the other two Khans. Most importantly, only a Khan is permitted to travel to the hidden realm of the Great Orcs to trade offerings for favor and revelations.</div>
+            <h2 id="the-great-orcs">The Great Orcs</h2>
+            <div class="p">Outside of the ice, cave, and wood orcs are the great orcs. These hulking brutes are the religious leaders of orckind. They preside from a place called <i>Tsev Fuabtais Loj</i>, which translates literally to Great Castle. The location of Tsev Fuabtais Loj is unknown to all but the Khans, and little is known of the great orcs except what is gleaned of them from old stories about human-orc wars.</div>
+            <div class="p">It is believed that many fantastical magical items are kept at Tsev Fuabtais Loj. No human treasure hunter has ever found the place (and no orc would try).</div>
+            &lt;redacted>
+            <h2 id="physical-appearance">Physical Appearance</h2>
+            <div class="p">All orcs have mottled skin, protruding lower tusks, thick hair, and coarse features.</div>
             <ul>
-                <li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.</li>
-                <li>When you move on your turn, you drag the grappled creature with you.</li>
+                <li>Wood orcs have marbled skin of dark green and brown.</li>
+                <li>Cave orcs have dark gray skin and nearly solid black eyes. They are the shortest type of orc by nearly a foot on average.</li>
+                <li>Ice orcs have pale skin with a blue tint.</li>
+                <li>Great orcs have splotchy skin of gray and off-white. They are the tallest and bulkiest by far, standing a head taller than most other orcs without exception. They are also prone to physical deformities due to a history of inbreeding.</li>
             </ul>
-            <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or if the grappled creature is no longer within your reach.</div>
-            <div class="p">This condition is typically caused by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
-        </div>
-    </div>
-</div>
-<script src="/js/drag.js"></script>
-    </article>
-
-    <footer>
-        This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
-    </footer>
-</body>
-
+            <h2 id="orcs-and-humans">Orcs and Humans</h2>
+            <div class="p">Humans largely believe orcs are monsters and are treated as such. This is due to a number of reasons, including their capacity for violence, apparent lack of manners, and scary appearance.</div>
+            <div class="p">In a way, orcs agree with the humans. Orcs are far more suspicious and hateful of enemy clans than of humans. Most orcs are just wary of humans.</div>
+            <h2 id="game-mechanics">Game Mechanics</h2>
+            <div class="medium-card">
+                <h1 id="orc">Orc</h1>
+                <div class="p"><b><i>Abilities.</i></b> Orcs are a hardy and strong-willed people, and have a high average Strength, Constitution, and Charisma.</div>
+                <div class="p"><b><i>Age.</i></b> Many orcs die young due to their harsh homeland and fighting, reaching maturity at 15 years. Your <a href="/settings/four-corners/glossary.html#old-age">old age</a> threshold is 65 years, with an aging rate of 5 years.</div>
+                <div class="p"><b><i>Alignment.</i></b> Orcish society consists of close-knit clans in a state of mutual suspicion. Within a clan, orcs display fierce loyalty and have a strong sense of honor. Howewver, to rival clan members, orcs are pitiless and brutal. In general, orcs are capable of any moral extreme depending on the circumstances.</div>
+                <div class="p"><b><i>Languages.</i></b> You can speak, read, and write your clan's dialect of Orcish.</div>
+                <div class="p"><b><i>Size.</i></b> Your size is Medium.</div>
+                <div class="p"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</div>
+                <div class="p"><b><i>Relentless Endurance.</i></b> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</div>
+                <div class="p"><b><i>Protective Instincts.</i></b> When an ally you can see takes damage, you can use your reaction to gain temporary hit points equal to 1d8 + your Constitution modifier and move up to your speed towards that ally.</div>
+                <div class="p">Once you use this feature, you can use neither it nor Aggressive Instincts until you finish a short rest.</div>
+                <div class="p"><b><i>Aggressive Instincts.</i></b> When a creature you can see becomes bloodied, you can use your reaction to move up to your speed towards that creature and gain advantage on the first attack you make against it before the end of your next turn. If the attack hits, it deals extra damage equal to your level.</div>
+                <div class="p">Once you use this feature, you can use neither it nor Protective Instincts until you finish a short rest.</div>
+                <h2 id="cave-orc">Cave Orc</h2>
+                <div class="p"><b><i>Darkvision.</i></b> You have darkvision out to a range of 60 feet.</div>
+                <h2 id="ice-orc">Ice Orc</h2>
+                <div class="p"><b><i>Cold Resistance.</i></b> You have resistance to cold damage.</div>
+                <h2 id="wood-orc">Wood Orc</h2>
+                <div class="p"><b><i>Forest Camouflage.</i></b> You have advantage on Stealth checks made to hide in vegetation.</div>
+                <h2 id="great-orc">Great Orc</h2>
+                <div class="p"><b><i>Powerful Build.</i></b> You count as one size larger than your actual size for the purpose of <span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">grappling</span>, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
+                <div class="p"><b><i>Siegebreaker.</i></b> Your unarmed attacks deal 1d8 bludgeoning damage, or 1d12 bludgeoning damage against a target that is at least one size larger than you. Your melee weapon attacks do double damage to objects and structures.</div>
+            </div>
+            <h2 id="suggested-backgrounds">Suggested Backgrounds</h2>
+            <div class="cardgroup">
+                <div class="small-card">
+                    <h1 id="orc-combat-training">Orc Combat Training</h1>
+                    <div class="p card-subheader"><i>Prerequisite: The ability to speak Orcish</i></div>
+                    <div class="p">You were taught to fight in the manner of orc bloodragers. You gain the following benefits:</div>
+                    <ul>
+                        <li>You have proficiency in Intimidation.</li>
+                        <li>Choose any number of the following weapons: unarmed strike, club, greatclub, mace, battleaxe, flail, greataxe, maul, morningstar, and/or warhammer. You are proficient with the chosen weapon.</li>
+                        <li>When you score a critical hit with a melee weapon attack using one of the chosen weapons, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</li>
+                    </ul>
+                </div>
+                <div class="small-card">
+                    <h1 id="orc-survival-training">Orc Survival Training</h1>
+                    <div class="p card-subheader"><i>Prerequisite: The ability to speak Orcish</i></div>
+                    <div class="p">You learned to survive as orcs do in the northern hinterlands of Ata. You gain the following benefits:</div>
+                    <ul>
+                        <li>You have proficiency in Survival and one of the following skills of your choice: Athletics, Nature, Perception, or Stealth.</li>
+                        <li>Choose one of the following terrains: arctic, underground, or taiga. When you make a Survival check in that terrain, you can treat a d20 roll of 9 or lower as a 10.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup" id="popup0">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#grappling">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup0, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup0, options={event:event})">&times;</div>
+                    </div>
+                    grappling
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Grappling</h1>
+                        <div class="p">While you are grappling another creature (the <a href="/settings/four-corners/glossary.html#grappled">grappled</a> creature), you experience the following effects:</div>
+                        <ul>
+                            <li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.</li>
+                            <li>When you move on your turn, you drag the grappled creature with you.</li>
+                        </ul>
+                        <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or if the grappled creature is no longer within your reach.</div>
+                        <div class="p">This condition is typically caused by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
+                    </div>
+                </div>
+            </div>
+            <script src="/js/drag.js"></script>
+        </article>
+        <footer>
+            This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+        </footer>
+    </body>
 </html>
