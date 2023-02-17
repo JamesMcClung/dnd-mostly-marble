@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/races.html">Races</a><div class="dropdown-content"><a href="/settings/four-corners/races/aasimar.html">Aasimar</a><a href="/settings/four-corners/races/changeling.html">Changeling</a><a href="/settings/four-corners/races/dragonborn.html">Dragonborn</a><a href="/settings/four-corners/races/dwarf.html">Dwarf</a><a href="/settings/four-corners/races/elf.html">Elf</a><a href="/settings/four-corners/races/genasi.html">Genasi</a><a href="/settings/four-corners/races/gnome.html">Gnome</a><a href="/settings/four-corners/races/goblin.html">Goblin</a><a href="/settings/four-corners/races/goliath.html">Goliath</a><a href="/settings/four-corners/races/human.html">Human</a><a href="/settings/four-corners/races/orc.html">Orc</a><a href="/settings/four-corners/races/salamander.html">Salamander</a><a href="/settings/four-corners/races/tiefling.html">Tiefling</a></div></div>
             </div>
@@ -367,9 +367,9 @@
                 <div class="p"><b><i>Size.</i></b> Your size is Medium.</div>
                 <div class="p"><b><i>Speed.</i></b> Your base walking speed is 30 feet.</div>
                 <div class="p"><b><i>Relentless Endurance.</i></b> When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest.</div>
-                <div class="p"><b><i>Protective Instincts.</i></b> When an ally you can see takes damage, you can use your reaction to gain temporary hit points equal to 1d8 + your Constitution modifier and move up to your speed towards that ally.</div>
+                <div class="p"><b><i>Protective Instincts.</i></b> When an ally you can see takes damage, you can use your reaction to gain temporary hit points equal to 1d8 + your Constitution modifier and freely move up to your speed towards that ally.</div>
                 <div class="p">Once you use this feature, you can use neither it nor Aggressive Instincts until you finish a short rest.</div>
-                <div class="p"><b><i>Aggressive Instincts.</i></b> When a creature you can see becomes bloodied, you can use your reaction to move up to your speed towards that creature and gain advantage on the first attack you make against it before the end of your next turn. If the attack hits, it deals extra damage equal to your level.</div>
+                <div class="p"><b><i>Aggressive Instincts.</i></b> When a creature you can see becomes bloodied, you can use your reaction to freely move up to your speed towards that creature and gain advantage on the first attack you make against it before the end of your next turn. If the attack hits, it deals extra damage equal to your level.</div>
                 <div class="p">Once you use this feature, you can use neither it nor Protective Instincts until you finish a short rest.</div>
                 <h2 id="cave-orc">Cave Orc</h2>
                 <div class="p"><b><i>Darkvision.</i></b> You have darkvision out to a range of 60 feet.</div>
@@ -442,7 +442,7 @@
                         <div class="p">While you are grappling another creature (the <a href="/settings/four-corners/glossary.html#grappled">grappled</a> creature), you experience the following effects:</div>
                         <ul>
                             <li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.</li>
-                            <li>When you move on your turn, you drag the grappled creature with you.</li>
+                            <li>When you move, you drag the grappled creature with you.</li>
                         </ul>
                         <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or if the grappled creature is no longer within your reach.</div>
                         <div class="p">This condition is typically caused by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -1904,7 +1904,7 @@
                         </div>
                         <hr>
                         <div class="p">A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.</div>
-                        <div class="p">If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.</div>
+                        <div class="p">If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move so that it is no longer enclosed by the wall.</div>
                         <div class="p">The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.</div>
                         <div class="p">If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.</div>
                         <div class="p">The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.</div>
@@ -2904,7 +2904,8 @@
                         <h1 class="noHeaderID">Dazed</h1>
                         <div class="p">While you are dazed, you experience the following effects:</div>
                         <ul>
-                            <li>On each of your turns, you have 1 less <a href="/rules/action-points.html">action point</a>, and you can either move or take actions.</li>
+                            <li>On each of your turns, you have 1 less <a href="/rules/action-points.html">action point</a>.</li>
+                            <li>You start each of your turns with 0 <a href="/rules/movement.html">movement</a>. You can increase your movement in other ways, such as the <a href="/settings/four-corners/glossary.html#dash">Dash</a> action.</li>
                             <li>You can't take reactions.</li>
                             <li>You have disadvantage on saving throws you make to maintain <a href="/settings/four-corners/glossary.html#concentration">concentration</a> (including on the saving throw triggered by the effect that dazed you, if it triggered such a save).</li>
                         </ul>

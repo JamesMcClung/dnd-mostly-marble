@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/changes.html">Changes</a><div class="dropdown-content"></div></div>
             </div>
@@ -17,6 +17,65 @@
         </header>
         <article>
             <h1 id="changes">Changes</h1>
+            <h2 id="v1120">v1.12.0</h2>
+            <div class="p">Game:</div>
+            <ul>
+                <li>
+                    <a href="glossary.html#actions">Actions</a>:
+                    <ul>
+                        <li>
+                            Prop 17: The <a href="glossary.html#move">Move</a> action is now required to spend <a href="/rules/movement.html">movement</a>
+                            <ul>
+                                <li>
+                                    Consequently, the following have changed mechanically: 
+                                    <ul>
+                                        <li>Spells: <i>infestation</i>, <i>wall of stone</i>, <i>construct spirit</i>'s Berserk Lashing</li>
+                                        <li>Maneuvers: rounding attack</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    And the following have been reworded, but are mechanically unchanged:
+                                    <ul>
+                                        <li>Spells: <i>command, confusion, dissonant whispers, dream, haste, magic jar, Nathair's mischief</i>, the "summon x spirit" spells, <i>wind walk</i></li>
+                                        <li>Druid: Wild Companion</li>
+                                        <li>Ranger: Legendary Counterattack, Ephemeral Stride</li>
+                                        <li>Maneuvers: maneuvering attack</li>
+                                        <li>Orc: Protective Instincts, Aggressive Instincts</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Prop 21: Rework <a href="glossary.html#charge">Charge</a> to be Dash + walk/swim/fly in straight line + attack, and slowed after until end of next turn</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="glossary.html#conditions">Conditions</a>:
+                    <ul>
+                        <li>
+                            <a href="glossary.html#incapacitated">Incapacitated</a> no longer causes disadvantage on initiative checks
+                            <ul>
+                                <li>Also note that it now prevents movement, since Move is an action</li>
+                            </ul>
+                        </li>
+                        <li><a href="glossary.html#invisible">Invisible</a> no longer gives advantage on initiative checks</li>
+                        <li>Formally made <a href="glossary.html#dying">dying</a> a condition</li>
+                        <li>Updated <a href="glossary.html#dazed">dazed</a> to work with prop 17: start turn with 0 movement</li>
+                        <li><a href="glossary.html#grappled">Grappled</a> and <a href="glossary.html#grappling">grappling</a> no longer require it to be your turn to drag other creature</li>
+                    </ul>
+                </li>
+                <li>Spells: <a href="spells.html#tashas-mind-whip">Tasha's mind whip</a> now dazes instead of prohibiting reactions and limiting action to move/minor action/standard action</li>
+                <li>
+                    Experimental:
+                    <ul>
+                        <li><a href="glossary.html#falling">Fall</a> damage now scales with size and falling distance is explicitly stated</li>
+                        <li>Passive Perception now <a href="rules.html#passive-perception-falloff">falls off</a> with distance (1 per 5 ft)</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="p">Website:</div>
+            <ul>
+                <li>Glossary sections are collapsible</li>
+            </ul>
             <h2 id="v1112">v1.11.2</h2>
             <div class="p">Website:</div>
             <ul>

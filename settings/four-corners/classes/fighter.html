@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/classes.html">Classes</a><div class="dropdown-content"><a href="/settings/four-corners/classes/druid.html">Druid</a><a href="/settings/four-corners/classes/fighter.html">Fighter</a><a href="/settings/four-corners/classes/monk.html">Monk</a><a href="/settings/four-corners/classes/ranger.html">Ranger</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/classes/fighter.html">Fighter</a><div class="dropdown-content"></div></div>
@@ -294,7 +294,7 @@
                     </div>
                     <div class="small-card">
                         <h1 id="maneuvering-attack">Maneuvering Attack</h1>
-                        <div class="p">When you hit a creature with a weapon attack, you can maneuver one of your comrades into a more advantageous position. You add your maneuver die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</div>
+                        <div class="p">When you hit a creature with a weapon attack, you can maneuver one of your comrades into a more advantageous position. You add your maneuver die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to freely move without provoking opportunity attacks from the target of your attack.</div>
                     </div>
                     <div class="small-card">
                         <h1 id="menacing-attack">Menacing Attack</h1>
@@ -373,7 +373,7 @@
                     </div>
                     <div class="small-card">
                         <h1 id="rounding-attack">Rounding Attack</h1>
-                        <div class="p">When you hit a creature within 5 feet of you with a melee weapon attack, you can attempt to trick it into swapping places with you. You add your maneuver die to the attack's damage roll, and the target must make an Intelligence saving throw. On a failed save, you can spend 5 feet of movement to switch places with the target, provided it has a speed of at least 5 feet and both of you are capable of safely moving to your new positions. This movement doesn't provoke opportunity attacks.</div>
+                        <div class="p">When you hit a creature within 5 feet of you with a melee weapon attack, you can attempt to trick it into swapping places with you. You add your maneuver die to the attack's damage roll, and the target must make an Intelligence saving throw. On a failed save, you and the target safely move past each other, swapping places. This movement doesn't provoke opportunity attacks.</div>
                     </div>
                     <div class="small-card">
                         <h1 id="timed-shot">Timed Shot</h1>
@@ -639,7 +639,7 @@
                         <div class="p">While you are grappled by another creature (the <a href="/settings/four-corners/glossary.html#grappling">grappling</a> creature), you experience the following effects:</div>
                         <ul>
                             <li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.</li>
-                            <li>When you move on your turn, you drag the grappling creature with you.</li>
+                            <li>When you move, you drag the grappling creature with you.</li>
                         </ul>
                         <div class="p">As a standard action, you can make a saving throw against the grapple, ending the grapple on a success.</div>
                         <div class="p">This condition is typically inflicted by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -661,7 +661,7 @@
                         <div class="p">While you are grappling another creature (the <a href="/settings/four-corners/glossary.html#grappled">grappled</a> creature), you experience the following effects:</div>
                         <ul>
                             <li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.</li>
-                            <li>When you move on your turn, you drag the grappled creature with you.</li>
+                            <li>When you move, you drag the grappled creature with you.</li>
                         </ul>
                         <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or if the grappled creature is no longer within your reach.</div>
                         <div class="p">This condition is typically caused by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -785,7 +785,7 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Maneuvering Attack</h1>
-                        <div class="p">When you hit a creature with a weapon attack, you can maneuver one of your comrades into a more advantageous position. You add your maneuver die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack.</div>
+                        <div class="p">When you hit a creature with a weapon attack, you can maneuver one of your comrades into a more advantageous position. You add your maneuver die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to freely move without provoking opportunity attacks from the target of your attack.</div>
                     </div>
                 </div>
             </div>
@@ -956,7 +956,7 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Rounding Attack</h1>
-                        <div class="p">When you hit a creature within 5 feet of you with a melee weapon attack, you can attempt to trick it into swapping places with you. You add your maneuver die to the attack's damage roll, and the target must make an Intelligence saving throw. On a failed save, you can spend 5 feet of movement to switch places with the target, provided it has a speed of at least 5 feet and both of you are capable of safely moving to your new positions. This movement doesn't provoke opportunity attacks.</div>
+                        <div class="p">When you hit a creature within 5 feet of you with a melee weapon attack, you can attempt to trick it into swapping places with you. You add your maneuver die to the attack's damage roll, and the target must make an Intelligence saving throw. On a failed save, you and the target safely move past each other, swapping places. This movement doesn't provoke opportunity attacks.</div>
                     </div>
                 </div>
             </div>
@@ -1044,7 +1044,7 @@
                             <li>You have disadvantage on attack rolls.</li>
                             <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
                         </ul>
-                        <div class="p">Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
+                        <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
                         <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
                     </div>
                 </div>

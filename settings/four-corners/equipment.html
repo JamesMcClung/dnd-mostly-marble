@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/equipment.html">Equipment</a><div class="dropdown-content"><a href="/settings/four-corners/equipment/properties.html">Properties</a></div></div>
             </div>
@@ -531,7 +531,7 @@
                         <div class="p">While you are grappled by another creature (the <a href="/settings/four-corners/glossary.html#grappling">grappling</a> creature), you experience the following effects:</div>
                         <ul>
                             <li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.</li>
-                            <li>When you move on your turn, you drag the grappling creature with you.</li>
+                            <li>When you move, you drag the grappling creature with you.</li>
                         </ul>
                         <div class="p">As a standard action, you can make a saving throw against the grapple, ending the grapple on a success.</div>
                         <div class="p">This condition is typically inflicted by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -553,7 +553,7 @@
                         <div class="p">While you are grappling another creature (the <a href="/settings/four-corners/glossary.html#grappled">grappled</a> creature), you experience the following effects:</div>
                         <ul>
                             <li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.</li>
-                            <li>When you move on your turn, you drag the grappled creature with you.</li>
+                            <li>When you move, you drag the grappled creature with you.</li>
                         </ul>
                         <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or if the grappled creature is no longer within your reach.</div>
                         <div class="p">This condition is typically caused by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -639,7 +639,7 @@
                             <li>You have disadvantage on attack rolls.</li>
                             <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
                         </ul>
-                        <div class="p">Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
+                        <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
                         <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
                     </div>
                 </div>
@@ -897,7 +897,7 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Ball Bearings (Bag of 1,000)</h1>
                         <div class="p card-subheader"><i>Cost: 1 gp<br>Weight: 2 lb.</i></div>
-                        <div class="p">As a standard action, you can spill these tiny metal balls from their pouch to cover a level area 10 feet square. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature moving through the area at half speed doesn't need to make the saving throw.</div>
+                        <div class="p">As a standard action, you can spill these tiny metal balls from their pouch to cover a level area 10 feet square. A creature moving across the covered area must succeed on a DC 10 Dexterity saving throw or fall prone. A creature doesn't need to make the saving throw if it <a href="/settings/four-corners/glossary.html#crawl">crawls</a> or <a href="/settings/four-corners/glossary.html#sneak">sneaks</a>.</div>
                     </div>
                 </div>
             </div>
@@ -948,7 +948,7 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Caltrops (Bag of 20)</h1>
                         <div class="p card-subheader"><i>Cost: 1 gp<br>Weight: 2 lb.</i></div>
-                        <div class="p">As a standard action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature moving through the area at half speed doesn't need to make the saving throw.</div>
+                        <div class="p">As a standard action, you can spread a single bag of caltrops to cover a 5-foot-square area. Any creature that enters the area must succeed on a DC 15 Dexterity saving throw or stop moving and take 1 piercing damage. Until the creature regains at least 1 hit point, its walking speed is reduced by 10 feet. A creature doesn't need to make the saving throw if it <a href="/settings/four-corners/glossary.html#crawl">crawls</a> or <a href="/settings/four-corners/glossary.html#sneak">sneaks</a>.</div>
                     </div>
                 </div>
             </div>

@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/races.html">Races</a><div class="dropdown-content"><a href="/settings/four-corners/races/aasimar.html">Aasimar</a><a href="/settings/four-corners/races/changeling.html">Changeling</a><a href="/settings/four-corners/races/dragonborn.html">Dragonborn</a><a href="/settings/four-corners/races/dwarf.html">Dwarf</a><a href="/settings/four-corners/races/elf.html">Elf</a><a href="/settings/four-corners/races/genasi.html">Genasi</a><a href="/settings/four-corners/races/gnome.html">Gnome</a><a href="/settings/four-corners/races/goblin.html">Goblin</a><a href="/settings/four-corners/races/goliath.html">Goliath</a><a href="/settings/four-corners/races/human.html">Human</a><a href="/settings/four-corners/races/orc.html">Orc</a><a href="/settings/four-corners/races/salamander.html">Salamander</a><a href="/settings/four-corners/races/tiefling.html">Tiefling</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/races/aasimar.html">Aasimar</a><div class="dropdown-content"></div></div>
@@ -352,7 +352,7 @@
                             <li>You have disadvantage on attack rolls.</li>
                             <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
                         </ul>
-                        <div class="p">Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
+                        <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
                         <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
                     </div>
                 </div>
@@ -369,7 +369,26 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Falling</h1>
-                        <div class="p">At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands <span class="popupAnchor" id="anchor8" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor8)" onmouseout="hidePopup(popup8)">prone</span>, unless it avoids taking damage from the fall.</div>
+                        <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
+                        <div class="p">On impact, roll a fall damage die for every 10 feet you fell, to a maximum of 20 dice. You take bludgeoning damage equal to their sum. Your size determines your fall damage die, as shown in the table below. You also land <span class="popupAnchor" id="anchor8" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor8)" onmouseout="hidePopup(popup8)">prone</span>, unless you avoid taking damage from the fall.</div>
+                        <div class="tableAndCaption">
+                            <span class="caption" id="fall-damage-die">Fall Damage Die</span>
+                            <div class="tableWrapper">
+                                <table>
+                                    <thead>
+                                        <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Die</span></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td align="left">Tiny</td><td align="center">d4</td></tr>
+                                        <tr><td align="left">Small</td><td align="center">d6</td></tr>
+                                        <tr><td align="left">Medium</td><td align="center">d8</td></tr>
+                                        <tr><td align="left">Large</td><td align="center">d10</td></tr>
+                                        <tr><td align="left">Huge</td><td align="center">d12</td></tr>
+                                        <tr><td align="left">Gargantuan</td><td align="center">d20</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -156,21 +156,23 @@ h3 {
   border-bottom: 1px solid var(--light-border);
 }
 details {
-  margin-bottom: 18px;
+  margin: 7px 0px;
 }
 details > summary {
   font: 20px Arial, Geneva, Helvetica, sans-serif;
-  margin-bottom: -8px;
   cursor: pointer;
   user-select: none;
   padding: 2px;
-  padding-left: 6px;
+  padding-left: 10px;
   color: var(--dark-bg-text);
   background-color: var(--dark-bg);
-  border-radius: 4px;
+  border-radius: 100px;
 }
 details > summary:hover {
   background-color: var(--dark-bg-hover);
+}
+details > summary + .source-subheader {
+  margin-top: 0px;
 }
 h4 {
   font: 18px Arial, Geneva, Helvetica, sans-serif;

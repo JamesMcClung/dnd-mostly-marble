@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/glossary.html">Glossary</a><div class="dropdown-content"></div></div>
             </div>
@@ -18,7 +18,9 @@
         <article>
             <h1 id="glossary">Glossary</h1>
             <div class="p">Also see the <a href="rules.html">rules</a> page.</div>
-            <h2 id="actions">Actions</h2>
+            <details open id="actions">
+            <summary>Actions</summary>
+            <div class="p">These actions are based on <a href="/rules/action-points.html">action points</a>.</div>
             <div class="cardgroup">
                 <div class="small-card">
                     <h1 id="attack">Attack</h1>
@@ -37,12 +39,12 @@
                 <div class="small-card">
                     <h1 id="charge">Charge</h1>
                     <div class="p card-subheader"><i>Cost: 3 AP</i></div>
-                    <div class="p">Taking the Charge action increases your movement for the current turn by your current speed. If you end your movement closer to a creature than where you started, you can make a melee weapon attack against it if it is within reach. If you make this attack, the first attack made against you before the start of your next turn has advantage.</div>
+                    <div class="p">When you Charge, increase your <a href="/rules/movement.html">movement</a> by your current speed and then <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup2, options={event:event})" onmouseover="showPopup(popup2, anchor3)" onmouseout="hidePopup(popup2)">walk</span>, <span class="popupAnchor" id="anchor4" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor4)" onmouseout="hidePopup(popup3)">swim</span> (if you have a swim speed), or <span class="popupAnchor" id="anchor5" onclick="toggleDragEnabled(popup4, options={event:event})" onmouseover="showPopup(popup4, anchor5)" onmouseout="hidePopup(popup4)">fly</span> (if you have a fly speed) in a straight line. You may then make a melee weapon attack. Finally, you are <span class="popupAnchor" id="anchor9" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor9)" onmouseout="hidePopup(popup8)">slowed</span> until the end of your next turn as you recover from the burst of strength.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="dash">Dash</h1>
                     <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                    <div class="p">Taking the Dash action increases your movement for the current turn by your current speed.</div>
+                    <div class="p">Taking the Dash action adds your current speed to your remaining movement, potentially letting you <a href="/settings/four-corners/glossary.html#move">Move</a> further.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="disengage">Disengage</h1>
@@ -57,7 +59,7 @@
                 <div class="small-card">
                     <h1 id="frighten">Frighten</h1>
                     <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                    <div class="p">When you take the Frighten action, you may attempt to scare a specific creature within 60 feet of you. Make a Charisma (Intimidation) check, which becomes your Frighten DC. The target creature must make a Wisdom saving throw against your Frighten DC or be <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup2, options={event:event})" onmouseover="showPopup(popup2, anchor3)" onmouseout="hidePopup(popup2)">frightened</span> of you until the end of your next turn.</div>
+                    <div class="p">When you take the Frighten action, you may attempt to scare a specific creature within 60 feet of you. Make a Charisma (Intimidation) check, which becomes your Frighten DC. The target creature must make a Wisdom saving throw against your Frighten DC or be <span class="popupAnchor" id="anchor10" onclick="toggleDragEnabled(popup9, options={event:event})" onmouseover="showPopup(popup9, anchor10)" onmouseout="hidePopup(popup9)">frightened</span> of you until the end of your next turn.</div>
                     <div class="p">A creature is unaffected by this action if it can neither see nor hear you.</div>
                 </div>
                 <div class="small-card">
@@ -69,14 +71,19 @@
                 <div class="small-card">
                     <h1 id="hide">Hide</h1>
                     <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                    <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" id="anchor4" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor4)" onmouseout="hidePopup(popup3)">hidden</span> from one or more creatures. Make a Dexterity (Stealth) check.  If you are heavily <span class="popupAnchor" id="anchor13" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor13)" onmouseout="hidePopup(popup5)">obscured</span> or behind at least three-quarters <span class="popupAnchor" id="anchor14" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor14)" onmouseout="hidePopup(popup6)">cover</span> relative to a creature, and your check equals or exceeds its passive Perception score, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
+                    <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" id="anchor11" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor11)" onmouseout="hidePopup(popup10)">hidden</span> from one or more creatures. Make a Dexterity (Stealth) check. If you are heavily <span class="popupAnchor" id="anchor20" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor20)" onmouseout="hidePopup(popup12)">obscured</span> or behind at least three-quarters <span class="popupAnchor" id="anchor21" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor21)" onmouseout="hidePopup(popup13)">cover</span> relative to a creature, and your check equals or exceeds its passive Perception score, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="magic">Magic</h1>
                     <div class="p card-subheader"><i>Cost: varies (repeatable)</i></div>
                     <div class="p">When you take the Magic action, you cast a spell that has a casting time of an action, or you use a feature or a magic item that requires a Magic action to be activated. This use of the Magic action costs a number of AP determined by the spell or magic item.</div>
-                    <div class="p">If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain <span class="popupAnchor" id="anchor15" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor15)" onmouseout="hidePopup(popup8)">concentration</span> while you do so. This use of the Magic action costs 2 AP. If your concentration is broken, the spell fails, but you don't expend a spell slot.</div>
+                    <div class="p">If you cast a spell that has a casting time of 1 minute or longer, you must take the Magic action on each turn of that casting, and you must maintain <span class="popupAnchor" id="anchor22" onclick="toggleDragEnabled(popup15, options={event:event})" onmouseover="showPopup(popup15, anchor22)" onmouseout="hidePopup(popup15)">concentration</span> while you do so. This use of the Magic action costs 2 AP. If your concentration is broken, the spell fails, but you don't expend a spell slot.</div>
                     <div class="p">This action is repeatable, but you can only use it to cast one non-cantrip spell per turn.</div>
+                </div>
+                <div class="small-card">
+                    <h1 id="move">Move</h1>
+                    <div class="p card-subheader"><i>Cost: 0 AP (repeatable)</i></div>
+                    <div class="p">You move using any <a href="/settings/four-corners/glossary.html#movement">movement</a> mode available to you.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="opportunity-attack">Opportunity Attack</h1>
@@ -88,9 +95,9 @@
                     <h1 id="ready">Ready</h1>
                     <div class="p card-subheader"><i>Cost: varies</i></div>
                     <div class="p">Sometimes you want to get the jump on a foe or wait for a particular circumstance before you act. To do so, you can take the Ready action on your turn so that you can act later in the round using your reaction.</div>
-                    <div class="p">First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger, or you choose to move up to your speed in response to it. The Ready action costs the same number of AP as the action you ready, or 2 AP if you ready movement. Examples of readying an action include "If the cultist steps on the trapdoor, I'll pull the lever that opens it," and "If the goblin steps next to me, I move away."</div>
+                    <div class="p">First, you decide what perceivable circumstance will trigger your reaction. Then, you choose the action you will take in response to that trigger. The Ready action costs the same number of AP as the action you ready. Examples of readying an action include "If the cultist steps on the trapdoor, I'll pull the lever that opens it," and "If the goblin steps next to me, I move away."</div>
                     <div class="p">When the trigger occurs, you can either take your reaction right after the trigger finishes or ignore the trigger. Remember that you can take only one reaction per round.</div>
-                    <div class="p">When you ready the <a href="/settings/four-corners/glossary.html#magic">Magic</a> action to cast a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding onto the spell's magic requires <span class="popupAnchor" id="anchor16" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor16)" onmouseout="hidePopup(popup8)">concentration</span> unless it is a cantrip. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the <i>web</i> spell and ready <i>magic missile</i>, your <i>web</i> spell ends, and if you take damage before you release <i>magic missile</i> with your reaction, your concentration might be broken.</div>
+                    <div class="p">When you ready the <a href="/settings/four-corners/glossary.html#magic">Magic</a> action to cast a spell, you cast it as normal but hold its energy, which you release with your reaction when the trigger occurs. To be readied, a spell must have a casting time of an action, and holding onto the spell's magic requires <span class="popupAnchor" id="anchor23" onclick="toggleDragEnabled(popup15, options={event:event})" onmouseover="showPopup(popup15, anchor23)" onmouseout="hidePopup(popup15)">concentration</span> unless it is a cantrip. If your concentration is broken, the spell dissipates without taking effect. For example, if you are concentrating on the <i>web</i> spell and ready <i>magic missile</i>, your <i>web</i> spell ends, and if you take damage before you release <i>magic missile</i> with your reaction, your concentration might be broken.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="search">Search</h1>
@@ -139,21 +146,23 @@
                 <div class="small-card">
                     <h1 id="taunt">Taunt</h1>
                     <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                    <div class="p">When you take the Taunt action, you may attempt to goad a specific creature within 60 feet of you into attacking you. Make a Charisma (Deception, Performance, or Persuasion) check, which becomes your Taunt DC. The target creature must make a Wisdom saving throw against your Taunt DC or be <span class="popupAnchor" id="anchor17" onclick="toggleDragEnabled(popup9, options={event:event})" onmouseover="showPopup(popup9, anchor17)" onmouseout="hidePopup(popup9)">taunted</span> by you until the end of your next turn.</div>
+                    <div class="p">When you take the Taunt action, you may attempt to goad a specific creature within 60 feet of you into attacking you. Make a Charisma (Deception, Performance, or Persuasion) check, which becomes your Taunt DC. The target creature must make a Wisdom saving throw against your Taunt DC or be <span class="popupAnchor" id="anchor24" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor24)" onmouseout="hidePopup(popup16)">taunted</span> by you until the end of your next turn.</div>
                     <div class="p">A creature is unaffected by this action if it can neither see nor hear you.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="activate-object">Activate Object</h1>
                     <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                    <div class="p">You normally interact with an object using the <span class="popupAnchor" id="anchor18" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor18)" onmouseout="hidePopup(popup10)">item interaction</span>. When an object requires your action for its use, you take the Activate Object action.</div>
+                    <div class="p">You normally interact with an object using the <span class="popupAnchor" id="anchor25" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor25)" onmouseout="hidePopup(popup17)">item interaction</span>. When an object requires your action for its use, you take the Activate Object action.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="item-interaction">Item Interaction</h1>
                     <div class="p card-subheader"><i>Cost: 0 AP</i></div>
-                    <div class="p">When you take the Item Interaction action, you interact with one object or feature of the environment in a trivial way. For example, you could open a door or pick up a dropped weapon. If you need to interact with more than one object on a turn, subsequent interactions require the <span class="popupAnchor" id="anchor21" onclick="toggleDragEnabled(popup11, options={event:event})" onmouseover="showPopup(popup11, anchor21)" onmouseout="hidePopup(popup11)">Activate Object</span> action.</div>
+                    <div class="p">When you take the Item Interaction action, you interact with one object or feature of the environment in a trivial way. For example, you could open a door or pick up a dropped weapon. If you need to interact with more than one object on a turn, subsequent interactions require the <span class="popupAnchor" id="anchor28" onclick="toggleDragEnabled(popup18, options={event:event})" onmouseover="showPopup(popup18, anchor28)" onmouseout="hidePopup(popup18)">Activate Object</span> action.</div>
                 </div>
             </div>
-            <h2 id="conditions">Conditions</h2>
+            </details>
+            <details open id="conditions">
+            <summary>Conditions</summary>
             <div class="cardgroup">
                 <div class="small-card">
                     <h1 id="blinded">Blinded</h1>
@@ -183,18 +192,24 @@
                     <h1 id="dazed">Dazed</h1>
                     <div class="p">While you are dazed, you experience the following effects:</div>
                     <ul>
-                        <li>On each of your turns, you have 1 less <a href="/rules/action-points.html">action point</a>, and you can either move or take actions.</li>
+                        <li>On each of your turns, you have 1 less <a href="/rules/action-points.html">action point</a>.</li>
+                        <li>You start each of your turns with 0 <a href="/rules/movement.html">movement</a>. You can increase your movement in other ways, such as the <a href="/settings/four-corners/glossary.html#dash">Dash</a> action.</li>
                         <li>You can't take reactions.</li>
                         <li>You have disadvantage on saving throws you make to maintain <a href="/settings/four-corners/glossary.html#concentration">concentration</a> (including on the saving throw triggered by the effect that dazed you, if it triggered such a save).</li>
                     </ul>
                 </div>
                 <div class="small-card">
                     <h1 id="deafened">Deafened</h1>
-                    <div class="p">While blinded, you can't hear anything.</div>
+                    <div class="p">While deafened, you can't hear anything.</div>
+                </div>
+                <div class="small-card">
+                    <h1 id="dying">Dying</h1>
+                    <div class="p">While you are dying, make a death saving throw at the start of each of your turns. Keep track of your successes and failures. You automatically suffer 1 failure each time you take damage while dying, or 2 failures if the damage was from a critical hit. If you reach 3 failures, you die. If you reach 3 successes, you stop dying. If you stop dying for any reason, stop tracking your successes and failures; the counts don't carry over to the next time you are dying.</div>
+                    <div class="p">If you aren't already dying, you start dying when you are <span class="tooltipWrapper"><span class="tooltipAnchor">reduced to 0 hit points</span><span class="tooltip">You also fall <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>.</span></span> and there is at least 1 point of excess damage. The condition ends early if you regain hit points. A creature within 5 feet of you can also make a DC 10 Medicine check to stabilize you as a standard action, ending the condition on a success.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="exhaustion">Exhaustion</h1>
-                    <div class="p">This condition is cumulative. Each time you receive it, you gain 1 level of exhaustion. You die if your exhaustion level exceeds 10. While you have at least 1 level of exhaustion, you experience the following effects:</div>
+                    <div class="p">This condition is cumulative. Each time you receive it, you gain a specified number of levels of exhaustion. You die if your exhaustion level exceeds 10. While you have at least 1 level of exhaustion, you experience the following effects:</div>
                     <ul>
                         <li>When you make an attack roll, ability check, or saving throw, you subtract your exhaustion level from the d20 roll.</li>
                         <li>Subtract your exhaustion level from the spell save DC of any spell you cast.</li>
@@ -224,7 +239,7 @@
                     <div class="p">While you are grappling another creature (the <a href="/settings/four-corners/glossary.html#grappled">grappled</a> creature), you experience the following effects:</div>
                     <ul>
                         <li>Your speed is halved if you are the same size as the grappled creature, or 0 if you are smaller.</li>
-                        <li>When you move on your turn, you drag the grappled creature with you.</li>
+                        <li>When you move, you drag the grappled creature with you.</li>
                     </ul>
                     <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or if the grappled creature is no longer within your reach.</div>
                     <div class="p">This condition is typically caused by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -234,7 +249,7 @@
                     <div class="p">While you are grappled by another creature (the <a href="/settings/four-corners/glossary.html#grappling">grappling</a> creature), you experience the following effects:</div>
                     <ul>
                         <li>Your speed is halved if you are one size larger than the grappling creature, or 0 if you are the same size or smaller.</li>
-                        <li>When you move on your turn, you drag the grappling creature with you.</li>
+                        <li>When you move, you drag the grappling creature with you.</li>
                     </ul>
                     <div class="p">As a standard action, you can make a saving throw against the grapple, ending the grapple on a success.</div>
                     <div class="p">This condition is typically inflicted by the <a href="/settings/four-corners/equipment.html#grapple">grapple</a> attack.</div>
@@ -243,7 +258,7 @@
                     <h1 id="hidden">Hidden</h1>
                     <div class="p">While you are hidden from a creature, you gain the following benefits:</div>
                     <ul>
-                        <li>You have a Hide DC, which is typically determined by the <span class="popupAnchor" id="anchor22" onclick="toggleDragEnabled(popup4, options={event:event})" onmouseover="showPopup(popup4, anchor22)" onmouseout="hidePopup(popup4)">Hide</span> action. If you move at least 5 feet on a turn without <span class="popupAnchor" id="anchor23" onclick="toggleDragEnabled(popup7, options={event:event})" onmouseover="showPopup(popup7, anchor23)" onmouseout="hidePopup(popup7)">sneaking</span>, you must reroll the Hide DC by making another Dexterity (Stealth) check.</li>
+                        <li>You have a Hide DC, which is typically determined by the <span class="popupAnchor" id="anchor29" onclick="toggleDragEnabled(popup11, options={event:event})" onmouseover="showPopup(popup11, anchor29)" onmouseout="hidePopup(popup11)">Hide</span> action. If you move without <span class="popupAnchor" id="anchor30" onclick="toggleDragEnabled(popup14, options={event:event})" onmouseover="showPopup(popup14, anchor30)" onmouseout="hidePopup(popup14)">sneaking</span>, you must reroll the Hide DC by making another Dexterity (Stealth) check.</li>
                         <li>The creature can't see you.</li>
                         <li>The creature can't track your movement.</li>
                     </ul>
@@ -252,9 +267,9 @@
                         <li>You make a sound louder than a whisper.</li>
                         <li>Another creature reveals your location.</li>
                         <li>You make an attack roll or cast a spell with a verbal component</li>
-                        <li>You aren't heavily <span class="popupAnchor" id="anchor24" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor24)" onmouseout="hidePopup(popup5)">obscured</span> or behind any <span class="popupAnchor" id="anchor25" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor25)" onmouseout="hidePopup(popup6)">cover</span>.</li>
+                        <li>You aren't heavily <span class="popupAnchor" id="anchor31" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor31)" onmouseout="hidePopup(popup12)">obscured</span> or behind any <span class="popupAnchor" id="anchor32" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor32)" onmouseout="hidePopup(popup13)">cover</span>.</li>
                         <li>The creature succeeds on a Wisdom (Perception) check against your Hide DC. The <a href="/settings/four-corners/glossary.html#search">Search</a> action lets a creature attempt this check.</li>
-                        <li>Your Hide DC becomes less than the creature's passive Perception.</li>
+                        <li>Your Hide DC becomes less than the creature's <span class="tooltipWrapper"><span class="tooltipAnchor">passive Perception</span><span class="tooltip">Also see the rule on <a href="/settings/four-corners/rules.html#passive-perception-falloff">Passive Perception Falloff</a>.</span></span>.</li>
                     </ul>
                     <div class="p">This condition is typically obtained via the <a href="/settings/four-corners/glossary.html#hide">Hide</a> action.</div>
                 </div>
@@ -265,20 +280,15 @@
                         <li>You can't take actions or reactions.</li>
                         <li>Your <a href="/settings/four-corners/glossary.html#concentration">concentration</a> is broken and you can't regain concentration.</li>
                         <li>You can't speak.</li>
-                        <li>You have disadvantage on initiative checks.</li>
                     </ul>
                 </div>
                 <div class="small-card">
                     <h1 id="invisible">Invisible</h1>
-                    <div class="p">While invisible, you experience the following effects:</div>
-                    <ul>
-                        <li>You can't be seen without the aid of magic or a special sense. Any equipment you are wearing or carrying similarly can't be seen.</li>
-                        <li>You have advantage on initiative checks.</li>
-                    </ul>
+                    <div class="p">While invisible, you can't be seen without the aid of magic or a special sense. Any equipment you are wearing or carrying similarly can't be seen.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="old-age">Old Age</h1>
-                    <div class="p">While you are older than your old age threshold, you have 1 permanent level of <span class="popupAnchor" id="anchor26" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor26)" onmouseout="hidePopup(popup12)">exhaustion</span>. As you continue to age, you gain an additional permanent level of exhaustion for every number of years equal to your aging rate. These levels of exhaustion vanish immediately to reflect changes in your age or if you gain immunity to old age.</div>
+                    <div class="p">While you are older than your old age threshold, you have 1 permanent level of <span class="popupAnchor" id="anchor33" onclick="toggleDragEnabled(popup19, options={event:event})" onmouseover="showPopup(popup19, anchor33)" onmouseout="hidePopup(popup19)">exhaustion</span>. As you continue to age, you gain an additional permanent level of exhaustion for every number of years equal to your aging rate. These levels of exhaustion vanish immediately to reflect changes in your age or if you gain immunity to old age.</div>
                     <div class="p">See the see the "Age" trait of your <a href="/settings/four-corners/races.html#game-mechanics">racial statblock</a> for your old age threshold and aging rate.</div>
                 </div>
                 <div class="small-card">
@@ -289,7 +299,8 @@
                     <h1 id="paralyzed">Paralyzed</h1>
                     <div class="p">While paralyzed, you experience the following effects:</div>
                     <ul>
-                        <li>You are <span class="popupAnchor" id="anchor27" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor27)" onmouseout="hidePopup(popup13)">incapacitated</span> and can't move.</li>
+                        <li>You are <span class="popupAnchor" id="anchor34" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor34)" onmouseout="hidePopup(popup20)">incapacitated</span>.</li>
+                        <li>Your speed is 0.</li>
                         <li>You automatically fail Strength and Dexterity saving throws.</li>
                         <li>Attack rolls against you have advantage.</li>
                         <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
@@ -299,7 +310,7 @@
                     <h1 id="petrified">Petrified</h1>
                     <div class="p">While petrified, you experience the following effects:</div>
                     <ul>
-                        <li>You are <span class="popupAnchor" id="anchor28" onclick="toggleDragEnabled(popup14, options={event:event})" onmouseover="showPopup(popup14, anchor28)" onmouseout="hidePopup(popup14)">transformed</span> into a solid inanimate substance (usually stone). Your game statistics are the same as your original form.</li>
+                        <li>You are <span class="popupAnchor" id="anchor35" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor35)" onmouseout="hidePopup(popup21)">transformed</span> into a solid inanimate substance (usually stone). Your game statistics are the same as your original form.</li>
                         <li>Your weight increases by a factor of ten, and you cease aging.</li>
                         <li>Attack rolls against you have advantage.</li>
                         <li>You automatically fail Strength and Dexterity saving throws.</li>
@@ -315,18 +326,18 @@
                     <h1 id="prone">Prone</h1>
                     <div class="p">While prone, you experience the following effects:</div>
                     <ul>
-                        <li>Your only movement option is to <span class="popupAnchor" id="anchor29" onclick="toggleDragEnabled(popup15, options={event:event})" onmouseover="showPopup(popup15, anchor29)" onmouseout="hidePopup(popup15)">crawl</span>, unless you stand up and thereby end the condition.</li>
+                        <li>Your only movement option is to <span class="popupAnchor" id="anchor37" onclick="toggleDragEnabled(popup7, options={event:event})" onmouseover="showPopup(popup7, anchor37)" onmouseout="hidePopup(popup7)">crawl</span>, unless you stand up and thereby end the condition.</li>
                         <li>You have disadvantage on attack rolls.</li>
                         <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
                     </ul>
-                    <div class="p">Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
+                    <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
                     <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="restrained">Restrained</h1>
                     <div class="p">While restrained, you experience the following effects:</div>
                     <ul>
-                        <li>Your speed becomes 0, and you can't benefit from any bonuses to speed.</li>
+                        <li>Your speed is 0.</li>
                         <li>Attack rolls against you have advantage, and your attack rolls have disadvantage.</li>
                         <li>You have disadvantage on Dexterity saving throws.</li>
                     </ul>
@@ -335,7 +346,7 @@
                     <h1 id="slowed">Slowed</h1>
                     <div class="p">While you are slowed, you experience the following effects:</div>
                     <ul>
-                        <li>You must expend 1 extra foot of movement for every foot you move using your speed.</li>
+                        <li>You must expend 1 extra foot of movement for every foot you move.</li>
                         <li>Attack rolls against you have advantage.</li>
                         <li>You have disadvantage on Dexterity saving throws.</li>
                     </ul>
@@ -344,14 +355,15 @@
                     <h1 id="stunned">Stunned</h1>
                     <div class="p">While stunned, you experience the following effects:</div>
                     <ul>
-                        <li>You are <span class="popupAnchor" id="anchor30" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor30)" onmouseout="hidePopup(popup13)">incapacitated</span> and can't move.</li>
+                        <li>You are <span class="popupAnchor" id="anchor38" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor38)" onmouseout="hidePopup(popup20)">incapacitated</span>.</li>
+                        <li>Your speed is 0.</li>
                         <li>You automatically fail Strength and Dexterity saving throws.</li>
                         <li>Attack rolls against you have advantage.</li>
                     </ul>
                 </div>
                 <div class="small-card">
                     <h1 id="suffocating">Suffocating</h1>
-                    <div class="p">While you are suffocating, keep track of how many rounds go by. For a number of rounds equal to your Constitution modifier (minimum of 1 round), nothing happens. At the start of your next turn, you drop to 0 hit points and are dying, and you can't regain hit points or be stabilized until you can breathe again.</div>
+                    <div class="p">While you are suffocating, keep track of how many rounds go by. For a number of rounds equal to your Constitution modifier (minimum of 1 round), nothing happens. At the start of your next turn, you drop to 0 hit points and are <span class="popupAnchor" id="anchor39" onclick="toggleDragEnabled(popup22, options={event:event})" onmouseover="showPopup(popup22, anchor39)" onmouseout="hidePopup(popup22)">dying</span>, and you can't regain hit points or be stabilized until you can breathe again.</div>
                     <div class="p">You can hold your breath for a number of minutes equal to 1 + your Constitution modifier (minimum of 30 seconds). After that, you start suffocating.</div>
                 </div>
                 <div class="small-card">
@@ -372,28 +384,50 @@
                     <ul>
                         <li>Your game statistics are replaced by the statistics of the object.</li>
                         <li>Your equipment melds into your new form and has no effect.</li>
-                        <li>You are incapacitated, can't move, and are unaware of your surroundings.</li>
+                        <li>You are <span class="popupAnchor" id="anchor40" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor40)" onmouseout="hidePopup(popup20)">incapacitated</span> and unaware of your surroundings.</li>
                         <li>You have no memory of time spent in this form.</li>
                     </ul>
-                    <div class="p">When you revert to your normal form, you return to the number of hit points you had before you transformed, assuming you didn't die. If you revert as a result of dropping to 0 hit points, and any excess damage carries over to your normal form.</div>
+                    <div class="p">When you revert to your normal form, you return to the number of hit points you had before you transformed, assuming you didn't die. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="unconscious">Unconscious</h1>
                     <div class="p">While unconscious, you experience the following effects:</div>
                     <ul>
-                        <li>You are <span class="popupAnchor" id="anchor31" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor31)" onmouseout="hidePopup(popup13)">incapacitated</span>, can't move, and are unaware of your surroundings.</li>
-                        <li>You drop whatever you're holding and fall <span class="popupAnchor" id="anchor32" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor32)" onmouseout="hidePopup(popup16)">prone</span>.</li>
+                        <li>You are <span class="popupAnchor" id="anchor41" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor41)" onmouseout="hidePopup(popup20)">incapacitated</span> and unaware of your surroundings.</li>
+                        <li>You drop whatever you're holding and fall <span class="popupAnchor" id="anchor42" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor42)" onmouseout="hidePopup(popup6)">prone</span>.</li>
                         <li>You automatically fails Strength and Dexterity saving throws.</li>
                         <li>Attack rolls against you have advantage.</li>
                         <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
                     </ul>
+                    <div class="p">You fall unconscious when you are <span class="tooltipWrapper"><span class="tooltipAnchor">reduced to 0 hit points</span><span class="tooltip">You also start <a href="4c?glossary#dying">dying</a> if there was excess damage.</span></span>. When you fall unconscious in this way, you wake up if you regain any hit points, and you automatically regain 1 hit point after 1d4 hours.</div>
                 </div>
             </div>
-            <h2 id="environment">Environment</h2>
+            </details>
+            <details open id="environment">
+            <summary>Environment</summary>
             <div class="cardgroup">
                 <div class="small-card">
                     <h1 id="falling">Falling</h1>
-                    <div class="p">At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands <span class="popupAnchor" id="anchor34" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor34)" onmouseout="hidePopup(popup16)">prone</span>, unless it avoids taking damage from the fall.</div>
+                    <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
+                    <div class="p">On impact, roll a fall damage die for every 10 feet you fell, to a maximum of 20 dice. You take bludgeoning damage equal to their sum. Your size determines your fall damage die, as shown in the table below. You also land <span class="popupAnchor" id="anchor43" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor43)" onmouseout="hidePopup(popup6)">prone</span>, unless you avoid taking damage from the fall.</div>
+                    <div class="tableAndCaption">
+                        <span class="caption" id="fall-damage-die">Fall Damage Die</span>
+                        <div class="tableWrapper">
+                            <table>
+                                <thead>
+                                    <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Die</span></th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td align="left">Tiny</td><td align="center">d4</td></tr>
+                                    <tr><td align="left">Small</td><td align="center">d6</td></tr>
+                                    <tr><td align="left">Medium</td><td align="center">d8</td></tr>
+                                    <tr><td align="left">Large</td><td align="center">d10</td></tr>
+                                    <tr><td align="left">Huge</td><td align="center">d12</td></tr>
+                                    <tr><td align="left">Gargantuan</td><td align="center">d20</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
                 <div class="small-card">
                     <h1 id="light">Light</h1>
@@ -401,9 +435,9 @@
                     <h4 id="bright-light">Bright Light</h4>
                     <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
                     <h4 id="dim-light">Dim Light</h4>
-                    <div class="p">Dim light, also called shadows, creates a lightly <span class="popupAnchor" id="anchor35" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor35)" onmouseout="hidePopup(popup5)">obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
+                    <div class="p">Dim light, also called shadows, creates a lightly <span class="popupAnchor" id="anchor44" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor44)" onmouseout="hidePopup(popup12)">obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
                     <h4 id="darkness">Darkness</h4>
-                    <div class="p">Darkness creates a heavily <span class="popupAnchor" id="anchor36" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor36)" onmouseout="hidePopup(popup5)">obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
+                    <div class="p">Darkness creates a heavily <span class="popupAnchor" id="anchor45" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor45)" onmouseout="hidePopup(popup12)">obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="cover">Cover</h1>
@@ -431,12 +465,12 @@
                 </div>
                 <div class="small-card">
                     <h1 id="space">Space</h1>
-                    <div class="p">Your size determines how much space you occupy. In combat, you normally occupy a square with a side length given by the Normal column of the Creature Sizes table below. This area, often refered to as "your space," represents the space you need to move and fight unhindered. You control your space, and can prevent other creatures within 1 size category of yourself from sharing it. Additionally, your space counts as both <span class="popupAnchor" id="anchor37" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor37)" onmouseout="hidePopup(popup17)">difficult terrain</span> and half <span class="popupAnchor" id="anchor38" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor38)" onmouseout="hidePopup(popup6)">cover</span> for all creatures other than yourself.</div>
+                    <div class="p">Your size determines how much space you occupy. In combat, you normally occupy a square with a side length given by the Normal column of the Creature Sizes table below. This area, often refered to as "your space," represents the space you need to move and fight unhindered. You control your space, and can prevent other creatures within 1 size category of yourself from sharing it. Additionally, your space counts as both <span class="popupAnchor" id="anchor46" onclick="toggleDragEnabled(popup23, options={event:event})" onmouseover="showPopup(popup23, anchor46)" onmouseout="hidePopup(popup23)">difficult terrain</span> and half <span class="popupAnchor" id="anchor47" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor47)" onmouseout="hidePopup(popup13)">cover</span> for all creatures other than yourself.</div>
                     <div class="p">You do not have to occupy your normal amount of space. If you occupy less, whether by choice or by force, you suffer penalties.</div>
                     <h4 id="squeezing">Squeezing</h4>
-                    <div class="p">Squeezing can reduce one or both side lengths of your space down to the value in the Squeezing column of the Creature Sizes table. You are <span class="popupAnchor" id="anchor39" onclick="toggleDragEnabled(popup18, options={event:event})" onmouseover="showPopup(popup18, anchor39)" onmouseout="hidePopup(popup18)">slowed</span> while squeezing.</div>
+                    <div class="p">Squeezing can reduce one or both side lengths of your space down to the value in the Squeezing column of the Creature Sizes table. You are <span class="popupAnchor" id="anchor48" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor48)" onmouseout="hidePopup(popup8)">slowed</span> while squeezing.</div>
                     <h4 id="stuck">Stuck</h4>
-                    <div class="p">The value in the Stuck column of the Creature Sizes table is the minimum side length your area of control can have. If at least one side length of your area of control is between the "Stuck" and "Squeezing" values, you are stuck. While stuck, you are <span class="popupAnchor" id="anchor40" onclick="toggleDragEnabled(popup19, options={event:event})" onmouseover="showPopup(popup19, anchor40)" onmouseout="hidePopup(popup19)">restrained</span>. You can use your action to make a DC 10 Strength (Athletics) or Dexterity (Acrobatics) check. On a success, you can move up to half your speed as if you weren't restrained by being stuck.</div>
+                    <div class="p">The value in the Stuck column of the Creature Sizes table is the minimum side length your area of control can have. If at least one side length of your area of control is between the "Stuck" and "Squeezing" values, you are stuck. While stuck, you are <span class="popupAnchor" id="anchor49" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor49)" onmouseout="hidePopup(popup24)">restrained</span>. You can use a standard action to make a DC 10 Strength (Athletics) or Dexterity (Acrobatics) check. On a success, you can move as if you were <span class="popupAnchor" id="anchor50" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor50)" onmouseout="hidePopup(popup8)">slowed</span> instead of restrained.</div>
                     <h4 id="crushed">Crushed</h4>
                     <div class="p">You cannot willingly reduce a side length of your space to less than the value in the Stuck column of the Creature Sizes table. If you are forced to, you immediately take 1d10 bludgeoning damage for each inch your space's shorter side length subceeds your Stuck value, and you are crushed. You take this damage again at the end of each of your turns as long as you remain crushed. You are also stuck while crushed, and the DC to try to move increases by 1 for each inch your space's shorter side length subceeds your Stuck value.</div>
                     <div class="tableAndCaption">
@@ -459,7 +493,10 @@
                     </div>
                 </div>
             </div>
-            <h2 id="movement">Movement</h2>
+            </details>
+            <details open id="movement">
+            <summary>Movement</summary>
+            <div class="p">These movement modes are based on the <a href="/rules/movement.html">movement</a> rules.</div>
             <div class="cardgroup">
                 <div class="small-card">
                     <h1 id="climb">Climb</h1>
@@ -473,19 +510,19 @@
                 <div class="small-card">
                     <h1 id="fly">Fly</h1>
                     <div class="p">Flying lets you move through the air. Doing so requires the use of a flying speed.</div>
-                    <div class="p">While flying, you <span class="popupAnchor" id="anchor41" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor41)" onmouseout="hidePopup(popup20)">fall</span> if you are <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or your flying speed becomes 0. If you use magic to fly, you only fall if you die.</div>
+                    <div class="p">While flying, you <span class="popupAnchor" id="anchor51" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor51)" onmouseout="hidePopup(popup5)">fall</span> if you are <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or your flying speed becomes 0. If you use magic to fly, you only fall if you die.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="jump">Jump</h1>
-                    <div class="p">Jumping lets you clear gaps or obstacles. Distance traveled as part of a jump counts as movement, and like all movement, your total movement on a turn cannot exceed your speed. </div>
-                    <div class="p">When you jump, perform the following series of calculations; don't round until the end. The resulting value is the maximum number of feet you can jump, not counting limitations from your speed.</div>
+                    <div class="p">Jumping lets you clear gaps or obstacles. Distance traveled as part of a jump counts as movement.</div>
+                    <div class="p">When you jump, perform the following series of calculations; don't round until the end. The resulting value is the maximum number of feet you can jump.</div>
                     <ol>
                         <li>Start with your passive Athletics. Alternatively, you can make a Strength (Athletics check) and use the result instead.</li>
                         <li>Divide the value by 2.</li>
                         <li>If you did not get a running start immediately before jumping, divide the value by 2 again. To get a running start, you must move in a straight line in the direction you want to jump for a number of feet determined by your size, as shown in the Running Start Distances table.</li>
                         <li>To determine the vertical distance you can clear, divide the value by 2 again.</li>
                     </ol>
-                    <div class="p">If you land in <a href="/settings/four-corners/glossary.html#difficult-terrain">difficult terrain</a>, you must succeed on a DC 10 Dexterity (Acrobatics) check or fall <span class="popupAnchor" id="anchor43" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor43)" onmouseout="hidePopup(popup16)">prone</span>.</div>
+                    <div class="p">If you land in <a href="/settings/four-corners/glossary.html#difficult-terrain">difficult terrain</a>, you must succeed on a DC 10 Dexterity (Acrobatics) check or fall <span class="popupAnchor" id="anchor52" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor52)" onmouseout="hidePopup(popup6)">prone</span>.</div>
                     <div class="tableAndCaption">
                         <span class="caption" id="running-start-distances">Running Start Distances</span>
                         <div class="tableWrapper">
@@ -507,7 +544,7 @@
                 </div>
                 <div class="small-card">
                     <h1 id="sneak">Sneak</h1>
-                    <div class="p">Sneaking lets you maintain your Hide DC when you move while <span class="popupAnchor" id="anchor44" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor44)" onmouseout="hidePopup(popup3)">hidden</span>. Sneaking costs 1 extra foot of movement for each foot traveled.</div>
+                    <div class="p">Sneaking lets you maintain your Hide DC when you move while <span class="popupAnchor" id="anchor53" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor53)" onmouseout="hidePopup(popup10)">hidden</span>. Sneaking costs 1 extra foot of movement for each foot traveled.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="swim">Swim</h1>
@@ -520,8 +557,14 @@
                     <div class="p">If the destination space of your teleportation is occupied by another creature or blocked by a solid obstacle, you instead appear in the nearest unoccupied space of your choice.</div>
                     <div class="p">The description of a teleportation effect tells you if you must see the teleportation's destination.</div>
                 </div>
+                <div class="small-card">
+                    <h1 id="walk">Walk</h1>
+                    <div class="p">Walking is the default movement mode and doesn't have an extra movement cost associated with it. There is no mechanical distinction between walking and running.</div>
+                </div>
             </div>
-            <h2 id="senses">Senses</h2>
+            </details>
+            <details open id="senses">
+            <summary>Senses</summary>
             <div class="cardgroup">
                 <div class="small-card">
                     <h1 id="blindsight">Blindsight</h1>
@@ -529,7 +572,7 @@
                 </div>
                 <div class="small-card">
                     <h1 id="darkvision">Darkvision</h1>
-                    <div class="p">Within a specified range, a creature with darkvision can see in dim <span class="popupAnchor" id="anchor45" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor45)" onmouseout="hidePopup(popup21)">light</span> as if it were bright light, and in darkness as if it were dim light. The creature can't discern color in darkness, only shades of gray.</div>
+                    <div class="p">Within a specified range, a creature with darkvision can see in dim <span class="popupAnchor" id="anchor54" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor54)" onmouseout="hidePopup(popup25)">light</span> as if it were bright light, and in darkness as if it were dim light. The creature can't discern color in darkness, only shades of gray.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="tremorsense">Tremorsense</h1>
@@ -548,6 +591,7 @@
                     </ul>
                 </div>
             </div>
+            </details>
             <div class="popup" id="popup1">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
@@ -586,9 +630,153 @@
             <div class="popup" id="popup2">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#frightened">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#walk">&raquo;</a></div>
                         <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup2, options={event:event})">&#9675;</div>
                         <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup2, options={event:event})">&times;</div>
+                    </div>
+                    walk
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Walk</h1>
+                        <div class="p">Walking is the default movement mode and doesn't have an extra movement cost associated with it. There is no mechanical distinction between walking and running.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup3">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#swim">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup3, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup3, options={event:event})">&times;</div>
+                    </div>
+                    swim
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Swim</h1>
+                        <div class="p">When you swim, you travel through a liquid. Each foot traveled in this way costs 1 extra foot. A swim speed ignores this extra cost.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup7">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#crawl">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup7, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup7, options={event:event})">&times;</div>
+                    </div>
+                    crawl
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Crawl</h1>
+                        <div class="p">Crawling lets you move while <a href="/settings/four-corners/glossary.html#prone">prone</a>. Crawling costs 1 extra foot of movement for each foot traveled.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup6">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#prone">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup6, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup6, options={event:event})">&times;</div>
+                    </div>
+                    prone
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Prone</h1>
+                        <div class="p">While prone, you experience the following effects:</div>
+                        <ul>
+                            <li>Your only movement option is to <span class="popupAnchor" id="anchor8" onclick="toggleDragEnabled(popup7, options={event:event})" onmouseover="showPopup(popup7, anchor8)" onmouseout="hidePopup(popup7)">crawl</span>, unless you stand up and thereby end the condition.</li>
+                            <li>You have disadvantage on attack rolls.</li>
+                            <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
+                        </ul>
+                        <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
+                        <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup5">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#falling">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup5, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup5, options={event:event})">&times;</div>
+                    </div>
+                    fall
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Falling</h1>
+                        <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
+                        <div class="p">On impact, roll a fall damage die for every 10 feet you fell, to a maximum of 20 dice. You take bludgeoning damage equal to their sum. Your size determines your fall damage die, as shown in the table below. You also land <span class="popupAnchor" id="anchor7" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor7)" onmouseout="hidePopup(popup6)">prone</span>, unless you avoid taking damage from the fall.</div>
+                        <div class="tableAndCaption">
+                            <span class="caption" id="fall-damage-die">Fall Damage Die</span>
+                            <div class="tableWrapper">
+                                <table>
+                                    <thead>
+                                        <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Die</span></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td align="left">Tiny</td><td align="center">d4</td></tr>
+                                        <tr><td align="left">Small</td><td align="center">d6</td></tr>
+                                        <tr><td align="left">Medium</td><td align="center">d8</td></tr>
+                                        <tr><td align="left">Large</td><td align="center">d10</td></tr>
+                                        <tr><td align="left">Huge</td><td align="center">d12</td></tr>
+                                        <tr><td align="left">Gargantuan</td><td align="center">d20</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup4">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#fly">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup4, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup4, options={event:event})">&times;</div>
+                    </div>
+                    fly
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Fly</h1>
+                        <div class="p">Flying lets you move through the air. Doing so requires the use of a flying speed.</div>
+                        <div class="p">While flying, you <span class="popupAnchor" id="anchor6" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor6)" onmouseout="hidePopup(popup5)">fall</span> if you are <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or your flying speed becomes 0. If you use magic to fly, you only fall if you die.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup8">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#slowed">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup8, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup8, options={event:event})">&times;</div>
+                    </div>
+                    slowed
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Slowed</h1>
+                        <div class="p">While you are slowed, you experience the following effects:</div>
+                        <ul>
+                            <li>You must expend 1 extra foot of movement for every foot you move.</li>
+                            <li>Attack rolls against you have advantage.</li>
+                            <li>You have disadvantage on Dexterity saving throws.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup9">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#frightened">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup9, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup9, options={event:event})">&times;</div>
                     </div>
                     frightened
                 </div>
@@ -604,12 +792,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup5">
+            <div class="popup" id="popup12">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#obscured">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup5, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup5, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup12, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup12, options={event:event})">&times;</div>
                     </div>
                     obscured
                 </div>
@@ -624,12 +812,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup6">
+            <div class="popup" id="popup13">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#cover">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup6, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup6, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup13, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup13, options={event:event})">&times;</div>
                     </div>
                     cover
                 </div>
@@ -647,12 +835,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup4">
+            <div class="popup" id="popup11">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#hide">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup4, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup4, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup11, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup11, options={event:event})">&times;</div>
                     </div>
                     Hide
                 </div>
@@ -660,32 +848,32 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Hide</h1>
                         <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                        <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" id="anchor6" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor6)" onmouseout="hidePopup(popup3)">hidden</span> from one or more creatures. Make a Dexterity (Stealth) check.  If you are heavily <span class="popupAnchor" id="anchor7" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor7)" onmouseout="hidePopup(popup5)">obscured</span> or behind at least three-quarters <span class="popupAnchor" id="anchor8" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor8)" onmouseout="hidePopup(popup6)">cover</span> relative to a creature, and your check equals or exceeds its passive Perception score, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
+                        <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" id="anchor13" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor13)" onmouseout="hidePopup(popup10)">hidden</span> from one or more creatures. Make a Dexterity (Stealth) check. If you are heavily <span class="popupAnchor" id="anchor14" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor14)" onmouseout="hidePopup(popup12)">obscured</span> or behind at least three-quarters <span class="popupAnchor" id="anchor15" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor15)" onmouseout="hidePopup(popup13)">cover</span> relative to a creature, and your check equals or exceeds its passive Perception score, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup7">
+            <div class="popup" id="popup14">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#sneak">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup7, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup7, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup14, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup14, options={event:event})">&times;</div>
                     </div>
                     sneaking
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Sneak</h1>
-                        <div class="p">Sneaking lets you maintain your Hide DC when you move while <span class="popupAnchor" id="anchor10" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor10)" onmouseout="hidePopup(popup3)">hidden</span>. Sneaking costs 1 extra foot of movement for each foot traveled.</div>
+                        <div class="p">Sneaking lets you maintain your Hide DC when you move while <span class="popupAnchor" id="anchor17" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor17)" onmouseout="hidePopup(popup10)">hidden</span>. Sneaking costs 1 extra foot of movement for each foot traveled.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup3">
+            <div class="popup" id="popup10">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#hidden">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup3, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup3, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup10, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup10, options={event:event})">&times;</div>
                     </div>
                     hidden
                 </div>
@@ -694,7 +882,7 @@
                         <h1 class="noHeaderID">Hidden</h1>
                         <div class="p">While you are hidden from a creature, you gain the following benefits:</div>
                         <ul>
-                            <li>You have a Hide DC, which is typically determined by the <span class="popupAnchor" id="anchor5" onclick="toggleDragEnabled(popup4, options={event:event})" onmouseover="showPopup(popup4, anchor5)" onmouseout="hidePopup(popup4)">Hide</span> action. If you move at least 5 feet on a turn without <span class="popupAnchor" id="anchor9" onclick="toggleDragEnabled(popup7, options={event:event})" onmouseover="showPopup(popup7, anchor9)" onmouseout="hidePopup(popup7)">sneaking</span>, you must reroll the Hide DC by making another Dexterity (Stealth) check.</li>
+                            <li>You have a Hide DC, which is typically determined by the <span class="popupAnchor" id="anchor12" onclick="toggleDragEnabled(popup11, options={event:event})" onmouseover="showPopup(popup11, anchor12)" onmouseout="hidePopup(popup11)">Hide</span> action. If you move without <span class="popupAnchor" id="anchor16" onclick="toggleDragEnabled(popup14, options={event:event})" onmouseover="showPopup(popup14, anchor16)" onmouseout="hidePopup(popup14)">sneaking</span>, you must reroll the Hide DC by making another Dexterity (Stealth) check.</li>
                             <li>The creature can't see you.</li>
                             <li>The creature can't track your movement.</li>
                         </ul>
@@ -703,20 +891,20 @@
                             <li>You make a sound louder than a whisper.</li>
                             <li>Another creature reveals your location.</li>
                             <li>You make an attack roll or cast a spell with a verbal component</li>
-                            <li>You aren't heavily <span class="popupAnchor" id="anchor11" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor11)" onmouseout="hidePopup(popup5)">obscured</span> or behind any <span class="popupAnchor" id="anchor12" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor12)" onmouseout="hidePopup(popup6)">cover</span>.</li>
+                            <li>You aren't heavily <span class="popupAnchor" id="anchor18" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor18)" onmouseout="hidePopup(popup12)">obscured</span> or behind any <span class="popupAnchor" id="anchor19" onclick="toggleDragEnabled(popup13, options={event:event})" onmouseover="showPopup(popup13, anchor19)" onmouseout="hidePopup(popup13)">cover</span>.</li>
                             <li>The creature succeeds on a Wisdom (Perception) check against your Hide DC. The <a href="/settings/four-corners/glossary.html#search">Search</a> action lets a creature attempt this check.</li>
-                            <li>Your Hide DC becomes less than the creature's passive Perception.</li>
+                            <li>Your Hide DC becomes less than the creature's <span class="tooltipWrapper"><span class="tooltipAnchor">passive Perception</span><span class="tooltip">Also see the rule on <a href="/settings/four-corners/rules.html#passive-perception-falloff">Passive Perception Falloff</a>.</span></span>.</li>
                         </ul>
                         <div class="p">This condition is typically obtained via the <a href="/settings/four-corners/glossary.html#hide">Hide</a> action.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup8">
+            <div class="popup" id="popup15">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#concentration">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup8, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup8, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup15, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup15, options={event:event})">&times;</div>
                     </div>
                     concentration
                 </div>
@@ -735,12 +923,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup9">
+            <div class="popup" id="popup16">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#taunted">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup9, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup9, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup16, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup16, options={event:event})">&times;</div>
                     </div>
                     taunted
                 </div>
@@ -753,12 +941,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup11">
+            <div class="popup" id="popup18">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#activate-object">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup11, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup11, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup18, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup18, options={event:event})">&times;</div>
                     </div>
                     Activate Object
                 </div>
@@ -766,16 +954,16 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Activate Object</h1>
                         <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                        <div class="p">You normally interact with an object using the <span class="popupAnchor" id="anchor20" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor20)" onmouseout="hidePopup(popup10)">item interaction</span>. When an object requires your action for its use, you take the Activate Object action.</div>
+                        <div class="p">You normally interact with an object using the <span class="popupAnchor" id="anchor27" onclick="toggleDragEnabled(popup17, options={event:event})" onmouseover="showPopup(popup17, anchor27)" onmouseout="hidePopup(popup17)">item interaction</span>. When an object requires your action for its use, you take the Activate Object action.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup10">
+            <div class="popup" id="popup17">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#item-interaction">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup10, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup10, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup17, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup17, options={event:event})">&times;</div>
                     </div>
                     item interaction
                 </div>
@@ -783,23 +971,23 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Item Interaction</h1>
                         <div class="p card-subheader"><i>Cost: 0 AP</i></div>
-                        <div class="p">When you take the Item Interaction action, you interact with one object or feature of the environment in a trivial way. For example, you could open a door or pick up a dropped weapon. If you need to interact with more than one object on a turn, subsequent interactions require the <span class="popupAnchor" id="anchor19" onclick="toggleDragEnabled(popup11, options={event:event})" onmouseover="showPopup(popup11, anchor19)" onmouseout="hidePopup(popup11)">Activate Object</span> action.</div>
+                        <div class="p">When you take the Item Interaction action, you interact with one object or feature of the environment in a trivial way. For example, you could open a door or pick up a dropped weapon. If you need to interact with more than one object on a turn, subsequent interactions require the <span class="popupAnchor" id="anchor26" onclick="toggleDragEnabled(popup18, options={event:event})" onmouseover="showPopup(popup18, anchor26)" onmouseout="hidePopup(popup18)">Activate Object</span> action.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup12">
+            <div class="popup" id="popup19">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#exhaustion">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup12, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup12, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup19, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup19, options={event:event})">&times;</div>
                     </div>
                     exhaustion
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Exhaustion</h1>
-                        <div class="p">This condition is cumulative. Each time you receive it, you gain 1 level of exhaustion. You die if your exhaustion level exceeds 10. While you have at least 1 level of exhaustion, you experience the following effects:</div>
+                        <div class="p">This condition is cumulative. Each time you receive it, you gain a specified number of levels of exhaustion. You die if your exhaustion level exceeds 10. While you have at least 1 level of exhaustion, you experience the following effects:</div>
                         <ul>
                             <li>When you make an attack roll, ability check, or saving throw, you subtract your exhaustion level from the d20 roll.</li>
                             <li>Subtract your exhaustion level from the spell save DC of any spell you cast.</li>
@@ -812,12 +1000,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup13">
+            <div class="popup" id="popup20">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#incapacitated">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup13, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup13, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup20, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup20, options={event:event})">&times;</div>
                     </div>
                     incapacitated
                 </div>
@@ -829,17 +1017,16 @@
                             <li>You can't take actions or reactions.</li>
                             <li>Your <a href="/settings/four-corners/glossary.html#concentration">concentration</a> is broken and you can't regain concentration.</li>
                             <li>You can't speak.</li>
-                            <li>You have disadvantage on initiative checks.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup14">
+            <div class="popup" id="popup21">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#transformed">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup14, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup14, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup21, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup21, options={event:event})">&times;</div>
                     </div>
                     transformed
                 </div>
@@ -856,58 +1043,36 @@
                         <ul>
                             <li>Your game statistics are replaced by the statistics of the object.</li>
                             <li>Your equipment melds into your new form and has no effect.</li>
-                            <li>You are incapacitated, can't move, and are unaware of your surroundings.</li>
+                            <li>You are <span class="popupAnchor" id="anchor36" onclick="toggleDragEnabled(popup20, options={event:event})" onmouseover="showPopup(popup20, anchor36)" onmouseout="hidePopup(popup20)">incapacitated</span> and unaware of your surroundings.</li>
                             <li>You have no memory of time spent in this form.</li>
                         </ul>
-                        <div class="p">When you revert to your normal form, you return to the number of hit points you had before you transformed, assuming you didn't die. If you revert as a result of dropping to 0 hit points, and any excess damage carries over to your normal form.</div>
+                        <div class="p">When you revert to your normal form, you return to the number of hit points you had before you transformed, assuming you didn't die. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup15">
+            <div class="popup" id="popup22">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#crawl">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup15, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup15, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#dying">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup22, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup22, options={event:event})">&times;</div>
                     </div>
-                    crawl
+                    dying
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
-                        <h1 class="noHeaderID">Crawl</h1>
-                        <div class="p">Crawling lets you move while <a href="/settings/four-corners/glossary.html#prone">prone</a>. Crawling costs 1 extra foot of movement for each foot traveled.</div>
+                        <h1 class="noHeaderID">Dying</h1>
+                        <div class="p">While you are dying, make a death saving throw at the start of each of your turns. Keep track of your successes and failures. You automatically suffer 1 failure each time you take damage while dying, or 2 failures if the damage was from a critical hit. If you reach 3 failures, you die. If you reach 3 successes, you stop dying. If you stop dying for any reason, stop tracking your successes and failures; the counts don't carry over to the next time you are dying.</div>
+                        <div class="p">If you aren't already dying, you start dying when you are <span class="tooltipWrapper"><span class="tooltipAnchor">reduced to 0 hit points</span><span class="tooltip">You also fall <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>.</span></span> and there is at least 1 point of excess damage. The condition ends early if you regain hit points. A creature within 5 feet of you can also make a DC 10 Medicine check to stabilize you as a standard action, ending the condition on a success.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup16">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#prone">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup16, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup16, options={event:event})">&times;</div>
-                    </div>
-                    prone
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Prone</h1>
-                        <div class="p">While prone, you experience the following effects:</div>
-                        <ul>
-                            <li>Your only movement option is to <span class="popupAnchor" id="anchor33" onclick="toggleDragEnabled(popup15, options={event:event})" onmouseover="showPopup(popup15, anchor33)" onmouseout="hidePopup(popup15)">crawl</span>, unless you stand up and thereby end the condition.</li>
-                            <li>You have disadvantage on attack rolls.</li>
-                            <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
-                        </ul>
-                        <div class="p">Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
-                        <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup17">
+            <div class="popup" id="popup23">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#difficult-terrain">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup17, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup17, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup23, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup23, options={event:event})">&times;</div>
                     </div>
                     difficult terrain
                 </div>
@@ -919,33 +1084,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup18">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#slowed">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup18, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup18, options={event:event})">&times;</div>
-                    </div>
-                    slowed
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Slowed</h1>
-                        <div class="p">While you are slowed, you experience the following effects:</div>
-                        <ul>
-                            <li>You must expend 1 extra foot of movement for every foot you move using your speed.</li>
-                            <li>Attack rolls against you have advantage.</li>
-                            <li>You have disadvantage on Dexterity saving throws.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup19">
+            <div class="popup" id="popup24">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#restrained">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup19, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup19, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup24, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup24, options={event:event})">&times;</div>
                     </div>
                     restrained
                 </div>
@@ -954,35 +1098,19 @@
                         <h1 class="noHeaderID">Restrained</h1>
                         <div class="p">While restrained, you experience the following effects:</div>
                         <ul>
-                            <li>Your speed becomes 0, and you can't benefit from any bonuses to speed.</li>
+                            <li>Your speed is 0.</li>
                             <li>Attack rolls against you have advantage, and your attack rolls have disadvantage.</li>
                             <li>You have disadvantage on Dexterity saving throws.</li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup20">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#falling">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup20, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup20, options={event:event})">&times;</div>
-                    </div>
-                    fall
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Falling</h1>
-                        <div class="p">At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands <span class="popupAnchor" id="anchor42" onclick="toggleDragEnabled(popup16, options={event:event})" onmouseover="showPopup(popup16, anchor42)" onmouseout="hidePopup(popup16)">prone</span>, unless it avoids taking damage from the fall.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup21">
+            <div class="popup" id="popup25">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#light">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup21, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup21, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup25, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup25, options={event:event})">&times;</div>
                     </div>
                     light
                 </div>
@@ -993,9 +1121,9 @@
                         <h4 id="bright-light" class="noHeaderID">Bright Light</h4>
                         <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
                         <h4 id="dim-light" class="noHeaderID">Dim Light</h4>
-                        <div class="p">Dim light, also called shadows, creates a lightly <span class="popupAnchor" id="anchor46" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor46)" onmouseout="hidePopup(popup5)">obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
+                        <div class="p">Dim light, also called shadows, creates a lightly <span class="popupAnchor" id="anchor55" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor55)" onmouseout="hidePopup(popup12)">obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
                         <h4 id="darkness" class="noHeaderID">Darkness</h4>
-                        <div class="p">Darkness creates a heavily <span class="popupAnchor" id="anchor47" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor47)" onmouseout="hidePopup(popup5)">obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
+                        <div class="p">Darkness creates a heavily <span class="popupAnchor" id="anchor56" onclick="toggleDragEnabled(popup12, options={event:event})" onmouseover="showPopup(popup12, anchor56)" onmouseout="hidePopup(popup12)">obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
                     </div>
                 </div>
             </div>

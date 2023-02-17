@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movement</title>
+        <script src="/js/darkmode.js"></script>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/rules/movement.html">Movement</a><div class="dropdown-content"></div></div>
+            </div>
+            <button id="button-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
+        </header>
+        <article>
+            <h1 id="movement">Movement</h1>
+            <div class="p">Movement is a resource that you can spend to move. At the start of each of your turns, your movement resets to an amount of movement equal to your speed. If your speed changes, your remaining movement changes to match what it would have been if your speed were its new value from the start.</div>
+            <div class="p">Speed is a measure of how far you can go. It is usually given in feet. Your speed can change over the course of a fight or campaign, but in general it is determined by your race.</div>
+            <div class="p">If an effect lets you "freely move", you can move without spending movement.</div>
+            <blockquote>
+            <h4 id="rule-dependency-action-points">Rule Dependency: Action Points</h4>
+            <div class="p">This set of rules is designed to work with the <a href="/rules/action-points.html">Action Points</a> system.</div>
+            </blockquote>
+            <h2 id="move-action">Move Action</h2>
+            <div class="p">The most basic way to move is the Move action, a repeatable free action. You can use this action to walk, crawl, swim, climb, or use any other movement mode available to you. In general, you move 1 foot per foot of movement expended, although certain circumstances (such as difficult terrain) may increase this cost.</div>
+            <h2 id="dash-action">Dash Action</h2>
+            <div class="p">The Dash action is a repeatable standard action that adds your speed to your remaining movement. It does not let you spend the movement; for that, use the Move action.</div>
+            <h2 id="moving-out-of-turn">Moving Out of Turn</h2>
+            <div class="p">Since the Move action is a free action, you can Ready it as a free action. When your reaction is triggered, you then spend movement as normal. Make sure you end your turn with enough movement! If you spend all your movement on your turn and Ready a Move action, you won't be able to do anything with your reaction.</div>
+            <div class="p">Effects that let you (or make you) move out-of-turn also expend movement unless otherwise specified. If you have no movement left, you can't move as usual.</div>
+            <h2 id="forced-movement">Forced Movement</h2>
+            <div class="p">Forced movement refers to being pushed or pulled by an external force. You don't expend movement when you are moved in such a way.</div>
+            <h2 id="teleportation">Teleportation</h2>
+            <div class="p">When you teleport, you don't expend movement unless otherwise specified.</div>
+        </article>
+        <footer>
+            This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
+        </footer>
+    </body>
+</html>

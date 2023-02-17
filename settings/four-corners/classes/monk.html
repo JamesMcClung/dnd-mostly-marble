@@ -9,7 +9,7 @@
     <body>
         <header>
             <div class="navbar">
-                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
+                <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/classes.html">Classes</a><div class="dropdown-content"><a href="/settings/four-corners/classes/druid.html">Druid</a><a href="/settings/four-corners/classes/fighter.html">Fighter</a><a href="/settings/four-corners/classes/monk.html">Monk</a><a href="/settings/four-corners/classes/ranger.html">Ranger</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/classes/monk.html">Monk</a><div class="dropdown-content"></div></div>
@@ -385,7 +385,7 @@
                             <li>You have disadvantage on attack rolls.</li>
                             <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
                         </ul>
-                        <div class="p">Standing up costs an amount of movement equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
+                        <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
                         <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
                     </div>
                 </div>
@@ -402,8 +402,8 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Jump</h1>
-                        <div class="p">Jumping lets you clear gaps or obstacles. Distance traveled as part of a jump counts as movement, and like all movement, your total movement on a turn cannot exceed your speed. </div>
-                        <div class="p">When you jump, perform the following series of calculations; don't round until the end. The resulting value is the maximum number of feet you can jump, not counting limitations from your speed.</div>
+                        <div class="p">Jumping lets you clear gaps or obstacles. Distance traveled as part of a jump counts as movement.</div>
+                        <div class="p">When you jump, perform the following series of calculations; don't round until the end. The resulting value is the maximum number of feet you can jump.</div>
                         <ol>
                             <li>Start with your passive Athletics. Alternatively, you can make a Strength (Athletics check) and use the result instead.</li>
                             <li>Divide the value by 2.</li>
@@ -444,7 +444,26 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Falling</h1>
-                        <div class="p">At the end of a fall, a creature takes 1d6 bludgeoning damage for every 10 feet it fell, to a maximum of 20d6. The creature lands <span class="popupAnchor" id="anchor14" onclick="toggleDragEnabled(popup7, options={event:event})" onmouseover="showPopup(popup7, anchor14)" onmouseout="hidePopup(popup7)">prone</span>, unless it avoids taking damage from the fall.</div>
+                        <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
+                        <div class="p">On impact, roll a fall damage die for every 10 feet you fell, to a maximum of 20 dice. You take bludgeoning damage equal to their sum. Your size determines your fall damage die, as shown in the table below. You also land <span class="popupAnchor" id="anchor14" onclick="toggleDragEnabled(popup7, options={event:event})" onmouseover="showPopup(popup7, anchor14)" onmouseout="hidePopup(popup7)">prone</span>, unless you avoid taking damage from the fall.</div>
+                        <div class="tableAndCaption">
+                            <span class="caption" id="fall-damage-die">Fall Damage Die</span>
+                            <div class="tableWrapper">
+                                <table>
+                                    <thead>
+                                        <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Die</span></th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td align="left">Tiny</td><td align="center">d4</td></tr>
+                                        <tr><td align="left">Small</td><td align="center">d6</td></tr>
+                                        <tr><td align="left">Medium</td><td align="center">d8</td></tr>
+                                        <tr><td align="left">Large</td><td align="center">d10</td></tr>
+                                        <tr><td align="left">Huge</td><td align="center">d12</td></tr>
+                                        <tr><td align="left">Gargantuan</td><td align="center">d20</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -673,7 +692,7 @@
                         </div>
                         <hr>
                         <div class="p">A nonmagical wall of solid stone springs into existence at a point you choose within range. The wall is 6 inches thick and is composed of ten 10-foot-by-10-foot panels. Each panel must be contiguous with at least one other panel. Alternatively, you can create 10-foot-by-20-foot panels that are only 3 inches thick.</div>
-                        <div class="p">If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move up to its speed so that it is no longer enclosed by the wall.</div>
+                        <div class="p">If the wall cuts through a creature's space when it appears, the creature is pushed to one side of the wall (your choice). If a creature would be surrounded on all sides by the wall (or the wall and another solid surface), that creature can make a Dexterity saving throw. On a success, it can use its reaction to move so that it is no longer enclosed by the wall.</div>
                         <div class="p">The wall can have any shape you desire, though it can't occupy the same space as a creature or object. The wall doesn't need to be vertical or rest on any firm foundation. It must, however, merge with and be solidly supported by existing stone. Thus, you can use this spell to bridge a chasm or create a ramp.</div>
                         <div class="p">If you create a span greater than 20 feet in length, you must halve the size of each panel to create supports. You can crudely shape the wall to create crenellations, battlements, and so on.</div>
                         <div class="p">The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 hit points per inch of thickness. Reducing a panel to 0 hit points destroys it and might cause connected panels to collapse at the DM's discretion.</div>
@@ -949,7 +968,8 @@
                         <h1 class="noHeaderID">Dazed</h1>
                         <div class="p">While you are dazed, you experience the following effects:</div>
                         <ul>
-                            <li>On each of your turns, you have 1 less <a href="/rules/action-points.html">action point</a>, and you can either move or take actions.</li>
+                            <li>On each of your turns, you have 1 less <a href="/rules/action-points.html">action point</a>.</li>
+                            <li>You start each of your turns with 0 <a href="/rules/movement.html">movement</a>. You can increase your movement in other ways, such as the <a href="/settings/four-corners/glossary.html#dash">Dash</a> action.</li>
                             <li>You can't take reactions.</li>
                             <li>You have disadvantage on saving throws you make to maintain <a href="/settings/four-corners/glossary.html#concentration">concentration</a> (including on the saving throw triggered by the effect that dazed you, if it triggered such a save).</li>
                         </ul>
@@ -973,7 +993,6 @@
                             <li>You can't take actions or reactions.</li>
                             <li>Your <a href="/settings/four-corners/glossary.html#concentration">concentration</a> is broken and you can't regain concentration.</li>
                             <li>You can't speak.</li>
-                            <li>You have disadvantage on initiative checks.</li>
                         </ul>
                     </div>
                 </div>
@@ -992,7 +1011,8 @@
                         <h1 class="noHeaderID">Stunned</h1>
                         <div class="p">While stunned, you experience the following effects:</div>
                         <ul>
-                            <li>You are <span class="popupAnchor" id="anchor41" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor41)" onmouseout="hidePopup(popup29)">incapacitated</span> and can't move.</li>
+                            <li>You are <span class="popupAnchor" id="anchor41" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor41)" onmouseout="hidePopup(popup29)">incapacitated</span>.</li>
+                            <li>Your speed is 0.</li>
                             <li>You automatically fail Strength and Dexterity saving throws.</li>
                             <li>Attack rolls against you have advantage.</li>
                         </ul>
@@ -1088,7 +1108,8 @@
                         <h1 class="noHeaderID">Paralyzed</h1>
                         <div class="p">While paralyzed, you experience the following effects:</div>
                         <ul>
-                            <li>You are <span class="popupAnchor" id="anchor49" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor49)" onmouseout="hidePopup(popup29)">incapacitated</span> and can't move.</li>
+                            <li>You are <span class="popupAnchor" id="anchor49" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor49)" onmouseout="hidePopup(popup29)">incapacitated</span>.</li>
+                            <li>Your speed is 0.</li>
                             <li>You automatically fail Strength and Dexterity saving throws.</li>
                             <li>Attack rolls against you have advantage.</li>
                             <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
@@ -1108,7 +1129,7 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Exhaustion</h1>
-                        <div class="p">This condition is cumulative. Each time you receive it, you gain 1 level of exhaustion. You die if your exhaustion level exceeds 10. While you have at least 1 level of exhaustion, you experience the following effects:</div>
+                        <div class="p">This condition is cumulative. Each time you receive it, you gain a specified number of levels of exhaustion. You die if your exhaustion level exceeds 10. While you have at least 1 level of exhaustion, you experience the following effects:</div>
                         <ul>
                             <li>When you make an attack roll, ability check, or saving throw, you subtract your exhaustion level from the d20 roll.</li>
                             <li>Subtract your exhaustion level from the spell save DC of any spell you cast.</li>
@@ -1150,11 +1171,7 @@
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Invisible</h1>
-                        <div class="p">While invisible, you experience the following effects:</div>
-                        <ul>
-                            <li>You can't be seen without the aid of magic or a special sense. Any equipment you are wearing or carrying similarly can't be seen.</li>
-                            <li>You have advantage on initiative checks.</li>
-                        </ul>
+                        <div class="p">While invisible, you can't be seen without the aid of magic or a special sense. Any equipment you are wearing or carrying similarly can't be seen.</div>
                     </div>
                 </div>
             </div>
