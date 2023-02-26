@@ -103,7 +103,7 @@
                 <div class="small-card">
                     <h1 id="soaring-wings">Soaring Wings</h1>
                     <div class="p card-subheader"><i>Prerequisite: <a href="/settings/four-corners/races/dragonborn.html">Dragonborn</a><br>Cost: 8 feat points</i></div>
-                    <div class="p">Your wings are strong enough for flight. You gain a <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor3)" onmouseout="hidePopup(popup3)">flying speed</span> of 40 feet. If you also have the <a href="/settings/four-corners/feats.html#shielding-wings">Shielding Wings</a> feat or are wearing <a href="/settings/four-corners/equipment.html#heavy-armor">heavy armor</a>, this flying speed is halved.</div>
+                    <div class="p">Your wings are strong enough for flight. You gain a <span class="popupAnchor" id="anchor3" onclick="toggleDragEnabled(popup3, options={event:event})" onmouseover="showPopup(popup3, anchor3)" onmouseout="hidePopup(popup3)">fly speed</span> of 40 feet. If you also have the <a href="/settings/four-corners/feats.html#shielding-wings">Shielding Wings</a> feat or are wearing <a href="/settings/four-corners/equipment.html#heavy-armor">heavy armor</a>, this fly speed is halved.</div>
                 </div>
             </div>
             <div class="popup" id="popup2">
@@ -167,80 +167,6 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup6">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#crawl">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup6, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup6, options={event:event})">&times;</div>
-                    </div>
-                    crawl
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Crawl</h1>
-                        <div class="p">Crawling lets you move while <a href="/settings/four-corners/glossary.html#prone">prone</a>. Crawling costs 1 extra foot of movement for each foot traveled.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup5">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#prone">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup5, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup5, options={event:event})">&times;</div>
-                    </div>
-                    prone
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Prone</h1>
-                        <div class="p">While prone, you experience the following effects:</div>
-                        <ul>
-                            <li>Your only movement option is to <span class="popupAnchor" id="anchor6" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor6)" onmouseout="hidePopup(popup6)">crawl</span>, unless you stand up and thereby end the condition.</li>
-                            <li>You have disadvantage on attack rolls.</li>
-                            <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
-                        </ul>
-                        <div class="p">Standing up costs an amount of <a href="/rules/movement.html">movement</a> equal to half your current speed. You can't stand up if you don't have enough movement left or if your speed is 0.</div>
-                        <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup4">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#falling">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup4, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup4, options={event:event})">&times;</div>
-                    </div>
-                    fall
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Falling</h1>
-                        <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
-                        <div class="p">On impact, roll a fall damage die for every 10 feet you fell, to a maximum of 20 dice. You take bludgeoning damage equal to their sum. Your size determines your fall damage die, as shown in the table below. You also land <span class="popupAnchor" id="anchor5" onclick="toggleDragEnabled(popup5, options={event:event})" onmouseover="showPopup(popup5, anchor5)" onmouseout="hidePopup(popup5)">prone</span>, unless you avoid taking damage from the fall.</div>
-                        <div class="tableAndCaption">
-                            <span class="caption" id="fall-damage-die">Fall Damage Die</span>
-                            <div class="tableWrapper">
-                                <table>
-                                    <thead>
-                                        <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Die</span></th></tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr><td align="left">Tiny</td><td align="center">d4</td></tr>
-                                        <tr><td align="left">Small</td><td align="center">d6</td></tr>
-                                        <tr><td align="left">Medium</td><td align="center">d8</td></tr>
-                                        <tr><td align="left">Large</td><td align="center">d10</td></tr>
-                                        <tr><td align="left">Huge</td><td align="center">d12</td></tr>
-                                        <tr><td align="left">Gargantuan</td><td align="center">d20</td></tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="popup" id="popup3">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
@@ -248,13 +174,13 @@
                         <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup3, options={event:event})">&#9675;</div>
                         <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup3, options={event:event})">&times;</div>
                     </div>
-                    flying speed
+                    fly speed
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Fly</h1>
-                        <div class="p">Flying lets you move through the air. Doing so requires the use of a flying speed.</div>
-                        <div class="p">While flying, you <span class="popupAnchor" id="anchor4" onclick="toggleDragEnabled(popup4, options={event:event})" onmouseover="showPopup(popup4, anchor4)" onmouseout="hidePopup(popup4)">fall</span> if you are <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or your flying speed becomes 0. If you use magic to fly, you only fall if you die.</div>
+                        <div class="p card-subheader"><i>Natural Movement Modes: [Flying]($glossary#movement.flying)<br>Other Movement Modes (+1 Cost): [Shifting]($glossary#movement.shifting), [sneaking]($glossary#movement.sneaking)</i></div>
+                        <div class="p">A fly speed gives you access to the flying movement mode.</div>
                     </div>
                 </div>
             </div>

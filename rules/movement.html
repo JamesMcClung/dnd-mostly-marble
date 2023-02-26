@@ -16,24 +16,46 @@
         </header>
         <article>
             <h1 id="movement">Movement</h1>
-            <div class="p">Movement is a resource that you can spend to move. At the start of each of your turns, your movement resets to an amount of movement equal to your speed. If your speed changes, your remaining movement changes to match what it would have been if your speed were its new value from the start.</div>
-            <div class="p">Speed is a measure of how far you can go. It is usually given in feet. Your speed can change over the course of a fight or campaign, but in general it is determined by your race.</div>
-            <div class="p">If an effect lets you "freely move", you can move without spending movement.</div>
             <blockquote>
             <h4 id="rule-dependency-action-points">Rule Dependency: Action Points</h4>
             <div class="p">This set of rules is designed to work with the <a href="/rules/action-points.html">Action Points</a> system.</div>
             </blockquote>
-            <h2 id="move-action">Move Action</h2>
-            <div class="p">The most basic way to move is the Move action, a repeatable free action. You can use this action to walk, crawl, swim, climb, or use any other movement mode available to you. In general, you move 1 foot per foot of movement expended, although certain circumstances (such as difficult terrain) may increase this cost.</div>
-            <h2 id="dash-action">Dash Action</h2>
-            <div class="p">The Dash action is a repeatable standard action that adds your speed to your remaining movement. It does not let you spend the movement; for that, use the Move action.</div>
-            <h2 id="moving-out-of-turn">Moving Out of Turn</h2>
-            <div class="p">Since the Move action is a free action, you can Ready it as a free action. When your reaction is triggered, you then spend movement as normal. Make sure you end your turn with enough movement! If you spend all your movement on your turn and Ready a Move action, you won't be able to do anything with your reaction.</div>
-            <div class="p">Effects that let you (or make you) move out-of-turn also expend movement unless otherwise specified. If you have no movement left, you can't move as usual.</div>
+            <div class="p">Movement is a resource that you can spend to move. Each foot of movement lets you travel 1 foot unless otherwise specified. You can't spend more movement than your <b>movement limit</b>, which normally equals your speed. The amount of movement you've spent resets to 0 at the start of each of your turns.</div>
+            <div class="p">Changes to your speed have an immediate effect on your movement limit. For example, if your speed is set to 0, your movement limit becomes 0 and you can no longer move. Conversely, if your speed is increased by 10 feet, you can spend an additional 10 feet of movement.</div>
+            <h2 id="spending-movement">Spending Movement</h2>
+            <div class="p">To move, you must take an action, reaction, or special feature that lets you do so. The <b>Move action</b> is a repeatable free action that lets you move. It doesn't have to be your turn for you to move; for example, you could use a free action to Ready the Move action for "when I see a monster approach me".</div>
+            <div class="p">When you move, you can use any <a href="#movement-modes">movement mode</a> available to you unless otherwise specified.</div>
+            <h2 id="gaining-movement">Gaining Movement</h2>
+            <div class="p">The <b>Dash action</b> is a repeatable standard action that increases your movement limit by your speed until the start of your next turn. For example, if you take the Dash action twice in the same round, your movement limit equals 3 times your speed until the start of your next turn. Changes to your speed still immediately affect your movement limit; in the case of taking two Dash actions, if your speed is increased by 10 feet, your movement limit would increase by <i>30</i> feet.</div>
+            <h2 id="free-movement">Free Movement</h2>
+            <div class="p">Some effects let you <b>freely move</b>, which means you can move without expending movement. The effect will specify how far you can freely move.</div>
+            <div class="p">If an effect lets you freely move using a particular <a href="#movement-modes">movement mode</a>, you can do so even if that mode isn't normally available to you. For example, if you only have a <a href="#special-speeds">walk speed</a> and a spell lets you "freely teleport" up to 30 feet, you can teleport even though teleportation isn't on normally allowed by a walk speed.</div>
             <h2 id="forced-movement">Forced Movement</h2>
-            <div class="p">Forced movement refers to being pushed or pulled by an external force. You don't expend movement when you are moved in such a way.</div>
-            <h2 id="teleportation">Teleportation</h2>
-            <div class="p">When you teleport, you don't expend movement unless otherwise specified.</div>
+            <div class="p">Movement caused by a push, pull, or other external force is called <b>forced movement</b>. An effect that <i>moves you</i> specifies how far you are moved, and doesn't cause you to spend movement. An effect that <i>makes or lets you move</i>, such as a spell that makes you flee in terror, <i>does</i> cause you to spend movement (unless it specifies that you <a href="#free-movement">freely</a> move).</div>
+            <h2 id="movement-modes">Movement Modes</h2>
+            <div class="p">The most basic <b>movement mode</b> is <b>walking</b>, the catch-all term for "using your legs on the ground". Other modes, such as <b>crawling</b>, <b>swimming</b>, and <b>climbing</b>, are used in other circumstances and may require you to spend more than 1 foot of movement per foot traveled.</div>
+            <div class="p">Movement modes are not necessarily mutually exclusive. The <b>shifting</b> movement mode lets you move within a creature's reach without provoking opportunity attacks, but costs 1 extra foot of movement for each foot traveled. You can shift and swim at the same time, spending 3 feet of movement per foot traveled (unless you use a <a href="#special-speeds">swim speed</a>, in which case you spend 2 feet of movement per foot traveled).</div>
+            <div class="p">You implicitly use a movement mode even when stationary. For example, when you are treading water, you are swimming, and you sink if something prevents you from using that movement mode.</div>
+            <h2 id="special-speeds">Special Speeds</h2>
+            <div class="p">Some creatures have more than one kind of speed. Each kind of speed has a <b>natural movement mode</b>. A speed's natural movement mode costs 1 foot per foot traveled with that speed, and other modes cost an additional 1 foot of movement per foot traveled. See the Natural Movement Modes table for a list of each speed, its natural movement mode, and other movement modes it can be used with. A <b>swim speed</b>, for instance, is used to swim at no extra cost but can't be used for walking. A <b>fly speed</b> is required to use the flying movement mode. Your default speed is called your <b>walk speed</b> when clarity is necessary. </div>
+            <div class="tableAndCaption">
+                <span class="caption" id="natural-movement-modes">Natural Movement Modes</span>
+                <div class="tableWrapper">
+                    <table>
+                        <thead>
+                            <tr><th align="left"><span class="col-title">Speed Type</span></th><th align="left"><span class="col-title">Natural Movement Mode</span></th><th align="left"><span class="col-title">Other Movement Modes (+1 Cost)</span></th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td align="left">Walk (default)</td><td align="left">walking</td><td align="left">climbing, crawling, shifting, swimming</td></tr>
+                            <tr><td align="left">Climb</td><td align="left">climbing</td><td align="left">shifting</td></tr>
+                            <tr><td align="left">Fly</td><td align="left">flying</td><td align="left">shifting</td></tr>
+                            <tr><td align="left">Swim</td><td align="left">swimming</td><td align="left">shifting</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="p">There is a movement limit associated with each of your speeds, but <i>all movement expended counds towards every movement limit</i>. For example, suppose you have a walk speed of 30 feet and a swim speed of 20 feet. You can walk 10 feet and then swim 10 feet. At this point, you've spent 20 feet of movement, so you can use your walk speed but not your swim speed. If you're still in water, you can swim an additional 5 feet using your walk speed (spending 2 feet of movement per foot traveled) before you run out of movement completely.</div>
+            <div class="p">Finally, an effect that changes "your speed" changes <i>each</i> of your speeds. An effect that specifies a particular speed, such as your walk speed, doesn't affect your other speeds. While one of your speeds is 0, you can't benefit from that speed. For example, if you are flying to remain in the air and your fly speed becomes 0, you fall unless you have some other means of staying aloft.</div>
         </article>
         <footer>
             This website is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.

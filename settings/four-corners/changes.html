@@ -17,12 +17,50 @@
         </header>
         <article>
             <h1 id="changes">Changes</h1>
+            <h2 id="v1122">v1.12.2</h2>
+            <div class="p">Game:</div>
+            <ul>
+                <li>
+                    Rewrote <a href="/rules/movement.html">movement</a> rules
+                    <ul>
+                        <li>Introduce concepts of "movement limit" and "natural movement modes" for speeds</li>
+                        <li>Distinguish between movement modes and movement speeds</li>
+                        <li>Describe how multiple movement speeds work</li>
+                        <li>Describe implicit movement (e.g., flying to stay aloft, even though you aren't strictly moving)</li>
+                        <li>
+                            Teleport is no longer a special movement mode; many effects now specify "freely teleport"
+                            <ul>
+                                <li>Affected spells: <i>dimension door, far step, misty step, steel wind strike, thunder step, word of recall</i></li>
+                                <li>Affected features: Horizon Walker's Dimensional Sentinel and Ephemeral Stride</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Speeds:
+                    <ul>
+                        <li>Added <a href="glossary.html#crawl-speed">crawl speed</a></li>
+                        <li>Added <a href="glossary.html#burrow-speed">burrow speed</a>, which also lets you ignore DT due to certain debris</li>
+                        <li>Prop 22: added <a href="glossary.html#hover-speed">hover speed</a></li>
+                        <li>Hover and <a href="glossary.html#swim-speed">swim speed</a> now make you immune to prone</li>
+                        <li><a href="glossary.html#climb-speed">Climb speed</a> now gives advantage on any checks related to climbing</li>
+                    </ul>
+                </li>
+                <li><a href="glossary.html#jump">Jump</a> is now a free action, like Move</li>
+                <li>
+                    Prop 24: added <a href="glossary.html#shifting">shifting</a> movement mode, which lets you move within a creature's reach without provoking OA
+                    <ul>
+                        <li>Now provoke OA if you move within a creature's reach, unless you move closer to creature</li>
+                        <li>Buffed <a href="glossary.html#flanked">flanked</a> to give advantage instead of +2</li>
+                    </ul>
+                </li>
+            </ul>
             <h2 id="v1121">v1.12.1</h2>
             <div class="p">Game:</div>
             <ul>
                 <li>Added the <a href="/settings/four-corners/equipment.html#curtal">curtal</a> intrument</li>
                 <li>Removed the Gunner feat</li>
-                <li>Prop 20: classes choose from 2 of 3 saves</li>
+                <li>Prop 20 (partial): classes choose from 2 of 3 saves</li>
                 <li><a href="/settings/four-corners/spells.html#barkskin">Barkskin</a> now gives temp hp at end of turn instead of start</li>
                 <li>
                     Races:
