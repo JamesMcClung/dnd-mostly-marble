@@ -10,13 +10,45 @@
         <header>
             <div class="navbar">
                 <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
-                <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/bestiary.html">Bestiary</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/changes.html">Changes</a><div class="dropdown-content"></div></div>
             </div>
             <button id="button-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
         </header>
         <article>
             <h1 id="changes">Changes</h1>
+            <h2 id="v1123-pre1">v1.12.3-pre.1</h2>
+            <div class="p">Game:</div>
+            <ul>
+                <li>
+                    Added Powerful Build, Extra Attack, and Companion traits
+                    <ul>
+                        <li>Powerful Build: used by the <a href="feats.html#powerful-build">feat</a> and various <a href="races.html">races</a></li>
+                        <li>Extra Attack: used by various <a href="classes.html">classes</a></li>
+                        <li>Companion: used by <a href="classes/druid.html#wild-companion">Wild Companion</a></li>
+                    </ul>
+                </li>
+                <li>Simplified <a href="glossary.html#attack">Attack</a> and <a href="glossary.html#offhand-attack">Offhand Attack</a> actions (Prop 18)</li>
+                <li>Added <a href="glossary.html#underwater">underwater</a> rules and <a href="equipment/properties.html#hydrodynamic">hydrodynamic</a> weapon property</li>
+                <li>
+                    <a href="spells.html">Spell</a> save changes (Prop 20, completed):
+                    <ul>
+                        <li>Now Wis saves: <i>bane, calm emotions, contact other plane, symbol</i> (hopelessness, insanity)</li>
+                        <li>Now Cha saves: <i>command, dominate beast, dominate monster, dominate person, geas, hold monster, hold person, imprisonment, mass polymorph, Otto's irresistible dance, polymorph, prismatic spray</i> (violet), <i>prismatic wall</i> (violet), <i>sanctuary, scatter, slow, true polymorph</i></li>
+                        <li>Now Int saves: <i>confusion, detect thoughts, mind spike, modify memory</i></li>
+                    </ul>
+                </li>
+                <li>
+                    Druid (WIP):
+                    <ul>
+                        <li>Overhauled <a href="classes/druid.html#beast-forms">Beast Forms</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="p">Lore:</div>
+            <ul>
+                <li>Added <a href="bestiary.html">bestiary</a> (WIP)</li>
+            </ul>
             <h2 id="v1122">v1.12.2</h2>
             <div class="p">Game:</div>
             <ul>
@@ -47,6 +79,7 @@
                     </ul>
                 </li>
                 <li><a href="glossary.html#jump">Jump</a> is now a free action, like Move</li>
+                <li>Prop 21: <a href="glossary.html#charge">charge</a> now requires a natural movement mode</li>
                 <li>
                     Prop 24: added <a href="glossary.html#shifting">shifting</a> movement mode, which lets you move within a creature's reach without provoking OA
                     <ul>

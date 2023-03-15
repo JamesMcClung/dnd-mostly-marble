@@ -10,7 +10,7 @@
         <header>
             <div class="navbar">
                 <div class="dropdown"><a href="/index.html">DnD Home</a><div class="dropdown-content"><span class="dropdown-subtitle">Rules</span><a href="/rules/action-points.html">&nbsp;&nbsp;Action Points</a><a href="/rules/feat-points.html">&nbsp;&nbsp;Feat Points</a><a href="/rules/movement.html">&nbsp;&nbsp;Movement</a><span class="dropdown-subtitle">Settings</span><a href="/settings/four-corners.html">&nbsp;&nbsp;Four Corners</a></div></div>
-                <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
+                <div class="dropdown"><a href="/settings/four-corners.html">Four Corners</a><div class="dropdown-content"><a href="/settings/four-corners/backgrounds.html">Backgrounds</a><a href="/settings/four-corners/bestiary.html">Bestiary</a><a href="/settings/four-corners/binding.html">Binding</a><a href="/settings/four-corners/changes.html">Changes</a><a href="/settings/four-corners/classes.html">Classes</a><a href="/settings/four-corners/equipment.html">Equipment</a><a href="/settings/four-corners/expansion.html">Expansion</a><a href="/settings/four-corners/feats.html">Feats</a><a href="/settings/four-corners/glossary.html">Glossary</a><a href="/settings/four-corners/languages.html">Languages</a><a href="/settings/four-corners/magic.html">Magic</a><a href="/settings/four-corners/people.html">People</a><a href="/settings/four-corners/planes.html">Planes</a><a href="/settings/four-corners/primordials.html">Primordials</a><a href="/settings/four-corners/races.html">Races</a><a href="/settings/four-corners/religion.html">Religion</a><a href="/settings/four-corners/rules.html">Rules</a><a href="/settings/four-corners/souls.html">Souls</a><a href="/settings/four-corners/spells.html">Spells</a><a href="/settings/four-corners/timeline.html">Timeline</a><a href="/settings/four-corners/world.html">World</a></div></div>
                 <div class="dropdown"><a href="/settings/four-corners/glossary.html">Glossary</a><div class="dropdown-content"></div></div>
             </div>
             <button id="button-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
@@ -25,16 +25,12 @@
                 <div class="small-card">
                     <h1 id="attack">Attack</h1>
                     <div class="p card-subheader"><i>Cost: 2 AP (repeatable)</i></div>
-                    <div class="p">When you take the Attack action, you make one weapon attack.</div>
-                    <div class="p">You can equip or unequip one weapon before or after each attack you make as part of this action, even if the attack is unarmed.</div>
-                    <div class="p">If you move on your turn, you can use some or all of that movement to move between the attacks of this action if you have a feature, such as Extra Attack, that gives you more than one attack as part of the Attack action.</div>
+                    <div class="p">When you take the Attack action, you make one weapon attack. You can equip or unequip one weapon before or after the attack, even if the attack is <a href="/settings/four-corners/equipment.html#unarmed-attacks">unarmed</a>.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="offhand-attack">Offhand Attack</h1>
                     <div class="p card-subheader"><i>Cost: 1 AP</i></div>
-                    <div class="p">When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't attack with the same weapon with the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions on a turn.</div>
-                    <div class="p">You can equip or unequip one weapon before or after each attack you make as part of this action, even if the attack is unarmed.</div>
-                    <div class="p">If you move on your turn, you can use some or all of that movement to move between the attacks of this action if you have a feature, such as Flurry of Blows, that gives you more than one attack as part of this action.</div>
+                    <div class="p">When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor0" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor0)" onmouseout="hidePopup(popup0)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't use the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions to attack with the same weapon on the same turn.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="charge">Charge</h1>
@@ -522,6 +518,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="small-card">
+                    <h1 id="underwater">Underwater</h1>
+                    <div class="p">Underwater, the following rules apply:</div>
+                    <ul>
+                        <li>Attack rolls of melee weapon attacks <span class="tooltipWrapper"><span class="tooltipAnchor">have disadvantage</span><span class="tooltip">Unless you have a <a href="/settings/four-corners/glossary.html#swim">swim speed</a>.</span></span>.</li>
+                        <li>When making a ranged weapon attack, the long <a href="/settings/four-corners/equipment/properties.html#range">range</a> becomes the normal range and the normal range becomes 0 feet.</li>
+                        <li>Fire damage is halved.</li>
+                    </ul>
+                </div>
             </div>
             </details>
             <details open id="movement-modes">
@@ -579,37 +584,37 @@
             <div class="cardgroup">
                 <div class="small-card">
                     <h1 id="burrow">Burrow</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor52" onclick="toggleDragEnabled(popup23, options={event:event})" onmouseover="showPopup(popup23, anchor52)" onmouseout="hidePopup(popup23)">Burrowing</span>, <span class="popupAnchor" id="anchor53" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor53)" onmouseout="hidePopup(popup24)">walking</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor54" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor54)" onmouseout="hidePopup(popup10)">Crawling</span>, <span class="popupAnchor" id="anchor55" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor55)" onmouseout="hidePopup(popup25)">shifting</span>, <span class="popupAnchor" id="anchor56" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor56)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor49" onclick="toggleDragEnabled(popup22, options={event:event})" onmouseover="showPopup(popup22, anchor49)" onmouseout="hidePopup(popup22)">Burrowing</span>, <span class="popupAnchor" id="anchor50" onclick="toggleDragEnabled(popup23, options={event:event})" onmouseover="showPopup(popup23, anchor50)" onmouseout="hidePopup(popup23)">walking</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor51" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor51)" onmouseout="hidePopup(popup10)">Crawling</span>, <span class="popupAnchor" id="anchor52" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor52)" onmouseout="hidePopup(popup24)">shifting</span>, <span class="popupAnchor" id="anchor53" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor53)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
                     <div class="p">A burrow speed gives you access to the burrowing movement mode. When you use a burrow speed to walk or crawl, you ignore <a href="/settings/four-corners/glossary.html#difficult-terrain">difficult terrain</a> due to loose substrate.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="crawl">Crawl</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor57" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor57)" onmouseout="hidePopup(popup10)">Crawling</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor58" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor58)" onmouseout="hidePopup(popup25)">Shifting</span>, <span class="popupAnchor" id="anchor59" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor59)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor54" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor54)" onmouseout="hidePopup(popup10)">Crawling</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor55" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor55)" onmouseout="hidePopup(popup24)">Shifting</span>, <span class="popupAnchor" id="anchor56" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor56)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
                     <div class="p">A crawl speed lets you crawl faster than you can with a <a href="/settings/four-corners/glossary.html#walk-speed">walk speed</a>. Additionally, the <a href="/settings/four-corners/glossary.html#prone">prone</a> condition doesn't cause you to have disadvantage on attack rolls or cause creatures within 5 feet of you to have advantage on attack rolls against you.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="climb">Climb</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor60" onclick="toggleDragEnabled(popup26, options={event:event})" onmouseover="showPopup(popup26, anchor60)" onmouseout="hidePopup(popup26)">Climbing</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor62" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor62)" onmouseout="hidePopup(popup25)">Shifting</span>, <span class="popupAnchor" id="anchor63" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor63)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor57" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor57)" onmouseout="hidePopup(popup25)">Climbing</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor59" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor59)" onmouseout="hidePopup(popup24)">Shifting</span>, <span class="popupAnchor" id="anchor60" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor60)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
                     <div class="p">A climb speed lets you climb faster than you can with a <a href="/settings/four-corners/glossary.html#walk-speed">walk speed</a>. You also have advantage on any ability checks made to avoid falling while climbing.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="fly">Fly</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor64" onclick="toggleDragEnabled(popup27, options={event:event})" onmouseover="showPopup(popup27, anchor64)" onmouseout="hidePopup(popup27)">Flying</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor66" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor66)" onmouseout="hidePopup(popup25)">Shifting</span>, <span class="popupAnchor" id="anchor67" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor67)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor61" onclick="toggleDragEnabled(popup26, options={event:event})" onmouseover="showPopup(popup26, anchor61)" onmouseout="hidePopup(popup26)">Flying</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor63" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor63)" onmouseout="hidePopup(popup24)">Shifting</span>, <span class="popupAnchor" id="anchor64" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor64)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
                     <div class="p">A fly speed gives you access to the flying movement mode.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="hover">Hover</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor68" onclick="toggleDragEnabled(popup28, options={event:event})" onmouseover="showPopup(popup28, anchor68)" onmouseout="hidePopup(popup28)">Hovering</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor69" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor69)" onmouseout="hidePopup(popup25)">Shifting</span>, <span class="popupAnchor" id="anchor70" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor70)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor65" onclick="toggleDragEnabled(popup27, options={event:event})" onmouseover="showPopup(popup27, anchor65)" onmouseout="hidePopup(popup27)">Hovering</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor66" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor66)" onmouseout="hidePopup(popup24)">Shifting</span>, <span class="popupAnchor" id="anchor67" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor67)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
                     <div class="p">A hover speed gives you access to the hovering movement mode.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="swim">Swim</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor71" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor71)" onmouseout="hidePopup(popup29)">Swimming</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor72" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor72)" onmouseout="hidePopup(popup25)">Shifting</span>, <span class="popupAnchor" id="anchor73" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor73)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
-                    <div class="p">A swim speed lets you swim faster than you can with a <a href="/settings/four-corners/glossary.html#walk-speed">walk speed</a>.</div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor68" onclick="toggleDragEnabled(popup28, options={event:event})" onmouseover="showPopup(popup28, anchor68)" onmouseout="hidePopup(popup28)">Swimming</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor69" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor69)" onmouseout="hidePopup(popup24)">Shifting</span>, <span class="popupAnchor" id="anchor70" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor70)" onmouseout="hidePopup(popup8)">sneaking</span></i></div>
+                    <div class="p">A swim speed lets you swim faster than you can with a <a href="/settings/four-corners/glossary.html#walk-speed">walk speed</a>. Additionally, your melee weapon attacks do not have disadvantage as a result of being <a href="/settings/four-corners/glossary.html#underwater">underwater</a>.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="walk">Walk</h1>
-                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor74" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor74)" onmouseout="hidePopup(popup24)">Walking</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor75" onclick="toggleDragEnabled(popup26, options={event:event})" onmouseover="showPopup(popup26, anchor75)" onmouseout="hidePopup(popup26)">Climbing</span>, <span class="popupAnchor" id="anchor76" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor76)" onmouseout="hidePopup(popup10)">crawling</span>, <span class="popupAnchor" id="anchor77" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor77)" onmouseout="hidePopup(popup25)">shifting</span>, <span class="popupAnchor" id="anchor78" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor78)" onmouseout="hidePopup(popup8)">sneaking</span>, <span class="popupAnchor" id="anchor79" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor79)" onmouseout="hidePopup(popup29)">swimming</span></i></div>
+                    <div class="p card-subheader"><i>Natural Movement Modes: <span class="popupAnchor" id="anchor71" onclick="toggleDragEnabled(popup23, options={event:event})" onmouseover="showPopup(popup23, anchor71)" onmouseout="hidePopup(popup23)">Walking</span><br>Other Movement Modes (+1 Cost): <span class="popupAnchor" id="anchor72" onclick="toggleDragEnabled(popup25, options={event:event})" onmouseover="showPopup(popup25, anchor72)" onmouseout="hidePopup(popup25)">Climbing</span>, <span class="popupAnchor" id="anchor73" onclick="toggleDragEnabled(popup10, options={event:event})" onmouseover="showPopup(popup10, anchor73)" onmouseout="hidePopup(popup10)">crawling</span>, <span class="popupAnchor" id="anchor74" onclick="toggleDragEnabled(popup24, options={event:event})" onmouseover="showPopup(popup24, anchor74)" onmouseout="hidePopup(popup24)">shifting</span>, <span class="popupAnchor" id="anchor75" onclick="toggleDragEnabled(popup8, options={event:event})" onmouseover="showPopup(popup8, anchor75)" onmouseout="hidePopup(popup8)">sneaking</span>, <span class="popupAnchor" id="anchor76" onclick="toggleDragEnabled(popup28, options={event:event})" onmouseover="showPopup(popup28, anchor76)" onmouseout="hidePopup(popup28)">swimming</span></i></div>
                     <div class="p">All creatures have a walk speed. It is versatile, granting access to several movement modes.</div>
                 </div>
             </div>
@@ -623,7 +628,11 @@
                 </div>
                 <div class="small-card">
                     <h1 id="darkvision">Darkvision</h1>
-                    <div class="p">Within a specified range, a creature with darkvision can see in dim <span class="popupAnchor" id="anchor49" onclick="toggleDragEnabled(popup22, options={event:event})" onmouseover="showPopup(popup22, anchor49)" onmouseout="hidePopup(popup22)">light</span> as if it were bright light, and in darkness as if it were dim light. The creature can't discern color in darkness, only shades of gray.</div>
+                    <div class="p">Within a specified range, a creature with darkvision can see in dim <span class="popupAnchor" id="anchor77" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor77)" onmouseout="hidePopup(popup29)">light</span> as if it were bright light, and in darkness as if it were dim light. The creature can't discern color in darkness, only shades of gray.</div>
+                </div>
+                <div class="small-card">
+                    <h1 id="devils-sight">Devil's Sight</h1>
+                    <div class="p">Within a specified range, a creature with devil's sight can see perfectly in any <span class="popupAnchor" id="anchor80" onclick="toggleDragEnabled(popup29, options={event:event})" onmouseover="showPopup(popup29, anchor80)" onmouseout="hidePopup(popup29)">light</span>, even magical darkness.</div>
                 </div>
                 <div class="small-card">
                     <h1 id="tremorsense">Tremorsense</h1>
@@ -656,9 +665,7 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Offhand Attack</h1>
                         <div class="p card-subheader"><i>Cost: 1 AP</i></div>
-                        <div class="p">When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't attack with the same weapon with the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions on a turn.</div>
-                        <div class="p">You can equip or unequip one weapon before or after each attack you make as part of this action, even if the attack is unarmed.</div>
-                        <div class="p">If you move on your turn, you can use some or all of that movement to move between the attacks of this action if you have a feature, such as Flurry of Blows, that gives you more than one attack as part of this action.</div>
+                        <div class="p">When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor2" onclick="toggleDragEnabled(popup0, options={event:event})" onmouseover="showPopup(popup0, anchor2)" onmouseout="hidePopup(popup0)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't use the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions to attack with the same weapon on the same turn.</div>
                     </div>
                 </div>
             </div>
@@ -1110,31 +1117,9 @@
             <div class="popup" id="popup22">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#light">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#burrowing">&raquo;</a></div>
                         <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup22, options={event:event})">&#9675;</div>
                         <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup22, options={event:event})">&times;</div>
-                    </div>
-                    light
-                </div>
-                <div class="popupContent">
-                    <div class="small-card">
-                        <h1 class="noHeaderID">Light</h1>
-                        <div class="p">The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.</div>
-                        <h4 id="bright-light" class="noHeaderID">Bright Light</h4>
-                        <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
-                        <h4 id="dim-light" class="noHeaderID">Dim Light</h4>
-                        <div class="p">Dim light, also called shadows, creates a lightly <span class="popupAnchor" id="anchor50" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor50)" onmouseout="hidePopup(popup6)">obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
-                        <h4 id="darkness" class="noHeaderID">Darkness</h4>
-                        <div class="p">Darkness creates a heavily <span class="popupAnchor" id="anchor51" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor51)" onmouseout="hidePopup(popup6)">obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="popup" id="popup23">
-                <div class="popupHeader">
-                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#burrowing">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup23, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup23, options={event:event})">&times;</div>
                     </div>
                     Burrowing
                 </div>
@@ -1145,12 +1130,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup24">
+            <div class="popup" id="popup23">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#walking">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup24, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup24, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup23, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup23, options={event:event})">&times;</div>
                     </div>
                     walking
                 </div>
@@ -1161,12 +1146,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup25">
+            <div class="popup" id="popup24">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#shifting">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup25, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup25, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup24, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup24, options={event:event})">&times;</div>
                     </div>
                     shifting
                 </div>
@@ -1177,44 +1162,44 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup26">
+            <div class="popup" id="popup25">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#climbing">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup26, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup26, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup25, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup25, options={event:event})">&times;</div>
                     </div>
                     Climbing
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Climbing</h1>
-                        <div class="p">Climbing lets you move in any direction across vertical surfaces. If the surface is particularly difficult to climb, you may have to make a Strength (Athletics) check to avoid <span class="popupAnchor" id="anchor61" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor61)" onmouseout="hidePopup(popup21)">falling</span> off.</div>
+                        <div class="p">Climbing lets you move in any direction across vertical surfaces. If the surface is particularly difficult to climb, you may have to make a Strength (Athletics) check to avoid <span class="popupAnchor" id="anchor58" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor58)" onmouseout="hidePopup(popup21)">falling</span> off.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup27">
+            <div class="popup" id="popup26">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#flying">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup27, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup27, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup26, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup26, options={event:event})">&times;</div>
                     </div>
                     Flying
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <h1 class="noHeaderID">Flying</h1>
-                        <div class="p">Flying lets you move through the air in any direction with the use of wings. While flying, you only <span class="popupAnchor" id="anchor65" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor65)" onmouseout="hidePopup(popup21)">fall</span> if you are <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or knocked <a href="/settings/four-corners/glossary.html#prone">prone</a>.</div>
+                        <div class="p">Flying lets you move through the air in any direction with the use of wings. While flying, you only <span class="popupAnchor" id="anchor62" onclick="toggleDragEnabled(popup21, options={event:event})" onmouseover="showPopup(popup21, anchor62)" onmouseout="hidePopup(popup21)">fall</span> if you are <a href="/settings/four-corners/glossary.html#incapacitated">incapacitated</a> or knocked <a href="/settings/four-corners/glossary.html#prone">prone</a>.</div>
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup28">
+            <div class="popup" id="popup27">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#hovering">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup28, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup28, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup27, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup27, options={event:event})">&times;</div>
                     </div>
                     Hovering
                 </div>
@@ -1225,12 +1210,12 @@
                     </div>
                 </div>
             </div>
-            <div class="popup" id="popup29">
+            <div class="popup" id="popup28">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
                         <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#swimming">&raquo;</a></div>
-                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup29, options={event:event})">&#9675;</div>
-                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup29, options={event:event})">&times;</div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup28, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup28, options={event:event})">&times;</div>
                     </div>
                     Swimming
                 </div>
@@ -1238,6 +1223,28 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Swimming</h1>
                         <div class="p">Swimming lets you travel in any direction through a liquid. While swimming, you don't sink and can't be <a href="/settings/four-corners/glossary.html#prone">prone</a>.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup29">
+                <div class="popupHeader">
+                    <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/glossary.html#light">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup29, options={event:event})">&#9675;</div>
+                        <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup29, options={event:event})">&times;</div>
+                    </div>
+                    light
+                </div>
+                <div class="popupContent">
+                    <div class="small-card">
+                        <h1 class="noHeaderID">Light</h1>
+                        <div class="p">The presence or absence of light in an environment creates three categories of illumination: bright light, dim light, and darkness.</div>
+                        <h4 id="bright-light" class="noHeaderID">Bright Light</h4>
+                        <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
+                        <h4 id="dim-light" class="noHeaderID">Dim Light</h4>
+                        <div class="p">Dim light, also called shadows, creates a lightly <span class="popupAnchor" id="anchor78" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor78)" onmouseout="hidePopup(popup6)">obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
+                        <h4 id="darkness" class="noHeaderID">Darkness</h4>
+                        <div class="p">Darkness creates a heavily <span class="popupAnchor" id="anchor79" onclick="toggleDragEnabled(popup6, options={event:event})" onmouseover="showPopup(popup6, anchor79)" onmouseout="hidePopup(popup6)">obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
                     </div>
                 </div>
             </div>
