@@ -252,7 +252,7 @@
                     <div class="p">You were a maledrin acolyte being trained in the secrets of priesthood. You gain the following benefits:</div>
                     <ul>
                         <li>You can speak Deep Speech, which you use to conduct rituals and commune with your lesser gods.</li>
-                        <li>You learn each of the following spells once you have a spell slot capable of casting it: <span class="popupAnchor" id="anchor81" onclick="toggleDragEnabled(popup43, options={event:event})" onmouseover="showPopup(popup43, anchor81)" onmouseout="hidePopup(popup43)"><i>arms of Hadar</i></span>, <span class="popupAnchor" id="anchor82" onclick="toggleDragEnabled(popup44, options={event:event})" onmouseover="showPopup(popup44, anchor82)" onmouseout="hidePopup(popup44)"><i>augury</i></span>, <span class="popupAnchor" id="anchor83" onclick="toggleDragEnabled(popup45, options={event:event})" onmouseover="showPopup(popup45, anchor83)" onmouseout="hidePopup(popup45)"><i>hunger of Hadar</i></span>, <span class="popupAnchor" id="anchor84" onclick="toggleDragEnabled(popup46, options={event:event})" onmouseover="showPopup(popup46, anchor84)" onmouseout="hidePopup(popup46)"><i>Evard's black tentacles</i></span>, and <span class="popupAnchor" id="anchor85" onclick="toggleDragEnabled(popup47, options={event:event})" onmouseover="showPopup(popup47, anchor85)" onmouseout="hidePopup(popup47)"><i>contact other plane</i></span></li>
+                        <li>You learn each of the following spells once you have a spell slot capable of casting it: <span class="popupAnchor" id="anchor81" onclick="toggleDragEnabled(popup43, options={event:event})" onmouseover="showPopup(popup43, anchor81)" onmouseout="hidePopup(popup43)"><i>otherworldly tendrils</i></span>, <span class="popupAnchor" id="anchor82" onclick="toggleDragEnabled(popup44, options={event:event})" onmouseover="showPopup(popup44, anchor82)" onmouseout="hidePopup(popup44)"><i>augury</i></span>, <span class="popupAnchor" id="anchor83" onclick="toggleDragEnabled(popup45, options={event:event})" onmouseover="showPopup(popup45, anchor83)" onmouseout="hidePopup(popup45)"><i>hunger of the void</i></span>, <span class="popupAnchor" id="anchor84" onclick="toggleDragEnabled(popup46, options={event:event})" onmouseover="showPopup(popup46, anchor84)" onmouseout="hidePopup(popup46)"><i>grasping tentacles</i></span>, and <span class="popupAnchor" id="anchor85" onclick="toggleDragEnabled(popup47, options={event:event})" onmouseover="showPopup(popup47, anchor85)" onmouseout="hidePopup(popup47)"><i>contact other plane</i></span></li>
                         <li>You know the <span class="popupAnchor" id="anchor86" onclick="toggleDragEnabled(popup48, options={event:event})" onmouseover="showPopup(popup48, anchor86)" onmouseout="hidePopup(popup48)"><i>primal savagery</i></span> cantrip. When you cast it using this background, your arms turn into tentacles and you have a reach of 10 feet.</li>
                     </ul>
                     <div class="p">These spells are cast using Intelligence, Wisdom, or Charisma, chosen when you take this background.</div>
@@ -520,7 +520,7 @@
                             <li>You have disadvantage on attack rolls.</li>
                             <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
                         </ul>
-                        <div class="p">You can end this condition as a free action by standing up, spending <a href="/rules/movement.html">movement</a> equal to half your fastest speed. You can't stand up if your speed is 0.</div>
+                        <div class="p">You can end this condition as a free action by standing up, spending <a href="/rules/movement.html">movement</a> equal to half your <a href="/settings/four-corners/glossary.html#walk">walk</a> speed. You can't stand up if your walk speed is 0.</div>
                         <div class="p">This condition is commonly caused by <a href="/settings/four-corners/glossary.html#falling">falling</a>, falling <a href="/settings/four-corners/glossary.html#unconscious">unconscious</a>, and the <a href="/settings/four-corners/equipment.html#trip">trip</a> attack.</div>
                     </div>
                 </div>
@@ -547,6 +547,7 @@
                                         <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Die</span></th></tr>
                                     </thead>
                                     <tbody>
+                                        <tr><td align="left">Minuscule</td><td align="center">d1</td></tr>
                                         <tr><td align="left">Tiny</td><td align="center">d4</td></tr>
                                         <tr><td align="left">Small</td><td align="center">d6</td></tr>
                                         <tr><td align="left">Medium</td><td align="center">d8</td></tr>
@@ -943,7 +944,7 @@
                     <div class="small-card">
                         <h1 class="noHeaderID">Offhand Attack</h1>
                         <div class="p card-subheader"><i>Cost: 1 AP</i></div>
-                        <div class="p">When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor48" onclick="toggleDragEnabled(popup32, options={event:event})" onmouseover="showPopup(popup32, anchor48)" onmouseout="hidePopup(popup32)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. You must be holding nothing or another light weapon in your other hand, and you can't use the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions to attack with the same weapon on the same turn.</div>
+                        <div class="p">When you take the Offhand Attack action, you make one weapon attack with a <span class="popupAnchor" id="anchor48" onclick="toggleDragEnabled(popup32, options={event:event})" onmouseover="showPopup(popup32, anchor48)" onmouseout="hidePopup(popup32)">light</span> weapon. You don't add your ability modifier to the damage of the attack, unless that modifier is negative. Your other hand must be empty or holding another light weapon, and you can't use the <a href="/settings/four-corners/glossary.html#attack">Attack</a> and Offhand Attack actions to attack with the same weapon on a turn.</div>
                     </div>
                 </div>
             </div>
@@ -1176,17 +1177,17 @@
             <div class="popup" id="popup43">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/spells.html#arms-of-hadar">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/spells.html#otherworldly-tendrils">&raquo;</a></div>
                         <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup43, options={event:event})">&#9675;</div>
                         <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup43, options={event:event})">&times;</div>
                     </div>
-                    <i>arms of Hadar</i>
+                    <i>otherworldly tendrils</i>
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <div class="spell-header">
                             <div>
-                                <h1 class="noHeaderID">Arms of Hadar</h1>
+                                <h1 class="noHeaderID">Otherworldly Tendrils</h1>
                                 <div class="p spell-school"><i>1st-level conjuration</i></div>
                             </div>
                         </div>
@@ -1200,7 +1201,7 @@
                             <div class="p"><b>Range</b><br>Self</div>
                         </div>
                         <hr>
-                        <div class="p">You invoke the power of Hadar, the Dark Hunger. Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect.</div>
+                        <div class="p">Tendrils of dark energy erupt from you and batter all creatures within 10 feet of you. Each creature in that area must make a Strength saving throw. On a failed save, a target takes 2d6 necrotic damage and can't take reactions until its next turn. On a successful save, the creature takes half damage, but suffers no other effect.</div>
                         <div class="p"><b>At Higher Levels.</b> When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</div>
                         <hr>
                         <div class="spell-footer">
@@ -1260,17 +1261,17 @@
             <div class="popup" id="popup45">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/spells.html#hunger-of-hadar">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/spells.html#hunger-of-the-void">&raquo;</a></div>
                         <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup45, options={event:event})">&#9675;</div>
                         <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup45, options={event:event})">&times;</div>
                     </div>
-                    <i>hunger of Hadar</i>
+                    <i>hunger of the void</i>
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <div class="spell-header">
                             <div>
-                                <h1 class="noHeaderID">Hunger of Hadar</h1>
+                                <h1 class="noHeaderID">Hunger of the Void</h1>
                                 <div class="p spell-school"><i>3rd-level conjuration</i></div>
                             </div>
                             <div class="align-right">
@@ -1300,17 +1301,17 @@
             <div class="popup" id="popup46">
                 <div class="popupHeader">
                     <div class="popupHeaderButtongroup" onmousedown="event.stopPropagation()">
-                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/spells.html#evards-black-tentacles">&raquo;</a></div>
+                        <div class="popupHeaderButton popupHeaderButtonHref"><a href="/settings/four-corners/spells.html#grasping-tentacles">&raquo;</a></div>
                         <div class="popupHeaderButton popupHeaderButtonSticky" onclick="toggleFixedPosition(popup46, options={event:event})">&#9675;</div>
                         <div class="popupHeaderButton popupHeaderButtonClose" onclick="toggleDragEnabled(popup46, options={event:event})">&times;</div>
                     </div>
-                    <i>Evard's black tentacles</i>
+                    <i>grasping tentacles</i>
                 </div>
                 <div class="popupContent">
                     <div class="small-card">
                         <div class="spell-header">
                             <div>
-                                <h1 class="noHeaderID">Evard's Black Tentacles</h1>
+                                <h1 class="noHeaderID">Grasping Tentacles</h1>
                                 <div class="p spell-school"><i>4th-level conjuration</i></div>
                             </div>
                             <div class="align-right">

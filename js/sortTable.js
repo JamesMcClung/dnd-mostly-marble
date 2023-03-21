@@ -13,13 +13,22 @@ function getComparableContent(rows, col, idx) {
 }
 
 function maybeNumerify(str) {
-    if (str == "cantrip")
-        return 0;
+    if (str && !isNaN(str))
+        return Number(str)
+    switch (str) {
+        case "—": return -Infinity;
+        case "cantrip": return 0;
+        case "minuscule": return 0;
+        case "tiny": return 1;
+        case "small": return 2;
+        case "medium": return 3;
+        case "large": return 4;
+        case "huge": return 5;
+        case "gargantuan": return 6;
+    }
     const maybeLeadNumMatch = str.match(/(^\d+)(?:st|nd|rd|th)/);
     if (maybeLeadNumMatch)
         return Number(maybeLeadNumMatch[1])
-    if (str && !isNaN(str))
-        return Number(str)
     return str;
 }
 
