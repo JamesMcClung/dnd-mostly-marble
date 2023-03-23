@@ -17,6 +17,42 @@
         </header>
         <article>
             <h1 id="changes">Changes</h1>
+            <h2 id="v1124">v1.12.4</h2>
+            <div class="p">Game:</div>
+            <ul>
+                <li>
+                    <a href="classes/druid.html">Druid</a>:
+                    <ul>
+                        <li>Primal Surge: maximum number scales with level, up to 4</li>
+                        <li>Wild Shape: <span class="tooltipWrapper"><span class="tooltipAnchor">limit max hp to 2x druid level</span><span class="tooltip">A significant part of what makes Wild Shape hard to balance is the massive pool of hit points it represents. This is intended to rein in that unknown, especially at higher levels when beast forms can have over 100 hp.</span></span>, and <span class="tooltipWrapper"><span class="tooltipAnchor">no longer retain traits of normal form</span><span class="tooltip">Hopefully, the new beast forms can be made interesting enough in their own right. This change removes the ambiguity of what a form was 'physically capable of' and ensures unforeseen gimmicks do not arise from the interactions between beast form abilities and player abilities. That said, this change may be reverted, as it invalidates feats entirely.</span></span>.</li>
+                        <li>Druid Circle: moved to 3rd level</li>
+                        <li>Primal Torrent: <span class="tooltipWrapper"><span class="tooltipAnchor">replaces Beast Spells at 18th level</span><span class="tooltip">Beast Spells was very high level for such a significant change to how a druid plays. Primal Torrent is intended to preserve the feel and makes primal surges slightly more spammable (but not nearly as spammable as the former Archdruid made it).</span></span></li>
+                        <li>Archdruid: <span class="tooltipWrapper"><span class="tooltipAnchor">can longer use spell slot as primal surge</span><span class="tooltip">When higher-level beast forms were added in <a href="#v1123-pre1">v1.12.3-pre.1</a>, primal surges became much more powerful than a 1st-level spell slot.</span></span></li>
+                        <li>Added Circle of the Moon</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="feats.html">Feats</a>:
+                    <ul>
+                        <li>Add Frightening and Infuriating</li>
+                        <li>Replace Observant with Sharp Senses</li>
+                        <li>Overhaul Grappler and Keen Senses</li>
+                    </ul>
+                </li>
+                <li>
+                    General:
+                    <ul>
+                        <li>Draw or stow a weapon before any <a href="rules.html#attacking">attack</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Experimental:
+                    <ul>
+                        <li>Introduce "nonatomic" <a href="/rules/action-points.html">actions</a>, including Move, Dash, and Attack (abandons Props 17–18)</li>
+                        <li>Rework <a href="/rules/movement.html">movement</a> again, <span class="tooltipWrapper"><span class="tooltipAnchor">taking advantage of nonatomic Move</span><span class="tooltip">Several confusing concepts are no longer necessary, including the movement limit, free movement, and figuring out how changes to speed affect movement.</span></span></li>
+                    </ul>
+                </li>
+            </ul>
             <h2 id="v1123">v1.12.3</h2>
             <div class="p">Game:</div>
             <ul>
@@ -81,11 +117,11 @@
                     Added Powerful Build, Extra Attack, and Companion traits
                     <ul>
                         <li>Powerful Build: used by the <a href="feats.html#powerful-build">feat</a> and various <a href="races.html">races</a></li>
-                        <li>Extra Attack: used by various <a href="classes.html">classes</a></li>
-                        <li>Companion: used by <a href="classes/druid.html#wild-companion">Wild Companion</a></li>
+                        <li>Extra Attack (Prop 18): used by various <a href="classes.html">classes</a></li>
+                        <li>Companion (Prop 13): used by <a href="classes/druid.html#wild-companion">Wild Companion</a></li>
                     </ul>
                 </li>
-                <li>Simplified <a href="glossary.html#attack">Attack</a> and <a href="glossary.html#offhand-attack">Offhand Attack</a> actions (Prop 18)</li>
+                <li>Simplified <a href="glossary.html#attack">Attack</a> and <a href="glossary.html#offhand-attack">Offhand Attack</a> actions</li>
                 <li>Added <a href="glossary.html#underwater">underwater</a> rules and <a href="equipment/properties.html#hydrodynamic">hydrodynamic</a> weapon property</li>
                 <li>
                     <a href="spells.html">Spell</a> save changes (Prop 20, completed):
@@ -135,7 +171,7 @@
                         <li><a href="glossary.html#climb-speed">Climb speed</a> now gives advantage on any checks related to climbing</li>
                     </ul>
                 </li>
-                <li><a href="glossary.html#jump">Jump</a> is now a free action, like Move</li>
+                <li>Jump is now a free action, like Move</li>
                 <li>Prop 21: <a href="glossary.html#charge">charge</a> now requires a natural movement mode</li>
                 <li>
                     Prop 24: added <a href="glossary.html#shifting">shifting</a> movement mode, which lets you move within a creature's reach without provoking OA
@@ -323,7 +359,7 @@
                 <li>
                     Experimental:
                     <ul>
-                        <li>Instead of scaling <a href="glossary.html#jump">jump</a> distance with size, scale the running start distance</li>
+                        <li>Instead of scaling <a href="glossary.html#jumping">jump</a> distance with size, scale the running start distance</li>
                         <li>New rules for squeezing, with additional states "stuck" and "crushed" (all under <a href="glossary.html#space">space</a>, which is itself unchanged)</li>
                     </ul>
                 </li>
