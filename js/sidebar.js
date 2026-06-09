@@ -1,0 +1,1 @@
+var _a;let sidebar=document.getElementById("savedPopupSidebar");sidebar&&(sidebar.style.width=null!=(_a=localStorage.getItem("savedPopupSidebarWidth"))?_a:"","true"===localStorage.getItem("savedPopupSidebarIsVisible"))&&sidebar.classList.add("visible");
