@@ -1,4 +1,710 @@
-window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",associated_url:"/rules/2d/player-options/spells.html#aura-of-clarity",content_html:`<div class="small-card">
+window.POPUP_DATA={"spells#light":{title:"<i>Light</i>",associated_url:"/rules/2d/player-options/spells.html#light",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Light</h1>
+            <div class="card-subheader">Evocation cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a firefly or phosphorescent moss)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (20/40 ft.) in a color of your choice. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as a standard action.</div>
+    <div class="p">If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, magus, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"environment#light":{title:"Light",associated_url:"/rules/2d/glossary/environment.html#light",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Light</h1>
+    <div class="p">There are three categories of illumination: bright light, dim light, and darkness.</div>
+    <div class="p">A source of light typically emits bright light in a small radius and dim light in a larger radius; these distances are given in parentheses. For example, a fire that sheds light (20/40 ft.) produces bright light within 20 feet and dim light for another 20 feet beyond that.</div>
+    <h4 class="noHeaderID">Bright Light</h4>
+    <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
+    <h4 class="noHeaderID">Dim Light</h4>
+    <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
+    <h4 class="noHeaderID">Darkness</h4>
+    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
+</div>`},"environment#obscured.subitems.lightly":{title:"Lightly Obscured",associated_url:"/rules/2d/glossary/environment.html#lightly-obscured",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Lightly Obscured</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
+    </div>
+    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
+</div>`},"environment#obscured":{title:"Obscured",associated_url:"/rules/2d/glossary/environment.html#obscured",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Obscured</h1>
+    <div class="p">When vision in an area is hindered by smoke, darkness, or a similar phenomenon, the area is obscured. There are two degrees of obscurity.</div>
+    <h4 class="noHeaderID">Lightly Obscured</h4>
+    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
+    <h4 class="noHeaderID">Heavily Obscured</h4>
+    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
+</div>`},"environment#light.subitems.darkness":{title:"Darkness",associated_url:"/rules/2d/glossary/environment.html#darkness",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Darkness</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
+    </div>
+    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
+</div>`},"environment#obscured.subitems.heavily":{title:"Heavily Obscured",associated_url:"/rules/2d/glossary/environment.html#heavily-obscured",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Heavily Obscured</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
+    </div>
+    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
+</div>`},"spells#glint":{title:"<i>Glint</i>",associated_url:"/rules/2d/player-options/spells.html#glint",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Glint</h1>
+            <div class="card-subheader">Evocation cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You launch a shard of light at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes radiant damage and sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (5/10 ft.) until the end of your next turn. The damage is 1d8, or 1d10 if the target was already glowing due to this spell.</div>
+    <div class="p">This spell's damage increases by one die when you reach 5th level (2d8 or 2d10), 11th level (3d8 or 3d10), and 17th level (4d8 or 4d10).</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#resistance":{title:"<i>Resistance</i>",associated_url:"/rules/2d/player-options/spells.html#resistance",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Resistance</h1>
+            <div class="card-subheader">Abjuration cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take in response to you or an ally within 10 feet of you failing a saving throw</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You channel magical protection to the creature who failed the saving throw. That creature can roll a d4 and add the number rolled to the save, potentially turning it into a success.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">OneDnD</div></div>
+    </div>
+</div>`},"spells#guidance":{title:"<i>Guidance</i>",associated_url:"/rules/2d/player-options/spells.html#guidance",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Guidance</h1>
+            <div class="card-subheader">Divination cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take in response to you or an ally within 10 feet of you failing an ability check</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You channel magical insight to the creature who failed the ability check. That creature can roll a d4 and add the number rolled to the check, potentially turning it into a success.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">OneDnD, 2D</div></div>
+    </div>
+</div>`},"spells#burning_hands":{title:"<i>Burning Hands</i>",associated_url:"/rules/2d/player-options/spells.html#burning-hands",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Burning Hands</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cone (15 ft.) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in the spell's area must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</div>
+    <div class="p">The fire ignites any flammable objects in the area that aren't being worn or carried.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Magus, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#faerie_fire":{title:"<i>Faerie Fire</i>",associated_url:"/rules/2d/player-options/spells.html#faerie-fire",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Faerie Fire</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Cube (20 ft.) within range</div></div>
+        </div>
+    </div>
+    <div class="p">Each object in the spell's area is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (5 ft.).</div>
+    <div class="p">Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being <a href="/rules/2d/glossary/conditions.html#invisible">invisible</a>.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, druid, magus</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"environment#light.subitems.dim":{title:"Dim Light",associated_url:"/rules/2d/glossary/environment.html#dim-light",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Dim Light</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
+    </div>
+    <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
+</div>`},"spells#cure_wounds":{title:"<i>Cure Wounds</i>",associated_url:"/rules/2d/player-options/spells.html#cure-wounds",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Cure Wounds</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">A creature you touch regains a number of hit points equal to 2d8 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> or <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d8 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid, paladin, ranger</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#healing_word":{title:"<i>Healing Word</i>",associated_url:"/rules/2d/player-options/spells.html#healing-word",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Healing Word</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">A creature of your choice that you can see within range regains hit points equal to 2d4 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d4 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#inflict_wounds":{title:"<i>Inflict Wounds</i>",associated_url:"/rules/2d/player-options/spells.html#inflict-wounds",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Inflict Wounds</h1>
+            <div class="card-subheader">1st-level necromancy spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, magus</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#trumpet_of_glory":{title:"<i>Trumpet of Glory</i>",associated_url:"/rules/2d/player-options/spells.html#trumpet-of-glory",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Trumpet of Glory</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S, M (a brass bugle)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Burst (10 ft.) emanating from you, spreading around cover</div></div>
+        </div>
+    </div>
+    <div class="p">A trumpeting declaration of glory rings out from you. Each creature of your choice in the spell's area must succeed on a Constitution saving throw or take 1d6 thunder damage, or half as much on a success. Each other creature in the spell's area gains 1d6 temporary hit points that last for the duration.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage and temporary hit points both increase by 1d6 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#detect_magic":{title:"<i>Detect Magic</i>",associated_url:"/rules/2d/player-options/spells.html#detect-magic",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Detect Magic</h1>
+            <div class="card-subheader">1st-level divination spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            <span class="ritual-tag"><a href="/rules/2d/player-options/spells.html#rituals">ritual</a></span>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
+        </div>
+    </div>
+    <div class="p">For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use a standard action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</div>
+    <div class="p">The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, magus, paladin, ranger, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#holy_might":{title:"<i>Holy Might</i>",associated_url:"/rules/2d/player-options/spells.html#holy-might",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Holy Might</h1>
+            <div class="card-subheader">Enchantment cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You channel divine power through an ally within range. The target has advantage on the next attack it makes before the start of your next turn. The attack deals an extra 1d6 force damage on a hit.</div>
+    <div class="p">The extra damage from this spell increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#guiding_bolt":{title:"<i>Guiding Bolt</i>",associated_url:"/rules/2d/player-options/spells.html#guiding-bolt",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Guiding Bolt</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">120 feet</div></div>
+        </div>
+    </div>
+    <div class="p">A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#spare_the_dying":{title:"<i>Spare the Dying</i>",associated_url:"/rules/2d/player-options/spells.html#spare-the-dying",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Spare the Dying</h1>
+            <div class="card-subheader">Necromancy cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch a living creature that has 0 hit points. If it is <a href="/rules/2d/glossary/conditions.html#dying">dying</a>, it stops dying. Additionally, it can expend and roll a hit die to regain a number of hit points equal to the number rolled + its Constitution score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#sacred_flame":{title:"<i>Sacred Flame</i>",associated_url:"/rules/2d/player-options/spells.html#sacred-flame",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sacred Flame</h1>
+            <div class="card-subheader">Evocation cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Flame-like radiance descends on a creature that you can see within range. Choose one of the following effects:</div>
+    <ul>
+        <li>The target must succeed on a Dexterity saving throw or take 1d8 radiant damage, or half as much on a success. This saving throw ignores <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>.</li>
+        <li>The target gains 1d8 temporary hit points that last for 1 minute.</li>
+    </ul>
+    <div class="p">The spell's damage or temporary hit points increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"environment#cover":{title:"Cover",associated_url:"/rules/2d/glossary/environment.html#cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Cover</h1>
+    <div class="p">Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.</div>
+    <div class="p">There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.</div>
+    <h4 class="noHeaderID">Half Cover</h4>
+    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
+    <h4 class="noHeaderID">Three-Quarters Cover</h4>
+    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
+    <h4 class="noHeaderID">Total Cover</h4>
+    <div class="p">A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</div>
+</div>`},"spells#word_of_radiance":{title:"<i>Word of Radiance</i>",associated_url:"/rules/2d/player-options/spells.html#word-of-radiance",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Word of Radiance</h1>
+            <div class="card-subheader">Evocation cantrip</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a holy symbol)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Burst (5 ft.) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">You utter a divine word, and burning radiance erupts from you. Each other creature of your choice that you can see within the spell's area must make a Constution saving throw. On a failed save, a creature takes 1d6 radiant damage, or half as much damage on a successful one.</div>
+    <div class="p">The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
+    </div>
+</div>`},"channel-divinity#illuming_beacon":{title:"Illuming Beacon",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Illuming Beacon</h1>
+            <div class="card-subheader">2nd-level Light Domain cleric Channel Divinity option</div>
+        </div>
+    </div>
+    <div class="p">As a standard action, you present your holy symbol and illuminate a 5-foot-radius, 30-foot-tall cylinder within 30 feet of you. Until the end of your next turn, the area is <span class="popupAnchor" data-injection-arg="environment#light.subitems.bright" onclick='handleAnchorClick("environment#light.subitems.bright", this, event)' onmouseover='showPopup("environment#light.subitems.bright", this, event)' onmouseout='hidePopup("environment#light.subitems.bright", event)'>bright light</span> and emits <span class="popupAnchor" data-injection-arg="environment#light.subitems.bright" onclick='handleAnchorClick("environment#light.subitems.bright", this, event)' onmouseover='showPopup("environment#light.subitems.bright", this, event)' onmouseout='hidePopup("environment#light.subitems.bright", event)'>dim light</span> (5 ft.). This light is sunlight. The area has the following additional effects:</div>
+    <ul>
+        <li>When you create the light, each creature of your choice in the area must make a Constitution saving throw. A target takes radiant damage equal to 1d6 + your cleric level on a failed save, or half as much on a success.</li>
+        <li>Each illusion and area of magical <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span> is suppressed where it overlaps the area, unless it was created by a spell of a level higher than half your cleric level.</li>
+    </ul>
+</div>`},"environment#light.subitems.bright":{title:"Bright Light",associated_url:"/rules/2d/glossary/environment.html#bright-light",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Bright Light</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
+    </div>
+    <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
+</div>`},"spells#command":{title:"<i>Command</i>",associated_url:"/rules/2d/player-options/spells.html#command",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Command</h1>
+            <div class="card-subheader">1st-level enchantment spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You speak a one-word command to a creature you can see within range. The target must succeed on a Charisma saving throw or follow the command on its next turn. The spell has no effect if the target is <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>, if it doesn't understand your language, or if your command is directly harmful to it.</div>
+    <div class="p">Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</div>
+    <div class="p"><b>Approach.</b> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</div>
+    <div class="p"><b>Drop.</b> The target drops whatever it is holding and then ends its turn.</div>
+    <div class="p"><b>Flee.</b> The target spends its turn moving away from you by the fastest available means.</div>
+    <div class="p"><b>Grovel.</b> The target falls <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span> and then ends its turn.</div>
+    <div class="p"><b>Halt.</b> The target takes no actions.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
+    </div>
+</div>`},"conditions#prone":{title:"Prone",associated_url:"/rules/2d/glossary/conditions.html#prone",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Prone</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>The only movement mode available to you is <span class="popupAnchor" data-injection-arg="movement-modes#crawling" onclick='handleAnchorClick("movement-modes#crawling", this, event)' onmouseover='showPopup("movement-modes#crawling", this, event)' onmouseout='hidePopup("movement-modes#crawling", event)'>crawling</span>.</li>
+        <li>You have disadvantage on attack rolls.</li>
+        <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
+    </ul>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You can end this condition by standing up, which requires spending half of your <a href="/rules/2d/glossary/movement.html#walk">walk</a> speed when you move.</div>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">This condition is commonly caused by <a href="/rules/2d/glossary/environment.html#falling">falling</a>, falling <a href="/rules/2d/glossary/conditions.html#unconscious">unconscious</a>, and the <a href="/rules/2d/player-options/equipment.html#trip">trip</a> attack.</div>
+</div>`},"movement-modes#crawling":{title:"Crawling",associated_url:"/rules/2d/glossary/movement.html#crawling",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Crawling</h1>
+            <div class="card-subheader">Movement mode</div>
+        </div>
+    </div>
+    <div class="p">Crawling lets you move across a non-vertical surface while <a href="/rules/2d/glossary/conditions.html#prone">prone</a>.</div>
+</div>`},"spells#sanctuary":{title:"<i>Sanctuary</i>",associated_url:"/rules/2d/player-options/spells.html#sanctuary",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sanctuary</h1>
+            <div class="card-subheader">1st-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small silver mirror)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You ward a willing creature within range against harm for the duration. Before any creature can target the warded creature with a harmful effect (such as an attack), it must succeed on a Charisma saving throw. On a failed save, the effect is wasted unless the creature chooses a different target. This spell doesn't protect the warded creature from area effects, such as the explosion of a <span class="popupAnchor" data-injection-arg="spells#fireball" onclick='handleAnchorClick("spells#fireball", this, event)' onmouseover='showPopup("spells#fireball", this, event)' onmouseout='hidePopup("spells#fireball", event)'><i>fireball</i></span>.</div>
+    <div class="p">If the warded creature targets another creature with a harmful effect, this spell ends.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#fireball":{title:"<i>Fireball</i>",associated_url:"/rules/2d/player-options/spells.html#fireball",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Fireball</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a tiny ball of bat guano and sulfur)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Sphere (20 ft.) emanating from a point within range, spreading around cover</div></div>
+        </div>
+    </div>
+    <div class="p">A bright streak flashes from your pointing finger and blossoms with a low roar into an explosion of flame. Each creature in the spell's area must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</div>
+    <div class="p">The fire ignites flammable objects in the area that aren't being worn or carried.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Sorcerer</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#bane":{title:"<i>Bane</i>",associated_url:"/rules/2d/player-options/spells.html#bane",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Bane</h1>
+            <div class="card-subheader">1st-level enchantment spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a drop of blood)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Up to three creatures of your choice that you can see within range must make Wisdom saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#bless":{title:"<i>Bless</i>",associated_url:"/rules/2d/player-options/spells.html#bless",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Bless</h1>
+            <div class="card-subheader">1st-level enchantment spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a sprinkling of holy water)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#shield_of_faith":{title:"<i>Shield of Faith</i>",associated_url:"/rules/2d/player-options/spells.html#shield-of-faith",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Shield of Faith</h1>
+            <div class="card-subheader">1st-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small parchment with a bit of holy text written on it)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",associated_url:"/rules/2d/player-options/spells.html#aura-of-clarity",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
             <h1 class="noHeaderID">Aura of Clarity</h1>
@@ -16,7 +722,7 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
         <div class="card-stats-row">
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Aura (10 ft.) emanating from you</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Aura (20 ft.) emanating from you</div></div>
         </div>
     </div>
     <div class="p">Focusing energy radiates from you for the duration. Each ally in the aura has advantage on saving throws made to maintain <span class="popupAnchor" data-injection-arg="conditions#concentration" onclick='handleAnchorClick("conditions#concentration", this, event)' onmouseover='showPopup("conditions#concentration", this, event)' onmouseout='hidePopup("conditions#concentration", event)'>concentration</span> and against effects that can be cured by <span class="popupAnchor" data-injection-arg="spells#restore_mind" onclick='handleAnchorClick("spells#restore_mind", this, event)' onmouseover='showPopup("spells#restore_mind", this, event)' onmouseout='hidePopup("spells#restore_mind", event)'><i>restore mind</i></span>.</div>
@@ -202,31 +908,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     </ul>
     <div class="centered-header">Causes of This Condition</div>
     <div class="p">You automatically fall unconscious when you are reduced to 0 hit points.</div>
-</div>`},"conditions#prone":{title:"Prone",associated_url:"/rules/2d/glossary/conditions.html#prone",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Prone</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>The only movement mode available to you is <span class="popupAnchor" data-injection-arg="movement-modes#crawling" onclick='handleAnchorClick("movement-modes#crawling", this, event)' onmouseover='showPopup("movement-modes#crawling", this, event)' onmouseout='hidePopup("movement-modes#crawling", event)'>crawling</span>.</li>
-        <li>You have disadvantage on attack rolls.</li>
-        <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
-    </ul>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You can end this condition by standing up, which requires spending half of your <a href="/rules/2d/glossary/movement.html#walk">walk</a> speed when you move.</div>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">This condition is commonly caused by <a href="/rules/2d/glossary/environment.html#falling">falling</a>, falling <a href="/rules/2d/glossary/conditions.html#unconscious">unconscious</a>, and the <a href="/rules/2d/player-options/equipment.html#trip">trip</a> attack.</div>
-</div>`},"movement-modes#crawling":{title:"Crawling",associated_url:"/rules/2d/glossary/movement.html#crawling",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Crawling</h1>
-            <div class="card-subheader">Movement mode</div>
-        </div>
-    </div>
-    <div class="p">Crawling lets you move across a non-vertical surface while <a href="/rules/2d/glossary/conditions.html#prone">prone</a>.</div>
 </div>`},"conditions#dying":{title:"Dying",associated_url:"/rules/2d/glossary/conditions.html#dying",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -240,6 +921,509 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">The condition ends if you regain hit points. This condition can also be ended without healing you, such as via the <a href="/rules/2d/glossary/actions.html#heal">Heal</a> action.</div>
     <div class="centered-header">Causes of This Condition</div>
     <div class="p">If you aren't already dying, you start dying when you are reduced to 0 hit points (you also fall <a href="/rules/2d/glossary/conditions.html#unconscious">unconscious</a>) and there is at least 1 point of excess damage.</div>
+</div>`},"spells#mote":{title:"<i>Mote</i>",associated_url:"/rules/2d/player-options/spells.html#mote",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Mote</h1>
+            <div class="card-subheader">2nd-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You conjure forth a speck of divinity in an unoccupied space within range. The mote is Small, doesn't occupy its space, and lasts for the duration. When you cast this spell, choose the following characteristics of the mote:</div>
+    <ul>
+        <li>Its physical shape. For example, the mote could resemble a weapon, the symbol of your deity, or a moving, lifelike creature.</li>
+        <li>Its color. The mote is monochromatic and translucent.</li>
+        <li>Its damage type, which can be any type except bludgeoning, piercing, or slashing.</li>
+    </ul>
+    <div class="p">No matter what characteristics you choose, the mote is obviously incorporeal, sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (5/10 ft.), and can't make noise.</div>
+    <div class="p">When the mote appears, and as a minor action on subsequent turns, you can move it up to 30 feet to an unoccupied space within range that you can see and cause it to perform one of the following actions:</div>
+    <ul>
+        <li><b><i>Zap.</i></b> The mote forces one creature within 5 feet of it that you can see to make a Dexterity saving throw. The target takes 2d6 damage of the chosen type on a failed save, or half as much on a success.</li>
+        <li><b><i>Protect.</i></b> The mote emanates an <a href="/rules/2d/glossary/areas-of-effect.html#aura">aura</a> (5 ft.) until the start of your next turn. Creatures of your choice within the aura have <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span> against all effects.</li>
+    </ul>
+    <div class="p">If the mote is ever out of range, the spell ends.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the mote's damage increases by 1d6 for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"environment#cover.subitems.half":{title:"Half Cover",associated_url:"/rules/2d/glossary/environment.html#half-cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Half Cover</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
+    </div>
+    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
+</div>`},"spells#scorching_ray":{title:"<i>Scorching Ray</i>",associated_url:"/rules/2d/player-options/spells.html#scorching-ray",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Scorching Ray</h1>
+            <div class="card-subheader">2nd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">120 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.</div>
+    <div class="p">Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Magus, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#enhance_ability":{title:"<i>Enhance Ability</i>",associated_url:"/rules/2d/player-options/spells.html#enhance-ability",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Enhance Ability</h1>
+            <div class="card-subheader">2nd-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (fur or a feather from a beast)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.</div>
+    <div class="p"><b>Bull's Strength.</b> The target has advantage on Strength checks, and his or her carrying capacity doubles.</div>
+    <div class="p"><b>Cat's Grace.</b> The target has advantage on Dexterity checks. It also doesn't take damage from <a href="/rules/2d/glossary/environment.html#falling">falling</a> 20 feet or less if it isn't <a href="/rules/2d/glossary/conditions.html#incapacitated">incapacitated</a>.</div>
+    <div class="p"><b>Bear's Endurance.</b> The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</div>
+    <div class="p"><b>Fox's Cunning.</b> The target has advantage on Intelligence checks.</div>
+    <div class="p"><b>Owl's Wisdom.</b> The target has advantage on Wisdom checks.</div>
+    <div class="p"><b>Eagle's Splendor.</b> The target has advantage on Charisma checks.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, magus, ranger, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"spells#vital_flow":{title:"<i>Vital Flow</i>",associated_url:"/rules/2d/player-options/spells.html#vital-flow",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Vital Flow</h1>
+            <div class="card-subheader">2nd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Burst (5 ft.) emanating from the initial target</div></div>
+        </div>
+    </div>
+    <div class="p">A deluge of life energy bursts from one creature of your choice that you can see within range. That creature regains 2d8 hit points. Each other creature in the spell's area must succeed on a Constitution saving throw or take an amount of radiant damage equal to the number of hit points regained by the initial target, or half as much on a success.</div>
+    <div class="p">If you choose a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> as the initial target, this spell fails.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#invigorating_burst":{title:"<i>Invigorating Burst</i>",associated_url:"/rules/2d/player-options/spells.html#invigorating-burst",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Invigorating Burst</h1>
+            <div class="card-subheader">2nd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">30 feet / Sphere (10 ft. radius) within range</div></div>
+        </div>
+    </div>
+    <div class="p">You create a burst of invigorating energy. Each creature in the spell's area regains 2d10 hit points and has advantage on attack rolls until the end of its next turn. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> and <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d10 for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#hold_person":{title:"<i>Hold Person</i>",associated_url:"/rules/2d/player-options/spells.html#hold-person",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hold Person</h1>
+            <div class="card-subheader">2nd-level enchantment spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small, straight piece of iron)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Choose a <a href="/rules/2d/glossary/creature-types.html#humanoid">Humanoid</a> that you can see within range. The target must succeed on a Charisma saving throw or be <span class="popupAnchor" data-injection-arg="conditions#paralyzed" onclick='handleAnchorClick("conditions#paralyzed", this, event)' onmouseover='showPopup("conditions#paralyzed", this, event)' onmouseout='hidePopup("conditions#paralyzed", event)'>paralyzed</span> for the duration (save ends).</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can target one additional Humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"conditions#paralyzed":{title:"Paralyzed",associated_url:"/rules/2d/glossary/conditions.html#paralyzed",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Paralyzed</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>You have –3 <a href="/rules/2d/glossary/actions.html">AP</a> (possibly causing you to be <span class="popupAnchor" data-injection-arg="conditions#incapacitated" onclick='handleAnchorClick("conditions#incapacitated", this, event)' onmouseover='showPopup("conditions#incapacitated", this, event)' onmouseout='hidePopup("conditions#incapacitated", event)'>incapacitated</span>) and –2 <a href="/rules/2d/glossary/actions.html#reactions">reactions</a>.</li>
+        <li>You have disadvantage on saving throws you make to maintain <span class="popupAnchor" data-injection-arg="conditions#concentration" onclick='handleAnchorClick("conditions#concentration", this, event)' onmouseover='showPopup("conditions#concentration", this, event)' onmouseout='hidePopup("conditions#concentration", event)'>concentration</span> (including on the saving throw triggered by the effect that stunned you, if it triggered such a save).</li>
+        <li>You have disadvantage on attack rolls and Dexterity saving throws.</li>
+        <li>Attack rolls against you have advantage.</li>
+        <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
+    </ul>
+</div>`},"spells#restore_body":{title:"<i>Restore Body</i>",associated_url:"/rules/2d/player-options/spells.html#restore-body",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Restore Body</h1>
+            <div class="card-subheader">2nd-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch a creature and end each of the following conditions afflicting it: <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span>, <span class="popupAnchor" data-injection-arg="conditions#deafened" onclick='handleAnchorClick("conditions#deafened", this, event)' onmouseover='showPopup("conditions#deafened", this, event)' onmouseout='hidePopup("conditions#deafened", event)'>deafened</span>, <span class="popupAnchor" data-injection-arg="conditions#paralyzed" onclick='handleAnchorClick("conditions#paralyzed", this, event)' onmouseover='showPopup("conditions#paralyzed", this, event)' onmouseout='hidePopup("conditions#paralyzed", event)'>paralyzed</span>, <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span>, <span class="popupAnchor" data-injection-arg="conditions#weakened" onclick='handleAnchorClick("conditions#weakened", this, event)' onmouseover='showPopup("conditions#weakened", this, event)' onmouseout='hidePopup("conditions#weakened", event)'>weakened</span>, <span class="popupAnchor" data-injection-arg="conditions#slowed" onclick='handleAnchorClick("conditions#slowed", this, event)' onmouseover='showPopup("conditions#slowed", this, event)' onmouseout='hidePopup("conditions#slowed", event)'>slowed</span>, and <span class="popupAnchor" data-injection-arg="conditions#diseased" onclick='handleAnchorClick("conditions#diseased", this, event)' onmouseover='showPopup("conditions#diseased", this, event)' onmouseout='hidePopup("conditions#diseased", event)'>diseased</span>.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, paladin, ranger</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"conditions#blinded":{title:"Blinded",associated_url:"/rules/2d/glossary/conditions.html#blinded",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Blinded</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <div class="p">You lose your sense of <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
+</div>`},"conditions#deafened":{title:"Deafened",associated_url:"/rules/2d/glossary/conditions.html#deafened",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Deafened</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <div class="p">You lose your sense of <a href="/rules/2d/glossary/senses.html#base-senses">hearing</a>.</div>
+</div>`},"conditions#poisoned":{title:"Poisoned",associated_url:"/rules/2d/glossary/conditions.html#poisoned",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Poisoned</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <div class="p">You have disadvantage on attack rolls and ability checks.</div>
+</div>`},"conditions#weakened":{title:"Weakened",associated_url:"/rules/2d/glossary/conditions.html#weakened",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Weakened</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>You have disadvantage on Strength attack rolls, ability checks, and saving throws.</li>
+        <li>Your weapon attacks deal half damage.</li>
+    </ul>
+</div>`},"conditions#slowed":{title:"Slowed",associated_url:"/rules/2d/glossary/conditions.html#slowed",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Slowed</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>You have disadvantage on Dexterity attack rolls, ability checks, and saving throws.</li>
+        <li>Your speed is halved.</li>
+    </ul>
+</div>`},"conditions#diseased":{title:"Diseased",associated_url:"/rules/2d/glossary/conditions.html#diseased",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Diseased</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>You have disadvantage on Constitution attack rolls, ability checks, and saving throws.</li>
+        <li>You can't regain hit points.</li>
+    </ul>
+</div>`},"spells#daylight":{title:"<i>Daylight</i>",associated_url:"/rules/2d/player-options/spells.html#daylight",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Daylight</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Sphere (60 ft. radius) emanating from a point within range, spreading around cover</div></div>
+        </div>
+    </div>
+    <div class="p">Bright <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> fills the spell's area for the duration, forming a <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a>. The zone sheds dim light for an additional 60 feet.</div>
+    <div class="p">You can cause the zone to emanate from a Small or smaller object within range instead of a point. You can't target an object held by a creature other than you, however.</div>
+    <div class="p">If any of the zone overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, magus, paladin, ranger, sorcerer</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#disillusion":{title:"<i>Disillusion</i>",associated_url:"/rules/2d/player-options/spells.html#disillusion",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Disillusion</h1>
+            <div class="card-subheader">3rd-level illusion spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You fight illusion with illusion, making reality appear as it should. All illusions and illusion spells cast at 3rd level or lower within range are suppressed for the duration, except for those you choose not to suppress.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, you can suppress illusion spells cast at a level equal to or less than the level of the spell slot you expend.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#astral_flare":{title:"<i>Astral Flare</i>",associated_url:"/rules/2d/player-options/spells.html#astral-flare",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Astral Flare</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">90 feet / Sphere (10 ft. radius) emanating from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">You create a concussive burst of light. Each creature of your choice in the spell's area must succeed on a Constitution saving throw or take 4d8 radiant damage and be <span class="popupAnchor" data-injection-arg="conditions#dazed" onclick='handleAnchorClick("conditions#dazed", this, event)' onmouseover='showPopup("conditions#dazed", this, event)' onmouseout='hidePopup("conditions#dazed", event)'>dazed</span> until the start of your next turn. A target takes half damage and isn't dazed on a success. Each other creature in the spell's area must succeed on a Strength saving throw or be pushed 10 feet outward from the center of the blast.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#mass_healing_word":{title:"<i>Mass Healing Word</i>",associated_url:"/rules/2d/player-options/spells.html#mass-healing-word",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Mass Healing Word</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 4d4 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the healing increases by 2d4 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"spells#revivify":{title:"<i>Revivify</i>",associated_url:"/rules/2d/player-options/spells.html#revivify",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Revivify</h1>
+            <div class="card-subheader">3rd-level necromancy spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (diamonds worth 300 gp, which the spell consumes)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric, druid, paladin, ranger</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
+    </div>
+</div>`},"spells#recall_ally":{title:"<i>Recall Ally</i>",associated_url:"/rules/2d/player-options/spells.html#recall-ally",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Recall Ally</h1>
+            <div class="card-subheader">3rd-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S, M (a shepherd's crook)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">With a gesture, you <span class="popupAnchor" data-injection-arg="movement-modes#teleporting" onclick='handleAnchorClick("movement-modes#teleporting", this, event)' onmouseover='showPopup("movement-modes#teleporting", this, event)' onmouseout='hidePopup("movement-modes#teleporting", event)'>teleport</span> a willing creature you can see within range to an unoccupied space within 5 feet of you. The target then regains a number of hit points equal to 2d10 + your spellcasting ability modifier, unless it's a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d10 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"movement-modes#teleporting":{title:"Teleporting",associated_url:"/rules/2d/glossary/movement.html#teleporting",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Teleporting</h1>
+            <div class="card-subheader">Movement mode</div>
+        </div>
+    </div>
+    <div class="p">Teleporting lets you instantaneously travel from one location to another without going through the intervening space. You don't provoke <a href="/rules/2d/glossary/actions.html#opportunity-attack">opportunity attacks</a> when you teleport.</div>
+    <div class="p">When you teleport, all the equipment you are wearing and carrying teleports with you. If you are touching another creature when you teleport, that creature doesn't teleport with you unless otherwise specified.</div>
+    <div class="p">If the destination <a href="/rules/2d/glossary/environment.html#space">space</a> of your teleportation is occupied by another creature or blocked by a solid obstacle, you instead appear in the nearest unoccupied space of your choice.</div>
+    <div class="p">Unless otherwise specified, you must see your destination when you teleport.</div>
+</div>`},"spells#aura_of_retribution":{title:"<i>Aura of Retribution</i>",associated_url:"/rules/2d/player-options/spells.html#aura-of-retribution",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Aura of Retribution</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Aura (15 ft.) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">An orange glow surrounds you for the duration. When a creature in the aura deals damage to another creature for the first time on a turn, you can cause it to take 1d12 radiant or necrotic damage (you choose which damage type this spell deals when you cast it).</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the aura's radius increases by 5 feet for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
 </div>`},"spells#aura_of_shielding":{title:"<i>Aura of Shielding</i>",associated_url:"/rules/2d/player-options/spells.html#aura-of-shielding",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -268,11 +1452,42 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#lucidity":{title:"<i>Lucidity</i>",associated_url:"/rules/2d/player-options/spells.html#lucidity",content_html:`<div class="small-card">
+</div>`},"spells#thundering_condemnation":{title:"<i>Thundering Condemnation</i>",associated_url:"/rules/2d/player-options/spells.html#thundering-condemnation",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
-            <h1 class="noHeaderID">Lucidity</h1>
-            <div class="card-subheader">5th-level enchantment spell</div>
+            <h1 class="noHeaderID">Thundering Condemnation</h1>
+            <div class="card-subheader">3rd-level enchantment spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="spell-tags">
+        <span class="misc-tag">curse</span>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Your voice booms in denouncement of a foe's misdeeds and echos louder with each repeated offense. One creature of your choice within range is cursed for the duration. While cursed in this way, the target takes 1d4 thunder damage the first time each turn it deals damage to another creature. This damage increases by 1d4 after each time the target takes it, to a maximum of 10d4.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the initial and maximum damage increases by 1d4 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#argent_blessing":{title:"<i>Argent Blessing</i>",associated_url:"/rules/2d/player-options/spells.html#argent-blessing",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Argent Blessing</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
         </div>
         <div class="tags">
             <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
@@ -281,7 +1496,305 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     </div>
     <div class="card-stats">
         <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small mushroom)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a piece of silver)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You bless up to 6 weapons or pieces of ammunition within range with the powers of silver. Each blessed item sheds <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (5 ft.) for the duration. When an attack with a glowing weapon or piece of ammunition hits an <a href="/rules/2d/glossary/creature-types.html#ooze">Ooze</a>, <a href="/rules/2d/glossary/creature-types.html#monstrosity">Monstrosity</a>, <a href="/rules/2d/glossary/creature-types.html#fiend">Fiend</a>, or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>, the target of the attack takes an extra 1d4 radiant damage. Additionally, any creature in the light of a blessed item has advantage on saving throws against effects produced by those types of creatures.</div>
+    <div class="p">A blessed item's glow is suppressed by magical darkness. An item completely in darkness doesn't deal this spell's extra damage.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#prayer_of_healing":{title:"<i>Prayer of Healing</i>",associated_url:"/rules/2d/player-options/spells.html#prayer-of-healing",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Prayer of Healing</h1>
+            <div class="card-subheader">2nd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">10 minutes</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You utter an extended prayer of restoration. Choose up to 6 willing creatures, which must remain within range for the spell's entire casting time to be affected. Each target regains 4d8 hit points, gains the benefits of a short rest, and can't benefit from this spell again until it finishes a long rest.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 2d8 for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"spells#lens_of_distortion":{title:"<i>Lens of Distortion</i>",associated_url:"/rules/2d/player-options/spells.html#lens-of-distortion",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Lens of Distortion</h1>
+            <div class="card-subheader">4th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a magnifying glass)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">8 hours</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You put a self-sustaining bump or void in the fabric of reality. It manifests as a 5-foot-diameter sphere within range that lasts for the duration. The sphere counts as <span class="popupAnchor" data-injection-arg="environment#special_terrain.subitems.difficult" onclick='handleAnchorClick("environment#special_terrain.subitems.difficult", this, event)' onmouseover='showPopup("environment#special_terrain.subitems.difficult", this, event)' onmouseout='hidePopup("environment#special_terrain.subitems.difficult", event)'>difficult terrain</span> (2 ft.). It also warps light passing through it, focusing (bump) or unfocusing it (void). The focusing or unfocusing of light determines its effects, described below. Any creature can switch whether the sphere is focusing or unfocusing by touching it as a minor action.</div>
+    <div class="p"><b>Focusing.</b> If the sphere focuses light, it causes the following effects:</div>
+    <ul>
+        <li><a href="/rules/2d/glossary/senses.html#base-senses">Sight</a>-based <span class="popupAnchor" data-injection-arg="skills#perception" onclick='handleAnchorClick("skills#perception", this, event)' onmouseover='showPopup("skills#perception", this, event)' onmouseout='hidePopup("skills#perception", event)'>Perception</span> checks through the sphere have advantage.</li>
+        <li>If a ranged spell attack that deals only radiant damage passes through the sphere, it deals double damage. The distance between the sphere and the target counts doubly against the attack's range, however.</li>
+        <li>When an emanated <a href="/rules/2d/glossary/areas-of-effect.html">area</a> effect that deals only radiant damage passes through the sphere, the portion of the area that goes through the sphere deals double damage, but only travels half as far from the sphere as it otherwise would.</li>
+    </ul>
+    <div class="p"><b>Unfocusing.</b> If the sphere unfocuses light, it causes the following effects:</div>
+    <ul>
+        <li><a href="/rules/2d/glossary/senses.html#base-senses">Sight</a>-based <span class="popupAnchor" data-injection-arg="skills#perception" onclick='handleAnchorClick("skills#perception", this, event)' onmouseover='showPopup("skills#perception", this, event)' onmouseout='hidePopup("skills#perception", event)'>Perception</span> checks through the sphere have disadvantage.</li>
+        <li>If a ranged spell attack that deals only radiant damage passes through the sphere, it splits into two attacks. The attacker can choose an additional target within the attack's range. The damage of each attack is halved, however.</li>
+        <li>When an emanated <a href="/rules/2d/glossary/areas-of-effect.html">area</a> effect that deals only radiant damage passes through the sphere, the portion of the area that goes through the sphere travels twice as far as it otherwise would, but it deals half damage.</li>
+    </ul>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"environment#special_terrain.subitems.difficult":{title:"Difficult Terrain",associated_url:"/rules/2d/glossary/environment.html#difficult-terrain",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Difficult Terrain</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#special_terrain" onclick='handleAnchorClick("environment#special_terrain", this, event)' onmouseover='showPopup("environment#special_terrain", this, event)' onmouseout='hidePopup("environment#special_terrain", event)'>special terrain</span>
+    </div>
+    <div class="p">Traveling through difficult terrain costs more <a href="/rules/2d/glossary/movement.html">movement</a> than normal. The movement cost per foot traveled is given in parentheses after each listing. For example, "difficult terrain (2 ft.)" costs 2 feet of movement per foot traveled. Difficult terrains don't stack—a creature traveling through overlapping areas of difficult terrain only pays the movement cost of the most expensive one.</div>
+    <div class="p">Most sources of difficult terrain, such as low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs, cost 2 feet of movement per foot traveled. The <span class="popupAnchor" data-injection-arg="environment#space" onclick='handleAnchorClick("environment#space", this, event)' onmouseover='showPopup("environment#space", this, event)' onmouseout='hidePopup("environment#space", event)'>space</span> of another creature, whether hostile or not, also counts as difficult terrain (2 ft.).</div>
+</div>`},"environment#special_terrain":{title:"Special Terrain",associated_url:"/rules/2d/glossary/environment.html#special-terrain",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Special Terrain</h1>
+    <div class="p">Some terrains are more difficult or dangerous to traverse than others. Difficult, hazardous, and slippery terrains are all examples of special terrains.</div>
+    <h4 class="noHeaderID">Difficult Terrain</h4>
+    <div class="p">Traveling through difficult terrain costs more <a href="/rules/2d/glossary/movement.html">movement</a> than normal. The movement cost per foot traveled is given in parentheses after each listing. For example, "difficult terrain (2 ft.)" costs 2 feet of movement per foot traveled. Difficult terrains don't stack—a creature traveling through overlapping areas of difficult terrain only pays the movement cost of the most expensive one.</div>
+    <div class="p">Most sources of difficult terrain, such as low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs, cost 2 feet of movement per foot traveled. The <span class="popupAnchor" data-injection-arg="environment#space" onclick='handleAnchorClick("environment#space", this, event)' onmouseover='showPopup("environment#space", this, event)' onmouseout='hidePopup("environment#space", event)'>space</span> of another creature, whether hostile or not, also counts as difficult terrain (2 ft.).</div>
+    <h4 class="noHeaderID">Hazardous Terrain</h4>
+    <div class="p">Hazardous terrain is dangerous to traverse. For every 5 feet a creature <a href="/rules/2d/glossary/movement.html">moves</a> through hazardous terrain, it suffers an effect—usually damage—given in parentheses after the terrain's listing. For example, a creature that walks 10 feet through "hazardous terrain (1d6 piercing)" takes a total of 2d6 piercing damage.</div>
+    <h4 class="noHeaderID">Slippery Terrain</h4>
+    <div class="p">Creatures traversing slippery terrain have a chance of falling over. The first time on a turn a creature <a href="/rules/2d/glossary/movement.html">moves</a> at least 5 feet across slippery terrain, it must make an <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. The DC is given in parentheses after the terrain's listing. On a failed check, the creature falls <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span>. On a success, it doesn't fall prone, and if it stops moving on the slippery terrain, it can slide across the terrain up to an additional number of feet equal to the difference between its check and the DC.</div>
+    <div class="p">A creature on slippery terrain must also make an Acrobatics check against the same DC when it attempts to stand up from prone. On a failure, it stays prone, but it still pays the movement cost of standing.</div>
+</div>`},"environment#space":{title:"Space",associated_url:"/rules/2d/glossary/environment.html#space",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Space</h1>
+    <div class="p">Your size determines how much space you occupy. In combat, you normally occupy a square with a side length given by the Normal column of the Creature Sizes table below. This area, often refered to as "your space," represents the space you need to move and fight unhindered. You control your space, and can prevent other creatures within 1 size category of yourself from sharing it. Additionally, your space counts as both <span class="popupAnchor" data-injection-arg="environment#special_terrain.subitems.difficult" onclick='handleAnchorClick("environment#special_terrain.subitems.difficult", this, event)' onmouseover='showPopup("environment#special_terrain.subitems.difficult", this, event)' onmouseout='hidePopup("environment#special_terrain.subitems.difficult", event)'>difficult terrain</span> (2 ft.) and <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span> for all creatures other than yourself.</div>
+    <div class="p">You do not have to occupy your normal amount of space. If you occupy less, whether by choice or by force, you suffer penalties.</div>
+    <h4 class="noHeaderID">Squeezing</h4>
+    <div class="p">Squeezing can reduce one or both side lengths of your space down to the value in the Squeezing column of the Creature Sizes table. You are <span class="popupAnchor" data-injection-arg="conditions#hindered" onclick='handleAnchorClick("conditions#hindered", this, event)' onmouseover='showPopup("conditions#hindered", this, event)' onmouseout='hidePopup("conditions#hindered", event)'>hindered</span> while squeezing.</div>
+    <h4 class="noHeaderID">Stuck</h4>
+    <div class="p">The value in the Stuck column of the Creature Sizes table is the minimum side length your area of control can have. If at least one side length of your area of control is between the "Stuck" and "Squeezing" values, you are stuck. While stuck, you are <span class="popupAnchor" data-injection-arg="conditions#restrained" onclick='handleAnchorClick("conditions#restrained", this, event)' onmouseover='showPopup("conditions#restrained", this, event)' onmouseout='hidePopup("conditions#restrained", event)'>restrained</span>. You can use a standard action to make a DC 10 <a href="/rules/2d/glossary/skills.html#athletics">Athletics</a> or <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. On a success, you are <span class="popupAnchor" data-injection-arg="conditions#hindered" onclick='handleAnchorClick("conditions#hindered", this, event)' onmouseover='showPopup("conditions#hindered", this, event)' onmouseout='hidePopup("conditions#hindered", event)'>hindered</span> instead of restrained until the end of the current turn.</div>
+    <h4 class="noHeaderID">Crushed</h4>
+    <div class="p">You can't willingly reduce a side length of your space to less than the value in the Stuck column of the Creature Sizes table. If you are forced to, you immediately take 1d10 bludgeoning damage for each inch your space's shorter side length subceeds your Stuck value, and you are crushed. You take this damage again at the end of each of your turns as long as you remain crushed. You are also stuck while crushed, and the DC to try to move increases by 1 for each inch your space's shorter side length subceeds your Stuck value.</div>
+    <div class="tableAndCaption">
+        <span class="caption">Creature Sizes</span>
+        <div class="tableWrapper">
+            <table>
+                <thead>
+                    <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Normal</span></th><th align="center"><span class="col-title">Squeezing</span></th><th align="center"><span class="col-title">Stuck</span></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td align="left">Minuscule</td><td align="center">≤1 ft.</td><td align="center">≤6 in.</td><td align="center">≤1 in.</td></tr>
+                    <tr><td align="left">Tiny</td><td align="center">2 ft.</td><td align="center">1 ft.</td><td align="center">6 in.</td></tr>
+                    <tr><td align="left">Small</td><td align="center">3 ft.</td><td align="center">2 ft.</td><td align="center">1 ft.</td></tr>
+                    <tr><td align="left">Medium</td><td align="center">5 ft.</td><td align="center">3 ft.</td><td align="center">2 ft.</td></tr>
+                    <tr><td align="left">Large</td><td align="center">10 ft.</td><td align="center">5 ft.</td><td align="center">3 ft.</td></tr>
+                    <tr><td align="left">Huge</td><td align="center">15 ft.</td><td align="center">10 ft.</td><td align="center">5 ft.</td></tr>
+                    <tr><td align="left">Gargantuan</td><td align="center">≥20 ft.</td><td align="center">≥15 ft.</td><td align="center">≥10 ft.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>`},"conditions#hindered":{title:"Hindered",associated_url:"/rules/2d/glossary/conditions.html#hindered",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hindered</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>Each foot you travel costs 1 additional foot of <a href="/rules/2d/glossary/movement.html">movement</a>.</li>
+        <li>Attack rolls against you have advantage.</li>
+        <li>Your attack rolls and Dexterity saving throws have disadvantage.</li>
+    </ul>
+</div>`},"conditions#restrained":{title:"Restrained",associated_url:"/rules/2d/glossary/conditions.html#restrained",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Restrained</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>Your speed is 0.</li>
+        <li>Attack rolls against you have advantage, and your attack rolls have disadvantage.</li>
+        <li>You have disadvantage on Dexterity saving throws.</li>
+    </ul>
+</div>`},"skills#perception":{title:"Perception",associated_url:"/rules/2d/glossary/skills.html#perception",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Perception</h1>
+            <div class="card-subheader">Wisdom skill</div>
+        </div>
+    </div>
+    <div class="p">Perception is for noticing things using your <a href="/rules/2d/glossary/senses.html">senses</a>.</div>
+    <div class="p">Your passive Perception is less effective at noticing far-away targets. See the table below for the penalty at various distances.</div>
+    <div class="tableAndCaption">
+        <span class="caption">Passive Perception Falloff</span>
+        <div class="tableWrapper">
+            <table>
+                <thead>
+                    <tr><th align="center"><span class="col-title">Distance</span></th><th align="center"><span class="col-title">Penalty</span></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td align="center">0-20 ft.</td><td align="center">-0</td></tr>
+                    <tr><td align="center">21-60 ft.</td><td align="center">-5</td></tr>
+                    <tr><td align="center">61+ ft.</td><td align="center">-10</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="p">For example, if a goblin is 30 feet away from you and has a <a href="/rules/2d/glossary/conditions.html#hidden">Hide DC</a> of 13, you would need a base passive Perception of 18 to automatically notice it.</div>
+    <div class="p">This penalty only applies to your passive Perception. By taking the <a href="/rules/2d/glossary/actions.html#search">Search</a> action in the example above, you would only need to roll a 13 or higher to notice the goblin. This represents the difference between general 360-degree awareness and concentrated attention.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Appears in</div><div class="card-footer-item-text"><span class="popupAnchor" data-injection-arg="actions#search" onclick='handleAnchorClick("actions#search", this, event)' onmouseover='showPopup("actions#search", this, event)' onmouseout='hidePopup("actions#search", event)'>Search</span>, <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span></div></div>
+    </div>
+</div>`},"actions#search":{title:"Search",associated_url:"/rules/2d/glossary/actions.html#search",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Search</h1>
+            <div class="card-subheader">Standard action</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">Repeatable</span>
+        </div>
+    </div>
+    <div class="p">When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.</div>
+    <div class="tableAndCaption">
+        <span class="caption">Search</span>
+        <div class="tableWrapper">
+            <table>
+                <thead>
+                    <tr><th align="left"><span class="col-title">Skill</span></th><th align="left"><span class="col-title">Thing to Detect</span></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#insight">Insight</a></td><td align="left">Creature's state of mind</td></tr>
+                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#medicine">Medicine</a></td><td align="left">Creature's ailment</td></tr>
+                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#perception">Perception</a></td><td align="left">Concealed creature or object</td></tr>
+                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#survival">Survival</a></td><td align="left">Tracks or food</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>`},"conditions#hidden":{title:"Hidden",associated_url:"/rules/2d/glossary/conditions.html#hidden",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hidden</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="p">While hidden from one or more creatures, you have a Hide DC, which is typically determined by the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action. If you move without <span class="popupAnchor" data-injection-arg="movement-modes#sneaking" onclick='handleAnchorClick("movement-modes#sneaking", this, event)' onmouseover='showPopup("movement-modes#sneaking", this, event)' onmouseout='hidePopup("movement-modes#sneaking", event)'>sneaking</span>, you must reroll the Hide DC by making another <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check.</div>
+    <div class="centered-header">Effects</div>
+    <div class="p">While hidden from a creature, it doesn't know where you are, and it can't track your movement.</div>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You cease to be hidden from a creature if any of the following occurs:</div>
+    <ul>
+        <li>You aren't <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind any <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span> relative to the creature.</li>
+        <li>You attack the creature.</li>
+        <li>You make a sound louder than a whisper, such as by casting a spell with a verbal component.</li>
+        <li>Another creature reveals your location.</li>
+        <li>The creature succeeds on a <a href="/rules/2d/glossary/skills.html#perception">Perception</a> check against your Hide DC. The <a href="/rules/2d/glossary/actions.html#search">Search</a> action lets a creature attempt this check.</li>
+        <li>Your Hide DC becomes less than the creature's <span class="tooltipWrapper"><span class="tooltipAnchor">passive Perception</span><span class="tooltip">Also see the rule on <a href="/rules/2d.html#passive-perception-falloff">Passive Perception Falloff</a>.</span></span>.</li>
+    </ul>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">This condition is typically acquired via the <a href="/rules/2d/glossary/actions.html#hide">Hide</a> action.</div>
+</div>`},"actions#hide":{title:"Hide",associated_url:"/rules/2d/glossary/actions.html#hide",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hide</h1>
+            <div class="card-subheader">Standard action</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">Repeatable</span>
+        </div>
+    </div>
+    <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span> from one or more creatures. Make a <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check. If you are <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind at least <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span> relative to a creature, and your check equals or exceeds its passive <a href="/rules/2d/glossary/skills.html#perception">Perception</a>, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
+</div>`},"environment#cover.subitems.three_quarters":{title:"Three-Quarters Cover",associated_url:"/rules/2d/glossary/environment.html#three-quarters-cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Three-Quarters Cover</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
+    </div>
+    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
+</div>`},"movement-modes#sneaking":{title:"Sneaking",associated_url:"/rules/2d/glossary/movement.html#sneaking",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sneaking</h1>
+            <div class="card-subheader">Movement mode</div>
+        </div>
+    </div>
+    <div class="p">Sneaking is a special movement mode that you use at the same time as another movement mode. If you are <a href="/rules/2d/glossary/conditions.html#hidden">hidden</a>, sneaking allows you to maintain your Hide DC.</div>
+</div>`},"spells#revealing_light":{title:"<i>Revealing Light</i>",associated_url:"/rules/2d/player-options/spells.html#revealing-light",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Revealing Light</h1>
+            <div class="card-subheader">4th-level divination spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cone (60 ft.) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">Raising your implement high, you produce a ghostly white light in the spell's area for the duration. The light is <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span>, and it's an immediate <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a> for the duration. The light is blocked by <a href="/rules/2d/glossary/conditions.html#invisible">invisible</a> creatures and objects, producing stark shadows and revealing their location. You can change the direction of the cone as a minor action.</div>
+    <div class="p">When an invisible target triggers the zone, it must make a Constitution saving throw. On a failed save, the target takes 8d4 radiant damage, or half as much on a success. A creature that fails its save is also <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> until it leaves the cone or stops being invisible.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 5th level or higher, the damage increases by 2d4 for each slot level above 4th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#potency":{title:"<i>Potency</i>",associated_url:"/rules/2d/player-options/spells.html#potency",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Potency</h1>
+            <div class="card-subheader">4th-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a handful of spinach)</div></div>
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
         </div>
         <div class="card-stats-row">
@@ -289,13 +1802,220 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
         </div>
     </div>
-    <div class="p">You expand the mind of a creature you touch. The target ceases to be <span class="popupAnchor" data-injection-arg="conditions#addled" onclick='handleAnchorClick("conditions#addled", this, event)' onmouseover='showPopup("conditions#addled", this, event)' onmouseout='hidePopup("conditions#addled", event)'>addled</span>, and it gains the following benefits for the duration:</div>
+    <div class="p">You strengthen the body of a creature you touch. The target ceases to be <span class="popupAnchor" data-injection-arg="conditions#weakened" onclick='handleAnchorClick("conditions#weakened", this, event)' onmouseover='showPopup("conditions#weakened", this, event)' onmouseout='hidePopup("conditions#weakened", event)'>weakened</span>, and it gains the following benefits for the duration:</div>
     <ul>
-        <li>It has advantage on Intelligence saving throws and ability checks.</li>
-        <li>It can't be <span class="popupAnchor" data-injection-arg="conditions#unconscious" onclick='handleAnchorClick("conditions#unconscious", this, event)' onmouseover='showPopup("conditions#unconscious", this, event)' onmouseout='hidePopup("conditions#unconscious", event)'>unconscious</span> (even if it has 0 hit points). This condition is only suppressed for the duration, not cured or prevented.</li>
-        <li>It automatically succeeds on saving throws made to maintain <span class="popupAnchor" data-injection-arg="conditions#concentration" onclick='handleAnchorClick("conditions#concentration", this, event)' onmouseover='showPopup("conditions#concentration", this, event)' onmouseout='hidePopup("conditions#concentration", event)'>concentration</span>, and it can concentrate on two effects at the same time.</li>
+        <li>It has advantage on Strength saving throws and ability checks.</li>
+        <li>It has the <span class="popupAnchor" data-injection-arg="traits#powerful_build" onclick='handleAnchorClick("traits#powerful_build", this, event)' onmouseover='showPopup("traits#powerful_build", this, event)' onmouseout='hidePopup("traits#powerful_build", event)'>Powerful Build</span>.</li>
+        <li>Its weapon attacks deal double damage.</li>
     </ul>
-    <div class="p">When the spell ends, the target is addled and <span class="popupAnchor" data-injection-arg="conditions#dazed" onclick='handleAnchorClick("conditions#dazed", this, event)' onmouseover='showPopup("conditions#dazed", this, event)' onmouseout='hidePopup("conditions#dazed", event)'>dazed</span> until the end of its next turn, as a wave of confusion sweeps over it. The spell ends early if the target becomes addled.</div>
+    <div class="p">When the spell ends, the target is weakened and <span class="popupAnchor" data-injection-arg="conditions#dazed" onclick='handleAnchorClick("conditions#dazed", this, event)' onmouseover='showPopup("conditions#dazed", this, event)' onmouseout='hidePopup("conditions#dazed", event)'>dazed</span> until the end of its next turn, as a wave of fatigue sweeps over it. The spell ends early if the target becomes weakened.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"traits#powerful_build":{title:"Powerful Build",associated_url:"undefined",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Powerful Build</h1>
+    <div class="p">You are unusually bulky. You count as one size larger than your actual size for the purpose of <a href="/rules/2d/glossary/conditions.html#grappling">grappling</a> and being <a href="/rules/2d/glossary/conditions.html#grappled">grappled</a>, wielding <a href="/rules/2d/player-options/equipment/properties.html#heavy">heavy</a> weapons, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
+</div>`},"spells#purging_flames":{title:"<i>Purging Flames</i>",associated_url:"/rules/2d/player-options/spells.html#purging-flames",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Purging Flames</h1>
+            <div class="card-subheader">4th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Burst (20 ft) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">Brilliant flames swirl around you. Each creature of your choice in the spell's area must make a Constitution saving throw and take 8d4 fire damage on a failed save, or half as much damage on a success. Each other creature in the area regains 4d4 hit points and can end one "save ends" effect afflicting it.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 5th level or higher, the fire damage and healing both increase by 2d4 for each slot level above 4th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#demonic_wings":{title:"<i>Demonic Wings</i>",associated_url:"/rules/2d/player-options/spells.html#demonic-wings",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Demonic Wings</h1>
+            <div class="card-subheader">4th-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a vial of blood)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
+        </div>
+    </div>
+    <div class="p">Baleful wings appear on your back. The wings' appearance is up to you and your DM. For the duration, the wings give you a <span class="popupAnchor" data-injection-arg="speeds#fly" onclick='handleAnchorClick("speeds#fly", this, event)' onmouseover='showPopup("speeds#fly", this, event)' onmouseout='hidePopup("speeds#fly", event)'>fly</span> speed of 40 feet, you can cast <span class="popupAnchor" data-injection-arg="spells#hellish_rebuke" onclick='handleAnchorClick("spells#hellish_rebuke", this, event)' onmouseover='showPopup("spells#hellish_rebuke", this, event)' onmouseout='hidePopup("spells#hellish_rebuke", event)'><i>hellish rebuke</i></span> at will, and whenever an enemy makes an attack roll or saving throw within 10 feet of you, it subtracts 1d4 from the result.</div>
+    <div class="p">(When you cast <i>hellish rebuke</i> via <i>demonic wings</i>, <i>hellish rebuke</i> counts as being on <i>demonic wings</i>'s spell lists in addition to its usual spell lists.)</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"speeds#fly":{title:"Fly",associated_url:"/rules/2d/glossary/movement.html#fly",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Fly</h1>
+            <div class="card-subheader">Speed</div>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Natural Movement Modes</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="movement-modes#flying" onclick='handleAnchorClick("movement-modes#flying", this, event)' onmouseover='showPopup("movement-modes#flying", this, event)' onmouseout='hidePopup("movement-modes#flying", event)'>Flying</span></div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Other Movement Modes<br>(+1 Cost)</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="movement-modes#sneaking" onclick='handleAnchorClick("movement-modes#sneaking", this, event)' onmouseover='showPopup("movement-modes#sneaking", this, event)' onmouseout='hidePopup("movement-modes#sneaking", event)'>Sneaking</span></div></div>
+        </div>
+    </div>
+    <div class="p">When you use a fly speed to fly, you <span class="popupAnchor" data-injection-arg="environment#falling" onclick='handleAnchorClick("environment#falling", this, event)' onmouseover='showPopup("environment#falling", this, event)' onmouseout='hidePopup("environment#falling", event)'>fall</span> if your fly speed is 0.</div>
+</div>`},"movement-modes#flying":{title:"Flying",associated_url:"/rules/2d/glossary/movement.html#flying",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Flying</h1>
+            <div class="card-subheader">Movement mode</div>
+        </div>
+    </div>
+    <div class="p">Flying lets you move through the air. If you are knocked <a href="/rules/2d/glossary/conditions.html#prone">prone</a> while flying, you <span class="popupAnchor" data-injection-arg="environment#falling" onclick='handleAnchorClick("environment#falling", this, event)' onmouseover='showPopup("environment#falling", this, event)' onmouseout='hidePopup("environment#falling", event)'>fall</span>.</div>
+</div>`},"environment#falling":{title:"Falling",associated_url:"/rules/2d/glossary/environment.html#falling",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Falling</h1>
+    <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
+    <div class="p">On impact, you take one <a href="/rules/2d.html#size-die">size die</a> of bludgeoning damage for every 10 feet you fell, to a maximum of 20 dice. You land <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span> unless you avoid taking damage from the fall, such as via the <span class="popupAnchor" data-injection-arg="reactions#break_fall" onclick='handleAnchorClick("reactions#break_fall", this, event)' onmouseover='showPopup("reactions#break_fall", this, event)' onmouseout='hidePopup("reactions#break_fall", event)'>Break Fall</span> reaction.</div>
+    <div class="p">If you land in a creature's space, that creature must make a DC 10 Dexterity saving throw. It can choose to fail. On a failed save, the fall damage is split evenly between you and it.</div>
+</div>`},"reactions#break_fall":{title:"Break Fall",associated_url:"/rules/2d/glossary/actions.html#break-fall",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Break Fall</h1>
+            <div class="card-subheader">Reaction</div>
+        </div>
+    </div>
+    <div class="centered-header">Trigger</div>
+    <div class="p">You land at the end of a fall.</div>
+    <div class="centered-header">Effect</div>
+    <div class="p">You attempt to land safely. Make an <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. The fall damage is reduced by half the result of the check.</div>
+</div>`},"spells#hellish_rebuke":{title:"<i>Hellish Rebuke</i>",associated_url:"/rules/2d/player-options/spells.html#hellish-rebuke",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hellish Rebuke</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Warlock</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#angelic_wings":{title:"<i>Angelic Wings</i>",associated_url:"/rules/2d/player-options/spells.html#angelic-wings",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Angelic Wings</h1>
+            <div class="card-subheader">4th-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a vial of holy water)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
+        </div>
+    </div>
+    <div class="p">Beautiful wings appear on your back. The wings' appearance is up to you and your DM. For the duration, the wings give you a <span class="popupAnchor" data-injection-arg="speeds#fly" onclick='handleAnchorClick("speeds#fly", this, event)' onmouseover='showPopup("speeds#fly", this, event)' onmouseout='hidePopup("speeds#fly", event)'>fly</span> speed of 50 feet, you can cast <span class="popupAnchor" data-injection-arg="spells#feather_fall" onclick='handleAnchorClick("spells#feather_fall", this, event)' onmouseover='showPopup("spells#feather_fall", this, event)' onmouseout='hidePopup("spells#feather_fall", event)'><i>feather fall</i></span> at will, and whenever you or an ally makes an attack roll or saving throw within 30 feet of you, it adds 1d4 to the result.</div>
+    <div class="p">(When you cast <i>feather fall</i> via <i>angelic wings</i>, <i>feather fall</i> counts as being on <i>angelic wings</i>'s spell lists in addition to its usual spell lists.)</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#feather_fall":{title:"<i>Feather Fall</i>",associated_url:"/rules/2d/player-options/spells.html#feather-fall",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Feather Fall</h1>
+            <div class="card-subheader">1st-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a small feather or a piece of down)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take when you or a creature within 60 feet of you falls</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Choose up to five <a href="/rules/2d/glossary/environment.html#falling">falling</a> creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, magus, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#supernal_lance":{title:"<i>Supernal Lance</i>",associated_url:"/rules/2d/player-options/spells.html#supernal-lance",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Supernal Lance</h1>
+            <div class="card-subheader">4th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Line (infinitely long, 1/4 inch thick) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">A piercing beam of light extends from your palm. Each creature in the spell's area must succeed on a Dexterity saving throw or take 8d6 radiant damage.</div>
+    <div class="p">Wherever the beam enters an area of magical darkness created by a spell of 3rd level or lower, the spell that created that darkness is dispelled.</div>
+    <div class="p">Targets gain no benefit from <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span> or <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span> against this spell.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 and the spell level that's dispelled increases by 1 for each slot level above 4th.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
@@ -326,50 +2046,854 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"environment#light":{title:"Light",associated_url:"/rules/2d/glossary/environment.html#light",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Light</h1>
-    <div class="p">There are three categories of illumination: bright light, dim light, and darkness.</div>
-    <div class="p">A source of light typically emits bright light in a small radius and dim light in a larger radius; these distances are given in parentheses. For example, a fire that sheds light (20/40 ft.) produces bright light within 20 feet and dim light for another 20 feet beyond that.</div>
-    <h4 class="noHeaderID">Bright Light</h4>
-    <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
-    <h4 class="noHeaderID">Dim Light</h4>
-    <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
-    <h4 class="noHeaderID">Darkness</h4>
-    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
-</div>`},"environment#obscured.subitems.lightly":{title:"Lightly Obscured",associated_url:"/rules/2d/glossary/environment.html#lightly-obscured",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Lightly Obscured</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
-    </div>
-    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
-</div>`},"environment#obscured":{title:"Obscured",associated_url:"/rules/2d/glossary/environment.html#obscured",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Obscured</h1>
-    <div class="p">When vision in an area is hindered by smoke, darkness, or a similar phenomenon, the area is obscured. There are two degrees of obscurity.</div>
-    <h4 class="noHeaderID">Lightly Obscured</h4>
-    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
-    <h4 class="noHeaderID">Heavily Obscured</h4>
-    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
-</div>`},"environment#light.subitems.darkness":{title:"Darkness",associated_url:"/rules/2d/glossary/environment.html#darkness",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Darkness</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
-    </div>
-    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
-</div>`},"environment#obscured.subitems.heavily":{title:"Heavily Obscured",associated_url:"/rules/2d/glossary/environment.html#heavily-obscured",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Heavily Obscured</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
-    </div>
-    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
-</div>`},"conditions#blinded":{title:"Blinded",associated_url:"/rules/2d/glossary/conditions.html#blinded",content_html:`<div class="small-card">
+</div>`},"spells#death_ward":{title:"<i>Death Ward</i>",associated_url:"/rules/2d/player-options/spells.html#death-ward",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
-            <h1 class="noHeaderID">Blinded</h1>
+            <h1 class="noHeaderID">Death Ward</h1>
+            <div class="card-subheader">4th-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Until the target finishes a long rest</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch a creature and grant it a measure of protection from death.</div>
+    <div class="p">The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.</div>
+    <div class="p">If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#dawn":{title:"<i>Dawn</i>",associated_url:"/rules/2d/player-options/spells.html#dawn",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Dawn</h1>
+            <div class="card-subheader">5th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a sunburst pendant worth at least 100 gp)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Cylinder (30 ft. radius, 40 ft. tall) emanating downwards from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">The light of dawn shines in the spell's area, forming an immediate <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a> for the duration. The zone is <span class="popupAnchor" data-injection-arg="environment#light.subitems.bright" onclick='handleAnchorClick("environment#light.subitems.bright", this, event)' onmouseover='showPopup("environment#light.subitems.bright", this, event)' onmouseout='hidePopup("environment#light.subitems.bright", event)'>bright light</span> and emits <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (30 ft.), all of which counts as sunlight.</div>
+    <div class="p">A creature that triggers the zone must make a Constitution saving throw, taking 4d10 radiant damage on a failed save, or half as much damage on a successful one.</div>
+    <div class="p">If you're within 60 feet of the cylinder, you can move its point of emanation up to 60 feet as a minor action on your turn.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
+    </div>
+</div>`},"spells#wall_of_light":{title:"<i>Wall of Light</i>",associated_url:"/rules/2d/player-options/spells.html#wall-of-light",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Wall of Light</h1>
+            <div class="card-subheader">5th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a hand mirror)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">120 feet / Wall (up to 60 ft. long, 10 ft high, 5 ft. thick) anywhere within range, in any orientation</div></div>
+        </div>
+    </div>
+    <div class="p">A shimmering wall of bright light appears in the spell's area. The wall emits <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (120/240 ft.), blocking line of sight, but creatures and objects can pass through it.</div>
+    <div class="p">The wall is an immediate <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a>. Each creature that triggers the zone must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage, and it is <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> for 1 minute (save ends). On a successful save, it takes half as much damage and isn't blinded.</div>
+    <div class="p">Until the spell ends, you can use a standard action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes 4d8 radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
+    </div>
+</div>`},"spells#lucidity":{title:"<i>Lucidity</i>",associated_url:"/rules/2d/player-options/spells.html#lucidity",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Lucidity</h1>
+            <div class="card-subheader">5th-level enchantment spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small mushroom)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You expand the mind of a creature you touch. The target ceases to be <span class="popupAnchor" data-injection-arg="conditions#addled" onclick='handleAnchorClick("conditions#addled", this, event)' onmouseover='showPopup("conditions#addled", this, event)' onmouseout='hidePopup("conditions#addled", event)'>addled</span>, and it gains the following benefits for the duration:</div>
+    <ul>
+        <li>It has advantage on Intelligence saving throws and ability checks.</li>
+        <li>It can't be <span class="popupAnchor" data-injection-arg="conditions#unconscious" onclick='handleAnchorClick("conditions#unconscious", this, event)' onmouseover='showPopup("conditions#unconscious", this, event)' onmouseout='hidePopup("conditions#unconscious", event)'>unconscious</span> (even if it has 0 hit points). This condition is only suppressed for the duration, not cured or prevented.</li>
+        <li>It automatically succeeds on saving throws made to maintain <span class="popupAnchor" data-injection-arg="conditions#concentration" onclick='handleAnchorClick("conditions#concentration", this, event)' onmouseover='showPopup("conditions#concentration", this, event)' onmouseout='hidePopup("conditions#concentration", event)'>concentration</span>, and it can concentrate on two effects at the same time. (If you cast this spell on yourself while already concentrating on another effect, you can continue concentrating on that effect.)</li>
+    </ul>
+    <div class="p">When the spell ends, the target is addled and <span class="popupAnchor" data-injection-arg="conditions#dazed" onclick='handleAnchorClick("conditions#dazed", this, event)' onmouseover='showPopup("conditions#dazed", this, event)' onmouseout='hidePopup("conditions#dazed", event)'>dazed</span> until the end of its next turn, as a wave of confusion sweeps over it. The spell ends early if the target becomes addled.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#mass_cure_wounds":{title:"<i>Mass Cure Wounds</i>",associated_url:"/rules/2d/player-options/spells.html#mass-cure-wounds",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Mass Cure Wounds</h1>
+            <div class="card-subheader">5th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">A wave of healing energy washes over up to six creatures of your choice within range and within 60 feet of each other. Each target regains hit points equal to 6d8 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 6th level or higher, the healing increases by 2d8 for each slot level above 5th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#flame_strike":{title:"<i>Flame Strike</i>",associated_url:"/rules/2d/player-options/spells.html#flame-strike",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Flame Strike</h1>
+            <div class="card-subheader">5th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a burnt branch of a fig tree)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">300 feet / Cylinder (10 ft. radius, 1 mile tall) emanating downwards from the sky to a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">A vertical column of divine fire roars down from the heavens. Each creature the spell's area must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#arcane_eye":{title:"<i>Arcane Eye</i>",associated_url:"/rules/2d/player-options/spells.html#arcane-eye",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Arcane Eye</h1>
+            <div class="card-subheader">4th-level divination spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a bit of bat fur)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You create an <span class="popupAnchor" data-injection-arg="conditions#invisible" onclick='handleAnchorClick("conditions#invisible", this, event)' onmouseover='showPopup("conditions#invisible", this, event)' onmouseout='hidePopup("conditions#invisible", event)'>invisible</span>, magical eye within range that hovers in the air for the duration.</div>
+    <div class="p">You gain the eye's sense of <a href="/rules/2d/glossary/senses.html#base-senses">sight</a> in addition to your own. The eye has <span class="popupAnchor" data-injection-arg="senses#darkvision" onclick='handleAnchorClick("senses#darkvision", this, event)' onmouseover='showPopup("senses#darkvision", this, event)' onmouseout='hidePopup("senses#darkvision", event)'>darkvision</span> (30 ft.) and can look in every direction.</div>
+    <div class="p">As a standard action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"conditions#invisible":{title:"Invisible",associated_url:"/rules/2d/glossary/conditions.html#invisible",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Invisible</h1>
             <div class="card-subheader">Condition</div>
         </div>
     </div>
     <div class="centered-header">Effects</div>
-    <div class="p">You lose your sense of <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
+    <div class="p">You can't be seen without specialized aid, such as magic or <a href="/rules/2d/glossary/senses.html#blindsight">blindsight</a>. Any <a href="/rules/2d/player-options/equipment.html">equipment</a> you are wearing or carrying similarly can't be seen.</div>
+    <div class="p">You can take the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action once as a free action on the same turn that you become invisible.</div>
+</div>`},"senses#darkvision":{title:"Darkvision",associated_url:"/rules/2d/glossary/senses.html#darkvision",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Darkvision</h1>
+            <div class="card-subheader">Special sense (base sense: sight)</div>
+        </div>
+    </div>
+    <div class="p">Within a specified range, a creature with darkvision can see in <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> as if it were <span class="popupAnchor" data-injection-arg="environment#light.subitems.bright" onclick='handleAnchorClick("environment#light.subitems.bright", this, event)' onmouseover='showPopup("environment#light.subitems.bright", this, event)' onmouseout='hidePopup("environment#light.subitems.bright", event)'>bright light</span>, and in <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span> as if it were dim light. The creature can't discern color in darkness, only shades of gray.</div>
+</div>`},"spells#heal":{title:"<i>Heal</i>",associated_url:"/rules/2d/player-options/spells.html#heal",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Heal</h1>
+            <div class="card-subheader">6th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points and gaining the benefits of <span class="popupAnchor" data-injection-arg="spells#restore_body" onclick='handleAnchorClick("spells#restore_body", this, event)' onmouseover='showPopup("spells#restore_body", this, event)' onmouseout='hidePopup("spells#restore_body", event)'><i>restore body</i></span> and <span class="popupAnchor" data-injection-arg="spells#restore_mind" onclick='handleAnchorClick("spells#restore_mind", this, event)' onmouseover='showPopup("spells#restore_mind", this, event)' onmouseout='hidePopup("spells#restore_mind", event)'><i>restore mind</i></span>. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#investiture_of_light":{title:"<i>Investiture of Light</i>",associated_url:"/rules/2d/player-options/spells.html#investiture-of-light",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Investiture of Light</h1>
+            <div class="card-subheader">6th-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
+        </div>
+    </div>
+    <div class="p">Until the spell ends, your form turns to light, and you gain the following benefits:</div>
+    <ul>
+        <li>You are immune to radiant damage.</li>
+        <li>You shed <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (100/200 ft.).</li>
+        <li>You gain a <span class="popupAnchor" data-injection-arg="speeds#teleport" onclick='handleAnchorClick("speeds#teleport", this, event)' onmouseover='showPopup("speeds#teleport", this, event)' onmouseout='hidePopup("speeds#teleport", event)'>teleport</span> speed of 30 feet. You can only teleport to a space illuminated by this spell's light.</li>
+        <li>You can use a standard action to create a blast of light. Each creature in a 15-foot cone emanating from you must succeed on a Constitution saving throw or take 3d6 radiant damage and be <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> until the start of your next turn. A creature takes half damage and isn't blinded on a successful save.</li>
+    </ul>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, sorcerer</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"speeds#teleport":{title:"Teleport",associated_url:"/rules/2d/glossary/movement.html#teleport",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Teleport</h1>
+            <div class="card-subheader">Speed</div>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Natural Movement Modes</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="movement-modes#teleporting" onclick='handleAnchorClick("movement-modes#teleporting", this, event)' onmouseover='showPopup("movement-modes#teleporting", this, event)' onmouseout='hidePopup("movement-modes#teleporting", event)'>Teleporting</span></div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Other Movement Modes<br>(+1 Cost)</div><div class="card-stats-row-item-text">—</div></div>
+        </div>
+    </div>
+    <div class="p">A teleport speed ignores all changes to "your speed" unless otherwise specified.</div>
+</div>`},"spells#sunbeam":{title:"<i>Sunbeam</i>",associated_url:"/rules/2d/player-options/spells.html#sunbeam",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sunbeam</h1>
+            <div class="card-subheader">6th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a magnifying glass)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Line (60 ft.) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">A beam of brilliant light flashes out from your hand. Each creature in the spell's area must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> and <a href="/rules/2d/glossary/creature-types.html#ooze">Oozes</a> have disadvantage on this saving throw.</div>
+    <div class="p">You can create a new line of radiance as a standard action on any turn until the spell ends.</div>
+    <div class="p">For the duration, a mote of brilliant radiance shines in your hand, shedding <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (30/60 ft.). This light is sunlight.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"spells#true_seeing":{title:"<i>True Seeing</i>",associated_url:"/rules/2d/player-options/spells.html#true-seeing",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">True Seeing</h1>
+            <div class="card-subheader">6th-level divination spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a monocle)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Until the target finishes a short rest</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">This spell gives the willing creature you touch the ability to see things as they actually are. The target has <span class="popupAnchor" data-injection-arg="senses#truesight" onclick='handleAnchorClick("senses#truesight", this, event)' onmouseover='showPopup("senses#truesight", this, event)' onmouseout='hidePopup("senses#truesight", event)'>truesight</span> (120 ft.) for the duration.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"senses#truesight":{title:"Truesight",associated_url:"/rules/2d/glossary/senses.html#truesight",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Truesight</h1>
+            <div class="card-subheader">Special sense (base sense: sight)</div>
+        </div>
+    </div>
+    <div class="p">A creature with truesight has enhanced vision within a specified range. Within that range, the creature's vision pierces through the following:</div>
+    <ul>
+        <li>The creature can see in normal and magical <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>.</li>
+        <li>The creature can see <span class="popupAnchor" data-injection-arg="conditions#invisible" onclick='handleAnchorClick("conditions#invisible", this, event)' onmouseover='showPopup("conditions#invisible", this, event)' onmouseout='hidePopup("conditions#invisible", event)'>invisible</span> creatures and objects.</li>
+        <li>The creature notices visual illusions and automatically succeeds on saving throws against them.</li>
+        <li>The creature discerns the true form of any creature or object it sees that has been transformed by magic.</li>
+        <li>The creature can see into the Ethereal Plane.</li>
+    </ul>
+</div>`},"spells#etherealness":{title:"<i>Etherealness</i>",associated_url:"/rules/2d/player-options/spells.html#etherealness",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Etherealness</h1>
+            <div class="card-subheader">7th-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">8 hours</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
+        </div>
+    </div>
+    <div class="p">You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use a standard action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away.</div>
+    <div class="p">While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so.</div>
+    <div class="p">You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from.</div>
+    <div class="p">When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</div>
+    <div class="p">This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#fire_storm":{title:"<i>Fire Storm</i>",associated_url:"/rules/2d/player-options/spells.html#fire-storm",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Fire Storm</h1>
+            <div class="card-subheader">7th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / 10 connected cubes (10 ft.) within range</div></div>
+        </div>
+    </div>
+    <div class="p">A storm made up of sheets of roaring flame appears in the spell's area. Each creature there must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.</div>
+    <div class="p">The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#plane_shift":{title:"<i>Plane Shift</i>",associated_url:"/rules/2d/player-options/spells.html#plane-shift",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Plane Shift</h1>
+            <div class="card-subheader">7th-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.</div>
+    <div class="p">Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.</div>
+    <div class="p">You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#regenerate":{title:"<i>Regenerate</i>",associated_url:"/rules/2d/player-options/spells.html#regenerate",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Regenerate</h1>
+            <div class="card-subheader">7th-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a prayer wheel and holy water)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minute</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).</div>
+    <div class="p">If one of the target's body parts has been severed, it can be reattached as a standard action by holding it in its proper place at any point during the spell.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#arcane_embargo":{title:"<i>Arcane Embargo</i>",associated_url:"/rules/2d/player-options/spells.html#arcane-embargo",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Arcane Embargo</h1>
+            <div class="card-subheader">4th-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You interfere with a creature's magical ability. One creature of your choice that you can see within range must make a Charisma saving throw. On a successful save, it takes 4d6 psychic damage, and nothing else happens. On a failed save, it takes no psychic damage, but it can't cast—or concentrate on—spells for the duration.</div>
+    <div class="p">Each time the target takes damage, it can repeat its saving throw against this spell. On a success, it takes 4d6 psychic damage and the spell ends on it.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#second_sun":{title:"<i>Second Sun</i>",associated_url:"/rules/2d/player-options/spells.html#second-sun",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Second Sun</h1>
+            <div class="card-subheader">8th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a gilded sunflower seed worth at least 100 gp)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">8 hours</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minute</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 miles</div></div>
+        </div>
+    </div>
+    <div class="p">You create a likeness of the sun high in the sky within range. The second sun appears to be the same size as the real sun, although it doesn't travel across the sky. You choose how bright the second sun is when you create it: either as dim as the full moon, shedding <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (100 miles), or as bright as the noon sun, shedding <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (100/200 miles). You also choose the color of the light. The light is sunlight.</div>
+    <div class="p">The second sun lasts for the duration. You can end it early as a major action.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#godbolt":{title:"<i>Godbolt</i>",associated_url:"/rules/2d/player-options/spells.html#godbolt",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Godbolt</h1>
+            <div class="card-subheader">8th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 major action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">1 mile / Cylinder (5 ft. diameter, 1 mile tall) emanating downwards from the sky to a point on the ground within range</div></div>
+        </div>
+    </div>
+    <div class="p">A singular, devastating bolt of lightning crashes down from the heavens. Each target in the spell's area must make a Constitution saving throw and take 20d6 lightning damage on a failed save, or half as much on a success. A creature that fails its save by 5 or more is also <span class="popupAnchor" data-injection-arg="conditions#stunned" onclick='handleAnchorClick("conditions#stunned", this, event)' onmouseover='showPopup("conditions#stunned", this, event)' onmouseout='hidePopup("conditions#stunned", event)'>stunned</span> until the end of its next turn.</div>
+    <div class="p">A deafening burst of thunder accompanies the bolt, audible out to a range of 10 miles. Each creature within 30 feet of the spell's area must succeed on a Constitution saving throw or be <span class="popupAnchor" data-injection-arg="conditions#deafened" onclick='handleAnchorClick("conditions#deafened", this, event)' onmouseover='showPopup("conditions#deafened", this, event)' onmouseout='hidePopup("conditions#deafened", event)'>deafened</span> for 1 minute (save ends).</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 9th level, the damage increases by 10d6.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#sunburst":{title:"<i>Sunburst</i>",associated_url:"/rules/2d/player-options/spells.html#sunburst",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sunburst</h1>
+            <div class="card-subheader">8th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (fire and a piece of sunstone)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Sphere (60 ft. radius) emanating from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">Brilliant sunlight flashes the spell's area. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> for 1 minute (save ends). On a successful save, it takes half as much damage and isn't blinded by this spell. <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> and <a href="/rules/2d/glossary/creature-types.html#ooze">Oozes</a> have disadvantage on this saving throw.</div>
+    <div class="p">This spell dispels any <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span> in its area that was created by a spell.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"spells#cleansing_winds":{title:"<i>Cleansing Winds</i>",associated_url:"/rules/2d/player-options/spells.html#cleansing-winds",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Cleansing Winds</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Cube (40 ft.) emanating from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">A crisp, fragrant gust blows away miasma and more, dispersing clouds in the area. Additionally, you can choose up to 6 creatures in the area. Each chosen creature is cured of being <span class="popupAnchor" data-injection-arg="conditions#diseased" onclick='handleAnchorClick("conditions#diseased", this, event)' onmouseover='showPopup("conditions#diseased", this, event)' onmouseout='hidePopup("conditions#diseased", event)'>diseased</span> and <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span>, and must succeed on a Strength saving throw or be pushed up to 20 feet along a path of your choice within the area (a target can choose to fail its saving throw, as usual).</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, you can choose two additional creatures for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#tears_of_the_faithless":{title:"<i>Tears of the Faithless</i>",associated_url:"/rules/2d/player-options/spells.html#tears-of-the-faithless",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Tears of the Faithless</h1>
+            <div class="card-subheader">6th-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a vial of saltwater)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">90 feet / Cylinder (30 ft. radius, 20 ft. tall) emanating downwards from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">Divine rain pours down and burns the unfaithful. Each creature in the spell's area—except for those you choose or that share your religion—must make a Wisdom saving throw. A target takes 8d6 acid damage on a failed save, or half as much on a success. A creature that fails its saving throw is also <span class="popupAnchor" data-injection-arg="conditions#weakened" onclick='handleAnchorClick("conditions#weakened", this, event)' onmouseover='showPopup("conditions#weakened", this, event)' onmouseout='hidePopup("conditions#weakened", event)'>weakened</span> and unable to cast spells until the end of your next turn.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d6 for each slot level above 6th.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#mass_heal":{title:"<i>Mass Heal</i>",associated_url:"/rules/2d/player-options/spells.html#mass-heal",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Mass Heal</h1>
+            <div class="card-subheader">9th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
+        </div>
+    </div>
+    <div class="p">A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of each effect that can be ended by the <span class="popupAnchor" data-injection-arg="spells#restore_body" onclick='handleAnchorClick("spells#restore_body", this, event)' onmouseover='showPopup("spells#restore_body", this, event)' onmouseout='hidePopup("spells#restore_body", event)'><i>restore body</i></span> spell. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#power_word_heal":{title:"<i>Power Word Heal</i>",associated_url:"/rules/2d/player-options/spells.html#power-word-heal",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Power Word Heal</h1>
+            <div class="card-subheader">9th-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">A wave of healing energy washes over the creature you touch. The target regains all its hit points. The creature is cured of any effect that can be ended by <span class="popupAnchor" data-injection-arg="spells#greater_restoration" onclick='handleAnchorClick("spells#greater_restoration", this, event)' onmouseover='showPopup("spells#greater_restoration", this, event)' onmouseout='hidePopup("spells#greater_restoration", event)'><i>greater restoration</i></span>. If the creature is <a href="/rules/2d/glossary/conditions.html#prone">prone</a>, it can use a reaction to stand up. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"spells#greater_restoration":{title:"<i>Greater Restoration</i>",associated_url:"/rules/2d/player-options/spells.html#greater-restoration",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Greater Restoration</h1>
+            <div class="card-subheader">5th-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (diamond dust worth at least 100 gp, which the spell consumes)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">You channel a vast amount of restoring energy into a creature you touch. The target gains the benefits of <span class="popupAnchor" data-injection-arg="spells#restore_body" onclick='handleAnchorClick("spells#restore_body", this, event)' onmouseover='showPopup("spells#restore_body", this, event)' onmouseout='hidePopup("spells#restore_body", event)'><i>restore body</i></span>, <span class="popupAnchor" data-injection-arg="spells#restore_mind" onclick='handleAnchorClick("spells#restore_mind", this, event)' onmouseover='showPopup("spells#restore_mind", this, event)' onmouseout='hidePopup("spells#restore_mind", event)'><i>restore mind</i></span> and one of the following benefits of your choice:</div>
+    <ul>
+        <li>Its <span class="popupAnchor" data-injection-arg="conditions#exhaustion" onclick='handleAnchorClick("conditions#exhaustion", this, event)' onmouseover='showPopup("conditions#exhaustion", this, event)' onmouseout='hidePopup("conditions#exhaustion", event)'>exhaustion</span> level decreases by 1.</li>
+        <li>It is cured of the <span class="popupAnchor" data-injection-arg="conditions#petrified" onclick='handleAnchorClick("conditions#petrified", this, event)' onmouseover='showPopup("conditions#petrified", this, event)' onmouseout='hidePopup("conditions#petrified", event)'>petrified</span> or <span class="popupAnchor" data-injection-arg="conditions#transformed" onclick='handleAnchorClick("conditions#transformed", this, event)' onmouseover='showPopup("conditions#transformed", this, event)' onmouseout='hidePopup("conditions#transformed", event)'>transformed</span> condition.</li>
+        <li>It is cured of one effect reducing any of its ability scores.</li>
+        <li>It is cured of one effect reducing its hit point maximum.</li>
+    </ul>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, ranger</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
+    </div>
+</div>`},"conditions#exhaustion":{title:"Exhaustion",associated_url:"/rules/2d/glossary/conditions.html#exhaustion",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Exhaustion</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="p">This condition is cumulative. Each time you receive it, you gain a specified number of levels of exhaustion. You die if your exhaustion level reaches or exceeds 10.</div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>When you make an attack roll, ability check, or saving throw, you subtract your exhaustion level from the d20 roll.</li>
+        <li>Subtract your exhaustion level from the spell save DC of any spell you cast.</li>
+    </ul>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You can reduce your exhaustion by <a href="/rules/2d/systems/resting.html">resting</a>.</div>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">A common source of exhaustion is <a href="/rules/2d/systems/hit-points.html">dropping to 0 hit points</a>.</div>
+</div>`},"conditions#petrified":{title:"Petrified",associated_url:"/rules/2d/glossary/conditions.html#petrified",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Petrified</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>You are <span class="popupAnchor" data-injection-arg="conditions#transformed" onclick='handleAnchorClick("conditions#transformed", this, event)' onmouseover='showPopup("conditions#transformed", this, event)' onmouseout='hidePopup("conditions#transformed", event)'>transformed</span> into an object version of yourself, made out of a solid <a href="/rules/2d/glossary/objects.html#materials">material</a>. You retain your hit points and AC, but the rest of your game statistics are replaced by the material's properties. The material is typically specified in parentheses after this condition's listing.</li>
+        <li>If you have 0 hit points, you don't start <span class="popupAnchor" data-injection-arg="conditions#dying" onclick='handleAnchorClick("conditions#dying", this, event)' onmouseover='showPopup("conditions#dying", this, event)' onmouseout='hidePopup("conditions#dying", event)'>dying</span> until you are cured of this condition. However, at your DM's discretion, you may physically break as a result of being reduced to 0 hit points. Being cured of this condition doesn't repair any such breaks.</li>
+    </ul>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">This condition can be cured by the <span class="popupAnchor" data-injection-arg="spells#greater_restoration" onclick='handleAnchorClick("spells#greater_restoration", this, event)' onmouseover='showPopup("spells#greater_restoration", this, event)' onmouseout='hidePopup("spells#greater_restoration", event)'><i>greater restoration</i></span> spell.</div>
+</div>`},"conditions#transformed":{title:"Transformed",associated_url:"/rules/2d/glossary/conditions.html#transformed",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Transformed</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="p">While transformed into a creature, you experience the following effects:</div>
+    <ul>
+        <li>Your game statistics are replaced by the statistics of the creature, including hit points, hit dice, and mental ability scores. You retain your alignment and personality. If the creature has any legendary or lair actions, you can't use them.</li>
+        <li>You are limited in the actions you can perform by the nature of your new form. You can't speak, cast spells, or take any other action that requires hands or speech, unless your new form is capable of such actions. Transforming doesn't break your <a href="/rules/2d/player-options/spells.html#concentration">concentration</a> on a spell you've already cast, however, nor prevent you from taking actions that are part of a spell that you've already cast.</li>
+        <li>Your equipment melds into your new form and has no effect.</li>
+    </ul>
+    <div class="p">While transformed into an object, you experience the following effects:</div>
+    <ul>
+        <li>Your game statistics are replaced by the statistics of the object.</li>
+        <li>Your equipment melds into your new form and has no effect.</li>
+        <li>You are <span class="popupAnchor" data-injection-arg="conditions#incapacitated" onclick='handleAnchorClick("conditions#incapacitated", this, event)' onmouseover='showPopup("conditions#incapacitated", this, event)' onmouseout='hidePopup("conditions#incapacitated", event)'>incapacitated</span> and are unaware of your surroundings.</li>
+        <li>You have no memory of time spent in this form.</li>
+        <li>You don't age, and you are immune to being <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span> or <span class="popupAnchor" data-injection-arg="conditions#diseased" onclick='handleAnchorClick("conditions#diseased", this, event)' onmouseover='showPopup("conditions#diseased", this, event)' onmouseout='hidePopup("conditions#diseased", event)'>diseased</span>. Any preexisting poisons or diseases are suspended, not cured.</li>
+    </ul>
+    <div class="p">When you revert to your normal form, you return to the number of hit points you had before you transformed, assuming you didn't die. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</div>
+</div>`},"channel-divinity#radiant_scourge":{title:"Radiant Scourge",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Radiant Scourge</h1>
+            <div class="card-subheader">18th-level Light Domain cleric Channel Divinity option</div>
+        </div>
+    </div>
+    <div class="p">You brandish your holy symbol as a major action, and cause it to glow with a piercing light. The light fades from it and descends on up to three creatures of your choice that you can see with your own eyes or with <a href="/rules/2d/player-options/classes/cleric.html#suns-vigil">Sun's Vigil</a>, regardless of distance and <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>. Each target is subjected to the effects of <span class="popupAnchor" data-injection-arg="spells#dispel_magic" onclick='handleAnchorClick("spells#dispel_magic", this, event)' onmouseover='showPopup("spells#dispel_magic", this, event)' onmouseout='hidePopup("spells#dispel_magic", event)'><i>dispel magic</i></span> plus one of the following effects of your choice:</div>
+    <ul>
+        <li><b><i>Burn.</i></b> The target must succeed on a Constitution saving throw or take 7d6 radiant damage, or half as much on a success. If this damage reduces the target to 0 hit points, its body turns to ash.</li>
+        <li><b><i>Balm.</i></b> The target gains the benefits of <span class="popupAnchor" data-injection-arg="spells#greater_restoration" onclick='handleAnchorClick("spells#greater_restoration", this, event)' onmouseover='showPopup("spells#greater_restoration", this, event)' onmouseout='hidePopup("spells#greater_restoration", event)'><i>greater restoration</i></span>.</li>
+    </ul>
+</div>`},"spells#dispel_magic":{title:"<i>Dispel Magic</i>",associated_url:"/rules/2d/player-options/spells.html#dispel-magic",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Dispel Magic</h1>
+            <div class="card-subheader">3rd-level abjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">120 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, magus, paladin, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
+    </div>
+</div>`},"spells#mass_revivify":{title:"<i>Mass Revivify</i>",associated_url:"/rules/2d/player-options/spells.html#mass-revivify",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Mass Revivify</h1>
+            <div class="card-subheader">5th-level necromancy spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (diamonds worth 500 gp, which the spell consumes, and a holy symbol worth at least 5 gp)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">Kneeling and clutching your holy symbol, you speak a prayer for the fallen around you. Each creature within range that died within the last minute—including your enemies, if any—returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
 </div>`},"spells#mass_sanctuary":{title:"<i>Mass Sanctuary</i>",associated_url:"/rules/2d/player-options/spells.html#mass-sanctuary",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -398,184 +2922,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#sanctuary":{title:"<i>Sanctuary</i>",associated_url:"/rules/2d/player-options/spells.html#sanctuary",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sanctuary</h1>
-            <div class="card-subheader">1st-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small silver mirror)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You ward a willing creature within range against harm for the duration. Before any creature can target the warded creature with a harmful effect (such as an attack), it must succeed on a Charisma saving throw. On a failed save, the effect is wasted unless the creature chooses a different target. This spell doesn't protect the warded creature from area effects, such as the explosion of a <span class="popupAnchor" data-injection-arg="spells#fireball" onclick='handleAnchorClick("spells#fireball", this, event)' onmouseover='showPopup("spells#fireball", this, event)' onmouseout='hidePopup("spells#fireball", event)'><i>fireball</i></span>.</div>
-    <div class="p">If the warded creature targets another creature with a harmful effect, this spell ends.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#fireball":{title:"<i>Fireball</i>",associated_url:"/rules/2d/player-options/spells.html#fireball",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Fireball</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a tiny ball of bat guano and sulfur)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Sphere (20 ft.) emanating from a point within range, spreading around cover</div></div>
-        </div>
-    </div>
-    <div class="p">A bright streak flashes from your pointing finger and blossoms with a low roar into an explosion of flame. Each creature in the spell's area must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.</div>
-    <div class="p">The fire ignites flammable objects in the area that aren't being worn or carried.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Sorcerer</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#argent_blessing":{title:"<i>Argent Blessing</i>",associated_url:"/rules/2d/player-options/spells.html#argent-blessing",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Argent Blessing</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a piece of silver)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You bless up to 6 weapons or pieces of ammunition within range with the powers of silver. Each blessed item sheds <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (5 ft.) for the duration. When an attack with a glowing weapon or piece of ammunition hits an <a href="/rules/2d/glossary/creature-types.html#ooze">Ooze</a>, <a href="/rules/2d/glossary/creature-types.html#monstrosity">Monstrosity</a>, <a href="/rules/2d/glossary/creature-types.html#fiend">Fiend</a>, or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>, the target of the attack takes an extra 1d4 radiant damage. Additionally, any creature in the light of a blessed item has advantage on saving throws against effects produced by those types of creatures.</div>
-    <div class="p">A blessed item's glow is suppressed by magical darkness. An item completely in darkness doesn't deal this spell's extra damage.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"environment#light.subitems.dim":{title:"Dim Light",associated_url:"/rules/2d/glossary/environment.html#dim-light",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Dim Light</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
-    </div>
-    <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
-</div>`},"spells#tears_of_the_faithless":{title:"<i>Tears of the Faithless</i>",associated_url:"/rules/2d/player-options/spells.html#tears-of-the-faithless",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Tears of the Faithless</h1>
-            <div class="card-subheader">6th-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a vial of saltwater)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">90 feet / Cylinder (30 ft. radius, 20 ft. tall) emanating downwards from a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">Divine rain pours down and burns the unfaithful. Each creature in the spell's area—except for those you choose or that share your religion—must make a Wisdom saving throw. A target takes 8d6 acid damage on a failed save, or half as much on a success. A creature that fails its saving throw is also <span class="popupAnchor" data-injection-arg="conditions#weakened" onclick='handleAnchorClick("conditions#weakened", this, event)' onmouseover='showPopup("conditions#weakened", this, event)' onmouseout='hidePopup("conditions#weakened", event)'>weakened</span> and unable to cast spells until the end of your next turn.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"conditions#weakened":{title:"Weakened",associated_url:"/rules/2d/glossary/conditions.html#weakened",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Weakened</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>You have disadvantage on Strength attack rolls, ability checks, and saving throws.</li>
-        <li>Your weapon attacks deal half damage.</li>
-    </ul>
-</div>`},"spells#cleansing_winds":{title:"<i>Cleansing Winds</i>",associated_url:"/rules/2d/player-options/spells.html#cleansing-winds",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Cleansing Winds</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Cube (40 ft.) emanating from a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">A crisp, fragrant gust blows away miasma and more, dispersing clouds in the area. Additionally, you can choose up to 3 creatures in the area. Each chosen creature is cured of being <span class="popupAnchor" data-injection-arg="conditions#diseased" onclick='handleAnchorClick("conditions#diseased", this, event)' onmouseover='showPopup("conditions#diseased", this, event)' onmouseout='hidePopup("conditions#diseased", event)'>diseased</span> and <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span>, and must succeed on a Strength saving throw or be pushed up to 10 feet along a path of your choice (a target can choose to fail its saving throw, as usual).</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, you can choose one additional creature for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"conditions#diseased":{title:"Diseased",associated_url:"/rules/2d/glossary/conditions.html#diseased",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Diseased</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>You have disadvantage on Constitution attack rolls, ability checks, and saving throws.</li>
-        <li>You can't regain hit points.</li>
-    </ul>
-</div>`},"conditions#poisoned":{title:"Poisoned",associated_url:"/rules/2d/glossary/conditions.html#poisoned",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Poisoned</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <div class="p">You have disadvantage on attack rolls and ability checks.</div>
 </div>`},"spells#soothing_mists":{title:"<i>Soothing Mists</i>",associated_url:"/rules/2d/player-options/spells.html#soothing-mists",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -656,33 +3002,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Magus, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">EEPC, XGE, 2D</div></div>
     </div>
-</div>`},"spells#glint":{title:"<i>Glint</i>",associated_url:"/rules/2d/player-options/spells.html#glint",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Glint</h1>
-            <div class="card-subheader">Evocation cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You launch a shard of light at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes radiant damage and sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (5/10 ft.) until the end of your next turn. The damage is 1d8, or 1d10 if the target was already glowing due to this spell.</div>
-    <div class="p">This spell's damage increases by one die when you reach 5th level (2d8 or 2d10), 11th level (3d8 or 3d10), and 17th level (4d8 or 4d10).</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
 </div>`},"spells#minor_benediction":{title:"<i>Minor Benediction</i>",associated_url:"/rules/2d/player-options/spells.html#minor-benediction",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -737,41 +3056,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#potency":{title:"<i>Potency</i>",associated_url:"/rules/2d/player-options/spells.html#potency",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Potency</h1>
-            <div class="card-subheader">4th-level transmutation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a handful of spinach)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You strengthen the body of a creature you touch. The target ceases to be <span class="popupAnchor" data-injection-arg="conditions#weakened" onclick='handleAnchorClick("conditions#weakened", this, event)' onmouseover='showPopup("conditions#weakened", this, event)' onmouseout='hidePopup("conditions#weakened", event)'>weakened</span>, and it gains the following benefits for the duration:</div>
-    <ul>
-        <li>It has advantage on Strength saving throws and ability checks.</li>
-        <li>It has the <span class="popupAnchor" data-injection-arg="traits#powerful_build" onclick='handleAnchorClick("traits#powerful_build", this, event)' onmouseover='showPopup("traits#powerful_build", this, event)' onmouseout='hidePopup("traits#powerful_build", event)'>Powerful Build</span>.</li>
-        <li>Its weapon attacks deal double damage.</li>
-    </ul>
-    <div class="p">When the spell ends, the target is weakened and <span class="popupAnchor" data-injection-arg="conditions#dazed" onclick='handleAnchorClick("conditions#dazed", this, event)' onmouseover='showPopup("conditions#dazed", this, event)' onmouseout='hidePopup("conditions#dazed", event)'>dazed</span> until the end of its next turn, as a wave of fatigue sweeps over it. The spell ends early if the target becomes weakened.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"traits#powerful_build":{title:"Powerful Build",associated_url:"undefined",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Powerful Build</h1>
-    <div class="p">You are unusually bulky. You count as one size larger than your actual size for the purpose of <a href="/rules/2d/glossary/conditions.html#grappling">grappling</a> and being <a href="/rules/2d/glossary/conditions.html#grappled">grappled</a>, wielding <a href="/rules/2d/player-options/equipment/properties.html#heavy">heavy</a> weapons, determining your carrying capacity, and determining the weight you can push, drag, or lift.</div>
 </div>`},"spells#seance":{title:"<i>Séance</i>",associated_url:"/rules/2d/player-options/spells.html#sance",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -813,76 +3097,9 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">A summoned fiend pretends to be the target spirit, holding the true spirit hostage. It knows what the target looked like and basic facts about the target's life, such as place of birth, names of close friends and family members, and occupation. It is also proficient with the target's languages in addition to its own languages. If the fiend's true identity goes undiscovered for the duration of the spell, the fiend permanently destroys the target's soul: the target can never be resurrected, and all future <i>séances</i> to speak with the target summon the fiend instead. (The fiend may attempt to break the spellcaster's concentration in order to end the spell early, but doing so risks revealing its true intentions.) Regardless of how the spell ends, the fiend can choose to persist for up to 1 minute after the spell ends before disappearing, likely to gloat or attack.</div>
     <div class="p">Casting this spell multiple times in succession increases the chance of summoning the wrong entity. When determining what entity is summoned, the DM subtracts 1 from the result for each prior time you cast this spell in the past 24 hours.</div>
     <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, warlock</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"conditions#invisible":{title:"Invisible",associated_url:"/rules/2d/glossary/conditions.html#invisible",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Invisible</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <div class="p">You can't be seen without specialized aid, such as magic or <a href="/rules/2d/glossary/senses.html#blindsight">blindsight</a>. Any <a href="/rules/2d/player-options/equipment.html">equipment</a> you are wearing or carrying similarly can't be seen.</div>
-    <div class="p">You can take the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action once as a free action on the same turn that you become invisible.</div>
-</div>`},"actions#hide":{title:"Hide",associated_url:"/rules/2d/glossary/actions.html#hide",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hide</h1>
-            <div class="card-subheader">Standard action</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">Repeatable</span>
-        </div>
-    </div>
-    <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span> from one or more creatures. Make a <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check. If you are <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind at least <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span> relative to a creature, and your check equals or exceeds its passive <a href="/rules/2d/glossary/skills.html#perception">Perception</a>, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
-</div>`},"conditions#hidden":{title:"Hidden",associated_url:"/rules/2d/glossary/conditions.html#hidden",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hidden</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="p">While hidden from one or more creatures, you have a Hide DC, which is typically determined by the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action. If you move without <span class="popupAnchor" data-injection-arg="movement-modes#sneaking" onclick='handleAnchorClick("movement-modes#sneaking", this, event)' onmouseover='showPopup("movement-modes#sneaking", this, event)' onmouseout='hidePopup("movement-modes#sneaking", event)'>sneaking</span>, you must reroll the Hide DC by making another <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check.</div>
-    <div class="centered-header">Effects</div>
-    <div class="p">While hidden from a creature, it doesn't know where you are, and it can't track your movement.</div>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You cease to be hidden from a creature if any of the following occurs:</div>
-    <ul>
-        <li>You aren't <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind any <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span> relative to the creature.</li>
-        <li>You attack the creature.</li>
-        <li>You make a sound louder than a whisper, such as by casting a spell with a verbal component.</li>
-        <li>Another creature reveals your location.</li>
-        <li>The creature succeeds on a <a href="/rules/2d/glossary/skills.html#perception">Perception</a> check against your Hide DC. The <a href="/rules/2d/glossary/actions.html#search">Search</a> action lets a creature attempt this check.</li>
-        <li>Your Hide DC becomes less than the creature's <span class="tooltipWrapper"><span class="tooltipAnchor">passive Perception</span><span class="tooltip">Also see the rule on <a href="/rules/2d.html#passive-perception-falloff">Passive Perception Falloff</a>.</span></span>.</li>
-    </ul>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">This condition is typically acquired via the <a href="/rules/2d/glossary/actions.html#hide">Hide</a> action.</div>
-</div>`},"environment#cover":{title:"Cover",associated_url:"/rules/2d/glossary/environment.html#cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Cover</h1>
-    <div class="p">Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.</div>
-    <div class="p">There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.</div>
-    <h4 class="noHeaderID">Half Cover</h4>
-    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
-    <h4 class="noHeaderID">Three-Quarters Cover</h4>
-    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
-    <h4 class="noHeaderID">Total Cover</h4>
-    <div class="p">A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</div>
-</div>`},"movement-modes#sneaking":{title:"Sneaking",associated_url:"/rules/2d/glossary/movement.html#sneaking",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sneaking</h1>
-            <div class="card-subheader">Movement mode</div>
-        </div>
-    </div>
-    <div class="p">Sneaking is a special movement mode that you use at the same time as another movement mode. If you are <a href="/rules/2d/glossary/conditions.html#hidden">hidden</a>, sneaking allows you to maintain your Hide DC.</div>
-</div>`},"environment#cover.subitems.three_quarters":{title:"Three-Quarters Cover",associated_url:"/rules/2d/glossary/environment.html#three-quarters-cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Three-Quarters Cover</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
-    </div>
-    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
 </div>`},"spell-creatures(spell)#invidian_fiend":{title:"Invidian Fiend",associated_url:"undefined",content_html:`<div class="medium-card">
     <h1 class="noHeaderID">Invidian Fiend</h1>
     <div class="card-subheader">Medium Fiend, evil</div>
@@ -984,85 +3201,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
             </table>
         </div>
     </div>
-</div>`},"environment#special_terrain.subitems.difficult":{title:"Difficult Terrain",associated_url:"/rules/2d/glossary/environment.html#difficult-terrain",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Difficult Terrain</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#special_terrain" onclick='handleAnchorClick("environment#special_terrain", this, event)' onmouseover='showPopup("environment#special_terrain", this, event)' onmouseout='hidePopup("environment#special_terrain", event)'>special terrain</span>
-    </div>
-    <div class="p">Traveling through difficult terrain costs more <a href="/rules/2d/glossary/movement.html">movement</a> than normal. The movement cost per foot traveled is given in parentheses after each listing. For example, "difficult terrain (2 ft.)" costs 2 feet of movement per foot traveled. Difficult terrains don't stack—a creature traveling through overlapping areas of difficult terrain only pays the movement cost of the most expensive one.</div>
-    <div class="p">Most sources of difficult terrain, such as low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs, cost 2 feet of movement per foot traveled. The <span class="popupAnchor" data-injection-arg="environment#space" onclick='handleAnchorClick("environment#space", this, event)' onmouseover='showPopup("environment#space", this, event)' onmouseout='hidePopup("environment#space", event)'>space</span> of another creature, whether hostile or not, also counts as difficult terrain (2 ft.).</div>
-</div>`},"environment#special_terrain":{title:"Special Terrain",associated_url:"/rules/2d/glossary/environment.html#special-terrain",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Special Terrain</h1>
-    <div class="p">Some terrains are more difficult or dangerous to traverse than others. Difficult, hazardous, and slippery terrains are all examples of special terrains.</div>
-    <h4 class="noHeaderID">Difficult Terrain</h4>
-    <div class="p">Traveling through difficult terrain costs more <a href="/rules/2d/glossary/movement.html">movement</a> than normal. The movement cost per foot traveled is given in parentheses after each listing. For example, "difficult terrain (2 ft.)" costs 2 feet of movement per foot traveled. Difficult terrains don't stack—a creature traveling through overlapping areas of difficult terrain only pays the movement cost of the most expensive one.</div>
-    <div class="p">Most sources of difficult terrain, such as low furniture, rubble, undergrowth, steep stairs, snow, and shallow bogs, cost 2 feet of movement per foot traveled. The <span class="popupAnchor" data-injection-arg="environment#space" onclick='handleAnchorClick("environment#space", this, event)' onmouseover='showPopup("environment#space", this, event)' onmouseout='hidePopup("environment#space", event)'>space</span> of another creature, whether hostile or not, also counts as difficult terrain (2 ft.).</div>
-    <h4 class="noHeaderID">Hazardous Terrain</h4>
-    <div class="p">Hazardous terrain is dangerous to traverse. For every 5 feet a creature <a href="/rules/2d/glossary/movement.html">moves</a> through hazardous terrain, it suffers an effect—usually damage—given in parentheses after the terrain's listing. For example, a creature that walks 10 feet through "hazardous terrain (1d6 piercing)" takes a total of 2d6 piercing damage.</div>
-    <h4 class="noHeaderID">Slippery Terrain</h4>
-    <div class="p">Creatures traversing slippery terrain have a chance of falling over. The first time on a turn a creature <a href="/rules/2d/glossary/movement.html">moves</a> at least 5 feet across slippery terrain, it must make an <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. The DC is given in parentheses after the terrain's listing. On a failed check, the creature falls <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span>. On a success, it doesn't fall prone, and if it stops moving on the slippery terrain, it can slide across the terrain up to an additional number of feet equal to the difference between its check and the DC.</div>
-    <div class="p">A creature on slippery terrain must also make an Acrobatics check against the same DC when it attempts to stand up from prone. On a failure, it stays prone, but it still pays the movement cost of standing.</div>
-</div>`},"environment#space":{title:"Space",associated_url:"/rules/2d/glossary/environment.html#space",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Space</h1>
-    <div class="p">Your size determines how much space you occupy. In combat, you normally occupy a square with a side length given by the Normal column of the Creature Sizes table below. This area, often refered to as "your space," represents the space you need to move and fight unhindered. You control your space, and can prevent other creatures within 1 size category of yourself from sharing it. Additionally, your space counts as both <span class="popupAnchor" data-injection-arg="environment#special_terrain.subitems.difficult" onclick='handleAnchorClick("environment#special_terrain.subitems.difficult", this, event)' onmouseover='showPopup("environment#special_terrain.subitems.difficult", this, event)' onmouseout='hidePopup("environment#special_terrain.subitems.difficult", event)'>difficult terrain</span> (2 ft.) and <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span> for all creatures other than yourself.</div>
-    <div class="p">You do not have to occupy your normal amount of space. If you occupy less, whether by choice or by force, you suffer penalties.</div>
-    <h4 class="noHeaderID">Squeezing</h4>
-    <div class="p">Squeezing can reduce one or both side lengths of your space down to the value in the Squeezing column of the Creature Sizes table. You are <span class="popupAnchor" data-injection-arg="conditions#hindered" onclick='handleAnchorClick("conditions#hindered", this, event)' onmouseover='showPopup("conditions#hindered", this, event)' onmouseout='hidePopup("conditions#hindered", event)'>hindered</span> while squeezing.</div>
-    <h4 class="noHeaderID">Stuck</h4>
-    <div class="p">The value in the Stuck column of the Creature Sizes table is the minimum side length your area of control can have. If at least one side length of your area of control is between the "Stuck" and "Squeezing" values, you are stuck. While stuck, you are <span class="popupAnchor" data-injection-arg="conditions#restrained" onclick='handleAnchorClick("conditions#restrained", this, event)' onmouseover='showPopup("conditions#restrained", this, event)' onmouseout='hidePopup("conditions#restrained", event)'>restrained</span>. You can use a standard action to make a DC 10 <a href="/rules/2d/glossary/skills.html#athletics">Athletics</a> or <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. On a success, you are <span class="popupAnchor" data-injection-arg="conditions#hindered" onclick='handleAnchorClick("conditions#hindered", this, event)' onmouseover='showPopup("conditions#hindered", this, event)' onmouseout='hidePopup("conditions#hindered", event)'>hindered</span> instead of restrained until the end of the current turn.</div>
-    <h4 class="noHeaderID">Crushed</h4>
-    <div class="p">You can't willingly reduce a side length of your space to less than the value in the Stuck column of the Creature Sizes table. If you are forced to, you immediately take 1d10 bludgeoning damage for each inch your space's shorter side length subceeds your Stuck value, and you are crushed. You take this damage again at the end of each of your turns as long as you remain crushed. You are also stuck while crushed, and the DC to try to move increases by 1 for each inch your space's shorter side length subceeds your Stuck value.</div>
-    <div class="tableAndCaption">
-        <span class="caption">Creature Sizes</span>
-        <div class="tableWrapper">
-            <table>
-                <thead>
-                    <tr><th align="left"><span class="col-title">Size</span></th><th align="center"><span class="col-title">Normal</span></th><th align="center"><span class="col-title">Squeezing</span></th><th align="center"><span class="col-title">Stuck</span></th></tr>
-                </thead>
-                <tbody>
-                    <tr><td align="left">Minuscule</td><td align="center">≤1 ft.</td><td align="center">≤6 in.</td><td align="center">≤1 in.</td></tr>
-                    <tr><td align="left">Tiny</td><td align="center">2 ft.</td><td align="center">1 ft.</td><td align="center">6 in.</td></tr>
-                    <tr><td align="left">Small</td><td align="center">3 ft.</td><td align="center">2 ft.</td><td align="center">1 ft.</td></tr>
-                    <tr><td align="left">Medium</td><td align="center">5 ft.</td><td align="center">3 ft.</td><td align="center">2 ft.</td></tr>
-                    <tr><td align="left">Large</td><td align="center">10 ft.</td><td align="center">5 ft.</td><td align="center">3 ft.</td></tr>
-                    <tr><td align="left">Huge</td><td align="center">15 ft.</td><td align="center">10 ft.</td><td align="center">5 ft.</td></tr>
-                    <tr><td align="left">Gargantuan</td><td align="center">≥20 ft.</td><td align="center">≥15 ft.</td><td align="center">≥10 ft.</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>`},"environment#cover.subitems.half":{title:"Half Cover",associated_url:"/rules/2d/glossary/environment.html#half-cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Half Cover</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
-    </div>
-    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
-</div>`},"conditions#hindered":{title:"Hindered",associated_url:"/rules/2d/glossary/conditions.html#hindered",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hindered</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>Each foot you travel costs 1 additional foot of <a href="/rules/2d/glossary/movement.html">movement</a>.</li>
-        <li>Attack rolls against you have advantage.</li>
-        <li>Your attack rolls and Dexterity saving throws have disadvantage.</li>
-    </ul>
-</div>`},"conditions#restrained":{title:"Restrained",associated_url:"/rules/2d/glossary/conditions.html#restrained",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Restrained</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>Your speed is 0.</li>
-        <li>Attack rolls against you have advantage, and your attack rolls have disadvantage.</li>
-        <li>You have disadvantage on Dexterity saving throws.</li>
-    </ul>
 </div>`},"movement-modes#walking":{title:"Walking",associated_url:"/rules/2d/glossary/movement.html#walking",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1079,22 +3217,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">Climbing lets you move in any direction across vertical surfaces. If the surface is particularly difficult to climb, you may have to make an <a href="/rules/2d/glossary/skills.html#athletics">Athletics</a> check to avoid <span class="popupAnchor" data-injection-arg="environment#falling" onclick='handleAnchorClick("environment#falling", this, event)' onmouseover='showPopup("environment#falling", this, event)' onmouseout='hidePopup("environment#falling", event)'>falling</span> off.</div>
-</div>`},"environment#falling":{title:"Falling",associated_url:"/rules/2d/glossary/environment.html#falling",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Falling</h1>
-    <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
-    <div class="p">On impact, you take one <a href="/rules/2d.html#size-die">size die</a> of bludgeoning damage for every 10 feet you fell, to a maximum of 20 dice. You land <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span> unless you avoid taking damage from the fall, such as via the <span class="popupAnchor" data-injection-arg="reactions#break_fall" onclick='handleAnchorClick("reactions#break_fall", this, event)' onmouseover='showPopup("reactions#break_fall", this, event)' onmouseout='hidePopup("reactions#break_fall", event)'>Break Fall</span> reaction.</div>
-    <div class="p">If you land in a creature's space, that creature must make a DC 10 Dexterity saving throw. It can choose to fail. On a failed save, the fall damage is split evenly between you and it.</div>
-</div>`},"reactions#break_fall":{title:"Break Fall",associated_url:"/rules/2d/glossary/actions.html#break-fall",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Break Fall</h1>
-            <div class="card-subheader">Reaction</div>
-        </div>
-    </div>
-    <div class="centered-header">Trigger</div>
-    <div class="p">You land at the end of a fall.</div>
-    <div class="centered-header">Effect</div>
-    <div class="p">You attempt to land safely. Make an <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. The fall damage is reduced by half the result of the check.</div>
 </div>`},"movement-modes#swimming":{title:"Swimming",associated_url:"/rules/2d/glossary/movement.html#swimming",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1103,20 +3225,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">Swimming lets you travel in any direction through a liquid. While swimming, you don't sink and are immune to the <a href="/rules/2d/glossary/conditions.html#prone">prone</a> condition.</div>
-</div>`},"senses#darkvision":{title:"Darkvision",associated_url:"/rules/2d/glossary/senses.html#darkvision",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Darkvision</h1>
-            <div class="card-subheader">Special sense (base sense: sight)</div>
-        </div>
-    </div>
-    <div class="p">Within a specified range, a creature with darkvision can see in <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> as if it were <span class="popupAnchor" data-injection-arg="environment#light.subitems.bright" onclick='handleAnchorClick("environment#light.subitems.bright", this, event)' onmouseover='showPopup("environment#light.subitems.bright", this, event)' onmouseout='hidePopup("environment#light.subitems.bright", event)'>bright light</span>, and in <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span> as if it were dim light. The creature can't discern color in darkness, only shades of gray.</div>
-</div>`},"environment#light.subitems.bright":{title:"Bright Light",associated_url:"/rules/2d/glossary/environment.html#bright-light",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Bright Light</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
-    </div>
-    <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
 </div>`},"skills#deception":{title:"Deception",associated_url:"/rules/2d/glossary/skills.html#deception",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1264,14 +3372,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     </div>
     <div class="p">When you have a hover speed, you are immune to the <a href="/rules/2d/glossary/conditions.html#prone">prone</a> condition.</div>
     <div class="p">Some hover speeds have an altitude limit, usually specified in parentheses after the speed's listing. You can't use such a hover speed while your distance above the ground (or liquid surface) exceeds the altitude limit. You can still use the hover speed to catch yourself from <span class="popupAnchor" data-injection-arg="environment#falling" onclick='handleAnchorClick("environment#falling", this, event)' onmouseover='showPopup("environment#falling", this, event)' onmouseout='hidePopup("environment#falling", event)'>falling</span> as soon as your altitude is below the limit, however.</div>
-</div>`},"movement-modes#flying":{title:"Flying",associated_url:"/rules/2d/glossary/movement.html#flying",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Flying</h1>
-            <div class="card-subheader">Movement mode</div>
-        </div>
-    </div>
-    <div class="p">Flying lets you move through the air. If you are knocked <a href="/rules/2d/glossary/conditions.html#prone">prone</a> while flying, you <span class="popupAnchor" data-injection-arg="environment#falling" onclick='handleAnchorClick("environment#falling", this, event)' onmouseover='showPopup("environment#falling", this, event)' onmouseout='hidePopup("environment#falling", event)'>fall</span>.</div>
 </div>`},"skills#intimidation":{title:"Intimidation",associated_url:"/rules/2d/glossary/skills.html#intimidation",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1294,32 +3394,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">You attempt to scare one creature within 60 feet of you. Make an <a href="/rules/2d/glossary/skills.html#intimidation">Intimidation</a> check, which becomes your Frighten DC. The target must succeed on a Wisdom saving throw against your Frighten DC or be <span class="popupAnchor" data-injection-arg="conditions#frightened" onclick='handleAnchorClick("conditions#frightened", this, event)' onmouseover='showPopup("conditions#frightened", this, event)' onmouseout='hidePopup("conditions#frightened", event)'>frightened</span> of you until the end of your next turn. A target that can't see or hear you automatically succeeds on the save.</div>
-</div>`},"spells#mass_revivify":{title:"<i>Mass Revivify</i>",associated_url:"/rules/2d/player-options/spells.html#mass-revivify",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Mass Revivify</h1>
-            <div class="card-subheader">5th-level necromancy spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (diamonds worth 500 gp, which the spell consumes, and a holy symbol worth at least 5 gp)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Kneeling and clutching your holy symbol, you speak a prayer for the fallen around you. Each creature within range that died within the last minute—including your enemies, if any—returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
 </div>`},"spells#field_of_brimstone":{title:"<i>Field of Brimstone</i>",associated_url:"/rules/2d/player-options/spells.html#field-of-brimstone",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1338,11 +3412,11 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
         <div class="card-stats-row">
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">1000 feet / Cubes (100 ft.) within range</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">1,000 feet / Cube (100 ft.) within range</div></div>
         </div>
     </div>
-    <div class="p">Cracks spread through the ground in the spell's area, spewing sulfurous fumes and jets of flame. For the spell's duration, the ground in the area is <span class="popupAnchor" data-injection-arg="environment#special_terrain.subitems.difficult" onclick='handleAnchorClick("environment#special_terrain.subitems.difficult", this, event)' onmouseover='showPopup("environment#special_terrain.subitems.difficult", this, event)' onmouseout='hidePopup("environment#special_terrain.subitems.difficult", event)'>difficult terrain</span>, and the space up to 10 feet above the ground is a delayed <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a>. A creature that triggers the zone must succeed on a Constitution saving throw or take 4d10 poison damage and be <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span> until the start of its next turn. A creature takes half as much damage on a successful save.</div>
-    <div class="p">At the start of each of your turns for the duration of the spell, a vent opens beneath a random creature fully in the zone and engulfs it in fire. The fire is a 5-foot-radius, 20-foot-high cylinder emanating upwards from the ground directly below the creature. Each creature in the fire's area must succeed on a Dexterity saving throw or take 4d10 fire damage, or half as much on a success.</div>
+    <div class="p">Cracks spread through the ground, spewing sulfurous fumes and jets of flame. For the duration, the ground in the spell's area is <span class="popupAnchor" data-injection-arg="environment#special_terrain.subitems.difficult" onclick='handleAnchorClick("environment#special_terrain.subitems.difficult", this, event)' onmouseover='showPopup("environment#special_terrain.subitems.difficult", this, event)' onmouseout='hidePopup("environment#special_terrain.subitems.difficult", event)'>difficult terrain</span>, and the space up to 10 feet above the ground is a delayed <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a>. A creature that triggers the zone must succeed on a Constitution saving throw or take 4d10 poison damage and be <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span> until the start of its next turn. A creature takes half as much damage on a successful save.</div>
+    <div class="p">At the start of each of your turns while the spell persists, a vent opens beneath a random creature fully in the zone and engulfs it in fire. The fire is a 5-foot-radius, 20-foot-high cylinder emanating upwards from the ground directly below the creature. Each creature in the fire's area must succeed on a Dexterity saving throw or take 4d10 fire damage, or half as much on a success.</div>
     <div class="centered-header">Higher Level</div>
     <div class="p">When you cast this spell using a spell slot of 8th level or higher, the spell's area increases by 100 feet on each side for each slot level above 7th.</div>
     <div class="card-footer">
@@ -1373,7 +3447,7 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
         </div>
     </div>
-    <div class="p">Holy symbol thrust forward and voice booming with authority, you condemn an <span class="popupAnchor" data-injection-arg="conditions#incapacitated" onclick='handleAnchorClick("conditions#incapacitated", this, event)' onmouseover='showPopup("conditions#incapacitated", this, event)' onmouseout='hidePopup("conditions#incapacitated", event)'>incapacitated</span> creature you can see within range to lifetimes of incarceration. The target must make a Charisma saving throw. On a successful save, the target takes 8d12 psychic damage, and the spell ends. On a failed save, the target is banished to any plane of existence you know. You can choose the current plane, but never the Material Plane. You also choose the location within that plane. For the duration, the target is cursed: it can't leave that plane by any means, including death, death, resurrection, and subsequent <i>damnations</i>. Your DM decides what happens if a damned creature dies; possibilities include lingering as a spirit (which would still be damned), physically reforming somewhere else on the plane, or being permanently destroyed. Only <span class="popupAnchor" data-injection-arg="spells#remove_curse" onclick='handleAnchorClick("spells#remove_curse", this, event)' onmouseover='showPopup("spells#remove_curse", this, event)' onmouseout='hidePopup("spells#remove_curse", event)'><i>remove curse</i></span> cast at 9th level can remove this curse.</div>
+    <div class="p">Holy symbol thrust forward and voice booming with authority, you condemn an <span class="popupAnchor" data-injection-arg="conditions#incapacitated" onclick='handleAnchorClick("conditions#incapacitated", this, event)' onmouseover='showPopup("conditions#incapacitated", this, event)' onmouseout='hidePopup("conditions#incapacitated", event)'>incapacitated</span> creature you can see within range to lifetimes of incarceration. The target must make a Charisma saving throw. On a successful save, the target takes 8d12 psychic damage, and the spell ends. On a failed save, the target is banished to any plane of existence you know. You can choose the current plane—but never the Material Plane—as well as the location within that plane. For the duration, the target is cursed: it can't leave that plane by any means, including death, resurrection, and subsequent <i>damnations</i>. Your DM decides what happens if a damned creature dies; possibilities include lingering as a spirit (which would still be damned), physically reforming somewhere else on the plane, or being permanently destroyed. Only <span class="popupAnchor" data-injection-arg="spells#remove_curse" onclick='handleAnchorClick("spells#remove_curse", this, event)' onmouseover='showPopup("spells#remove_curse", this, event)' onmouseout='hidePopup("spells#remove_curse", event)'><i>remove curse</i></span> cast at 9th level can remove this curse.</div>
     <div class="p">If you cast this spell as a ritual, the target must be incapacitated and remain within range for the full casting time. If the target is a <a href="/rules/2d/glossary/creature-types.html#fiend">fiend</a> in that case, it automatically fails the saving throw.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
@@ -1405,92 +3479,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#aura_of_retribution":{title:"<i>Aura of Retribution</i>",associated_url:"/rules/2d/player-options/spells.html#aura-of-retribution",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Aura of Retribution</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Aura (15 ft.) emanating from you</div></div>
-        </div>
-    </div>
-    <div class="p">An orange glow surrounds you for the duration. When a creature in the aura deals damage to another creature for the first time on a turn, it takes 1d12 radiant or necrotic damage (you choose which damage type this spell deals when you cast it).</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the aura's radius increases by 5 feet for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#arcane_embargo":{title:"<i>Arcane Embargo</i>",associated_url:"/rules/2d/player-options/spells.html#arcane-embargo",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Arcane Embargo</h1>
-            <div class="card-subheader">4th-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You interfere with a creature's magical ability. One creature of your choice that you can see within range must make a Charisma saving throw. On a successful save, it takes 4d6 psychic damage, and nothing else happens. On a failed save, it takes no psychic damage, but it can't cast—or concentrate on—spells for the duration.</div>
-    <div class="p">Each time the target takes damage, it can repeat its saving throw against this spell. On a success, it takes 4d6 psychic damage and the spell ends on it.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 5th level or higher, you can target one additional creature for each slot level above 4th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#vital_flow":{title:"<i>Vital Flow</i>",associated_url:"/rules/2d/player-options/spells.html#vital-flow",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Vital Flow</h1>
-            <div class="card-subheader">2nd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Burst (5 ft.) emanating from the initial target</div></div>
-        </div>
-    </div>
-    <div class="p">A deluge of life energy bursts from one creature of your choice that you can see within range. That creature regains 2d8 hit points. Each other creature in the spell's area must succeed on a Constitution saving throw or take an amount of radiant damage equal to the number of hit points regained by the initial target, or half as much on a success.</div>
-    <div class="p">If you choose a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> as the initial target, this spell fails.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d8 for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
 </div>`},"spells#vital_ebb":{title:"<i>Vital Ebb</i>",associated_url:"/rules/2d/player-options/spells.html#vital-ebb",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1516,46 +3504,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">If you choose a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> as the initial target, this spell fails. This spell also doesn't restore hit points to such creatures.</div>
     <div class="centered-header">Higher Level</div>
     <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#mote":{title:"<i>Mote</i>",associated_url:"/rules/2d/player-options/spells.html#mote",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Mote</h1>
-            <div class="card-subheader">2nd-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You conjure forth a speck of divinity in an unoccupied space within range. The mote is Small, doesn't occupy its space, and lasts for the duration. When you cast this spell, choose the following characteristics of the mote:</div>
-    <ul>
-        <li>Its physical shape. For example, the mote could resemble a weapon, the symbol of your deity, or a moving, lifelike creature.</li>
-        <li>Its color. The mote is monochromatic and translucent.</li>
-        <li>Its damage type, which can be any type except bludgeoning, piercing, or slashing.</li>
-    </ul>
-    <div class="p">No matter what characteristics you choose, the mote is obviously incorporeal, sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (5/10 ft.), and can't make noise.</div>
-    <div class="p">When the mote appears, and as a minor action on subsequent turns, you can move it up to 30 feet to an unoccupied space within range and cause it to perform one of the following actions:</div>
-    <ul>
-        <li><b><i>Zap.</i></b> The mote forces one creature within 5 feet of it to make a Dexterity saving throw. The target takes 2d6 damage of the chosen type on a failed save, or half as much on a success.</li>
-        <li><b><i>Protect.</i></b> The mote emanates an <a href="/rules/2d/glossary/areas-of-effect.html#aura">aura</a> (5 ft.) until the start of your next turn. Creatures of your choice within the aura have <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span> against all effects.</li>
-    </ul>
-    <div class="p">If the mote is ever out of range, the spell ends.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the mote's damage increases by 1d6 for each slot level above 2nd.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
@@ -1946,21 +3894,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     </div>
     <div class="p">If you have blindsight, you can sense physical shapes within a specified range, allowing you to effectively see creatures and objects within that range. Blindsight doesn't go around <a href="/rules/2d/glossary/environment.html#cover">cover</a>, nor can it detect color or intangible things. Thus, blindsight enables you to effectively see <a href="/rules/2d/glossary/conditions.html#invisible">invisible</a> things, but you can't use it to detect an illusory object created by a spell such as <a href="/rules/2d/player-options/spells.html#minor-illusion"><i>minor illusion</i></a>.</div>
     <div class="p">The base sense of blindsight varies. A common base sense is hearing, in which case blindsight can often be interpreted as echolocation. Some creatures have no base sense for their blindsight; this represents a fundamentally distinct sense, such as a shark's electroreception. When a base sense is present, it is usually given in parentheses after this sense's listing.</div>
-</div>`},"senses#truesight":{title:"Truesight",associated_url:"/rules/2d/glossary/senses.html#truesight",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Truesight</h1>
-            <div class="card-subheader">Special sense (base sense: sight)</div>
-        </div>
-    </div>
-    <div class="p">A creature with truesight has enhanced vision within a specified range. Within that range, the creature's vision pierces through the following:</div>
-    <ul>
-        <li>The creature can see in normal and magical <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>.</li>
-        <li>The creature can see <span class="popupAnchor" data-injection-arg="conditions#invisible" onclick='handleAnchorClick("conditions#invisible", this, event)' onmouseover='showPopup("conditions#invisible", this, event)' onmouseout='hidePopup("conditions#invisible", event)'>invisible</span> creatures and objects.</li>
-        <li>The creature notices visual illusions and automatically succeeds on saving throws against them.</li>
-        <li>The creature discerns the true form of any creature or object it sees that has been transformed by magic.</li>
-        <li>The creature can see into the Ethereal Plane.</li>
-    </ul>
 </div>`},"spells#arcane_knot":{title:"<i>Arcane Knot</i>",associated_url:"/rules/2d/player-options/spells.html#arcane-knot",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -2214,153 +4147,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"conditions#petrified":{title:"Petrified",associated_url:"/rules/2d/glossary/conditions.html#petrified",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Petrified</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>You are <span class="popupAnchor" data-injection-arg="conditions#transformed" onclick='handleAnchorClick("conditions#transformed", this, event)' onmouseover='showPopup("conditions#transformed", this, event)' onmouseout='hidePopup("conditions#transformed", event)'>transformed</span> into an object version of yourself, made out of a solid <a href="/rules/2d/glossary/objects.html#materials">material</a>. You retain your hit points and AC, but the rest of your game statistics are replaced by the material's properties. The material is typically specified in parentheses after this condition's listing.</li>
-        <li>If you have 0 hit points, you don't start <span class="popupAnchor" data-injection-arg="conditions#dying" onclick='handleAnchorClick("conditions#dying", this, event)' onmouseover='showPopup("conditions#dying", this, event)' onmouseout='hidePopup("conditions#dying", event)'>dying</span> until you are cured of this condition. However, at your DM's discretion, you may physically break as a result of being reduced to 0 hit points. Being cured of this condition doesn't repair any such breaks.</li>
-    </ul>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">This condition can be cured by the <span class="popupAnchor" data-injection-arg="spells#greater_restoration" onclick='handleAnchorClick("spells#greater_restoration", this, event)' onmouseover='showPopup("spells#greater_restoration", this, event)' onmouseout='hidePopup("spells#greater_restoration", event)'><i>greater restoration</i></span> spell.</div>
-</div>`},"conditions#transformed":{title:"Transformed",associated_url:"/rules/2d/glossary/conditions.html#transformed",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Transformed</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="p">While transformed into a creature, you experience the following effects:</div>
-    <ul>
-        <li>Your game statistics are replaced by the statistics of the creature, including hit points, hit dice, and mental ability scores. You retain your alignment and personality. If the creature has any legendary or lair actions, you can't use them.</li>
-        <li>You are limited in the actions you can perform by the nature of your new form. You can't speak, cast spells, or take any other action that requires hands or speech, unless your new form is capable of such actions. Transforming doesn't break your <a href="/rules/2d/player-options/spells.html#concentration">concentration</a> on a spell you've already cast, however, nor prevent you from taking actions that are part of a spell that you've already cast.</li>
-        <li>Your equipment melds into your new form and has no effect.</li>
-    </ul>
-    <div class="p">While transformed into an object, you experience the following effects:</div>
-    <ul>
-        <li>Your game statistics are replaced by the statistics of the object.</li>
-        <li>Your equipment melds into your new form and has no effect.</li>
-        <li>You are <span class="popupAnchor" data-injection-arg="conditions#incapacitated" onclick='handleAnchorClick("conditions#incapacitated", this, event)' onmouseover='showPopup("conditions#incapacitated", this, event)' onmouseout='hidePopup("conditions#incapacitated", event)'>incapacitated</span> and are unaware of your surroundings.</li>
-        <li>You have no memory of time spent in this form.</li>
-        <li>You don't age, and you are immune to being <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span> or <span class="popupAnchor" data-injection-arg="conditions#diseased" onclick='handleAnchorClick("conditions#diseased", this, event)' onmouseover='showPopup("conditions#diseased", this, event)' onmouseout='hidePopup("conditions#diseased", event)'>diseased</span>. Any preexisting poisons or diseases are suspended, not cured.</li>
-    </ul>
-    <div class="p">When you revert to your normal form, you return to the number of hit points you had before you transformed, assuming you didn't die. If you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form.</div>
-</div>`},"spells#greater_restoration":{title:"<i>Greater Restoration</i>",associated_url:"/rules/2d/player-options/spells.html#greater-restoration",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Greater Restoration</h1>
-            <div class="card-subheader">5th-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (diamond dust worth at least 100 gp, which the spell consumes)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You channel a vast amount of restoring energy into a creature you touch. The target gains the benefits of <span class="popupAnchor" data-injection-arg="spells#restore_body" onclick='handleAnchorClick("spells#restore_body", this, event)' onmouseover='showPopup("spells#restore_body", this, event)' onmouseout='hidePopup("spells#restore_body", event)'><i>restore body</i></span>, <span class="popupAnchor" data-injection-arg="spells#restore_mind" onclick='handleAnchorClick("spells#restore_mind", this, event)' onmouseover='showPopup("spells#restore_mind", this, event)' onmouseout='hidePopup("spells#restore_mind", event)'><i>restore mind</i></span> and one of the following benefits of your choice:</div>
-    <ul>
-        <li>Its <span class="popupAnchor" data-injection-arg="conditions#exhaustion" onclick='handleAnchorClick("conditions#exhaustion", this, event)' onmouseover='showPopup("conditions#exhaustion", this, event)' onmouseout='hidePopup("conditions#exhaustion", event)'>exhaustion</span> level decreases by 1.</li>
-        <li>It is cured of the <span class="popupAnchor" data-injection-arg="conditions#petrified" onclick='handleAnchorClick("conditions#petrified", this, event)' onmouseover='showPopup("conditions#petrified", this, event)' onmouseout='hidePopup("conditions#petrified", event)'>petrified</span> or <span class="popupAnchor" data-injection-arg="conditions#transformed" onclick='handleAnchorClick("conditions#transformed", this, event)' onmouseover='showPopup("conditions#transformed", this, event)' onmouseout='hidePopup("conditions#transformed", event)'>transformed</span> condition.</li>
-        <li>It is cured of one effect reducing any of its ability scores.</li>
-        <li>It is cured of one effect reducing its hit point maximum.</li>
-    </ul>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, ranger</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
-</div>`},"spells#restore_body":{title:"<i>Restore Body</i>",associated_url:"/rules/2d/player-options/spells.html#restore-body",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Restore Body</h1>
-            <div class="card-subheader">2nd-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch a creature and end each of the following conditions afflicting it: <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span>, <span class="popupAnchor" data-injection-arg="conditions#deafened" onclick='handleAnchorClick("conditions#deafened", this, event)' onmouseover='showPopup("conditions#deafened", this, event)' onmouseout='hidePopup("conditions#deafened", event)'>deafened</span>, <span class="popupAnchor" data-injection-arg="conditions#paralyzed" onclick='handleAnchorClick("conditions#paralyzed", this, event)' onmouseover='showPopup("conditions#paralyzed", this, event)' onmouseout='hidePopup("conditions#paralyzed", event)'>paralyzed</span>, <span class="popupAnchor" data-injection-arg="conditions#poisoned" onclick='handleAnchorClick("conditions#poisoned", this, event)' onmouseover='showPopup("conditions#poisoned", this, event)' onmouseout='hidePopup("conditions#poisoned", event)'>poisoned</span>, <span class="popupAnchor" data-injection-arg="conditions#weakened" onclick='handleAnchorClick("conditions#weakened", this, event)' onmouseover='showPopup("conditions#weakened", this, event)' onmouseout='hidePopup("conditions#weakened", event)'>weakened</span>, <span class="popupAnchor" data-injection-arg="conditions#slowed" onclick='handleAnchorClick("conditions#slowed", this, event)' onmouseover='showPopup("conditions#slowed", this, event)' onmouseout='hidePopup("conditions#slowed", event)'>slowed</span>, and <span class="popupAnchor" data-injection-arg="conditions#diseased" onclick='handleAnchorClick("conditions#diseased", this, event)' onmouseover='showPopup("conditions#diseased", this, event)' onmouseout='hidePopup("conditions#diseased", event)'>diseased</span>.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, paladin, ranger</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"conditions#deafened":{title:"Deafened",associated_url:"/rules/2d/glossary/conditions.html#deafened",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Deafened</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <div class="p">You lose your sense of <a href="/rules/2d/glossary/senses.html#base-senses">hearing</a>.</div>
-</div>`},"conditions#paralyzed":{title:"Paralyzed",associated_url:"/rules/2d/glossary/conditions.html#paralyzed",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Paralyzed</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>You have –3 <a href="/rules/2d/glossary/actions.html">AP</a> (possibly causing you to be <span class="popupAnchor" data-injection-arg="conditions#incapacitated" onclick='handleAnchorClick("conditions#incapacitated", this, event)' onmouseover='showPopup("conditions#incapacitated", this, event)' onmouseout='hidePopup("conditions#incapacitated", event)'>incapacitated</span>) and –2 <a href="/rules/2d/glossary/actions.html#reactions">reactions</a>.</li>
-        <li>You have disadvantage on saving throws you make to maintain <span class="popupAnchor" data-injection-arg="conditions#concentration" onclick='handleAnchorClick("conditions#concentration", this, event)' onmouseover='showPopup("conditions#concentration", this, event)' onmouseout='hidePopup("conditions#concentration", event)'>concentration</span> (including on the saving throw triggered by the effect that stunned you, if it triggered such a save).</li>
-        <li>You have disadvantage on attack rolls and Dexterity saving throws.</li>
-        <li>Attack rolls against you have advantage.</li>
-        <li>Any attack that hits you is a critical hit if the attacker is within 5 feet of you.</li>
-    </ul>
-</div>`},"conditions#slowed":{title:"Slowed",associated_url:"/rules/2d/glossary/conditions.html#slowed",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Slowed</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>You have disadvantage on Dexterity attack rolls, ability checks, and saving throws.</li>
-        <li>Your speed is halved.</li>
-    </ul>
-</div>`},"conditions#exhaustion":{title:"Exhaustion",associated_url:"/rules/2d/glossary/conditions.html#exhaustion",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Exhaustion</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="p">This condition is cumulative. Each time you receive it, you gain a specified number of levels of exhaustion. You die if your exhaustion level reaches or exceeds 10.</div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>When you make an attack roll, ability check, or saving throw, you subtract your exhaustion level from the d20 roll.</li>
-        <li>Subtract your exhaustion level from the spell save DC of any spell you cast.</li>
-    </ul>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You can reduce your exhaustion by <a href="/rules/2d/systems/resting.html">resting</a>.</div>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">A common source of exhaustion is <a href="/rules/2d/systems/hit-points.html">dropping to 0 hit points</a>.</div>
 </div>`},"materials#ice":{title:"Ice",associated_url:"/rules/2d/glossary/objects.html#ice",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -2722,44 +4508,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Druid, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
-</div>`},"spells#lens_of_distortion":{title:"<i>Lens of Distortion</i>",associated_url:"/rules/2d/player-options/spells.html#lens-of-distortion",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Lens of Distortion</h1>
-            <div class="card-subheader">4th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a magnifying glass)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">8 hours</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You put a self-sustaining bump or void in the fabric of reality. It manifests as a 5-foot-diameter sphere within range that lasts for the duration. The sphere counts as <span class="popupAnchor" data-injection-arg="environment#special_terrain.subitems.difficult" onclick='handleAnchorClick("environment#special_terrain.subitems.difficult", this, event)' onmouseover='showPopup("environment#special_terrain.subitems.difficult", this, event)' onmouseout='hidePopup("environment#special_terrain.subitems.difficult", event)'>difficult terrain</span> (2 ft.). It also warps light passing through it, focusing (bump) or unfocusing it (void). The focusing or unfocusing of light determines its effects, described below. Any creature can switch whether the sphere is focusing or unfocusing by touching it as a minor action.</div>
-    <div class="p"><b>Focusing.</b> If the sphere focuses light, it causes the following effects:</div>
-    <ul>
-        <li><a href="/rules/2d/glossary/senses.html#base-senses">Sight</a>-based <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks through the sphere have advantage.</li>
-        <li>If a ranged spell attack that deals only radiant damage fully passes through the sphere, it deals an additional 1d10 radiant damage on a hit.</li>
-        <li>If an emanated <a href="/rules/2d/glossary/areas-of-effect.html">area</a> effect that deals only radiant damage passes through the sphere, the effect's area shrinks. The distance from a point to the sphere counts as twice as far as normal for the purpose of determining whether that point is in the area. However, the effect deals an additional 1d10 radiant damage to any creature whose space contains such a point.</li>
-    </ul>
-    <div class="p"><b>Unfocusing.</b> If the sphere unfocuses light, it causes the following effects:</div>
-    <ul>
-        <li><a href="/rules/2d/glossary/senses.html#base-senses">Sight</a>-based <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks through the sphere have disadvantage.</li>
-        <li>If a ranged spell attack that deals only radiant damage fully passes through the sphere, it splits into two attacks. The attacker can choose an additional target within the attack's range. The damage of each attack is halved, however.</li>
-        <li>If an emanated <a href="/rules/2d/glossary/areas-of-effect.html">area</a> effect that deals only radiant damage passes through the sphere, the effect's area grows. The distance from a point to the sphere counts as half as far as normal for the purpose of determining whether that point is in the area. However, the effect's damage is halved against any creature whose space contains such a point.</li>
-    </ul>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
 </div>`},"spells#lingering_shocks":{title:"<i>Lingering Shocks</i>",associated_url:"/rules/2d/player-options/spells.html#lingering-shocks",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -3552,62 +5300,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="multi-p">
         <div class="p"><b><i>Slam.</i></b> <i>Melee weapon attack; <span class="popupAnchor" data-injection-arg="weapon-properties#unarmed" onclick='handleAnchorClick("weapon-properties#unarmed", this, event)' onmouseover='showPopup("weapon-properties#unarmed", this, event)' onmouseout='hidePopup("weapon-properties#unarmed", event)'>unarmed</span>.</i> Your spell attack modifier to hit. Hit: 2d12 + your spellcasting ability score bludgeoning damage, and the target must succeed on a Strength saving throw against your spell save DC or be pushed up to 5 feet.</div>
     </div>
-</div>`},"skills#perception":{title:"Perception",associated_url:"/rules/2d/glossary/skills.html#perception",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Perception</h1>
-            <div class="card-subheader">Wisdom skill</div>
-        </div>
-    </div>
-    <div class="p">Perception is for noticing things using your <a href="/rules/2d/glossary/senses.html">senses</a>.</div>
-    <div class="p">Your passive Perception is less effective at noticing far-away targets. See the table below for the penalty at various distances.</div>
-    <div class="tableAndCaption">
-        <span class="caption">Passive Perception Falloff</span>
-        <div class="tableWrapper">
-            <table>
-                <thead>
-                    <tr><th align="center"><span class="col-title">Distance</span></th><th align="center"><span class="col-title">Penalty</span></th></tr>
-                </thead>
-                <tbody>
-                    <tr><td align="center">0-20 ft.</td><td align="center">-0</td></tr>
-                    <tr><td align="center">21-60 ft.</td><td align="center">-5</td></tr>
-                    <tr><td align="center">61+ ft.</td><td align="center">-10</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <div class="p">For example, if a goblin is 30 feet away from you and has a <a href="/rules/2d/glossary/conditions.html#hidden">Hide DC</a> of 13, you would need a base passive Perception of 18 to automatically notice it.</div>
-    <div class="p">This penalty only applies to your passive Perception. By taking the <a href="/rules/2d/glossary/actions.html#search">Search</a> action in the example above, you would only need to roll a 13 or higher to notice the goblin. This represents the difference between general 360-degree awareness and concentrated attention.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Appears in</div><div class="card-footer-item-text"><span class="popupAnchor" data-injection-arg="actions#search" onclick='handleAnchorClick("actions#search", this, event)' onmouseover='showPopup("actions#search", this, event)' onmouseout='hidePopup("actions#search", event)'>Search</span>, <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span></div></div>
-    </div>
-</div>`},"actions#search":{title:"Search",associated_url:"/rules/2d/glossary/actions.html#search",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Search</h1>
-            <div class="card-subheader">Standard action</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">Repeatable</span>
-        </div>
-    </div>
-    <div class="p">When you take the Search action, you make a Wisdom check to discern something that isn't obvious. The Search table suggests which skills are applicable when you take this action, depending on what you're trying to detect.</div>
-    <div class="tableAndCaption">
-        <span class="caption">Search</span>
-        <div class="tableWrapper">
-            <table>
-                <thead>
-                    <tr><th align="left"><span class="col-title">Skill</span></th><th align="left"><span class="col-title">Thing to Detect</span></th></tr>
-                </thead>
-                <tbody>
-                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#insight">Insight</a></td><td align="left">Creature's state of mind</td></tr>
-                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#medicine">Medicine</a></td><td align="left">Creature's ailment</td></tr>
-                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#perception">Perception</a></td><td align="left">Concealed creature or object</td></tr>
-                    <tr><td align="left"><a href="/rules/2d/glossary/skills.html#survival">Survival</a></td><td align="left">Tracks or food</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
 </div>`},"spell-creatures(spell)#metal_construct":{title:"Metal Construct",associated_url:"undefined",content_html:`<div class="medium-card">
     <h1 class="noHeaderID">Metal Construct</h1>
     <div class="card-subheader">Medium Construct, unaligned</div>
@@ -3838,34 +5530,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">You command one of your companions that has the <span class="popupAnchor" data-injection-arg="traits#companion" onclick='handleAnchorClick("traits#companion", this, event)' onmouseover='showPopup("traits#companion", this, event)' onmouseout='hidePopup("traits#companion", event)'>Companion</span> trait.</div>
-</div>`},"spells#dawn":{title:"<i>Dawn</i>",associated_url:"/rules/2d/player-options/spells.html#dawn",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Dawn</h1>
-            <div class="card-subheader">5th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a sunburst pendant worth at least 100 gp)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Cylinder (30 ft. radius, 40 ft. tall) emanating downwards from a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">The light of dawn shines in the spell's area, forming an immediate <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a> for the duration. The zone is <span class="popupAnchor" data-injection-arg="environment#light.subitems.bright" onclick='handleAnchorClick("environment#light.subitems.bright", this, event)' onmouseover='showPopup("environment#light.subitems.bright", this, event)' onmouseout='hidePopup("environment#light.subitems.bright", event)'>bright light</span> and emits <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (30 ft.), all of which counts as sunlight.</div>
-    <div class="p">A creature that triggers the zone must make a Constitution saving throw, taking 4d10 radiant damage on a failed save, or half as much damage on a successful one.</div>
-    <div class="p">If you're within 60 feet of the cylinder, you can move its point of emanation up to 60 feet as a minor action on your turn.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
-    </div>
 </div>`},"spells#hunger_of_the_void":{title:"<i>Hunger of the Void</i>",associated_url:"/rules/2d/player-options/spells.html#hunger-of-the-void",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -4118,145 +5782,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Druid, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#holy_might":{title:"<i>Holy Might</i>",associated_url:"/rules/2d/player-options/spells.html#holy-might",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Holy Might</h1>
-            <div class="card-subheader">Enchantment cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You channel divine power through an ally within range. The target has advantage on the next attack it makes before the start of your next turn. The attack deals an extra 1d6 force damage on a hit.</div>
-    <div class="p">The extra damage from this spell increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#cure_wounds":{title:"<i>Cure Wounds</i>",associated_url:"/rules/2d/player-options/spells.html#cure-wounds",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Cure Wounds</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">A creature you touch regains a number of hit points equal to 2d8 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> or <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d8 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid, paladin, ranger</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#healing_word":{title:"<i>Healing Word</i>",associated_url:"/rules/2d/player-options/spells.html#healing-word",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Healing Word</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">A creature of your choice that you can see within range regains hit points equal to 2d4 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 2d4 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#mass_cure_wounds":{title:"<i>Mass Cure Wounds</i>",associated_url:"/rules/2d/player-options/spells.html#mass-cure-wounds",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Mass Cure Wounds</h1>
-            <div class="card-subheader">5th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">A wave of healing energy washes over up to six creatures of your choice within range and within 60 feet of each other. Each target regains hit points equal to 6d8 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 6th level or higher, the healing increases by 2d8 for each slot level above 5th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#prayer_of_healing":{title:"<i>Prayer of Healing</i>",associated_url:"/rules/2d/player-options/spells.html#prayer-of-healing",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Prayer of Healing</h1>
-            <div class="card-subheader">2nd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">10 minutes</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You utter an extended prayer of restoration. Choose up to 6 willing creatures, which must remain within range for the spell's entire casting time to be affected. Each target regains 4d8 hit points, gains the benefits of a short rest, and can't benefit from this spell again until it finishes a long rest.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 2d8 for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
 </div>`},"spells#aura_of_purity":{title:"<i>Aura of Purity</i>",associated_url:"/rules/2d/player-options/spells.html#aura-of-purity",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -4313,34 +5838,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#purging_flames":{title:"<i>Purging Flames</i>",associated_url:"/rules/2d/player-options/spells.html#purging-flames",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Purging Flames</h1>
-            <div class="card-subheader">4th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cylinder (20 ft. radius, 10 ft. tall) emanating upward from the bottom of your space</div></div>
-        </div>
-    </div>
-    <div class="p">Brilliant flames swirl around you. Each creature of your choice in the spell's area must make a Constitution saving throw and take 8d4 fire damage on a failed save, or half as much damage on a success. Each other creature in the area regains 4d4 hit points and can end one "save ends" effect afflicting it.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 5th level or higher, the fire damage and healing both increase by 2d4 for each slot level above 4th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
 </div>`},"spells#toll_the_dead":{title:"<i>Toll the Dead</i>",associated_url:"/rules/2d/player-options/spells.html#toll-the-dead",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -4367,37 +5864,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
-    </div>
-</div>`},"spells#sacred_flame":{title:"<i>Sacred Flame</i>",associated_url:"/rules/2d/player-options/spells.html#sacred-flame",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sacred Flame</h1>
-            <div class="card-subheader">Evocation cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Flame-like radiance descends on a creature that you can see within range. Choose one of the following effects:</div>
-    <ul>
-        <li>The target must succeed on a Dexterity saving throw or take 1d8 radiant damage, or half as much on a success. This saving throw ignores <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>.</li>
-        <li>The target gains 1d8 temporary hit points that last for 1 minute.</li>
-    </ul>
-    <div class="p">The spell's damage or temporary hit points increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"spells#haste":{title:"<i>Haste</i>",associated_url:"/rules/2d/player-options/spells.html#haste",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -4430,62 +5896,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, magus, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#astral_flare":{title:"<i>Astral Flare</i>",associated_url:"/rules/2d/player-options/spells.html#astral-flare",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Astral Flare</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">90 feet / Sphere (10 ft. radius) emanating from a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">You create a concussive burst of light. Each creature of your choice in the spell's area must succeed on a Constitution saving throw or take 4d8 radiant damage and be <span class="popupAnchor" data-injection-arg="conditions#dazed" onclick='handleAnchorClick("conditions#dazed", this, event)' onmouseover='showPopup("conditions#dazed", this, event)' onmouseout='hidePopup("conditions#dazed", event)'>dazed</span> until the start of your next turn. A target takes half damage and isn't dazed on a success. Each other creature in the spell's area must succeed on a Strength saving throw or be pushed 10 feet outward from the center of the blast.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d8 for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#invigorating_burst":{title:"<i>Invigorating Burst</i>",associated_url:"/rules/2d/player-options/spells.html#invigorating-burst",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Invigorating Burst</h1>
-            <div class="card-subheader">2nd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">30 feet / Sphere (10 ft. radius) within range</div></div>
-        </div>
-    </div>
-    <div class="p">You create a burst of invigorating energy. Each creature in the spell's area regains 2d10 hit points and has advantage on attack rolls until the end of its next turn. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> and <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the healing increases by 1d10 for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
 </div>`},"spells#protection_from_poison":{title:"<i>Protection from Poison</i>",associated_url:"/rules/2d/player-options/spells.html#protection-from-poison",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -6131,20 +7541,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">When you have a crawl speed, being <a href="/rules/2d/glossary/conditions.html#prone">prone</a> doesn't cause you to have disadvantage on attack rolls or cause creatures within 5 feet of you to have advantage on attack rolls against you.</div>
-</div>`},"speeds#fly":{title:"Fly",associated_url:"/rules/2d/glossary/movement.html#fly",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Fly</h1>
-            <div class="card-subheader">Speed</div>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Natural Movement Modes</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="movement-modes#flying" onclick='handleAnchorClick("movement-modes#flying", this, event)' onmouseover='showPopup("movement-modes#flying", this, event)' onmouseout='hidePopup("movement-modes#flying", event)'>Flying</span></div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Other Movement Modes<br>(+1 Cost)</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="movement-modes#sneaking" onclick='handleAnchorClick("movement-modes#sneaking", this, event)' onmouseover='showPopup("movement-modes#sneaking", this, event)' onmouseout='hidePopup("movement-modes#sneaking", event)'>Sneaking</span></div></div>
-        </div>
-    </div>
-    <div class="p">When you use a fly speed to fly, you <span class="popupAnchor" data-injection-arg="environment#falling" onclick='handleAnchorClick("environment#falling", this, event)' onmouseover='showPopup("environment#falling", this, event)' onmouseout='hidePopup("environment#falling", event)'>fall</span> if your fly speed is 0.</div>
 </div>`},"speeds#swim":{title:"Swim",associated_url:"/rules/2d/glossary/movement.html#swim",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -6159,31 +7555,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">When you have a swim speed, your <a href="/rules/2d/player-options/equipment/properties.html#unarmed">unarmed</a> weapons have the <span class="popupAnchor" data-injection-arg="weapon-properties#hydrodynamic" onclick='handleAnchorClick("weapon-properties#hydrodynamic", this, event)' onmouseover='showPopup("weapon-properties#hydrodynamic", this, event)' onmouseout='hidePopup("weapon-properties#hydrodynamic", event)'>hydrodynamic</span> property.</div>
-</div>`},"speeds#teleport":{title:"Teleport",associated_url:"/rules/2d/glossary/movement.html#teleport",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Teleport</h1>
-            <div class="card-subheader">Speed</div>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Natural Movement Modes</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="movement-modes#teleporting" onclick='handleAnchorClick("movement-modes#teleporting", this, event)' onmouseover='showPopup("movement-modes#teleporting", this, event)' onmouseout='hidePopup("movement-modes#teleporting", event)'>Teleporting</span></div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Other Movement Modes<br>(+1 Cost)</div><div class="card-stats-row-item-text">—</div></div>
-        </div>
-    </div>
-    <div class="p">A teleport speed ignores all changes to "your speed" unless otherwise specified.</div>
-</div>`},"movement-modes#teleporting":{title:"Teleporting",associated_url:"/rules/2d/glossary/movement.html#teleporting",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Teleporting</h1>
-            <div class="card-subheader">Movement mode</div>
-        </div>
-    </div>
-    <div class="p">Teleporting lets you instantaneously travel from one location to another without going through the intervening space. You don't provoke <a href="/rules/2d/glossary/actions.html#opportunity-attack">opportunity attacks</a> when you teleport.</div>
-    <div class="p">When you teleport, all the equipment you are wearing and carrying teleports with you. If you are touching another creature when you teleport, that creature doesn't teleport with you unless otherwise specified.</div>
-    <div class="p">If the destination <a href="/rules/2d/glossary/environment.html#space">space</a> of your teleportation is occupied by another creature or blocked by a solid obstacle, you instead appear in the nearest unoccupied space of your choice.</div>
-    <div class="p">Unless otherwise specified, you must see your destination when you teleport.</div>
 </div>`},"spells#misty_step":{title:"<i>Misty Step</i>",associated_url:"/rules/2d/player-options/spells.html#misty-step",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -6642,34 +8013,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, magus, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#arcane_eye":{title:"<i>Arcane Eye</i>",associated_url:"/rules/2d/player-options/spells.html#arcane-eye",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Arcane Eye</h1>
-            <div class="card-subheader">4th-level divination spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a bit of bat fur)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You create an <span class="popupAnchor" data-injection-arg="conditions#invisible" onclick='handleAnchorClick("conditions#invisible", this, event)' onmouseover='showPopup("conditions#invisible", this, event)' onmouseout='hidePopup("conditions#invisible", event)'>invisible</span>, magical eye within range that hovers in the air for the duration.</div>
-    <div class="p">You gain the eye's sense of <a href="/rules/2d/glossary/senses.html#base-senses">sight</a> in addition to your own. The eye has <span class="popupAnchor" data-injection-arg="senses#darkvision" onclick='handleAnchorClick("senses#darkvision", this, event)' onmouseover='showPopup("senses#darkvision", this, event)' onmouseout='hidePopup("senses#darkvision", event)'>darkvision</span> (30 ft.) and can look in every direction.</div>
-    <div class="p">As a standard action, you can move the eye up to 30 feet in any direction. There is no limit to how far away from you the eye can move, but it can't enter another plane of existence. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#arcane_lock":{title:"<i>Arcane Lock</i>",associated_url:"/rules/2d/player-options/spells.html#arcane-lock",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -6909,10 +8252,10 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
         </div>
     </div>
-    <div class="p">A flame, equivalent in brightness to a torch, springs forth from an object that you touch. The effect looks like a regular flame, but it creates no heat and doesn't use oxygen. A <i>continual flame</i> can be covered or hidden but not smothered or quenched.</div>
+    <div class="p">A flame springs forth from an object that you touch. It sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (20/40 ft.) and looks like a regular flame, but it creates no heat and doesn't use oxygen. A <i>continual flame</i> can be covered or hidden but not smothered or quenched.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric, druid, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
     </div>
 </div>`},"spells#create_food_and_water":{title:"<i>Create Food and Water</i>",associated_url:"/rules/2d/player-options/spells.html#create-food-and-water",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -7000,61 +8343,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, druid, magus, ranger, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#detect_magic":{title:"<i>Detect Magic</i>",associated_url:"/rules/2d/player-options/spells.html#detect-magic",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Detect Magic</h1>
-            <div class="card-subheader">1st-level divination spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            <span class="ritual-tag"><a href="/rules/2d/player-options/spells.html#rituals">ritual</a></span>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
-        </div>
-    </div>
-    <div class="p">For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use a standard action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</div>
-    <div class="p">The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, magus, paladin, ranger, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#dispel_magic":{title:"<i>Dispel Magic</i>",associated_url:"/rules/2d/player-options/spells.html#dispel-magic",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Dispel Magic</h1>
-            <div class="card-subheader">3rd-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">120 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, magus, paladin, sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#earthen_barrier":{title:"<i>Earthen Barrier</i>",associated_url:"/rules/2d/player-options/spells.html#earthen-barrier",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -7135,40 +8423,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">When you cast this spell using a spell slot of 5th or 6th level, the bonus to attack rolls increases to +2 and the extra damage increases to 2d8. When you use a spell slot of 7th level or higher, the bonus increases to +3 and the extra damage increases to 3d8.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, druid, magus, paladin, ranger</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
-</div>`},"spells#enhance_ability":{title:"<i>Enhance Ability</i>",associated_url:"/rules/2d/player-options/spells.html#enhance-ability",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Enhance Ability</h1>
-            <div class="card-subheader">2nd-level transmutation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (fur or a feather from a beast)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch a creature and bestow upon it a magical enhancement. Choose one of the following effects; the target gains that effect until the spell ends.</div>
-    <div class="p"><b>Bull's Strength.</b> The target has advantage on Strength checks, and his or her carrying capacity doubles.</div>
-    <div class="p"><b>Cat's Grace.</b> The target has advantage on Dexterity checks. It also doesn't take damage from <a href="/rules/2d/glossary/environment.html#falling">falling</a> 20 feet or less if it isn't <a href="/rules/2d/glossary/conditions.html#incapacitated">incapacitated</a>.</div>
-    <div class="p"><b>Bear's Endurance.</b> The target has advantage on Constitution checks. It also gains 2d6 temporary hit points, which are lost when the spell ends.</div>
-    <div class="p"><b>Fox's Cunning.</b> The target has advantage on Intelligence checks.</div>
-    <div class="p"><b>Owl's Wisdom.</b> The target has advantage on Wisdom checks.</div>
-    <div class="p"><b>Eagle's Splendor.</b> The target has advantage on Charisma checks.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, druid, magus, ranger, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
     </div>
 </div>`},"spells#enlarge_reduce":{title:"<i>Enlarge/Reduce</i>",associated_url:"/rules/2d/player-options/spells.html#enlarge-reduce",content_html:`<div class="small-card">
@@ -7296,33 +8550,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#faerie_fire":{title:"<i>Faerie Fire</i>",associated_url:"/rules/2d/player-options/spells.html#faerie-fire",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Faerie Fire</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Cube (20 ft.) within range</div></div>
-        </div>
-    </div>
-    <div class="p">Each object in the spell's area is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw. For the duration, objects and affected creatures shed <span class="popupAnchor" data-injection-arg="environment#light.subitems.dim" onclick='handleAnchorClick("environment#light.subitems.dim", this, event)' onmouseover='showPopup("environment#light.subitems.dim", this, event)' onmouseout='hidePopup("environment#light.subitems.dim", event)'>dim light</span> (10 ft.).</div>
-    <div class="p">Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being <a href="/rules/2d/glossary/conditions.html#invisible">invisible</a>.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, druid, magus</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#false_life":{title:"<i>False Life</i>",associated_url:"/rules/2d/player-options/spells.html#false-life",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -7349,32 +8576,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, magus, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#feather_fall":{title:"<i>Feather Fall</i>",associated_url:"/rules/2d/player-options/spells.html#feather-fall",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Feather Fall</h1>
-            <div class="card-subheader">1st-level transmutation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a small feather or a piece of down)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take when you or a creature within 60 feet of you falls</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Choose up to five <a href="/rules/2d/glossary/environment.html#falling">falling</a> creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, magus, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#fire_bolt":{title:"<i>Fire Bolt</i>",associated_url:"/rules/2d/player-options/spells.html#fire-bolt",content_html:`<div class="small-card">
@@ -7864,33 +9065,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">When the spell ends, the target floats gently to the ground if it is still aloft.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, magus, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#light":{title:"<i>Light</i>",associated_url:"/rules/2d/player-options/spells.html#light",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Light</h1>
-            <div class="card-subheader">Evocation cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a firefly or phosphorescent moss)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (20/40 ft.) in a color of your choice. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as a standard action.</div>
-    <div class="p">If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, cleric, magus, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#lightning_lure":{title:"<i>Lightning Lure</i>",associated_url:"/rules/2d/player-options/spells.html#lightning-lure",content_html:`<div class="small-card">
@@ -8391,58 +9565,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#resistance":{title:"<i>Resistance</i>",associated_url:"/rules/2d/player-options/spells.html#resistance",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Resistance</h1>
-            <div class="card-subheader">Abjuration cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take in response to you or an ally within 10 feet of you failing a saving throw</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You channel magical protection to the creature who failed the saving throw. That creature can roll a d4 and add the number rolled to the save, potentially turning it into a success.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">OneDnD</div></div>
-    </div>
-</div>`},"spells#revivify":{title:"<i>Revivify</i>",associated_url:"/rules/2d/player-options/spells.html#revivify",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Revivify</h1>
-            <div class="card-subheader">3rd-level necromancy spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (diamonds worth 300 gp, which the spell consumes)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric, druid, paladin, ranger</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
-    </div>
 </div>`},"spells#rime_blade":{title:"<i>Rime Blade</i>",associated_url:"/rules/2d/player-options/spells.html#rime-blade",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -8640,32 +9762,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, druid, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">EEPC, XGE</div></div>
-    </div>
-</div>`},"spells#spare_the_dying":{title:"<i>Spare the Dying</i>",associated_url:"/rules/2d/player-options/spells.html#spare-the-dying",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Spare the Dying</h1>
-            <div class="card-subheader">Necromancy cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch a living creature that has 0 hit points. If it is <a href="/rules/2d/glossary/conditions.html#dying">dying</a>, it stops dying. Additionally, it can expend and roll a hit die to regain a number of hit points equal to the number rolled + its Constitution score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"spells#spider_climb":{title:"<i>Spider Climb</i>",associated_url:"/rules/2d/player-options/spells.html#spider-climb",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -10297,34 +11393,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="multi-p">
         <div class="p"><b><i>Slam.</i></b> <i>Melee weapon attack; <span class="popupAnchor" data-injection-arg="weapon-properties#reach" onclick='handleAnchorClick("weapon-properties#reach", this, event)' onmouseover='showPopup("weapon-properties#reach", this, event)' onmouseout='hidePopup("weapon-properties#reach", event)'>reach</span> (10 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#unarmed" onclick='handleAnchorClick("weapon-properties#unarmed", this, event)' onmouseover='showPopup("weapon-properties#unarmed", this, event)' onmouseout='hidePopup("weapon-properties#unarmed", event)'>unarmed</span>.</i> +6 to hit. Hit: 3d6 + 4 bludgeoning damage.</div>
     </div>
-</div>`},"spells#bane":{title:"<i>Bane</i>",associated_url:"/rules/2d/player-options/spells.html#bane",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Bane</h1>
-            <div class="card-subheader">1st-level enchantment spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a drop of blood)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Up to three creatures of your choice that you can see within range must make Wisdom saving throws. Whenever a target that fails this saving throw makes an attack roll or a saving throw before the spell ends, the target must roll a d4 and subtract the number rolled from the attack roll or saving throw.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#bestow_curse":{title:"<i>Bestow Curse</i>",associated_url:"/rules/2d/player-options/spells.html#bestow-curse",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -10556,40 +11624,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, magus, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB (Errata 2.0), TCE, 2D</div></div>
-    </div>
-</div>`},"spells#command":{title:"<i>Command</i>",associated_url:"/rules/2d/player-options/spells.html#command",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Command</h1>
-            <div class="card-subheader">1st-level enchantment spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You speak a one-word command to a creature you can see within range. The target must succeed on a Charisma saving throw or follow the command on its next turn. The spell has no effect if the target is <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>, if it doesn't understand your language, or if your command is directly harmful to it.</div>
-    <div class="p">Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can't follow your command, the spell ends.</div>
-    <div class="p"><b>Approach.</b> The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</div>
-    <div class="p"><b>Drop.</b> The target drops whatever it is holding and then ends its turn.</div>
-    <div class="p"><b>Flee.</b> The target spends its turn moving away from you by the fastest available means.</div>
-    <div class="p"><b>Grovel.</b> The target falls <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span> and then ends its turn.</div>
-    <div class="p"><b>Halt.</b> The target takes no actions.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
     </div>
 </div>`},"spells#comprehend_languages":{title:"<i>Comprehend Languages</i>",associated_url:"/rules/2d/player-options/spells.html#comprehend-languages",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -10944,38 +11978,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a Wisdom saving throw. Any creature that can't be <a href="/rules/2d/glossary/conditions.html#charmed">charmed</a> succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are <a href="/rules/2d/glossary/conditions.html#incapacitated">incapacitated</a> or can no longer speak.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, warlock</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#etherealness":{title:"<i>Etherealness</i>",associated_url:"/rules/2d/player-options/spells.html#etherealness",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Etherealness</h1>
-            <div class="card-subheader">7th-level transmutation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">8 hours</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
-        </div>
-    </div>
-    <div class="p">You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use a standard action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away.</div>
-    <div class="p">While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so.</div>
-    <div class="p">You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from.</div>
-    <div class="p">When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</div>
-    <div class="p">This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 8th level or higher, you can target up to three willing creatures (including you) for each slot level above 7th. The creatures must be within 10 feet of you when you cast the spell.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#evil_eye":{title:"<i>Evil Eye</i>",associated_url:"/rules/2d/player-options/spells.html#evil-eye",content_html:`<div class="small-card">
@@ -11479,32 +12481,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#guidance":{title:"<i>Guidance</i>",associated_url:"/rules/2d/player-options/spells.html#guidance",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Guidance</h1>
-            <div class="card-subheader">Divination cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take in response to you or an ally within 10 feet of you failing an ability check</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">10 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You channel magical insight to the creature who failed the ability check. That creature can roll a d4 and add the number rolled to the check, potentially turning it into a success.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">OneDnD, 2D</div></div>
-    </div>
 </div>`},"spells#hallucinatory_terrain":{title:"<i>Hallucinatory Terrain</i>",associated_url:"/rules/2d/player-options/spells.html#hallucinatory-terrain",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -11611,34 +12587,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">When you cast this spell using a spell slot of 6th level or higher, you can target one additional creature for each slot level above 5th. The creatures must be within 30 feet of each other when you target them.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#hold_person":{title:"<i>Hold Person</i>",associated_url:"/rules/2d/player-options/spells.html#hold-person",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hold Person</h1>
-            <div class="card-subheader">2nd-level enchantment spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small, straight piece of iron)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Choose a <a href="/rules/2d/glossary/creature-types.html#humanoid">Humanoid</a> that you can see within range. The target must succeed on a Charisma saving throw or be <span class="popupAnchor" data-injection-arg="conditions#paralyzed" onclick='handleAnchorClick("conditions#paralyzed", this, event)' onmouseover='showPopup("conditions#paralyzed", this, event)' onmouseout='hidePopup("conditions#paralyzed", event)'>paralyzed</span> for the duration (save ends).</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can target one additional Humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#hypnotic_pattern":{title:"<i>Hypnotic Pattern</i>",associated_url:"/rules/2d/player-options/spells.html#hypnotic-pattern",content_html:`<div class="small-card">
@@ -11839,34 +12787,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, magus, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#mass_healing_word":{title:"<i>Mass Healing Word</i>",associated_url:"/rules/2d/player-options/spells.html#mass-healing-word",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Mass Healing Word</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">As you call out words of restoration, up to six creatures of your choice that you can see within range regain hit points equal to 4d4 + your spellcasting ability score. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the healing increases by 2d4 for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
     </div>
 </div>`},"spells#mass_polymorph":{title:"<i>Mass Polymorph</i>",associated_url:"/rules/2d/player-options/spells.html#mass-polymorph",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -12274,32 +13194,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, druid, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#power_word_heal":{title:"<i>Power Word Heal</i>",associated_url:"/rules/2d/player-options/spells.html#power-word-heal",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Power Word Heal</h1>
-            <div class="card-subheader">9th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">A wave of healing energy washes over the creature you touch. The target regains all its hit points. The creature is cured of any effect that can be ended by <span class="popupAnchor" data-injection-arg="spells#greater_restoration" onclick='handleAnchorClick("spells#greater_restoration", this, event)' onmouseover='showPopup("spells#greater_restoration", this, event)' onmouseout='hidePopup("spells#greater_restoration", event)'><i>greater restoration</i></span>. If the creature is <a href="/rules/2d/glossary/conditions.html#prone">prone</a>, it can use a reaction to stand up. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
 </div>`},"spells#power_word_kill":{title:"<i>Power Word Kill</i>",associated_url:"/rules/2d/player-options/spells.html#power-word-kill",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -12528,33 +13422,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, paladin</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#regenerate":{title:"<i>Regenerate</i>",associated_url:"/rules/2d/player-options/spells.html#regenerate",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Regenerate</h1>
-            <div class="card-subheader">7th-level transmutation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a prayer wheel and holy water)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minute</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch a creature and stimulate its natural healing ability. The target regains 4d8 + 15 hit points. For the duration of the spell, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).</div>
-    <div class="p">If one of the target's body parts has been severed, it can be reattached as a standard action by holding it in its proper place at any point during the spell.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"spells#resurrection":{title:"<i>Resurrection</i>",associated_url:"/rules/2d/player-options/spells.html#resurrection",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -13039,32 +13906,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#true_seeing":{title:"<i>True Seeing</i>",associated_url:"/rules/2d/player-options/spells.html#true-seeing",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">True Seeing</h1>
-            <div class="card-subheader">6th-level divination spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a monocle)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Until the target finishes a short rest</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">This spell gives the willing creature you touch the ability to see things as they actually are. The target has <span class="popupAnchor" data-injection-arg="senses#truesight" onclick='handleAnchorClick("senses#truesight", this, event)' onmouseover='showPopup("senses#truesight", this, event)' onmouseout='hidePopup("senses#truesight", event)'>truesight</span> (120 ft.) for the duration.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#true_strike":{title:"<i>True Strike</i>",associated_url:"/rules/2d/player-options/spells.html#true-strike",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13090,34 +13931,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, magus, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#trumpet_of_glory":{title:"<i>Trumpet of Glory</i>",associated_url:"/rules/2d/player-options/spells.html#trumpet-of-glory",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Trumpet of Glory</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S, M (a brass bugle)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Burst (10 ft.) emanating from you, spreading around cover</div></div>
-        </div>
-    </div>
-    <div class="p">A trumpeting declaration of glory rings out from you. Each creature of your choice in the spell's area must succeed on a Constitution saving throw or take 1d6 thunder damage, or half as much on a success. Each other creature in the spell's area gains 1d6 temporary hit points that last for the duration.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage and temporary hit points both increase by 1d6 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
 </div>`},"spells#unseen_servant":{title:"<i>Unseen Servant</i>",associated_url:"/rules/2d/player-options/spells.html#unseen-servant",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -13610,32 +14423,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         </div>
     </div>
     <div class="p">An emblem can appear on a non-<a href="/rules/2d/player-options/equipment/properties.html#unarmed">unarmed</a> <a href="/rules/2d/player-options/equipment.html#weapons">weapon</a>, <a href="/rules/2d/player-options/equipment.html#shields">shield</a>, or piece of <a href="/rules/2d/player-options/equipment.html#armor">armor</a>. The cost represents the supplies and labor needed to create the symbol on the object. Wielding the weapon or shield counts as holding the holy symbol.</div>
-</div>`},"spells#angelic_wings":{title:"<i>Angelic Wings</i>",associated_url:"/rules/2d/player-options/spells.html#angelic-wings",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Angelic Wings</h1>
-            <div class="card-subheader">4th-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a vial of holy water)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
-        </div>
-    </div>
-    <div class="p">Beautiful wings appear on your back. The wings' appearance is up to you and your DM. For the duration, the wings give you a <span class="popupAnchor" data-injection-arg="speeds#fly" onclick='handleAnchorClick("speeds#fly", this, event)' onmouseover='showPopup("speeds#fly", this, event)' onmouseout='hidePopup("speeds#fly", event)'>fly</span> speed of 50 feet, you can cast <span class="popupAnchor" data-injection-arg="spells#feather_fall" onclick='handleAnchorClick("spells#feather_fall", this, event)' onmouseover='showPopup("spells#feather_fall", this, event)' onmouseout='hidePopup("spells#feather_fall", event)'><i>feather fall</i></span> at will, and whenever you or an ally makes an attack roll or saving throw within 30 feet of you, it adds 1d4 to the result.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
 </div>`},"spells#antimagic_field":{title:"<i>Antimagic Field</i>",associated_url:"/rules/2d/player-options/spells.html#antimagic-field",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13818,34 +14605,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#bless":{title:"<i>Bless</i>",associated_url:"/rules/2d/player-options/spells.html#bless",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Bless</h1>
-            <div class="card-subheader">1st-level enchantment spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a sprinkling of holy water)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#commune":{title:"<i>Commune</i>",associated_url:"/rules/2d/player-options/spells.html#commune",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -14048,116 +14807,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#daylight":{title:"<i>Daylight</i>",associated_url:"/rules/2d/player-options/spells.html#daylight",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Daylight</h1>
-            <div class="card-subheader">3rd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Sphere (60 ft. radius) emanating from a point within range, spreading around cover</div></div>
-        </div>
-    </div>
-    <div class="p">Bright <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> fills the spell's area for the duration, forming a <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a>. The zone sheds dim light for an additional 60 feet.</div>
-    <div class="p">You can cause the zone to emanate from a Small or smaller object within range instead of a point. You can't target an object held by a creature other than you, however.</div>
-    <div class="p">If any of the zone overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, magus, paladin, ranger, sorcerer</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#death_ward":{title:"<i>Death Ward</i>",associated_url:"/rules/2d/player-options/spells.html#death-ward",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Death Ward</h1>
-            <div class="card-subheader">4th-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Until the target finishes a long rest</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You touch a creature and grant it a measure of protection from death.</div>
-    <div class="p">The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.</div>
-    <div class="p">If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
-</div>`},"spells#demonic_wings":{title:"<i>Demonic Wings</i>",associated_url:"/rules/2d/player-options/spells.html#demonic-wings",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Demonic Wings</h1>
-            <div class="card-subheader">4th-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a vial of blood)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Self</div></div>
-        </div>
-    </div>
-    <div class="p">Baleful wings appear on your back. The wings' appearance is up to you and your DM. For the duration, the wings give you a <span class="popupAnchor" data-injection-arg="speeds#fly" onclick='handleAnchorClick("speeds#fly", this, event)' onmouseover='showPopup("speeds#fly", this, event)' onmouseout='hidePopup("speeds#fly", event)'>fly</span> speed of 40 feet, you can cast <span class="popupAnchor" data-injection-arg="spells#hellish_rebuke" onclick='handleAnchorClick("spells#hellish_rebuke", this, event)' onmouseover='showPopup("spells#hellish_rebuke", this, event)' onmouseout='hidePopup("spells#hellish_rebuke", event)'><i>hellish rebuke</i></span> at will, and whenever an enemy makes an attack roll or saving throw within 10 feet of you, it subtracts 1d4 from the result.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#hellish_rebuke":{title:"<i>Hellish Rebuke</i>",associated_url:"/rules/2d/player-options/spells.html#hellish-rebuke",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hellish Rebuke</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 reaction, which you take in response to being damaged by a creature within 60 feet of you that you can see</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames. The creature must make a Dexterity saving throw. It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Warlock</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#detect_evil_and_good":{title:"<i>Detect Evil and Good</i>",associated_url:"/rules/2d/player-options/spells.html#detect-evil-and-good",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14334,61 +14983,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#fire_storm":{title:"<i>Fire Storm</i>",associated_url:"/rules/2d/player-options/spells.html#fire-storm",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Fire Storm</h1>
-            <div class="card-subheader">7th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / 10 connected cubes (10 ft.) within range</div></div>
-        </div>
-    </div>
-    <div class="p">A storm made up of sheets of roaring flame appears in the spell's area. Each creature there must make a Dexterity saving throw. It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.</div>
-    <div class="p">The fire damages objects in the area and ignites flammable objects that aren't being worn or carried. If you choose, plant life in the area is unaffected by this spell.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#flame_strike":{title:"<i>Flame Strike</i>",associated_url:"/rules/2d/player-options/spells.html#flame-strike",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Flame Strike</h1>
-            <div class="card-subheader">5th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a burnt branch of a fig tree)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">300 feet / Cylinder (10 ft. radius, 1 mile tall) emanating downwards from the sky to a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">A vertical column of divine fire roars down from the heavens. Each creature the spell's area must make a Dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 6th level or higher, the fire damage or the radiant damage (your choice) increases by 1d6 for each slot level above 5th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#forbiddance":{title:"<i>Forbiddance</i>",associated_url:"/rules/2d/player-options/spells.html#forbiddance",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14474,63 +15068,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
     </div>
-</div>`},"spells#godbolt":{title:"<i>Godbolt</i>",associated_url:"/rules/2d/player-options/spells.html#godbolt",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Godbolt</h1>
-            <div class="card-subheader">8th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 major action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">1 mile / Cylinder (5 ft. diameter, 1 mile tall) emanating downwards from the sky to a point on the ground within range</div></div>
-        </div>
-    </div>
-    <div class="p">A singular, devastating bolt of lightning crashes down from the heavens. Each target in the spell's area must make a Constitution saving throw and take 20d6 lightning damage on a failed save, or half as much on a success. A creature that fails its save by 5 or more is also <span class="popupAnchor" data-injection-arg="conditions#stunned" onclick='handleAnchorClick("conditions#stunned", this, event)' onmouseover='showPopup("conditions#stunned", this, event)' onmouseout='hidePopup("conditions#stunned", event)'>stunned</span> until the end of its next turn.</div>
-    <div class="p">A deafening burst of thunder accompanies the bolt, audible out to a range of 10 miles. Each creature within 30 feet of the spell's area must succeed on a Constitution saving throw or be <span class="popupAnchor" data-injection-arg="conditions#deafened" onclick='handleAnchorClick("conditions#deafened", this, event)' onmouseover='showPopup("conditions#deafened", this, event)' onmouseout='hidePopup("conditions#deafened", event)'>deafened</span> for 1 minute (save ends).</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 9th level, the damage increases by 10d6.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#guiding_bolt":{title:"<i>Guiding Bolt</i>",associated_url:"/rules/2d/player-options/spells.html#guiding-bolt",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Guiding Bolt</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 round</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">120 feet</div></div>
-        </div>
-    </div>
-    <div class="p">A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#hallow":{title:"<i>Hallow</i>",associated_url:"/rules/2d/player-options/spells.html#hallow",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14595,34 +15132,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#heal":{title:"<i>Heal</i>",associated_url:"/rules/2d/player-options/spells.html#heal",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Heal</h1>
-            <div class="card-subheader">6th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Choose a creature that you can see within range. A surge of positive energy washes through the creature, causing it to regain 70 hit points and gaining the benefits of <span class="popupAnchor" data-injection-arg="spells#restore_body" onclick='handleAnchorClick("spells#restore_body", this, event)' onmouseover='showPopup("spells#restore_body", this, event)' onmouseout='hidePopup("spells#restore_body", event)'><i>restore body</i></span> and <span class="popupAnchor" data-injection-arg="spells#restore_mind" onclick='handleAnchorClick("spells#restore_mind", this, event)' onmouseover='showPopup("spells#restore_mind", this, event)' onmouseout='hidePopup("spells#restore_mind", event)'><i>restore mind</i></span>. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 7th level or higher, the amount of healing increases by 10 for each slot level above 6th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#holy_aura":{title:"<i>Holy Aura</i>",associated_url:"/rules/2d/player-options/spells.html#holy-aura",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14648,34 +15157,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
-</div>`},"spells#inflict_wounds":{title:"<i>Inflict Wounds</i>",associated_url:"/rules/2d/player-options/spells.html#inflict-wounds",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Inflict Wounds</h1>
-            <div class="card-subheader">1st-level necromancy spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, magus</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#insect_plague":{title:"<i>Insect Plague</i>",associated_url:"/rules/2d/player-options/spells.html#insect-plague",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -14769,32 +15250,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#mass_heal":{title:"<i>Mass Heal</i>",associated_url:"/rules/2d/player-options/spells.html#mass-heal",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Mass Heal</h1>
-            <div class="card-subheader">9th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of each effect that can be ended by the <span class="popupAnchor" data-injection-arg="spells#restore_body" onclick='handleAnchorClick("spells#restore_body", this, event)' onmouseover='showPopup("spells#restore_body", this, event)' onmouseout='hidePopup("spells#restore_body", event)'><i>restore body</i></span> spell. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#construct">Constructs</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#meld_into_stone":{title:"<i>Meld into Stone</i>",associated_url:"/rules/2d/player-options/spells.html#meld-into-stone",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14823,34 +15278,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, ranger</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
     </div>
-</div>`},"spells#plane_shift":{title:"<i>Plane Shift</i>",associated_url:"/rules/2d/player-options/spells.html#plane-shift",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Plane Shift</h1>
-            <div class="card-subheader">7th-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a forked, metal rod worth at least 250 gp, attuned to a particular plane of existence)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">You and up to eight willing creatures who link hands in a circle are transported to a different plane of existence. You can specify a target destination in general terms, such as the City of Brass on the Elemental Plane of Fire or the palace of Dispater on the second level of the Nine Hells, and you appear in or near that destination. If you are trying to reach the City of Brass, for example, you might arrive in its Street of Steel, before its Gate of Ashes, or looking at the city from across the Sea of Fire, at the DM's discretion.</div>
-    <div class="p">Alternatively, if you know the sigil sequence of a teleportation circle on another plane of existence, this spell can take you to that circle. If the teleportation circle is too small to hold all the creatures you transported, they appear in the closest unoccupied spaces next to the circle.</div>
-    <div class="p">You can use this spell to banish an unwilling creature to another plane. Choose a creature within your reach and make a melee spell attack against it. On a hit, the creature must make a Charisma saving throw. If the creature fails this save, it is transported to a random location on the plane of existence you specify. A creature so transported must find its own way back to your current plane of existence.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#protection_from_evil_and_good":{title:"<i>Protection from Evil and Good</i>",associated_url:"/rules/2d/player-options/spells.html#protection-from-evil-and-good",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14878,60 +15305,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, paladin, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE</div></div>
     </div>
-</div>`},"spells#recall_ally":{title:"<i>Recall Ally</i>",associated_url:"/rules/2d/player-options/spells.html#recall-ally",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Recall Ally</h1>
-            <div class="card-subheader">3rd-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S, M (a shepherd's crook)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">With a gesture, you <span class="popupAnchor" data-injection-arg="movement-modes#teleporting" onclick='handleAnchorClick("movement-modes#teleporting", this, event)' onmouseover='showPopup("movement-modes#teleporting", this, event)' onmouseout='hidePopup("movement-modes#teleporting", event)'>teleport</span> a willing creature you can see within range to an unoccupied space within 5 feet of you. The target then regains a number of hit points equal to 2d10 + your spellcasting ability modifier, unless it's a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a> or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the healing increases by 1d10 for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#shield_of_faith":{title:"<i>Shield of Faith</i>",associated_url:"/rules/2d/player-options/spells.html#shield-of-faith",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Shield of Faith</h1>
-            <div class="card-subheader">1st-level abjuration spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a small parchment with a bit of holy text written on it)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#stream_of_life":{title:"<i>Stream of Life</i>",associated_url:"/rules/2d/player-options/spells.html#stream-of-life",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -14957,91 +15330,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">This spell ends early if total cover comes between you and the target, or if the target leaves the spell's range.</div>
     <div class="centered-header">Higher Level</div>
     <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can deal an additional 1d8 necrotic damage to yourself for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#sunbeam":{title:"<i>Sunbeam</i>",associated_url:"/rules/2d/player-options/spells.html#sunbeam",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sunbeam</h1>
-            <div class="card-subheader">6th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a magnifying glass)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Line (60 ft.) emanating from you</div></div>
-        </div>
-    </div>
-    <div class="p">A beam of brilliant light flashes out from your hand. Each creature in the spell's area must make a Constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> and <a href="/rules/2d/glossary/creature-types.html#ooze">Oozes</a> have disadvantage on this saving throw.</div>
-    <div class="p">You can create a new line of radiance as a standard action on any turn until the spell ends.</div>
-    <div class="p">For the duration, a mote of brilliant radiance shines in your hand, shedding <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (30/60 ft.). This light is sunlight.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
-</div>`},"spells#sunburst":{title:"<i>Sunburst</i>",associated_url:"/rules/2d/player-options/spells.html#sunburst",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sunburst</h1>
-            <div class="card-subheader">8th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (fire and a piece of sunstone)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Sphere (60 ft. radius) emanating from a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">Brilliant sunlight flashes the spell's area. Each creature in that light must make a Constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> for 1 minute (save ends). On a successful save, it takes half as much damage and isn't blinded by this spell. <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a> and <a href="/rules/2d/glossary/creature-types.html#ooze">Oozes</a> have disadvantage on this saving throw.</div>
-    <div class="p">This spell dispels any <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span> in its area that was created by a spell.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, druid, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
-</div>`},"spells#supernal_lance":{title:"<i>Supernal Lance</i>",associated_url:"/rules/2d/player-options/spells.html#supernal-lance",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Supernal Lance</h1>
-            <div class="card-subheader">4th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Line (infinitely long, 1/4 inch thick)</div></div>
-        </div>
-    </div>
-    <div class="p">A piercing beam of light extends from your palm. Each creature in the spell's area must succeed on a Dexterity saving throw or take 8d6 radiant damage.</div>
-    <div class="p">Wherever the beam enters an area of magical darkness created by a spell of 3rd level or lower, the spell that created that darkness is dispelled.</div>
-    <div class="p">Targets gain no benefit from <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span> or <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span> against this spell.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 and the spell level that's dispelled increases by 1 for each slot level above 4th.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
@@ -15114,37 +15402,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#thundering_condemnation":{title:"<i>Thundering Condemnation</i>",associated_url:"/rules/2d/player-options/spells.html#thundering-condemnation",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Thundering Condemnation</h1>
-            <div class="card-subheader">3rd-level enchantment spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="spell-tags">
-        <span class="misc-tag">curse</span>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">60 feet</div></div>
-        </div>
-    </div>
-    <div class="p">Your voice booms in denouncement of a foe's misdeeds and echos louder with each repeated offense. One creature of your choice within range is cursed for the duration. While cursed in this way, the target takes 1d4 thunder damage the first time each turn it deals damage to another creature. This damage increases by 1d4 after each time the target takes it, to a maximum of 10d4.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the initial and maximum damage increases by 1d4 for each slot level above 3rd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
 </div>`},"spells#true_resurrection":{title:"<i>True Resurrection</i>",associated_url:"/rules/2d/player-options/spells.html#true-resurrection",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -15199,33 +15456,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric, paladin</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, TCE, 2D</div></div>
-    </div>
-</div>`},"spells#word_of_radiance":{title:"<i>Word of Radiance</i>",associated_url:"/rules/2d/player-options/spells.html#word-of-radiance",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Word of Radiance</h1>
-            <div class="card-subheader">Evocation cantrip</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, M (a holy symbol)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Burst (5 ft.) emanating from you</div></div>
-        </div>
-    </div>
-    <div class="p">You utter a divine word, and burning radiance erupts from you. Each other creature of your choice that you can see within the spell's area must make a Constution saving throw. On a failed save, a creature takes 1d6 radiant damage, or half as much damage on a successful one.</div>
-    <div class="p">The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
     </div>
 </div>`},"spells#word_of_recall":{title:"<i>Word of Recall</i>",associated_url:"/rules/2d/player-options/spells.html#word-of-recall",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -15456,6 +15686,46 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
+</div>`},"channel-divinity#touch_of_death":{title:"Touch of Death",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Touch of Death</h1>
+            <div class="card-subheader">2nd-level Death Domain cleric Channel Divinity option</div>
+        </div>
+    </div>
+    <div class="p">As a free action when you hit a creature with a melee attack, you bid its spirit depart. The target takes necrotic damage equal to 5 + twice your cleric level.</div>
+</div>`},"channel-divinity#mortal_call":{title:"Mortal Call",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Mortal Call</h1>
+            <div class="card-subheader">18th-level Death Domain cleric Channel Divinity option</div>
+        </div>
+    </div>
+    <div class="p">As a major action, you concentrate on your holy symbol and attempt to bring instant death to one creature you can see within 30 feet. The target makes a Constitution saving throw, a Wisdom saving throw, and a Charisma saving throw, and suffers an effect based on the number of failed saves:</div>
+    <ul>
+        <li><b><i>0 failures.</i></b> The target takes necrotic damage equal to an eighth of its hit point maximum (rounded up).</li>
+        <li><b><i>1 failure.</i></b> The target takes necrotic damage equal to a quarter of its hit point maximum (rounded up).</li>
+        <li><b><i>2 failures.</i></b> The target takes necrotic damage equal to half its hit point maximum (rounded up).</li>
+        <li><b><i>3 failures.</i></b> The target takes necrotic damage equal to its hit point maximum.</li>
+    </ul>
+    <div class="p">If damage from this effect reduces the target to 0 hit points, it dies instantly and its soul departs, as if it had been dead for 1 minute. (In particular, the target can't be resurrected by <span class="popupAnchor" data-injection-arg="spells#revivify" onclick='handleAnchorClick("spells#revivify", this, event)' onmouseover='showPopup("spells#revivify", this, event)' onmouseout='hidePopup("spells#revivify", event)'><i>revivify</i></span>.)</div>
+</div>`},"channel-divinity#turn_the_faithless":{title:"Turn the Faithless",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Turn the Faithless</h1>
+            <div class="card-subheader">2nd-level cleric Channel Divinity option</div>
+        </div>
+    </div>
+    <div class="p">As a standard action, you thrust out your holy symbol and censure the enemies of your faith. Choose one of the following creature types: <a href="/rules/2d/glossary/creature-types.html#aberration">Aberration</a>, <a href="/rules/2d/glossary/creature-types.html#celestial">Celestial</a>, <a href="/rules/2d/glossary/creature-types.html#fey">Fey</a>, <a href="/rules/2d/glossary/creature-types.html#fiend">Fiend</a>, or <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>. Each creature of the chosen type within 30 feet of you that isn't behind <a href="/rules/2d/glossary/environment.html#total-cover">total cover</a> must succeed on a Wisdom saving throw or be forced to turn away from you for 1 minute, as it recoils from your presence. While turned, a target has disadvantage on attack rolls and ability checks, and it can't willingly move closer to you.</div>
+    <div class="p">A target ceases to be turned if it takes any damage or if total cover comes between it and your holy symbol. The effect also ends if you are <a href="/rules/2d/glossary/conditions.html#incapacitated">incapacitated</a> or if your holy symbol ceases to be on your person.</div>
+</div>`},"channel-divinity#absolve_the_faithful":{title:"Absolve the Faithful",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Absolve the Faithful</h1>
+            <div class="card-subheader">2nd-level cleric Channel Divinity option</div>
+        </div>
+    </div>
+    <div class="p">As a standard action, you present your holy symbol and relieve your allies of some of their burdens. Choose any number of creatures within 30 feet of you that aren't behind <a href="/rules/2d/glossary/environment.html#total-cover">total cover</a>. Each target regains a number of hit points equal to your cleric level and can repeat one saving throw against a "save ends" effect of its choice.</div>
 </div>`},"armor#round_shield":{title:"Round Shield",associated_url:"/rules/2d/player-options/equipment.html#round-shield",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -16838,7 +17108,7 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     </div>
     <div class="p">Until the spell ends, bits of rock spread across your body, and you gain the following benefits:</div>
     <ul>
-        <li>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+        <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
         <li>You can use a standard action to create a small earthquake on the ground in a 15-foot burst emanating from you. Other creatures on that ground must succeed on a Dexterity saving throw or take 2d12 bludgeoning damage and be knocked <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span>.</li>
         <li>You ignore <span class="popupAnchor" data-injection-arg="environment#special_terrain" onclick='handleAnchorClick("environment#special_terrain", this, event)' onmouseover='showPopup("environment#special_terrain", this, event)' onmouseout='hidePopup("environment#special_terrain", event)'>special terrain</span> created by earth or stone.</li>
         <li>You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there. If you do so, you are ejected to the nearest unoccupied space and take 1d10 force damage for every 5 feet you travel.</li>
@@ -25073,35 +25343,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
-</div>`},"spells#scorching_ray":{title:"<i>Scorching Ray</i>",associated_url:"/rules/2d/player-options/spells.html#scorching-ray",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Scorching Ray</h1>
-            <div class="card-subheader">2nd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">120 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.</div>
-    <div class="p">Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Magus, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
-    </div>
 </div>`},"spells#cloak_of_shadow":{title:"<i>Cloak of Shadow</i>",associated_url:"/rules/2d/player-options/spells.html#cloak-of-shadow",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -26317,35 +26558,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#burning_hands":{title:"<i>Burning Hands</i>",associated_url:"/rules/2d/player-options/spells.html#burning-hands",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Burning Hands</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cone (15 ft.) emanating from you</div></div>
-        </div>
-    </div>
-    <div class="p">As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in the spell's area must make a Dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</div>
-    <div class="p">The fire ignites any flammable objects in the area that aren't being worn or carried.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Magus, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"spells#cause_fear":{title:"<i>Cause Fear</i>",associated_url:"/rules/2d/player-options/spells.html#cause-fear",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -29006,36 +29218,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#wall_of_light":{title:"<i>Wall of Light</i>",associated_url:"/rules/2d/player-options/spells.html#wall-of-light",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Wall of Light</h1>
-            <div class="card-subheader">5th-level evocation spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a hand mirror)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 10 minutes</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">120 feet / Wall (up to 60 ft. long, 10 ft high, 5 ft. thick) anywhere within range, in any orientation</div></div>
-        </div>
-    </div>
-    <div class="p">A shimmering wall of bright light appears in the spell's area. The wall emits <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (120/240 ft.), blocking line of sight, but creatures and objects can pass through it.</div>
-    <div class="p">The wall is an immediate <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a>. Each creature that triggers the zone must make a Constitution saving throw. On a failed save, a creature takes 4d8 radiant damage, and it is <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> for 1 minute (save ends). On a successful save, it takes half as much damage and isn't blinded.</div>
-    <div class="p">Until the spell ends, you can use a standard action to launch a beam of radiance from the wall at one creature you can see within 60 feet of it. Make a ranged spell attack. On a hit, the target takes 4d8 radiant damage. Whether you hit or miss, reduce the length of the wall by 10 feet. If the wall's length drops to 0 feet, the spell ends.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">XGE, 2D</div></div>
-    </div>
 </div>`},"spells#weird":{title:"<i>Weird</i>",associated_url:"/rules/2d/player-options/spells.html#weird",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -29874,34 +30056,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">You change the appearance of a Small or smaller object you can see within range. The new appearance must reasonably match the object's actual shape and size. For example, you could make a shortsword appear as a bouquet of flowers, alter the text on a page, or change the denomination of a coin, but you couldn't turn a mask into a tophat.</div>
     <div class="p">The changes wrought by this spell are intangible. A sword appearing as a bouquet would still function as a sword, although parts of the sword might be invisible and the illusory leaves would pass through other objects.</div>
     <div class="p">A creature can also use the <a href="/rules/2d/glossary/actions.html#study">Study</a> action to inspect the object from a distance, making an <a href="/rules/2d/glossary/skills.html#investigation">Investigation</a> check against your spell save DC. On a success, the creature discovers the illusion and learns the actual nature of the object.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#disillusion":{title:"<i>Disillusion</i>",associated_url:"/rules/2d/player-options/spells.html#disillusion",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Disillusion</h1>
-            <div class="card-subheader">3rd-level illusion spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
-        </div>
-    </div>
-    <div class="p">You fight illusion with illusion, making reality appear as it should. All illusions and illusion spells cast at 3rd level or lower within range are suppressed for the duration, except for those you choose not to suppress.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, you can suppress illusion spells cast at a level equal to or less than the level of the spell slot you expend.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
@@ -30771,35 +30925,6 @@ window.POPUP_DATA={"spells#aura_of_clarity":{title:"<i>Aura of Clarity</i>",asso
     <div class="p">You call to mind the image of a creature you have seen within the past minute. If the target is on the same plane of existence, it must make a Charisma saving throw. On a failed save, the target is <span class="popupAnchor" data-injection-arg="conditions#stunned" onclick='handleAnchorClick("conditions#stunned", this, event)' onmouseover='showPopup("conditions#stunned", this, event)' onmouseout='hidePopup("conditions#stunned", event)'>stunned</span> for the duration, and you briefly see its immediate surroundings. The spell ends if the target takes any damage.</div>
     <div class="centered-header">Higher Level</div>
     <div class="p">When you cast this spell using a spell slot of 6th or 7th level, the maximum duration and time since seeing the creature both increase to 1 hour. When you cast this spell using a spell slot of 8th or 9th level, both times increase to 1 day.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#revealing_light":{title:"<i>Revealing Light</i>",associated_url:"/rules/2d/player-options/spells.html#revealing-light",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Revealing Light</h1>
-            <div class="card-subheader">4th-level divination spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 minute</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cone (60 ft.) emanating from you</div></div>
-        </div>
-    </div>
-    <div class="p">Raising your implement high, you produce a ghostly white light in the spell's area, forming an immediate <a href="/rules/2d/glossary/areas-of-effect.html#zones">zone</a> for the duration. The light is blocked by <a href="/rules/2d/glossary/conditions.html#invisible">invisible</a> creatures and objects, producing stark shadows and revealing their location. You can change the direction of the cone as a minor action.</div>
-    <div class="p">When an invisible target triggers the zone, it must make a Constitution saving throw. On a failed save, the target takes 8d4 radiant damage, or half as much on a success. A creature that fails its save is also <span class="popupAnchor" data-injection-arg="conditions#blinded" onclick='handleAnchorClick("conditions#blinded", this, event)' onmouseover='showPopup("conditions#blinded", this, event)' onmouseout='hidePopup("conditions#blinded", event)'>blinded</span> until it leaves the cone or stops being invisible.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 5th level or higher, the damage increases by 2d4 for each slot level above 4th.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
