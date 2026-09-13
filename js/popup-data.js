@@ -1,4 +1,742 @@
-window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",associated_url:"/rules/2d/player-options/classes.html#spellcasting",content_html:`<div class="small-card">
+window.POPUP_DATA={"classes#artificer.subclasses.gunsmith.features.well_armed":{title:"Well-armed",associated_url:"/rules/2d/player-options/classes.html#well-armed",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Well-armed</h1>
+            <div class="card-subheader">3rd-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">You know the <span class="popupAnchor" data-injection-arg="artificer-infusions#hand_cannon" onclick='handleAnchorClick("artificer-infusions#hand_cannon", this, event)' onmouseover='showPopup("artificer-infusions#hand_cannon", this, event)' onmouseout='hidePopup("artificer-infusions#hand_cannon", event)'><i>hand cannon</i></span> infusion, which doesn't count against the number of artificer infusions you can know. This infusion—and other infusions available at higher artificer levels—can be used to create a <span class="misc-tag">gun</span> weapon. As a gunsmith, you gain the following benefits with such infusions:</div>
+    <ul>
+        <li>Up to 2 of your active gun infusions don't count against the maximum number of active infusions you can have at a time.</li>
+        <li>You can have up to 2 of the same gun infusion active at a time.</li>
+    </ul>
+</div>`},"artificer-infusions#hand_cannon":{title:"Hand Cannon",associated_url:"/rules/2d/player-options/classes/artificer.html#hand-cannon",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hand Cannon</h1>
+            <div class="card-subheader">3rd-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal worth at least 20 gp</div></div>
+    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#hand_cannon" onclick='handleAnchorClick("special-weapons#hand_cannon", this, event)' onmouseover='showPopup("special-weapons#hand_cannon", this, event)' onmouseout='hidePopup("special-weapons#hand_cannon", event)'>hand cannon</span>. You are proficient with it.</div>
+    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
+    <ul>
+        <li>The attuned creature is proficient with the weapon.</li>
+        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
+    </ul>
+</div>`},"special-weapons#hand_cannon":{title:"Hand Cannon",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hand Cannon</h1>
+            <div class="card-subheader">Unique ranged weapon</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">gun</span>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d6 piercing</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">50 gp</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 30/120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#light" onclick='handleAnchorClick("weapon-properties#light", this, event)' onmouseover='showPopup("weapon-properties#light", this, event)' onmouseout='hidePopup("weapon-properties#light", event)'>light</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (1), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (120 ft.)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">4 lb.</div></div>
+        </div>
+    </div>
+</div>`},"weapon-properties#ammunition":{title:"Ammunition",associated_url:"/rules/2d/player-options/equipment/properties.html#ammunition",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Ammunition</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">When you make an attack with an ammunition weapon, you use it to fire a piece of <span class="popupAnchor" data-injection-arg="items#ammunition" onclick='handleAnchorClick("items#ammunition", this, event)' onmouseover='showPopup("items#ammunition", this, event)' onmouseout='hidePopup("items#ammunition", event)'>ammunition</span> at the target. The type of ammunition appears in parentheses after this property's listing, as do the weapon's normal and long <a href="/rules/2d/systems/attacking.html#range">ranges</a>. Drawing a piece of ammunition from an appropriate container (such as a <span class="popupAnchor" data-injection-arg="items#quiver" onclick='handleAnchorClick("items#quiver", this, event)' onmouseover='showPopup("items#quiver", this, event)' onmouseout='hidePopup("items#quiver", event)'>quiver</span>) is part of the attack, and requires a free hand. (Note that a <span class="popupAnchor" data-injection-arg="weapon-properties#two_handed" onclick='handleAnchorClick("weapon-properties#two_handed", this, event)' onmouseover='showPopup("weapon-properties#two_handed", this, event)' onmouseout='hidePopup("weapon-properties#two_handed", event)'>two-handed</span> ammunition weapon can be held in one hand while a piece of ammunition is drawn.)</div>
+    <div class="p">In general, you can recover half your expended ammunition after a battle by searching the battlefield.</div>
+</div>`},"items#ammunition":{title:"Ammunition",associated_url:"/rules/2d/player-options/equipment.html#ammunition",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Ammunition</h1>
+            <div class="card-subheader">Item category</div>
+        </div>
+    </div>
+    <div class="tableAndCaption">
+        <div class="tableWrapper">
+            <table>
+                <thead>
+                    <tr><th align="left"><span class="col-title">Item</span></th><th align="right"><span class="col-title">Cost</span></th><th align="right"><span class="col-title">Weight</span></th><th align="left"><span class="col-title">Capacity</span></th></tr>
+                </thead>
+                <tbody>
+                    <tr><td align="left"><span id="arrows">Arrows (20)</span></td><td align="right">1 gp</td><td align="right">1 lb.</td><td align="left">—</td></tr>
+                    <tr><td align="left"><span class="popupAnchor" data-injection-arg="items#ammunition.subitems.blowgun_needles" onclick='handleAnchorClick("items#ammunition.subitems.blowgun_needles", this, event)' onmouseover='showPopup("items#ammunition.subitems.blowgun_needles", this, event)' onmouseout='hidePopup("items#ammunition.subitems.blowgun_needles", event)'><span id="blowgun-needles">Blowgun needles (50)</span></span></td><td align="right">1 gp</td><td align="right">1 lb.</td><td align="left">—</td></tr>
+                    <tr><td align="left"><span id="crossbow-bolts">Crossbow bolts (20)</span></td><td align="right">1 gp</td><td align="right">1 1/2 lb.</td><td align="left">—</td></tr>
+                    <tr><td align="left"><span id="sling-bullets">Sling bullets (20)</span></td><td align="right">4 cp</td><td align="right">1 1/2 lb.</td><td align="left">—</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>`},"items#ammunition.subitems.blowgun_needles":{title:"Blowgun Needles (50)",associated_url:"/rules/2d/player-options/equipment.html#blowgun-needles",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Blowgun Needles (50)</h1>
+            <div class="card-subheader">Item</div>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1 gp</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">1 lb.</div></div>
+        </div>
+    </div>
+    <div class="p">Blowgun needles are well-suited to delivering poison. A dose of poison or similar substance (such as <a href="/rules/2d/player-options/equipment.html#poison-basic">basic poison</a> or a ranger's <a href="/rules/2d/player-options/classes/ranger.html#potent-extracts">Potent Extracts</a>) that can normally only be applied to 1 piece of ammunition can be applied to 3 blowgun needles at once.</div>
+</div>`},"items#quiver":{title:"Quiver",associated_url:"/rules/2d/player-options/equipment.html#quiver",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Quiver</h1>
+            <div class="card-subheader">Item</div>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1 gp</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">1 lb.</div></div>
+        </div>
+    </div>
+    <div class="p">A quiver can hold up to 20 <a href="/rules/2d/player-options/equipment.html#arrows">arrows</a>.</div>
+</div>`},"weapon-properties#two_handed":{title:"Two-Handed",associated_url:"/rules/2d/player-options/equipment/properties.html#two-handed",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Two-Handed</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">Two hands are required to make an attack with a two-handed weapon.</div>
+</div>`},"items#ball_bearings":{title:"Ball Bearings (Bag of 1,000)",associated_url:"/rules/2d/player-options/equipment.html#ball-bearings",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Ball Bearings (Bag of 1,000)</h1>
+            <div class="card-subheader">Item</div>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1 gp</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">2 lb.</div></div>
+        </div>
+    </div>
+    <div class="centered-header"><span class="popupAnchor" data-injection-arg="actions#use" onclick='handleAnchorClick("actions#use", this, event)' onmouseover='showPopup("actions#use", this, event)' onmouseout='hidePopup("actions#use", event)'>Use</span> (2 AP)</div>
+    <div class="p">You spill these tiny metal balls from their pouch to cover a level, 10-foot-square area. For every 5 feet that a creature moves across the area, it must succeed on a DC 10 Dexterity saving throw or fall <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span>. A creature can avoid making the saving throw by <a href="/rules/2d/glossary/movement.html#crawling">crawling</a> or <a href="/rules/2d/glossary/movement.html#sneaking">sneaking</a>.</div>
+</div>`},"actions#use":{title:"Use",associated_url:"/rules/2d/glossary/actions.html#use",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Use</h1>
+            <div class="card-subheader">Action (cost varies)</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">Repeatable</span>
+        </div>
+    </div>
+    <div class="p">The Use action allows you to manipulate one object or feature of the environment in a potentially involved way. Activating an item's effect requires the Use action, which takes 2 AP unless otherwise specified. You can also take this action to do anything that the <span class="popupAnchor" data-injection-arg="actions#interact" onclick='handleAnchorClick("actions#interact", this, event)' onmouseover='showPopup("actions#interact", this, event)' onmouseout='hidePopup("actions#interact", event)'>Interact</span> action can do, and unlike the Interact action, it is repeatable.</div>
+</div>`},"actions#interact":{title:"Interact",associated_url:"/rules/2d/glossary/actions.html#interact",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Interact</h1>
+            <div class="card-subheader">Free action</div>
+        </div>
+    </div>
+    <div class="p">When you take the Interact action, you manipulate one object or feature of the environment in a trivial way. For example, you could open a door or pick up a dropped weapon. You can also use this action to <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grapple</span> a willing creature.</div>
+    <div class="p">If you need to interact with more than one thing on a turn, subsequent interactions require the <span class="popupAnchor" data-injection-arg="actions#use" onclick='handleAnchorClick("actions#use", this, event)' onmouseover='showPopup("actions#use", this, event)' onmouseout='hidePopup("actions#use", event)'>Use</span> action.</div>
+</div>`},"conditions#grappled":{title:"Grappled",associated_url:"/rules/2d/glossary/conditions.html#grappled",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Grappled</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="p">Grappling is an act that requires two creatures. One creature, the "grappler," has the <span class="popupAnchor" data-injection-arg="conditions#grappling" onclick='handleAnchorClick("conditions#grappling", this, event)' onmouseover='showPopup("conditions#grappling", this, event)' onmouseout='hidePopup("conditions#grappling", event)'>grappling</span> condition, while the other has this condition (grappled).</div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>Your speed is halved if you are one size larger than the grappler, or 0 if you are the same size or smaller.</li>
+        <li>When you move, you drag the grappler with you.</li>
+        <li>If the grappler attempts to use the grapple to move you, you can make a Strength saving throw against its passive Athletics. On a success, it can't use the grapple to move you until the start of its next turn.</li>
+    </ul>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You can attempt to escape the grapple by taking the <span class="popupAnchor" data-injection-arg="actions#disengage" onclick='handleAnchorClick("actions#disengage", this, event)' onmouseover='showPopup("actions#disengage", this, event)' onmouseout='hidePopup("actions#disengage", event)'>Disengage</span> action.</div>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">This condition is typically inflicted by the <a href="/rules/2d/player-options/equipment.html#grapple">grapple</a> attack.</div>
+</div>`},"actions#disengage":{title:"Disengage",associated_url:"/rules/2d/glossary/actions.html#disengage",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Disengage</h1>
+            <div class="card-subheader">Standard action</div>
+        </div>
+    </div>
+    <div class="p">When you take the Disengage action, you attempt to escape from your foes. Your movement doesn't provoke <a href="/rules/2d/glossary/actions.html#opportunity-attack">opportunity attacks</a> for the rest of the turn. Additionally, if you are <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grappled</span>, you can make an <a href="/rules/2d/glossary/skills.html#athletics">Athletics</a> or <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check (your choice) against the passive Athletics score of each creature <a href="/rules/2d/glossary/conditions.html#grappling">grappling</a> you. You escape that grapple on a success.</div>
+</div>`},"conditions#grappling":{title:"Grappling",associated_url:"/rules/2d/glossary/conditions.html#grappling",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Grappling</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="p">Grappling is an act that requires two creatures. One creature, the "grappler," has this condition (grappling), while the other has the <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grappled</span> condition.</div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>Your speed is halved if you are the same size as the grappled target, or 0 if you are smaller.</li>
+        <li>When you move, you drag or push the grappled target with you.</li>
+        <li>If you are the same size as the grappled target or larger, you can move it to another space within your reach as a repeatable minor action.</li>
+    </ul>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/rules/2d/glossary/conditions.html#incapacitated">incapacitated</a> or if the target is no longer within your reach.</div>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">This condition is typically caused by the <a href="/rules/2d/player-options/equipment.html#grapple">grapple</a> attack (for grappling enemies) and the <a href="/rules/2d/glossary/actions.html#interact">Interact</a> action (for grappling allies).</div>
+</div>`},"conditions#prone":{title:"Prone",associated_url:"/rules/2d/glossary/conditions.html#prone",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Prone</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="centered-header">Effects</div>
+    <ul>
+        <li>The only movement mode available to you is <span class="popupAnchor" data-injection-arg="movement-modes#crawling" onclick='handleAnchorClick("movement-modes#crawling", this, event)' onmouseover='showPopup("movement-modes#crawling", this, event)' onmouseout='hidePopup("movement-modes#crawling", event)'>crawling</span>.</li>
+        <li>You have disadvantage on attack rolls.</li>
+        <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
+    </ul>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You can end this condition by standing up, which requires spending half of your <a href="/rules/2d/glossary/movement.html#walk">walk</a> speed when you move.</div>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">This condition is commonly caused by <a href="/rules/2d/glossary/environment.html#falling">falling</a>, falling <a href="/rules/2d/glossary/conditions.html#unconscious">unconscious</a>, and the <a href="/rules/2d/player-options/equipment.html#trip">trip</a> attack.</div>
+</div>`},"movement-modes#crawling":{title:"Crawling",associated_url:"/rules/2d/glossary/movement.html#crawling",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Crawling</h1>
+            <div class="card-subheader">Movement mode</div>
+        </div>
+    </div>
+    <div class="p">Crawling lets you move across a non-vertical surface while <a href="/rules/2d/glossary/conditions.html#prone">prone</a>.</div>
+</div>`},"weapon-properties#light":{title:"Light",associated_url:"/rules/2d/player-options/equipment/properties.html#light",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Light</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">A light weapon is small enough to be easily wielded in one hand. Each time you spend at least 2 AP to take the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action and use a light weapon for the attack, you can take the Attack action once later that turn as a minor action. The secondary attack—called an <b>offhand attack</b>—must be made with a different light weapon, and it deals half damage.</div>
+</div>`},"actions#attack":{title:"Attack",associated_url:"/rules/2d/glossary/actions.html#attack",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Attack</h1>
+            <div class="card-subheader">Standard action</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">Repeatable</span>
+        </div>
+    </div>
+    <div class="p">You make one <a href="/rules/2d/systems/attacking.html#weapon-attacks">weapon attack</a>.</div>
+</div>`},"weapon-properties#loading":{title:"Loading",associated_url:"/rules/2d/player-options/equipment/properties.html#loading",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Loading</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">A loading weapon can store ammunition inside it, enabling it to be loaded and fired at separate times. The maximum number of pieces of ammunition that can be stored in the weapon is given in parentheses after this property's listing. The weapon can be fully loaded as part of an attack with the weapon, as normal, or by using the <span class="popupAnchor" data-injection-arg="actions#interact" onclick='handleAnchorClick("actions#interact", this, event)' onmouseover='showPopup("actions#interact", this, event)' onmouseout='hidePopup("actions#interact", event)'>Interact</span> action. Both loading methods require a free hand.</div>
+</div>`},"weapon-properties#loud":{title:"Loud",associated_url:"/rules/2d/player-options/equipment/properties.html#loud",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Loud</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">When an attack is made with a loud weapon, it makes a noise that's easily audible out to the distance given in parentheses after this property's listing.</div>
+</div>`},"classes#artificer.subclasses.gunsmith.features.gun_modifications":{title:"Gun Modifications",associated_url:"/rules/2d/player-options/classes.html#gun-modifications",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Gun Modifications</h1>
+            <div class="card-subheader">3rd-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">When you make a <span class="misc-tag">gun</span> weapon with one of your artificer infusions, you can permanently modify it with one of the following modifications.</div>
+    <div class="p"><b><i>Aimed.</i></b> The gun's normal and long ranges are doubled. Additionally, when you or a creature attuned to the gun takes the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action to make a ranged attack with the gun, that creature can spend 1 additional AP to add your Intelligence score to the attack roll.</div>
+    <div class="p"><b><i>Bladed.</i></b> An arcane blade can magically extend from the gun. Any creature holding the gun can extend or retract the blade as a repeatable free action. While the blade is extended, the gun doubles as a melee weapon. Choose the blade's damage type when you create the gun. The blade has the <span class="popupAnchor" data-injection-arg="weapon-properties#finesse" onclick='handleAnchorClick("weapon-properties#finesse", this, event)' onmouseover='showPopup("weapon-properties#finesse", this, event)' onmouseout='hidePopup("weapon-properties#finesse", event)'>finesse</span> property, and it also inherits the following properties from the gun itself: <span class="popupAnchor" data-injection-arg="weapon-properties#light" onclick='handleAnchorClick("weapon-properties#light", this, event)' onmouseover='showPopup("weapon-properties#light", this, event)' onmouseout='hidePopup("weapon-properties#light", event)'>light</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#heavy" onclick='handleAnchorClick("weapon-properties#heavy", this, event)' onmouseover='showPopup("weapon-properties#heavy", this, event)' onmouseout='hidePopup("weapon-properties#heavy", event)'>heavy</span>, and/or <span class="popupAnchor" data-injection-arg="weapon-properties#two_handed" onclick='handleAnchorClick("weapon-properties#two_handed", this, event)' onmouseover='showPopup("weapon-properties#two_handed", this, event)' onmouseout='hidePopup("weapon-properties#two_handed", event)'>two-handed</span>. The blade's damage die is a d6 if it has the light property, a d10 if it has the heavy property, or a d8 otherwise. Additionally, when you or a creature attuned to the gun makes an attack with the blade, that creature gains advantage on the next ranged attack it makes with a gun against the same target before the end of its next turn.</div>
+    <div class="p"><b><i>Loaded.</i></b> The gun has the <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (12) property, replacing its normal loading property if it has one. The gun also has a separate chamber that has the loading (1) property. Only you or a creature attuned to the gun can fire from or load the smaller chamber, and once loaded, it can't be loaded again for 1 hour. When a creature fires the ammunition in the smaller chamber, the ammunition is automatically empowered with the Arcing or Slug option (creature's choice) without expending one of your bullet charges.</div>
+    <div class="p"><b><i>Silenced.</i></b> Thanks to magical silencing, the gun lacks the <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> property. Additionally, when you or a creature attuned to the gun makes a ranged attack with the gun while <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span>, that creature doesn't reveal its position.</div>
+</div>`},"weapon-properties#finesse":{title:"Finesse",associated_url:"/rules/2d/player-options/equipment/properties.html#finesse",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Finesse</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">Finesse weapons are designed for speed and precision. When you make a melee attack with a finesse weapon, you can use use Dexterity instead of Strength for the attack and damage rolls.</div>
+</div>`},"weapon-properties#heavy":{title:"Heavy",associated_url:"/rules/2d/player-options/equipment/properties.html#heavy",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Heavy</h1>
+            <div class="card-subheader">Weapon property</div>
+        </div>
+    </div>
+    <div class="p">Due to their weight distribution, <span class="tooltipWrapper"><span class="tooltipAnchor">Small creatures</span><span class="tooltip">Except those with the <a href="/settings/four-corners/player-options/feats.html#powerful-build">Powerful Build</a> trait</span></span> have disadvantage on attack rolls with heavy weapons.</div>
+</div>`},"conditions#hidden":{title:"Hidden",associated_url:"/rules/2d/glossary/conditions.html#hidden",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hidden</h1>
+            <div class="card-subheader">Condition</div>
+        </div>
+    </div>
+    <div class="p">While hidden from one or more creatures, you have a Hide DC, which is typically determined by the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action. If you move without <span class="popupAnchor" data-injection-arg="movement-modes#sneaking" onclick='handleAnchorClick("movement-modes#sneaking", this, event)' onmouseover='showPopup("movement-modes#sneaking", this, event)' onmouseout='hidePopup("movement-modes#sneaking", event)'>sneaking</span>, you must reroll the Hide DC by making another <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check.</div>
+    <div class="centered-header">Effects</div>
+    <div class="p">While hidden from a creature, it doesn't know where you are, and it can't track your movement.</div>
+    <div class="centered-header">Ending This Condition</div>
+    <div class="p">You cease to be hidden from a creature if any of the following occurs:</div>
+    <ul>
+        <li>You aren't <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind any <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span> relative to the creature.</li>
+        <li>You attack the creature.</li>
+        <li>You make a sound louder than a whisper, such as by casting a spell with a verbal component.</li>
+        <li>Another creature reveals your location.</li>
+        <li>The creature succeeds on a <a href="/rules/2d/glossary/skills.html#perception">Perception</a> check against your Hide DC. The <a href="/rules/2d/glossary/actions.html#search">Search</a> action lets a creature attempt this check.</li>
+        <li>Your Hide DC becomes less than the creature's <span class="tooltipWrapper"><span class="tooltipAnchor">passive Perception</span><span class="tooltip">Also see the rule on <a href="/rules/2d.html#passive-perception-falloff">Passive Perception Falloff</a>.</span></span>.</li>
+    </ul>
+    <div class="centered-header">Causes of This Condition</div>
+    <div class="p">This condition is typically acquired via the <a href="/rules/2d/glossary/actions.html#hide">Hide</a> action.</div>
+</div>`},"environment#obscured.subitems.heavily":{title:"Heavily Obscured",associated_url:"/rules/2d/glossary/environment.html#heavily-obscured",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Heavily Obscured</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
+    </div>
+    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
+</div>`},"environment#obscured":{title:"Obscured",associated_url:"/rules/2d/glossary/environment.html#obscured",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Obscured</h1>
+    <div class="p">When vision in an area is hindered by smoke, darkness, or a similar phenomenon, the area is obscured. There are two degrees of obscurity.</div>
+    <h4 class="noHeaderID">Lightly Obscured</h4>
+    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
+    <h4 class="noHeaderID">Heavily Obscured</h4>
+    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
+</div>`},"environment#light.subitems.darkness":{title:"Darkness",associated_url:"/rules/2d/glossary/environment.html#darkness",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Darkness</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
+    </div>
+    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
+</div>`},"environment#light":{title:"Light",associated_url:"/rules/2d/glossary/environment.html#light",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Light</h1>
+    <div class="p">There are three categories of illumination: bright light, dim light, and darkness.</div>
+    <div class="p">A source of light typically emits bright light in a small radius and dim light in a larger radius; these distances are given in parentheses. For example, a fire that sheds light (20/40 ft.) produces bright light within 20 feet and dim light for another 20 feet beyond that.</div>
+    <h4 class="noHeaderID">Bright Light</h4>
+    <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
+    <h4 class="noHeaderID">Dim Light</h4>
+    <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
+    <h4 class="noHeaderID">Darkness</h4>
+    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
+</div>`},"environment#obscured.subitems.lightly":{title:"Lightly Obscured",associated_url:"/rules/2d/glossary/environment.html#lightly-obscured",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Lightly Obscured</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
+    </div>
+    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
+</div>`},"environment#cover":{title:"Cover",associated_url:"/rules/2d/glossary/environment.html#cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Cover</h1>
+    <div class="p">Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.</div>
+    <div class="p">There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.</div>
+    <h4 class="noHeaderID">Half Cover</h4>
+    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
+    <h4 class="noHeaderID">Three-Quarters Cover</h4>
+    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
+    <h4 class="noHeaderID">Total Cover</h4>
+    <div class="p">A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</div>
+</div>`},"actions#hide":{title:"Hide",associated_url:"/rules/2d/glossary/actions.html#hide",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hide</h1>
+            <div class="card-subheader">Standard action</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">Repeatable</span>
+        </div>
+    </div>
+    <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span> from one or more creatures. Make a <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check. If you are <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind at least <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span> relative to a creature, and your check equals or exceeds its passive <a href="/rules/2d/glossary/skills.html#perception">Perception</a>, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
+</div>`},"environment#cover.subitems.three_quarters":{title:"Three-Quarters Cover",associated_url:"/rules/2d/glossary/environment.html#three-quarters-cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Three-Quarters Cover</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
+    </div>
+    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
+</div>`},"movement-modes#sneaking":{title:"Sneaking",associated_url:"/rules/2d/glossary/movement.html#sneaking",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sneaking</h1>
+            <div class="card-subheader">Movement mode</div>
+        </div>
+    </div>
+    <div class="p">Sneaking is a special movement mode that you use at the same time as another movement mode. If you are <a href="/rules/2d/glossary/conditions.html#hidden">hidden</a>, sneaking allows you to maintain your Hide DC.</div>
+</div>`},"classes#artificer.subclasses.gunsmith.features.bullet_charges":{title:"Bullet Charges",associated_url:"/rules/2d/player-options/classes.html#bullet-charges",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Bullet Charges</h1>
+            <div class="card-subheader">3rd-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">You have a number of bullet charges equal to your Intelligence score (minimum 1) that you can use to empower your gun ammunition. When you make an attack with a <span class="misc-tag">gun</span> weapon, you can expend 1 charge to empower the ammunition with the Arcing or Slug option, described below. A piece of ammunition can't be empowered by more than one option. You regain expended charges when you finish a short or long rest. You can also use a minor action and expend a spell slot to regain a number of charges up to the slot's level.</div>
+    <div class="p"><b><i>Arcing.</i></b> An Arcing bullet automatically makes slight course corrections throughout its entire flight, ignoring half and three-quarters cover and granting advantage on the attack roll. Moreover, the attacker can change the bullet's direction mid-flight at a single point, potentially shooting around total <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>.</div>
+    <div class="p"><b><i>Slug.</i></b> A Slug bullet packs an extra punch. On a hit, the bullet deals extra damage equal to your Intelligence score and the target is pushed up to 10 feet in the direction of the bullet's motion.</div>
+</div>`},"classes#artificer.subclasses.gunsmith.features.advanced_munitions":{title:"Advanced Munitions",associated_url:"/rules/2d/player-options/classes.html#advanced-munitions",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Advanced Munitions</h1>
+            <div class="card-subheader">7th-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">You learn two additional bullet charge options: Explosive and Piercing, described below. These options cost 2 bullet charges each instead of 1.</div>
+    <div class="p"><b><i>Explosive.</i></b> When an Explosive bullet hits a target, it explodes in a 10-foot sphere emanating from a point in the target's space in addition to its other effects. If an Explosive bullet somehow hits multiple targets, it produces an explosion from each target. Each creature in the area of at least one explosion must make a Dexterity saving throw against your spell save DC. A creature takes 3d6 damage on a failed save, or half as much on a success. You choose the damage type when you fire the bullet from the following options: acid, cold, fire, lightning, poison, or thunder.</div>
+    <div class="p"><b><i>Piercing.</i></b> A Piercing bullet can tunnel through up to two intermediate targets before hitting its final target. Each intermediate target can be a creature of any size or an object up to 5 feet thick along the bullet's trajectory. Make an attack roll against each intermediate target and the final target, potentially hitting any number of them. The intermediate targets provide no <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span> for these attacks, although other sources of cover apply as normal.</div>
+</div>`},"classes#artificer.subclasses.gunsmith.features.propulsive_recoil":{title:"Propulsive Recoil",associated_url:"/rules/2d/player-options/classes.html#propulsive-recoil",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Propulsive Recoil</h1>
+            <div class="card-subheader">7th-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">When you make an attack with a <span class="misc-tag">gun</span> weapon created by one of your artificer infusions, you can amplify the gun's recoil and be pushed up to 5 feet in the opposite direction of the attack (even vertically). If you fired a Slug bullet—or if you fired an Explosive bullet and were caught in the explosion—you can be pushed an additional 10 feet (for a total of 15 feet). This push counts as forced movement, and thus doesn't trigger <span class="popupAnchor" data-injection-arg="reactions#opportunity_attack" onclick='handleAnchorClick("reactions#opportunity_attack", this, event)' onmouseover='showPopup("reactions#opportunity_attack", this, event)' onmouseout='hidePopup("reactions#opportunity_attack", event)'>opportunity attacks</span>.</div>
+</div>`},"reactions#opportunity_attack":{title:"Opportunity Attack",associated_url:"/rules/2d/glossary/actions.html#opportunity-attack",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Opportunity Attack</h1>
+            <div class="card-subheader">Reaction</div>
+        </div>
+    </div>
+    <div class="centered-header">Trigger</div>
+    <div class="p">You're wielding a melee <a href="/rules/2d/player-options/equipment.html#weapons">weapon</a> when either of the following occurs:</div>
+    <ul>
+        <li>A creature you can see <a href="/rules/2d/glossary/movement.html">moves</a> out of your weapon's <a href="/rules/2d/systems/attacking.html#reach">reach</a> without first taking the <a href="/rules/2d/glossary/actions.html#disengage">Disengage</a> action.</li>
+        <li>A creature you can see makes a ranged attack within your weapon's reach without doing so <a href="/rules/2d/systems/attacking.html#ranged-attacks">hastily</a>.</li>
+    </ul>
+    <div class="centered-header">Effect</div>
+    <div class="p">You make a melee attack against the triggering creature with your weapon. Your attack, called an <b>opportunity attack</b>, occurs immediately before the target leaves your reach or immediately after the target makes a ranged attack.</div>
+</div>`},"classes#artificer.subclasses.gunsmith.features.masterful_modifications":{title:"Masterful Modifications",associated_url:"/rules/2d/player-options/classes.html#masterful-modifications",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Masterful Modifications</h1>
+            <div class="card-subheader">11th-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">When you make a <span class="misc-tag">gun</span> weapon with one of your artificer infusions, you can apply two different modifications with your <span class="popupAnchor" data-injection-arg="classes#artificer.subclasses.gunsmith.features.gun_modifications" onclick='handleAnchorClick("classes#artificer.subclasses.gunsmith.features.gun_modifications", this, event)' onmouseover='showPopup("classes#artificer.subclasses.gunsmith.features.gun_modifications", this, event)' onmouseout='hidePopup("classes#artificer.subclasses.gunsmith.features.gun_modifications", event)'>Gun Modifications</span> feature, not just one.</div>
+    <div class="p">Addditionally, the number of extra gun infusions you can have active at a time (per your <span class="popupAnchor" data-injection-arg="classes#artificer.subclasses.gunsmith.features.well_armed" onclick='handleAnchorClick("classes#artificer.subclasses.gunsmith.features.well_armed", this, event)' onmouseover='showPopup("classes#artificer.subclasses.gunsmith.features.well_armed", this, event)' onmouseout='hidePopup("classes#artificer.subclasses.gunsmith.features.well_armed", event)'>Well-armed</span> feature) increases from 2 to 4.</div>
+</div>`},"classes#artificer.subclasses.gunsmith.features.spell_shooter":{title:"Spell Shooter",associated_url:"/rules/2d/player-options/classes.html#spell-shooter",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Spell Shooter</h1>
+            <div class="card-subheader">11th-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">You can activate your spell objects by shooting them. When you make an attack with a <span class="misc-tag">gun</span> weapon against one of your own spell objects, the attack automatically hits, and you can cast one spell imbued within the spell object that has a casting time of 3 AP or less. You cast the spell as normal, except its casting obeys the following rules:</div>
+    <ul>
+        <li>The spell is cast from the spell object's location, not your location.</li>
+        <li>If the spell has a range of self, the spell fails.</li>
+        <li>If the spell has a range of touch, it must be cast on a creature touching or bearing the spell object.</li>
+        <li>If the spell creates an area that emanates from a point within the spell's range, the area must emanate from the spell object itself.</li>
+        <li>If the spell creates an area within the spell's range, the area must contain the spell object.</li>
+    </ul>
+</div>`},"classes#artificer.subclasses.gunsmith.features.hybrid_munitions":{title:"Hybrid Munitions",associated_url:"/rules/2d/player-options/classes.html#hybrid-munitions",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Hybrid Munitions</h1>
+            <div class="card-subheader">15th-level gunsmith feature</div>
+        </div>
+    </div>
+    <div class="p">You can empower a piece of ammunition with two different bullet charge options simultaneously.</div>
+</div>`},"spells#fog_cloud":{title:"<i>Fog Cloud</i>",associated_url:"/rules/2d/player-options/spells.html#fog-cloud",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Fog Cloud</h1>
+            <div class="card-subheader">1st-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">120 feet / Sphere (20 ft. radius) emanating from a point within range, spreading around cover</div></div>
+        </div>
+    </div>
+    <div class="p">Thick fog fills the spell's area, forming a zone for the duration. The zone is <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span>. Wind of moderate or greater speed (at least 10 miles per hour) disperses the fog.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the radius of the zone increases by 20 feet for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, druid, magus, ranger, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#shatter":{title:"<i>Shatter</i>",associated_url:"/rules/2d/player-options/spells.html#shatter",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Shatter</h1>
+            <div class="card-subheader">2nd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a chip of mica)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Sphere (10 ft. radius) within range</div></div>
+        </div>
+    </div>
+    <div class="p">A sudden loud noise, painfully intense, rings through the spell's area. Each creature there must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.</div>
+    <div class="p">Am object that isn't being worn or carried also takes the damage if it's in the spell's area.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#fire_burst":{title:"<i>Fire Burst</i>",associated_url:"/rules/2d/player-options/spells.html#fire-burst",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Fire Burst</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">90 feet / Sphere (10 ft. radius) emanating from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">You create an explosion of heat and pressure. Each creature in the spell's area must succeed on a Strength saving throw or take 6d6 fire damage and be pushed 10 feet from the point of emanation. A target takes half as much damage and isn't pushed on a successful save.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"artificer-infusions#quickshot_gun":{title:"Quickshot Gun",associated_url:"/rules/2d/player-options/classes/artificer.html#quickshot-gun",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Quickshot Gun</h1>
+            <div class="card-subheader">6th-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal and wood stock worth at least 10 gp</div></div>
+    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#quickshot_gun" onclick='handleAnchorClick("special-weapons#quickshot_gun", this, event)' onmouseover='showPopup("special-weapons#quickshot_gun", this, event)' onmouseout='hidePopup("special-weapons#quickshot_gun", event)'>quickshot gun</span>. You are proficient with it.</div>
+    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
+    <ul>
+        <li>The attuned creature is proficient with the weapon.</li>
+        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
+    </ul>
+</div>`},"special-weapons#quickshot_gun":{title:"Quickshot Gun",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Quickshot Gun</h1>
+            <div class="card-subheader">Unique ranged weapon</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">gun</span>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d4 piercing</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">100 gp</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 30/120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#light" onclick='handleAnchorClick("weapon-properties#light", this, event)' onmouseover='showPopup("weapon-properties#light", this, event)' onmouseout='hidePopup("weapon-properties#light", event)'>light</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (6), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (120 ft.)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">3 lb.</div></div>
+        </div>
+    </div>
+    <div class="p">Immediately after a creature takes the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action to make a ranged attack with this weapon, that creature can take the Attack action again as a minor action to make another attack against that target using this weaon.</div>
+</div>`},"artificer-infusions#scattershot_gun":{title:"Scattershot Gun",associated_url:"/rules/2d/player-options/classes/artificer.html#scattershot-gun",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Scattershot Gun</h1>
+            <div class="card-subheader">6th-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal and wood stock worth at least 20 gp</div></div>
+    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#scattershot_gun" onclick='handleAnchorClick("special-weapons#scattershot_gun", this, event)' onmouseover='showPopup("special-weapons#scattershot_gun", this, event)' onmouseout='hidePopup("special-weapons#scattershot_gun", event)'>scattershot gun</span>. You are proficient with it.</div>
+    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
+    <ul>
+        <li>The attuned creature is proficient with the weapon.</li>
+        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
+    </ul>
+</div>`},"special-weapons#scattershot_gun":{title:"Scattershot Gun",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Scattershot Gun</h1>
+            <div class="card-subheader">Unique ranged weapon</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">gun</span>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d4 piercing</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">200 gp</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 30/120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#heavy" onclick='handleAnchorClick("weapon-properties#heavy", this, event)' onmouseover='showPopup("weapon-properties#heavy", this, event)' onmouseout='hidePopup("weapon-properties#heavy", event)'>heavy</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (1), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#two_handed" onclick='handleAnchorClick("weapon-properties#two_handed", this, event)' onmouseover='showPopup("weapon-properties#two_handed", this, event)' onmouseout='hidePopup("weapon-properties#two_handed", event)'>two-handed</span></div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">6 lb.</div></div>
+        </div>
+    </div>
+    <div class="p">When a creature makes a ranged attack with this weapon, it selects a point within the target's space that isn't behind <span class="popupAnchor" data-injection-arg="environment#cover.subitems.total" onclick='handleAnchorClick("environment#cover.subitems.total", this, event)' onmouseover='showPopup("environment#cover.subitems.total", this, event)' onmouseout='hidePopup("environment#cover.subitems.total", event)'>total cover</span>. Each creature and object (including the original target) in a 5-foot-radius sphere centered on that point takes 1d4 piercing damage if the attack roll would have hit it.</div>
+</div>`},"environment#cover.subitems.total":{title:"Total Cover",associated_url:"/rules/2d/glossary/environment.html#total-cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Total Cover</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
+    </div>
+    <div class="p">A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</div>
+</div>`},"artificer-infusions#longshot_gun":{title:"Longshot Gun",associated_url:"/rules/2d/player-options/classes/artificer.html#longshot-gun",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Longshot Gun</h1>
+            <div class="card-subheader">10th-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal worth at least 100 gp</div></div>
+    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#longshot_gun" onclick='handleAnchorClick("special-weapons#longshot_gun", this, event)' onmouseover='showPopup("special-weapons#longshot_gun", this, event)' onmouseout='hidePopup("special-weapons#longshot_gun", event)'>longshot gun</span>. You are proficient with it.</div>
+    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
+    <ul>
+        <li>The attuned creature is proficient with the weapon.</li>
+        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
+    </ul>
+</div>`},"special-weapons#longshot_gun":{title:"Longshot Gun",associated_url:"undefined",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Longshot Gun</h1>
+            <div class="card-subheader">Unique ranged weapon</div>
+        </div>
+        <div class="tags">
+            <span class="misc-tag">gun</span>
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d12 piercing</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1,000 gp</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 300/1,200 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#heavy" onclick='handleAnchorClick("weapon-properties#heavy", this, event)' onmouseover='showPopup("weapon-properties#heavy", this, event)' onmouseout='hidePopup("weapon-properties#heavy", event)'>heavy</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (1), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (1,200 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#two_handed" onclick='handleAnchorClick("weapon-properties#two_handed", this, event)' onmouseover='showPopup("weapon-properties#two_handed", this, event)' onmouseout='hidePopup("weapon-properties#two_handed", event)'>two-handed</span></div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">10 lb.</div></div>
+        </div>
+    </div>
+    <div class="p">A ranged attack made against a target within 120 feet of the attacker ignores <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span>, and a ranged attack made against a target within 30 feet of the attacker also ignores <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span>.</div>
+</div>`},"environment#cover.subitems.half":{title:"Half Cover",associated_url:"/rules/2d/glossary/environment.html#half-cover",content_html:`<div class="small-card">
+    <h1 class="noHeaderID">Half Cover</h1>
+    <div class="card-subheader">Main entry: 
+    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
+    </div>
+    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
+</div>`},"spells#thunderwave":{title:"<i>Thunderwave</i>",associated_url:"/rules/2d/player-options/spells.html#thunderwave",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Thunderwave</h1>
+            <div class="card-subheader">1st-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cube (15 ft.) emanating from you</div></div>
+        </div>
+    </div>
+    <div class="p">A wave of thunderous force sweeps out from you. Each creature in the spell's area must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</div>
+    <div class="p">In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, druid, magus, sorcerer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
+    </div>
+</div>`},"spells#repair_minor_damage":{title:"<i>Repair Minor Damage</i>",associated_url:"/rules/2d/player-options/spells.html#repair-minor-damage",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Repair Minor Damage</h1>
+            <div class="card-subheader">1st-level transmutation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S, M (a small hammer)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
+        </div>
+    </div>
+    <div class="p">A creature you touch regains a number of hit points equal to 1d6 + your spellcasting ability score, or twice that amount if the target is a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a>. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d6 for each slot level above 1st.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"classes#artificer.features.artificer_combat_tactics_i":{title:"Artificer Combat Tactics I",associated_url:"/rules/2d/player-options/classes.html#artificer-combat-tactics-i",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Artificer Combat Tactics I</h1>
+            <div class="card-subheader">2nd-level artificer feature</div>
+        </div>
+    </div>
+    <div class="p">Choose Martial Tactics or Magic Tactics. Your choice gives you benefits now, described below, and later at 5th and 9th levels.</div>
+    <h4 class="noHeaderID">Martial Tactics I</h4>
+    <div class="p">You gain proficiency with martial <a href="/rules/2d/player-options/equipment.html#weapons-table">weapons</a>, heavy <a href="/rules/2d/player-options/equipment.html#armor-table">armor</a>, and heavy <a href="/rules/2d/player-options/equipment.html#shields-table">shields</a>.</div>
+    <h4 class="noHeaderID">Magic Tactics I</h4>
+    <div class="p">You learn one cantrip of your choice from the <a href="/rules/2d/player-options/classes/artificer.html#artificer-spells">artificer</a>, <a href="/rules/2d/player-options/classes/druid.html#druid-spells">druid</a>, or <a href="/rules/2d/player-options/classes/wizard.html#wizard-spells">wizard</a> spell list. The cantrip counts as an artificer spell for you.</div>
+</div>`},"classes#artificer.features.artificer_combat_tactics_ii":{title:"Artificer Combat Tactics II",associated_url:"/rules/2d/player-options/classes.html#artificer-combat-tactics-ii",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Artificer Combat Tactics II</h1>
+            <div class="card-subheader">5th-level artificer feature</div>
+        </div>
+    </div>
+    <div class="p">You gain one of the following features based on your choice at 2nd level.</div>
+    <h4 class="noHeaderID">Martial Tactics II</h4>
+    <div class="p">Each time you spend at least 2 AP to take the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action and use a magic weapon for the attack, you can take the Attack action once later that turn as a free action. The secondary attack must also be made with a magic weapon, which can be the same weapon or a different one.</div>
+    <h4 class="noHeaderID">Magic Tactics II</h4>
+    <div class="p">When you use a major action to create a <a href="/rules/2d/player-options/classes/artificer.html#makeshift-magic">spell object</a>, you can create two spell objects instead of one. You only expend one spell slot, but if any material components are expended, you must expend them separately for each spell object.</div>
+</div>`},"classes#artificer.features.sustaining_attunement":{title:"Sustaining Attunement",associated_url:"/rules/2d/player-options/classes.html#sustaining-attunement",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Sustaining Attunement</h1>
+            <div class="card-subheader">3rd-level artificer feature</div>
+        </div>
+    </div>
+    <div class="p">When another creature is attuned to one or more of your <a href="/rules/2d/player-options/classes/artificer.html#infusions">infusions</a>, one of those infusions doesn't count against the number of infusions you can have active at a time, as the infusion can draw magical power from the attuned creature instead of you. You still can't have more than one of a given infusion in existence at a time, however.</div>
+</div>`},"classes#cleric.features.spellcasting":{title:"Spellcasting",associated_url:"/rules/2d/player-options/classes.html#spellcasting",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
             <h1 class="noHeaderID">Spellcasting</h1>
@@ -256,31 +994,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="p">When you begin falling, you immediately fall 60 feet. While falling, you drop another 180 feet at the start of each of your turns.</div>
     <div class="p">On impact, you take one <a href="/rules/2d.html#size-die">size die</a> of bludgeoning damage for every 10 feet you fell, to a maximum of 20 dice. You land <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span> unless you avoid taking damage from the fall, such as via the <span class="popupAnchor" data-injection-arg="reactions#break_fall" onclick='handleAnchorClick("reactions#break_fall", this, event)' onmouseover='showPopup("reactions#break_fall", this, event)' onmouseout='hidePopup("reactions#break_fall", event)'>Break Fall</span> reaction.</div>
     <div class="p">If you land in a creature's space, that creature must make a DC 10 Dexterity saving throw. It can choose to fail. On a failed save, the fall damage is split evenly between you and it.</div>
-</div>`},"conditions#prone":{title:"Prone",associated_url:"/rules/2d/glossary/conditions.html#prone",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Prone</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>The only movement mode available to you is <span class="popupAnchor" data-injection-arg="movement-modes#crawling" onclick='handleAnchorClick("movement-modes#crawling", this, event)' onmouseover='showPopup("movement-modes#crawling", this, event)' onmouseout='hidePopup("movement-modes#crawling", event)'>crawling</span>.</li>
-        <li>You have disadvantage on attack rolls.</li>
-        <li>An attack roll against you has advantage if the attacker is within 5 feet of you. Otherwise, the attack roll has disadvantage.</li>
-    </ul>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You can end this condition by standing up, which requires spending half of your <a href="/rules/2d/glossary/movement.html#walk">walk</a> speed when you move.</div>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">This condition is commonly caused by <a href="/rules/2d/glossary/environment.html#falling">falling</a>, falling <a href="/rules/2d/glossary/conditions.html#unconscious">unconscious</a>, and the <a href="/rules/2d/player-options/equipment.html#trip">trip</a> attack.</div>
-</div>`},"movement-modes#crawling":{title:"Crawling",associated_url:"/rules/2d/glossary/movement.html#crawling",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Crawling</h1>
-            <div class="card-subheader">Movement mode</div>
-        </div>
-    </div>
-    <div class="p">Crawling lets you move across a non-vertical surface while <a href="/rules/2d/glossary/conditions.html#prone">prone</a>.</div>
 </div>`},"reactions#break_fall":{title:"Break Fall",associated_url:"/rules/2d/glossary/actions.html#break-fall",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -292,14 +1005,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="p">You land at the end of a fall.</div>
     <div class="centered-header">Effect</div>
     <div class="p">You attempt to land safely. Make an <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check. The fall damage is reduced by half the result of the check.</div>
-</div>`},"movement-modes#sneaking":{title:"Sneaking",associated_url:"/rules/2d/glossary/movement.html#sneaking",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sneaking</h1>
-            <div class="card-subheader">Movement mode</div>
-        </div>
-    </div>
-    <div class="p">Sneaking is a special movement mode that you use at the same time as another movement mode. If you are <a href="/rules/2d/glossary/conditions.html#hidden">hidden</a>, sneaking allows you to maintain your Hide DC.</div>
 </div>`},"spells#feather_fall":{title:"<i>Feather Fall</i>",associated_url:"/rules/2d/player-options/spells.html#feather-fall",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -423,41 +1128,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
     </div>
     <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
-</div>`},"environment#light":{title:"Light",associated_url:"/rules/2d/glossary/environment.html#light",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Light</h1>
-    <div class="p">There are three categories of illumination: bright light, dim light, and darkness.</div>
-    <div class="p">A source of light typically emits bright light in a small radius and dim light in a larger radius; these distances are given in parentheses. For example, a fire that sheds light (20/40 ft.) produces bright light within 20 feet and dim light for another 20 feet beyond that.</div>
-    <h4 class="noHeaderID">Bright Light</h4>
-    <div class="p">Bright light lets most creatures see normally. Even gloomy days provide bright light, as do torches, lanterns, fires, and other sources of illumination within a specific radius.</div>
-    <h4 class="noHeaderID">Dim Light</h4>
-    <div class="p">Dim light, also called shadows, creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.lightly" onclick='handleAnchorClick("environment#obscured.subitems.lightly", this, event)' onmouseover='showPopup("environment#obscured.subitems.lightly", this, event)' onmouseout='hidePopup("environment#obscured.subitems.lightly", event)'>lightly obscured</span> area. An area of dim light is usually a boundary between a source of bright light, such as a torch, and surrounding darkness. The soft light of twilight and dawn also counts as dim light. A particularly brilliant full moon might bathe the land in dim light.</div>
-    <h4 class="noHeaderID">Darkness</h4>
-    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
-</div>`},"environment#obscured.subitems.lightly":{title:"Lightly Obscured",associated_url:"/rules/2d/glossary/environment.html#lightly-obscured",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Lightly Obscured</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
-    </div>
-    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
-</div>`},"environment#obscured":{title:"Obscured",associated_url:"/rules/2d/glossary/environment.html#obscured",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Obscured</h1>
-    <div class="p">When vision in an area is hindered by smoke, darkness, or a similar phenomenon, the area is obscured. There are two degrees of obscurity.</div>
-    <h4 class="noHeaderID">Lightly Obscured</h4>
-    <div class="p">In a lightly obscured area, such as <a href="/rules/2d/glossary/environment.html#dim-light">dim light</a>, patchy fog, or moderate foliage, creatures have disadvantage on <a href="/rules/2d/glossary/skills.html#perception">Perception</a> checks that rely on <a href="/rules/2d/glossary/senses.html#base-senses">sight</a>.</div>
-    <h4 class="noHeaderID">Heavily Obscured</h4>
-    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
-</div>`},"environment#light.subitems.darkness":{title:"Darkness",associated_url:"/rules/2d/glossary/environment.html#darkness",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Darkness</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span>
-    </div>
-    <div class="p">Darkness creates a <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> area. Characters face darkness outdoors at night (even most moonlit nights), within the confines of an unlit dungeon or a subterranean vault, or in an area of magical darkness.</div>
-</div>`},"environment#obscured.subitems.heavily":{title:"Heavily Obscured",associated_url:"/rules/2d/glossary/environment.html#heavily-obscured",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Heavily Obscured</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span>
-    </div>
-    <div class="p">A heavily obscured area, such as <span class="popupAnchor" data-injection-arg="environment#light.subitems.darkness" onclick='handleAnchorClick("environment#light.subitems.darkness", this, event)' onmouseover='showPopup("environment#light.subitems.darkness", this, event)' onmouseout='hidePopup("environment#light.subitems.darkness", event)'>darkness</span>, opaque fog, or dense foliage, blocks vision entirely. Nothing in that area can be seen.</div>
 </div>`},"spells#astral_flare":{title:"<i>Astral Flare</i>",associated_url:"/rules/2d/player-options/spells.html#astral-flare",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1135,22 +1805,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Cleric</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"environment#cover.subitems.three_quarters":{title:"Three-Quarters Cover",associated_url:"/rules/2d/glossary/environment.html#three-quarters-cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Three-Quarters Cover</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
-    </div>
-    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
-</div>`},"environment#cover":{title:"Cover",associated_url:"/rules/2d/glossary/environment.html#cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Cover</h1>
-    <div class="p">Walls, trees, creatures, and other obstacles can provide cover during combat, making a target more difficult to harm. A target can benefit from cover only when an attack or other effect originates on the opposite side of the cover.</div>
-    <div class="p">There are three degrees of cover. If a target is behind multiple sources of cover, only the most protective degree of cover applies; the degrees aren't added together. For example, if a target is behind a creature that gives half cover and a tree trunk that gives three-quarters cover, the target has three-quarters cover.</div>
-    <h4 class="noHeaderID">Half Cover</h4>
-    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
-    <h4 class="noHeaderID">Three-Quarters Cover</h4>
-    <div class="p">A target with three-quarters cover has a +5 bonus to AC and Dexterity saving throws. A target has three-quarters cover if about three-quarters of it is covered by an obstacle. The obstacle might be a portcullis, an arrow slit, or a thick tree trunk.</div>
-    <h4 class="noHeaderID">Total Cover</h4>
-    <div class="p">A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</div>
 </div>`},"environment#special_terrain.subitems.difficult":{title:"Difficult Terrain",associated_url:"/rules/2d/glossary/environment.html#difficult-terrain",content_html:`<div class="small-card">
     <h1 class="noHeaderID">Difficult Terrain</h1>
     <div class="card-subheader">Main entry: 
@@ -1198,12 +1852,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
             </table>
         </div>
     </div>
-</div>`},"environment#cover.subitems.half":{title:"Half Cover",associated_url:"/rules/2d/glossary/environment.html#half-cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Half Cover</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
-    </div>
-    <div class="p">A target with half cover has a +2 bonus to AC and Dexterity saving throws. A target has half cover if an obstacle blocks at least half of its body. The obstacle might be a low wall, a large piece of furniture, a narrow tree trunk, or a creature, whether that creature is an enemy or a friend.</div>
 </div>`},"conditions#hindered":{title:"Hindered",associated_url:"/rules/2d/glossary/conditions.html#hindered",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -1351,39 +1999,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="centered-header">Effects</div>
     <div class="p">You can't be seen without specialized aid, such as magic or <a href="/rules/2d/glossary/senses.html#blindsight">blindsight</a>. Any <a href="/rules/2d/player-options/equipment.html">equipment</a> you are wearing or carrying similarly can't be seen.</div>
     <div class="p">You can take the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action once as a free action on the same turn that you become invisible.</div>
-</div>`},"actions#hide":{title:"Hide",associated_url:"/rules/2d/glossary/actions.html#hide",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hide</h1>
-            <div class="card-subheader">Standard action</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">Repeatable</span>
-        </div>
-    </div>
-    <div class="p">The Hide action allows you to attempt to become <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span> from one or more creatures. Make a <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check. If you are <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind at least <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span> relative to a creature, and your check equals or exceeds its passive <a href="/rules/2d/glossary/skills.html#perception">Perception</a>, you become hidden from it. The result of the check also becomes your Hide DC, as described in the condition.</div>
-</div>`},"conditions#hidden":{title:"Hidden",associated_url:"/rules/2d/glossary/conditions.html#hidden",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hidden</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="p">While hidden from one or more creatures, you have a Hide DC, which is typically determined by the <span class="popupAnchor" data-injection-arg="actions#hide" onclick='handleAnchorClick("actions#hide", this, event)' onmouseover='showPopup("actions#hide", this, event)' onmouseout='hidePopup("actions#hide", event)'>Hide</span> action. If you move without <span class="popupAnchor" data-injection-arg="movement-modes#sneaking" onclick='handleAnchorClick("movement-modes#sneaking", this, event)' onmouseover='showPopup("movement-modes#sneaking", this, event)' onmouseout='hidePopup("movement-modes#sneaking", event)'>sneaking</span>, you must reroll the Hide DC by making another <a href="/rules/2d/glossary/skills.html#stealth">Stealth</a> check.</div>
-    <div class="centered-header">Effects</div>
-    <div class="p">While hidden from a creature, it doesn't know where you are, and it can't track your movement.</div>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You cease to be hidden from a creature if any of the following occurs:</div>
-    <ul>
-        <li>You aren't <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span> or behind any <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span> relative to the creature.</li>
-        <li>You attack the creature.</li>
-        <li>You make a sound louder than a whisper, such as by casting a spell with a verbal component.</li>
-        <li>Another creature reveals your location.</li>
-        <li>The creature succeeds on a <a href="/rules/2d/glossary/skills.html#perception">Perception</a> check against your Hide DC. The <a href="/rules/2d/glossary/actions.html#search">Search</a> action lets a creature attempt this check.</li>
-        <li>Your Hide DC becomes less than the creature's <span class="tooltipWrapper"><span class="tooltipAnchor">passive Perception</span><span class="tooltip">Also see the rule on <a href="/rules/2d.html#passive-perception-falloff">Passive Perception Falloff</a>.</span></span>.</li>
-    </ul>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">This condition is typically acquired via the <a href="/rules/2d/glossary/actions.html#hide">Hide</a> action.</div>
 </div>`},"spells#cleansing_winds":{title:"<i>Cleansing Winds</i>",associated_url:"/rules/2d/player-options/spells.html#cleansing-winds",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -4555,14 +5170,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         </div>
     </div>
     <div class="p">When you use your own body as a weapon, such as when you punch or kick, the body part you use counts as a weapon with the "unarmed" property.</div>
-</div>`},"weapon-properties#finesse":{title:"Finesse",associated_url:"/rules/2d/player-options/equipment/properties.html#finesse",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Finesse</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">Finesse weapons are designed for speed and precision. When you make a melee attack with a finesse weapon, you can use use Dexterity instead of Strength for the attack and damage rolls.</div>
 </div>`},"spells#disguise_self":{title:"<i>Disguise Self</i>",associated_url:"/rules/2d/player-options/spells.html#disguise-self",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -6170,25 +6777,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"weapon-properties#light":{title:"Light",associated_url:"/rules/2d/player-options/equipment/properties.html#light",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Light</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">A light weapon is small enough to be easily wielded in one hand. Each time you spend at least 2 AP to take the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action and use a light weapon for the attack, you can take the Attack action once later that turn as a minor action. The secondary attack—called an <b>offhand attack</b>—must be made with a different light weapon, and it deals half damage.</div>
-</div>`},"actions#attack":{title:"Attack",associated_url:"/rules/2d/glossary/actions.html#attack",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Attack</h1>
-            <div class="card-subheader">Standard action</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">Repeatable</span>
-        </div>
-    </div>
-    <div class="p">You make one <a href="/rules/2d/systems/attacking.html#weapon-attacks">weapon attack</a>.</div>
 </div>`},"weapon-properties#thrown":{title:"Thrown",associated_url:"/rules/2d/player-options/equipment/properties.html#thrown",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -7374,36 +7962,74 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"spells#visions_of_odds":{title:"<i>Visions of Odds</i>",associated_url:"/rules/2d/player-options/spells.html#visions-of-odds",content_html:`<div class="small-card">
+</div>`},"artificer-infusions#rocket_boots":{title:"Rocket Boots",associated_url:"/rules/2d/player-options/classes/artificer.html#rocket-boots",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
-            <h1 class="noHeaderID">Visions of Odds</h1>
-            <div class="card-subheader">3rd-level divination spell</div>
+            <h1 class="noHeaderID">Rocket Boots</h1>
+            <div class="card-subheader">2nd-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">a pair of boots</div></div>
+    <div class="p">You augment a pair of boots with three explosive charges, which replenish each dawn. A creature wearing the boots can use a minor action to spend 1 charge and propel themselves up to 15 feet in any direction, even vertically. This propulsion counts as forced movement, and thus doesn't trigger <span class="popupAnchor" data-injection-arg="reactions#opportunity_attack" onclick='handleAnchorClick("reactions#opportunity_attack", this, event)' onmouseover='showPopup("reactions#opportunity_attack", this, event)' onmouseout='hidePopup("reactions#opportunity_attack", event)'>opportunity attacks</span>.</div>
+</div>`},"artificer-infusions#cloak_of_invisibility":{title:"Cloak of Invisibility",associated_url:"/rules/2d/player-options/classes/artificer.html#cloak-of-invisibility",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Cloak of Invisibility</h1>
+            <div class="card-subheader">10th-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">a cloak</div></div>
+    <div class="p">A creature wearing this cloak can raise or lower the hood with the <a href="actions.html#interact">Interact</a> action. When the hood is raised, the cloak casts <span class="popupAnchor" data-injection-arg="spells#invisibility" onclick='handleAnchorClick("spells#invisibility", this, event)' onmouseover='showPopup("spells#invisibility", this, event)' onmouseout='hidePopup("spells#invisibility", event)'><i>invisibility</i></span> on the creature, no components or <span class="popupAnchor" data-injection-arg="conditions#concentration" onclick='handleAnchorClick("conditions#concentration", this, event)' onmouseover='showPopup("conditions#concentration", this, event)' onmouseout='hidePopup("conditions#concentration", event)'>concentration</span> required. The spell ends early if the cloak is removed or the hood is lowered. The cloak can't cast <i>invisibility</i> again until the next dawn.</div>
+</div>`},"spells#invisibility":{title:"<i>Invisibility</i>",associated_url:"/rules/2d/player-options/spells.html#invisibility",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Invisibility</h1>
+            <div class="card-subheader">2nd-level illusion spell</div>
         </div>
         <div class="tags">
-            
+            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
             
         </div>
     </div>
     <div class="card-stats">
         <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (an eyelash encased in gum arabic)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
         </div>
         <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
         </div>
     </div>
-    <div class="p">You anticipate the imminent luck of one creature you can see within range, forcing it to make an Intelligence saving throw. The target takes 3d6 psychic damage unless it willingly fails the saving throw. Roll three d20s on a failed save, or half as many on a success, and record the numbers.</div>
-    <div class="p">For the duration of the spell, each time you sense the target make an attack roll, ability check, or saving throw—or a creature make an attack roll against the target—you can choose a number from your list. If you do so, the attack roll, ability check, or saving throw uses that number as the d20 result instead of rolling. If the attack roll, ability check, or saving throw was made with advantage or disadvantage, your number only replaces the first d20, and the other is rolled as normal.</div>
-    <div class="p">The spell ends after the last d20 in your list is used.</div>
+    <div class="p">A creature you touch becomes <span class="popupAnchor" data-injection-arg="conditions#invisible" onclick='handleAnchorClick("conditions#invisible", this, event)' onmouseover='showPopup("conditions#invisible", this, event)' onmouseout='hidePopup("conditions#invisible", event)'>invisible</span> until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</div>
     <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 4th level or higher, roll an additional d20 on a failed save for each slot level above 3rd.</div>
+    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</div>
     <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, magus, sorcerer, warlock, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
+</div>`},"artificer-infusions#death_ward_medallion":{title:"Death Ward Medallion",associated_url:"/rules/2d/player-options/classes/artificer.html#death-ward-medallion",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Death Ward Medallion</h1>
+            <div class="card-subheader">10th-level artificer infusion</div>
+        </div>
+        <div class="tags">
+            <span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">a medallion</div></div>
+    <div class="p">A creature is permanently under the effect of <span class="popupAnchor" data-injection-arg="spells#death_ward" onclick='handleAnchorClick("spells#death_ward", this, event)' onmouseover='showPopup("spells#death_ward", this, event)' onmouseout='hidePopup("spells#death_ward", event)'><i>death ward</i></span> while bearing this medallion. When the <i>death ward</i> would normally end, the medallion shatters.</div>
+</div>`},"artificer-infusions#flare_launcher":{title:"Flare Launcher",associated_url:"/rules/2d/player-options/classes/artificer.html#flare-launcher",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Flare Launcher</h1>
+            <div class="card-subheader">2nd-level artificer infusion</div>
+        </div>
+    </div>
+    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">metal parts worth at least 5 gp</div></div>
+    <div class="p">A creature holding this device can take the <span class="popupAnchor" data-injection-arg="actions#use" onclick='handleAnchorClick("actions#use", this, event)' onmouseover='showPopup("actions#use", this, event)' onmouseout='hidePopup("actions#use", event)'>Use</span> action (1 AP) to launch a brightly-burning flare up to 150 feet. The flare sheds <span class="popupAnchor" data-injection-arg="environment#light" onclick='handleAnchorClick("environment#light", this, event)' onmouseover='showPopup("environment#light", this, event)' onmouseout='hidePopup("environment#light", event)'>light</span> (100/200 ft.), and the flare itself is visible through <span class="popupAnchor" data-injection-arg="environment#obscured" onclick='handleAnchorClick("environment#obscured", this, event)' onmouseover='showPopup("environment#obscured", this, event)' onmouseout='hidePopup("environment#obscured", event)'>obscured</span> areas. The flare remains lit for 1 minute.</div>
+    <div class="p">The flare doesn't do damage or spread fire on its own, but it is a valid target of <span class="popupAnchor" data-injection-arg="spells#pyrotechnics" onclick='handleAnchorClick("spells#pyrotechnics", this, event)' onmouseover='showPopup("spells#pyrotechnics", this, event)' onmouseout='hidePopup("spells#pyrotechnics", event)'><i>pyrotechnics</i></span>. When extinguished by <i>pyrotechnics</i>, the number of damage dice in the spell's "fireworks" option is doubled.</div>
 </div>`},"spells#pyrotechnics":{title:"<i>Pyrotechnics</i>",associated_url:"/rules/2d/player-options/spells.html#pyrotechnics",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -7686,50 +8312,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="multi-p">
         <div class="p"><b><i>(2 AP) Bite.</i></b> A target grappled by the frog's Tongue takes 1 bludgeoning damage.</div>
     </div>
-</div>`},"conditions#grappled":{title:"Grappled",associated_url:"/rules/2d/glossary/conditions.html#grappled",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Grappled</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="p">Grappling is an act that requires two creatures. One creature, the "grappler," has the <span class="popupAnchor" data-injection-arg="conditions#grappling" onclick='handleAnchorClick("conditions#grappling", this, event)' onmouseover='showPopup("conditions#grappling", this, event)' onmouseout='hidePopup("conditions#grappling", event)'>grappling</span> condition, while the other has this condition (grappled).</div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>Your speed is halved if you are one size larger than the grappler, or 0 if you are the same size or smaller.</li>
-        <li>When you move, you drag the grappler with you.</li>
-        <li>If the grappler attempts to use the grapple to move you, you can make a Strength saving throw against its passive Athletics. On a success, it can't use the grapple to move you until the start of its next turn.</li>
-    </ul>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You can attempt to escape the grapple by taking the <span class="popupAnchor" data-injection-arg="actions#disengage" onclick='handleAnchorClick("actions#disengage", this, event)' onmouseover='showPopup("actions#disengage", this, event)' onmouseout='hidePopup("actions#disengage", event)'>Disengage</span> action.</div>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">This condition is typically inflicted by the <a href="/rules/2d/player-options/equipment.html#grapple">grapple</a> attack.</div>
-</div>`},"actions#disengage":{title:"Disengage",associated_url:"/rules/2d/glossary/actions.html#disengage",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Disengage</h1>
-            <div class="card-subheader">Standard action</div>
-        </div>
-    </div>
-    <div class="p">When you take the Disengage action, you attempt to escape from your foes. Your movement doesn't provoke <a href="/rules/2d/glossary/actions.html#opportunity-attack">opportunity attacks</a> for the rest of the turn. Additionally, if you are <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grappled</span>, you can make an <a href="/rules/2d/glossary/skills.html#athletics">Athletics</a> or <a href="/rules/2d/glossary/skills.html#acrobatics">Acrobatics</a> check (your choice) against the passive Athletics score of each creature <a href="/rules/2d/glossary/conditions.html#grappling">grappling</a> you. You escape that grapple on a success.</div>
-</div>`},"conditions#grappling":{title:"Grappling",associated_url:"/rules/2d/glossary/conditions.html#grappling",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Grappling</h1>
-            <div class="card-subheader">Condition</div>
-        </div>
-    </div>
-    <div class="p">Grappling is an act that requires two creatures. One creature, the "grappler," has this condition (grappling), while the other has the <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grappled</span> condition.</div>
-    <div class="centered-header">Effects</div>
-    <ul>
-        <li>Your speed is halved if you are the same size as the grappled target, or 0 if you are smaller.</li>
-        <li>When you move, you drag or push the grappled target with you.</li>
-        <li>If you are the same size as the grappled target or larger, you can move it to another space within your reach as a repeatable minor action.</li>
-    </ul>
-    <div class="centered-header">Ending This Condition</div>
-    <div class="p">You can end the grapple at any time, no action required. The grapple also ends if you become <a href="/rules/2d/glossary/conditions.html#incapacitated">incapacitated</a> or if the target is no longer within your reach.</div>
-    <div class="centered-header">Causes of This Condition</div>
-    <div class="p">This condition is typically caused by the <a href="/rules/2d/player-options/equipment.html#grapple">grapple</a> attack (for grappling enemies) and the <a href="/rules/2d/glossary/actions.html#interact">Interact</a> action (for grappling allies).</div>
 </div>`},"druid-creatures(druid)#newt":{title:"Newt",associated_url:"/rules/2d/player-options/classes/druid.html#newt",content_html:`<div class="medium-card">
     <h1 class="noHeaderID">Newt</h1>
     <div class="card-subheader">Minuscule Beast, unaligned<br>2nd-level druid <a href="/rules/2d/player-options/classes/druid.html#wild-shape">beast form</a></div>
@@ -7977,6 +8559,64 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <h2 class="noHeaderID">Special Actions</h2>
     <div class="multi-p">
         <div class="p"><b><i>(2 AP) Bite.</i></b> A target grappled by the toad's Tongue takes 1 bludgeoning damage.</div>
+    </div>
+</div>`},"spells#frost_burst":{title:"<i>Frost Burst</i>",associated_url:"/rules/2d/player-options/spells.html#frost-burst",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Frost Burst</h1>
+            <div class="card-subheader">3rd-level evocation spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">90 feet / Sphere (10 ft. radius) emanating from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">You freeze the air, causing an implosion. Each creature in the spell's area must succeed on a Strength saving throw or take 6d6 cold damage and be pulled 10 feet toward the point of emanation. A target takes half as much damage and isn't pulled on a successful save.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, wizard</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
+    </div>
+</div>`},"spells#visions_of_odds":{title:"<i>Visions of Odds</i>",associated_url:"/rules/2d/player-options/spells.html#visions-of-odds",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Visions of Odds</h1>
+            <div class="card-subheader">3rd-level divination spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">1 minute</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 minor action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">30 feet</div></div>
+        </div>
+    </div>
+    <div class="p">You anticipate the imminent luck of one creature you can see within range, forcing it to make an Intelligence saving throw. The target takes 3d6 psychic damage unless it willingly fails the saving throw. Roll three d20s on a failed save, or half as many on a success, and record the numbers.</div>
+    <div class="p">For the duration of the spell, each time you sense the target make an attack roll, ability check, or saving throw—or a creature make an attack roll against the target—you can choose a number from your list. If you do so, the attack roll, ability check, or saving throw uses that number as the d20 result instead of rolling. If the attack roll, ability check, or saving throw was made with advantage or disadvantage, your number only replaces the first d20, and the other is rolled as normal.</div>
+    <div class="p">The spell ends after the last d20 in your list is used.</div>
+    <div class="centered-header">Higher Level</div>
+    <div class="p">When you cast this spell using a spell slot of 4th level or higher, roll an additional d20 on a failed save for each slot level above 3rd.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
 </div>`},"spells#mass_polymorph":{title:"<i>Mass Polymorph</i>",associated_url:"/rules/2d/player-options/spells.html#mass-polymorph",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -8274,35 +8914,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#thunderwave":{title:"<i>Thunderwave</i>",associated_url:"/rules/2d/player-options/spells.html#thunderwave",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Thunderwave</h1>
-            <div class="card-subheader">1st-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">Self / Cube (15 ft.) emanating from you</div></div>
-        </div>
-    </div>
-    <div class="p">A wave of thunderous force sweeps out from you. Each creature in the spell's area must make a Constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed up to 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</div>
-    <div class="p">In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Bard, druid, magus, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"spells#barkskin":{title:"<i>Barkskin</i>",associated_url:"/rules/2d/player-options/spells.html#barkskin",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -8857,42 +9468,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, ranger</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"items#ammunition":{title:"Ammunition",associated_url:"/rules/2d/player-options/equipment.html#ammunition",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Ammunition</h1>
-            <div class="card-subheader">Item category</div>
-        </div>
-    </div>
-    <div class="tableAndCaption">
-        <div class="tableWrapper">
-            <table>
-                <thead>
-                    <tr><th align="left"><span class="col-title">Item</span></th><th align="right"><span class="col-title">Cost</span></th><th align="right"><span class="col-title">Weight</span></th><th align="left"><span class="col-title">Capacity</span></th></tr>
-                </thead>
-                <tbody>
-                    <tr><td align="left"><span id="arrows">Arrows (20)</span></td><td align="right">1 gp</td><td align="right">1 lb.</td><td align="left">—</td></tr>
-                    <tr><td align="left"><span class="popupAnchor" data-injection-arg="items#ammunition.subitems.blowgun_needles" onclick='handleAnchorClick("items#ammunition.subitems.blowgun_needles", this, event)' onmouseover='showPopup("items#ammunition.subitems.blowgun_needles", this, event)' onmouseout='hidePopup("items#ammunition.subitems.blowgun_needles", event)'><span id="blowgun-needles">Blowgun needles (50)</span></span></td><td align="right">1 gp</td><td align="right">1 lb.</td><td align="left">—</td></tr>
-                    <tr><td align="left"><span id="crossbow-bolts">Crossbow bolts (20)</span></td><td align="right">1 gp</td><td align="right">1 1/2 lb.</td><td align="left">—</td></tr>
-                    <tr><td align="left"><span id="sling-bullets">Sling bullets (20)</span></td><td align="right">4 cp</td><td align="right">1 1/2 lb.</td><td align="left">—</td></tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>`},"items#ammunition.subitems.blowgun_needles":{title:"Blowgun Needles (50)",associated_url:"/rules/2d/player-options/equipment.html#blowgun-needles",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Blowgun Needles (50)</h1>
-            <div class="card-subheader">Item</div>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1 gp</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">1 lb.</div></div>
-        </div>
-    </div>
-    <div class="p">Blowgun needles are well-suited to delivering poison. A dose of poison or similar substance (such as <a href="/rules/2d/player-options/equipment.html#poison-basic">basic poison</a> or a ranger's <a href="/rules/2d/player-options/classes/ranger.html#potent-extracts">Potent Extracts</a>) that can normally only be applied to 1 piece of ammunition can be applied to 3 blowgun needles at once.</div>
 </div>`},"spells#reincarnate":{title:"<i>Reincarnate</i>",associated_url:"/rules/2d/player-options/spells.html#reincarnate",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -9271,37 +9846,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="multi-p">
         <div class="p"><b><i>(2 AP) Multiattack.</i></b> The skeleton makes two attacks.</div>
     </div>
-</div>`},"weapon-properties#ammunition":{title:"Ammunition",associated_url:"/rules/2d/player-options/equipment/properties.html#ammunition",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Ammunition</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">When you make an attack with an ammunition weapon, you use it to fire a piece of <span class="popupAnchor" data-injection-arg="items#ammunition" onclick='handleAnchorClick("items#ammunition", this, event)' onmouseover='showPopup("items#ammunition", this, event)' onmouseout='hidePopup("items#ammunition", event)'>ammunition</span> at the target. The type of ammunition appears in parentheses after this property's listing, as do the weapon's normal and long <a href="/rules/2d/systems/attacking.html#range">ranges</a>. Drawing a piece of ammunition from an appropriate container (such as a <span class="popupAnchor" data-injection-arg="items#quiver" onclick='handleAnchorClick("items#quiver", this, event)' onmouseover='showPopup("items#quiver", this, event)' onmouseout='hidePopup("items#quiver", event)'>quiver</span>) is part of the attack, and requires a free hand. (Note that a <span class="popupAnchor" data-injection-arg="weapon-properties#two_handed" onclick='handleAnchorClick("weapon-properties#two_handed", this, event)' onmouseover='showPopup("weapon-properties#two_handed", this, event)' onmouseout='hidePopup("weapon-properties#two_handed", event)'>two-handed</span> ammunition weapon can be held in one hand while a piece of ammunition is drawn.)</div>
-    <div class="p">In general, you can recover half your expended ammunition after a battle by searching the battlefield.</div>
-</div>`},"items#quiver":{title:"Quiver",associated_url:"/rules/2d/player-options/equipment.html#quiver",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Quiver</h1>
-            <div class="card-subheader">Item</div>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1 gp</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">1 lb.</div></div>
-        </div>
-    </div>
-    <div class="p">A quiver can hold up to 20 <a href="/rules/2d/player-options/equipment.html#arrows">arrows</a>.</div>
-</div>`},"weapon-properties#two_handed":{title:"Two-Handed",associated_url:"/rules/2d/player-options/equipment/properties.html#two-handed",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Two-Handed</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">Two hands are required to make an attack with a two-handed weapon.</div>
 </div>`},"items#ammunition.subitems.arrows":{title:"Arrows (20)",associated_url:"/rules/2d/player-options/equipment.html#arrows",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -9521,21 +10065,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="p">When you take the <span class="popupAnchor" data-injection-arg="actions#charge" onclick='handleAnchorClick("actions#charge", this, event)' onmouseover='showPopup("actions#charge", this, event)' onmouseout='hidePopup("actions#charge", event)'>Charge</span> action, your movement doesn't provoke <span class="popupAnchor" data-injection-arg="reactions#opportunity_attack" onclick='handleAnchorClick("reactions#opportunity_attack", this, event)' onmouseover='showPopup("reactions#opportunity_attack", this, event)' onmouseout='hidePopup("reactions#opportunity_attack", event)'>opportunity attacks</span>, and you don't suffer the usual ill effects afterwards.</div>
     <div class="centered-header">Active Effect (1 Ki)</div>
     <div class="p">When you take the Charge action and make an attack with a monk weapon, you can gain advantage on the attack roll. If it hits, it is a critical hit.</div>
-</div>`},"reactions#opportunity_attack":{title:"Opportunity Attack",associated_url:"/rules/2d/glossary/actions.html#opportunity-attack",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Opportunity Attack</h1>
-            <div class="card-subheader">Reaction</div>
-        </div>
-    </div>
-    <div class="centered-header">Trigger</div>
-    <div class="p">You're wielding a melee <a href="/rules/2d/player-options/equipment.html#weapons">weapon</a> when either of the following occurs:</div>
-    <ul>
-        <li>A creature you can see <a href="/rules/2d/glossary/movement.html">moves</a> out of your weapon's <a href="/rules/2d/systems/attacking.html#reach">reach</a> without first taking the <a href="/rules/2d/glossary/actions.html#disengage">Disengage</a> action.</li>
-        <li>A creature you can see makes a ranged attack within your weapon's reach without doing so <a href="/rules/2d/systems/attacking.html#ranged-attacks">hastily</a>.</li>
-    </ul>
-    <div class="centered-header">Effect</div>
-    <div class="p">You make a melee attack against the triggering creature with your weapon. Your attack, called an <b>opportunity attack</b>, occurs immediately before the target leaves your reach or immediately after the target makes a ranged attack.</div>
 </div>`},"spells#dire_future":{title:"<i>Dire Future</i>",associated_url:"/rules/2d/player-options/spells.html#dire-future",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -9663,35 +10192,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Druid, sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#shatter":{title:"<i>Shatter</i>",associated_url:"/rules/2d/player-options/spells.html#shatter",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Shatter</h1>
-            <div class="card-subheader">2nd-level evocation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (a chip of mica)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">60 feet / Sphere (10 ft. radius) within range</div></div>
-        </div>
-    </div>
-    <div class="p">A sudden loud noise, painfully intense, rings through the spell's area. Each creature there must make a Constitution saving throw. A creature takes 3d8 thunder damage on a failed save, or half as much damage on a successful one. A creature made of inorganic material such as stone, crystal, or metal has disadvantage on this saving throw.</div>
-    <div class="p">Am object that isn't being worn or carried also takes the damage if it's in the spell's area.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d8 for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"4c/feats#fist_of_khttum":{title:"Fist of Khttum",associated_url:"/settings/four-corners/player-options/feats.html#fist-of-khttum",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -10100,34 +10600,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Druid, sorcerer</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"weapon-properties#loading":{title:"Loading",associated_url:"/rules/2d/player-options/equipment/properties.html#loading",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Loading</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">A loading weapon can store ammunition inside it, enabling it to be loaded and fired at separate times. The maximum number of pieces of ammunition that can be stored in the weapon is given in parentheses after this property's listing. The weapon can be fully loaded as part of an attack with the weapon, as normal, or by using the <span class="popupAnchor" data-injection-arg="actions#interact" onclick='handleAnchorClick("actions#interact", this, event)' onmouseover='showPopup("actions#interact", this, event)' onmouseout='hidePopup("actions#interact", event)'>Interact</span> action. Both loading methods require a free hand.</div>
-</div>`},"actions#interact":{title:"Interact",associated_url:"/rules/2d/glossary/actions.html#interact",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Interact</h1>
-            <div class="card-subheader">Free action</div>
-        </div>
-    </div>
-    <div class="p">When you take the Interact action, you manipulate one object or feature of the environment in a trivial way. For example, you could open a door or pick up a dropped weapon. You can also use this action to <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grapple</span> a willing creature.</div>
-    <div class="p">If you need to interact with more than one thing on a turn, subsequent interactions require the <span class="popupAnchor" data-injection-arg="actions#use" onclick='handleAnchorClick("actions#use", this, event)' onmouseover='showPopup("actions#use", this, event)' onmouseout='hidePopup("actions#use", event)'>Use</span> action.</div>
-</div>`},"actions#use":{title:"Use",associated_url:"/rules/2d/glossary/actions.html#use",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Use</h1>
-            <div class="card-subheader">Action (cost varies)</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">Repeatable</span>
-        </div>
-    </div>
-    <div class="p">The Use action allows you to manipulate one object or feature of the environment in a potentially involved way. Activating an item's effect requires the Use action, which takes 2 AP unless otherwise specified. You can also take this action to do anything that the <span class="popupAnchor" data-injection-arg="actions#interact" onclick='handleAnchorClick("actions#interact", this, event)' onmouseover='showPopup("actions#interact", this, event)' onmouseout='hidePopup("actions#interact", event)'>Interact</span> action can do, and unlike the Interact action, it is repeatable.</div>
 </div>`},"spells#endless_ammunition":{title:"<i>Endless Ammunition</i>",associated_url:"/rules/2d/player-options/spells.html#endless-ammunition",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -10208,56 +10680,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Special</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
     </div>
-</div>`},"environment#cover.subitems.total":{title:"Total Cover",associated_url:"/rules/2d/glossary/environment.html#total-cover",content_html:`<div class="small-card">
-    <h1 class="noHeaderID">Total Cover</h1>
-    <div class="card-subheader">Main entry: 
-    <span class="popupAnchor" data-injection-arg="environment#cover" onclick='handleAnchorClick("environment#cover", this, event)' onmouseover='showPopup("environment#cover", this, event)' onmouseout='hidePopup("environment#cover", event)'>cover</span>
-    </div>
-    <div class="p">A target with total cover can't be targeted directly by an attack or a spell, although some spells can reach such a target by including it in an area of effect. A target has total cover if it is completely concealed by an obstacle.</div>
-</div>`},"special-weapons#quickshot_gun":{title:"Quickshot Gun",associated_url:"undefined",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Quickshot Gun</h1>
-            <div class="card-subheader">Unique ranged weapon</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">gun</span>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d4 piercing</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">100 gp</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 30/120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#light" onclick='handleAnchorClick("weapon-properties#light", this, event)' onmouseover='showPopup("weapon-properties#light", this, event)' onmouseout='hidePopup("weapon-properties#light", event)'>light</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (6), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (120 ft.)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">3 lb.</div></div>
-        </div>
-    </div>
-    <div class="p">Immediately after a creature takes the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action to make a ranged attack with this weapon, that creature can take the Attack action again as a minor action to make another attack against that target using this weaon.</div>
-</div>`},"items#ball_bearings":{title:"Ball Bearings (Bag of 1,000)",associated_url:"/rules/2d/player-options/equipment.html#ball-bearings",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Ball Bearings (Bag of 1,000)</h1>
-            <div class="card-subheader">Item</div>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1 gp</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">2 lb.</div></div>
-        </div>
-    </div>
-    <div class="centered-header"><span class="popupAnchor" data-injection-arg="actions#use" onclick='handleAnchorClick("actions#use", this, event)' onmouseover='showPopup("actions#use", this, event)' onmouseout='hidePopup("actions#use", event)'>Use</span> (2 AP)</div>
-    <div class="p">You spill these tiny metal balls from their pouch to cover a level, 10-foot-square area. For every 5 feet that a creature moves across the area, it must succeed on a DC 10 Dexterity saving throw or fall <span class="popupAnchor" data-injection-arg="conditions#prone" onclick='handleAnchorClick("conditions#prone", this, event)' onmouseover='showPopup("conditions#prone", this, event)' onmouseout='hidePopup("conditions#prone", event)'>prone</span>. A creature can avoid making the saving throw by <a href="/rules/2d/glossary/movement.html#crawling">crawling</a> or <a href="/rules/2d/glossary/movement.html#sneaking">sneaking</a>.</div>
-</div>`},"weapon-properties#loud":{title:"Loud",associated_url:"/rules/2d/player-options/equipment/properties.html#loud",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Loud</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">When an attack is made with a loud weapon, it makes a noise that's easily audible out to the distance given in parentheses after this property's listing.</div>
 </div>`},"weapons#javelin":{title:"Javelin",associated_url:"/rules/2d/player-options/equipment.html#javelin",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -10851,9 +11273,11 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="create food and water"><span class="popupAnchor" data-injection-arg="spells#create_food_and_water" onclick='handleAnchorClick("spells#create_food_and_water", this, event)' onmouseover='showPopup("spells#create_food_and_water", this, event)' onmouseout='hidePopup("spells#create_food_and_water", event)'><span id="create-food-and-water">Create Food and Water</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="conjuration">Conjuration</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="dispel magic"><span class="popupAnchor" data-injection-arg="spells#dispel_magic" onclick='handleAnchorClick("spells#dispel_magic", this, event)' onmouseover='showPopup("spells#dispel_magic", this, event)' onmouseout='hidePopup("spells#dispel_magic", event)'><span id="dispel-magic">Dispel Magic</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="abjuration">Abjuration</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="elemental weapon"><span class="popupAnchor" data-injection-arg="spells#elemental_weapon" onclick='handleAnchorClick("spells#elemental_weapon", this, event)' onmouseover='showPopup("spells#elemental_weapon", this, event)' onmouseout='hidePopup("spells#elemental_weapon", event)'><span id="elemental-weapon">Elemental Weapon</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="transmutation">Transmutation</td><td align="left" ></td></tr>
+                    <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="fire burst"><span class="popupAnchor" data-injection-arg="spells#fire_burst" onclick='handleAnchorClick("spells#fire_burst", this, event)' onmouseover='showPopup("spells#fire_burst", this, event)' onmouseout='hidePopup("spells#fire_burst", event)'><span id="fire-burst">Fire Burst</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="evocation">Evocation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="flame arrows"><span class="popupAnchor" data-injection-arg="spells#flame_arrows" onclick='handleAnchorClick("spells#flame_arrows", this, event)' onmouseover='showPopup("spells#flame_arrows", this, event)' onmouseout='hidePopup("spells#flame_arrows", event)'><span id="flame-arrows">Flame Arrows</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="transmutation">Transmutation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="flaming stride"><span class="popupAnchor" data-injection-arg="spells#flaming_stride" onclick='handleAnchorClick("spells#flaming_stride", this, event)' onmouseover='showPopup("spells#flaming_stride", this, event)' onmouseout='hidePopup("spells#flaming_stride", event)'><span id="flaming-stride">Flaming Stride</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="augmentation">Augmentation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="fly"><span class="popupAnchor" data-injection-arg="spells#fly" onclick='handleAnchorClick("spells#fly", this, event)' onmouseover='showPopup("spells#fly", this, event)' onmouseout='hidePopup("spells#fly", event)'><span id="fly">Fly</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="kinesis">Kinesis</td><td align="left" ></td></tr>
+                    <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="frost burst"><span class="popupAnchor" data-injection-arg="spells#frost_burst" onclick='handleAnchorClick("spells#frost_burst", this, event)' onmouseover='showPopup("spells#frost_burst", this, event)' onmouseout='hidePopup("spells#frost_burst", event)'><span id="frost-burst">Frost Burst</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="evocation">Evocation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="glyph of warding"><span class="popupAnchor" data-injection-arg="spells#glyph_of_warding" onclick='handleAnchorClick("spells#glyph_of_warding", this, event)' onmouseover='showPopup("spells#glyph_of_warding", this, event)' onmouseout='hidePopup("spells#glyph_of_warding", event)'><span id="glyph-of-warding">Glyph of Warding</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="abjuration">Abjuration</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="haste"><span class="popupAnchor" data-injection-arg="spells#haste" onclick='handleAnchorClick("spells#haste", this, event)' onmouseover='showPopup("spells#haste", this, event)' onmouseout='hidePopup("spells#haste", event)'><span id="haste">Haste</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="augmentation">Augmentation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="intellect fortress"><span class="popupAnchor" data-injection-arg="spells#intellect_fortress" onclick='handleAnchorClick("spells#intellect_fortress", this, event)' onmouseover='showPopup("spells#intellect_fortress", this, event)' onmouseout='hidePopup("spells#intellect_fortress", event)'><span id="intellect-fortress">Intellect Fortress</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="abjuration">Abjuration</td><td align="left" data-sort-token="psionic"><span class="misc-tag">psionic</span></td></tr>
@@ -11624,34 +12048,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, magus, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
-</div>`},"spells#fog_cloud":{title:"<i>Fog Cloud</i>",associated_url:"/rules/2d/player-options/spells.html#fog-cloud",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Fog Cloud</h1>
-            <div class="card-subheader">1st-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">120 feet / Sphere (20 ft. radius) emanating from a point within range, spreading around cover</div></div>
-        </div>
-    </div>
-    <div class="p">Thick fog fills the spell's area, forming a zone for the duration. The zone is <span class="popupAnchor" data-injection-arg="environment#obscured.subitems.heavily" onclick='handleAnchorClick("environment#obscured.subitems.heavily", this, event)' onmouseover='showPopup("environment#obscured.subitems.heavily", this, event)' onmouseout='hidePopup("environment#obscured.subitems.heavily", event)'>heavily obscured</span>. Wind of moderate or greater speed (at least 10 miles per hour) disperses the fog.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the radius of the zone increases by 20 feet for each slot level above 1st.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, druid, magus, ranger, sorcerer, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spells#frostbite":{title:"<i>Frostbite</i>",associated_url:"/rules/2d/player-options/spells.html#frostbite",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -11854,34 +12250,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, sorcerer, warlock, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">TCE</div></div>
-    </div>
-</div>`},"spells#invisibility":{title:"<i>Invisibility</i>",associated_url:"/rules/2d/player-options/spells.html#invisibility",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Invisibility</h1>
-            <div class="card-subheader">2nd-level illusion spell</div>
-        </div>
-        <div class="tags">
-            <span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span>
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (an eyelash encased in gum arabic)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Up to 1 hour</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">A creature you touch becomes <span class="popupAnchor" data-injection-arg="conditions#invisible" onclick='handleAnchorClick("conditions#invisible", this, event)' onmouseover='showPopup("conditions#invisible", this, event)' onmouseout='hidePopup("conditions#invisible", event)'>invisible</span> until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer, bard, magus, sorcerer, warlock, wizard</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB</div></div>
     </div>
 </div>`},"spells#jump":{title:"<i>Jump</i>",associated_url:"/rules/2d/player-options/spells.html#jump",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -12302,34 +12670,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="p">A creature you touch regains a number of hit points equal to 8d6 + your spellcasting ability score and can make a saving throw against one "<a href="/rules/2d/glossary/conditions.html#save-ends">save ends</a>" condition currently affecting it. The condition can be <a href="/rules/2d/glossary/conditions.html#weakened">weakened</a>, <a href="/rules/2d/glossary/conditions.html#slowed">slowed</a>, <a href="/rules/2d/glossary/conditions.html#dazed">dazed</a>, or <a href="/rules/2d/glossary/conditions.html#stunned">stunned</a>. If the target is a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a>, it regains twice as many hit points and automatically succeeds on the saving throw. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
     <div class="centered-header">Higher Level</div>
     <div class="p">When you cast this spell using a spell slot of 5th level or higher, the healing increases by 2d6 for each slot level above 4th.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
-    </div>
-</div>`},"spells#repair_minor_damage":{title:"<i>Repair Minor Damage</i>",associated_url:"/rules/2d/player-options/spells.html#repair-minor-damage",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Repair Minor Damage</h1>
-            <div class="card-subheader">1st-level transmutation spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">S, M (a small hammer)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range</div><div class="card-stats-row-item-text">Touch</div></div>
-        </div>
-    </div>
-    <div class="p">A creature you touch regains a number of hit points equal to 1d6 + your spellcasting ability score, or twice that amount if the target is a <a href="/rules/2d/glossary/creature-types.html#construct">Construct</a>. This spell has no effect on <a href="/rules/2d/glossary/creature-types.html#undead">Undead</a>.</div>
-    <div class="centered-header">Higher Level</div>
-    <div class="p">When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d6 for each slot level above 1st.</div>
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Artificer</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">2D</div></div>
@@ -12892,6 +13232,7 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
                 <tbody>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="armor of acuity"><span class="popupAnchor" data-injection-arg="artificer-infusions#armor_of_acuity" onclick='handleAnchorClick("artificer-infusions#armor_of_acuity", this, event)' onmouseover='showPopup("artificer-infusions#armor_of_acuity", this, event)' onmouseout='hidePopup("artificer-infusions#armor_of_acuity", event)'><span id="armor-of-acuity">Armor of Acuity</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a suit of armor or robes">A suit of <a href="/rules/2d/player-options/equipment.html#armor-table">armor</a> or <a href="/rules/2d/player-options/equipment.html#robes">robes</a></td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="armor of magical strength"><span class="popupAnchor" data-injection-arg="artificer-infusions#armor_of_magical_strength" onclick='handleAnchorClick("artificer-infusions#armor_of_magical_strength", this, event)' onmouseover='showPopup("artificer-infusions#armor_of_magical_strength", this, event)' onmouseout='hidePopup("artificer-infusions#armor_of_magical_strength", event)'><span id="armor-of-magical-strength">Armor of Magical Strength</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a suit of armor">A suit of armor</td></tr>
+                    <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="flare launcher"><span class="popupAnchor" data-injection-arg="artificer-infusions#flare_launcher" onclick='handleAnchorClick("artificer-infusions#flare_launcher", this, event)' onmouseover='showPopup("artificer-infusions#flare_launcher", this, event)' onmouseout='hidePopup("artificer-infusions#flare_launcher", event)'><span id="flare-launcher">Flare Launcher</span></span></td><td align="center" ></td><td align="left" data-sort-token="metal parts worth at least 5 gp">Metal parts worth at least 5 gp</td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="frenzy seed"><span class="popupAnchor" data-injection-arg="artificer-infusions#frenzy_seed" onclick='handleAnchorClick("artificer-infusions#frenzy_seed", this, event)' onmouseover='showPopup("artificer-infusions#frenzy_seed", this, event)' onmouseout='hidePopup("artificer-infusions#frenzy_seed", event)'><span id="frenzy-seed">Frenzy Seed</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a nut or bulb">A nut or bulb</td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="grappling harpoon"><span class="popupAnchor" data-injection-arg="artificer-infusions#grappling_harpoon" onclick='handleAnchorClick("artificer-infusions#grappling_harpoon", this, event)' onmouseover='showPopup("artificer-infusions#grappling_harpoon", this, event)' onmouseout='hidePopup("artificer-infusions#grappling_harpoon", event)'><span id="grappling-harpoon">Grappling Harpoon</span></span></td><td align="center" ></td><td align="left" data-sort-token="a wooden or metal cylinder, springs, a long cord, and a metal rod, totalling at least 25 gp">A wooden or metal cylinder, springs, a long cord, and a metal rod, totalling at least 25 gp</td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="helm of awareness"><span class="popupAnchor" data-injection-arg="artificer-infusions#helm_of_awareness" onclick='handleAnchorClick("artificer-infusions#helm_of_awareness", this, event)' onmouseover='showPopup("artificer-infusions#helm_of_awareness", this, event)' onmouseout='hidePopup("artificer-infusions#helm_of_awareness", event)'><span id="helm-of-awareness">Helm of Awareness</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a helmet">A helmet</td></tr>
@@ -12903,14 +13244,17 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="repeating shot"><span class="popupAnchor" data-injection-arg="artificer-infusions#repeating_shot" onclick='handleAnchorClick("artificer-infusions#repeating_shot", this, event)' onmouseover='showPopup("artificer-infusions#repeating_shot", this, event)' onmouseout='hidePopup("artificer-infusions#repeating_shot", event)'><span id="repeating-shot">Repeating Shot</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a simple or martial weapon with the ammunition property">A simple or martial <a href="/rules/2d/player-options/equipment.html#weapons-table">weapon</a> with the <a href="/rules/2d/player-options/equipment/properties.html#ammunition">ammunition</a> property</td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="repulsion shield"><span class="popupAnchor" data-injection-arg="artificer-infusions#repulsion_shield" onclick='handleAnchorClick("artificer-infusions#repulsion_shield", this, event)' onmouseover='showPopup("artificer-infusions#repulsion_shield", this, event)' onmouseout='hidePopup("artificer-infusions#repulsion_shield", event)'><span id="repulsion-shield">Repulsion Shield</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a shield">A <a href="/rules/2d/player-options/equipment.html#shields-table">shield</a></td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="returning weapon"><span class="popupAnchor" data-injection-arg="artificer-infusions#returning_weapon" onclick='handleAnchorClick("artificer-infusions#returning_weapon", this, event)' onmouseover='showPopup("artificer-infusions#returning_weapon", this, event)' onmouseout='hidePopup("artificer-infusions#returning_weapon", event)'><span id="returning-weapon">Returning Weapon</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a simple or martial weapon">A simple or martial <a href="/rules/2d/player-options/equipment.html#weapons-table">weapon</a></td></tr>
+                    <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="rocket boots"><span class="popupAnchor" data-injection-arg="artificer-infusions#rocket_boots" onclick='handleAnchorClick("artificer-infusions#rocket_boots", this, event)' onmouseover='showPopup("artificer-infusions#rocket_boots", this, event)' onmouseout='hidePopup("artificer-infusions#rocket_boots", event)'><span id="rocket-boots">Rocket Boots</span></span></td><td align="center" ></td><td align="left" data-sort-token="a pair of boots">A pair of boots</td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="sending shells"><span class="popupAnchor" data-injection-arg="artificer-infusions#sending_shells" onclick='handleAnchorClick("artificer-infusions#sending_shells", this, event)' onmouseover='showPopup("artificer-infusions#sending_shells", this, event)' onmouseout='hidePopup("artificer-infusions#sending_shells", event)'><span id="sending-shells">Sending Shells</span></span></td><td align="center" ></td><td align="left" data-sort-token="a pair of hollow sea shells">A pair of hollow sea shells</td></tr>
                     <tr><td align="center" data-sort-token="2"><span class="rainbow1">2nd</span></td><td align="left" data-sort-token="shoulder cannon"><span class="popupAnchor" data-injection-arg="artificer-infusions#shoulder_cannon" onclick='handleAnchorClick("artificer-infusions#shoulder_cannon", this, event)' onmouseover='showPopup("artificer-infusions#shoulder_cannon", this, event)' onmouseout='hidePopup("artificer-infusions#shoulder_cannon", event)'><span id="shoulder-cannon">Shoulder Cannon</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="materials worth at least 20 gp">Materials worth at least 20 gp</td></tr>
-                    <tr><td align="center" data-sort-token="6"><span class="rainbow3">6th</span></td><td align="left" data-sort-token="boots of the winding path"><span class="popupAnchor" data-injection-arg="artificer-infusions#boots_of_the_winding_path" onclick='handleAnchorClick("artificer-infusions#boots_of_the_winding_path", this, event)' onmouseover='showPopup("artificer-infusions#boots_of_the_winding_path", this, event)' onmouseout='hidePopup("artificer-infusions#boots_of_the_winding_path", event)'><span id="boots-of-the-winding-path">Boots of the Winding Path</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a pair of boots">A pair of boots</td></tr>
+                    <tr><td align="center" data-sort-token="3"><span class="rainbow1">3rd</span></td><td align="left" data-sort-token="hand cannon"><span class="popupAnchor" data-injection-arg="artificer-infusions#hand_cannon" onclick='handleAnchorClick("artificer-infusions#hand_cannon", this, event)' onmouseover='showPopup("artificer-infusions#hand_cannon", this, event)' onmouseout='hidePopup("artificer-infusions#hand_cannon", event)'><span id="hand-cannon">Hand Cannon</span></span></td><td align="center" ></td><td align="left" data-sort-token="sheet metal worth at least 20 gp">Sheet metal worth at least 20 gp</td></tr>
                     <tr><td align="center" data-sort-token="6"><span class="rainbow3">6th</span></td><td align="left" data-sort-token="ever-filling brew"><span class="popupAnchor" data-injection-arg="artificer-infusions#ever_filling_brew" onclick='handleAnchorClick("artificer-infusions#ever_filling_brew", this, event)' onmouseover='showPopup("artificer-infusions#ever_filling_brew", this, event)' onmouseout='hidePopup("artificer-infusions#ever_filling_brew", event)'><span id="ever-filling-brew">Ever-Filling Brew</span></span></td><td align="center" ></td><td align="left" data-sort-token="a flask">A <a href="/rules/2d/player-options/equipment.html#flask">flask</a></td></tr>
                     <tr><td align="center" data-sort-token="6"><span class="rainbow3">6th</span></td><td align="left" data-sort-token="mind linker"><span class="popupAnchor" data-injection-arg="artificer-infusions#mind_linker" onclick='handleAnchorClick("artificer-infusions#mind_linker", this, event)' onmouseover='showPopup("artificer-infusions#mind_linker", this, event)' onmouseout='hidePopup("artificer-infusions#mind_linker", event)'><span id="mind-linker">Mind Linker</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="two gold wires, metal parts, and something that can be worn on the head, such as a headband, helmet, or earring">Two gold wires, metal parts, and something that can be worn on the head, such as a headband, helmet, or earring</td></tr>
                     <tr><td align="center" data-sort-token="6"><span class="rainbow3">6th</span></td><td align="left" data-sort-token="quickshot gun"><span class="popupAnchor" data-injection-arg="artificer-infusions#quickshot_gun" onclick='handleAnchorClick("artificer-infusions#quickshot_gun", this, event)' onmouseover='showPopup("artificer-infusions#quickshot_gun", this, event)' onmouseout='hidePopup("artificer-infusions#quickshot_gun", event)'><span id="quickshot-gun">Quickshot Gun</span></span></td><td align="center" ></td><td align="left" data-sort-token="sheet metal and wood stock worth at least 10 gp">Sheet metal and wood stock worth at least 10 gp</td></tr>
                     <tr><td align="center" data-sort-token="6"><span class="rainbow3">6th</span></td><td align="left" data-sort-token="scattershot gun"><span class="popupAnchor" data-injection-arg="artificer-infusions#scattershot_gun" onclick='handleAnchorClick("artificer-infusions#scattershot_gun", this, event)' onmouseover='showPopup("artificer-infusions#scattershot_gun", this, event)' onmouseout='hidePopup("artificer-infusions#scattershot_gun", event)'><span id="scattershot-gun">Scattershot Gun</span></span></td><td align="center" ></td><td align="left" data-sort-token="sheet metal and wood stock worth at least 20 gp">Sheet metal and wood stock worth at least 20 gp</td></tr>
                     <tr><td align="center" data-sort-token="6"><span class="rainbow3">6th</span></td><td align="left" data-sort-token="spell-refueling ring"><span class="popupAnchor" data-injection-arg="artificer-infusions#spell_refueling_ring" onclick='handleAnchorClick("artificer-infusions#spell_refueling_ring", this, event)' onmouseover='showPopup("artificer-infusions#spell_refueling_ring", this, event)' onmouseout='hidePopup("artificer-infusions#spell_refueling_ring", event)'><span id="spell-refueling-ring">Spell-Refueling Ring</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a ring">A ring</td></tr>
+                    <tr><td align="center" data-sort-token="10"><span class="rainbow5">10th</span></td><td align="left" data-sort-token="cloak of invisibility"><span class="popupAnchor" data-injection-arg="artificer-infusions#cloak_of_invisibility" onclick='handleAnchorClick("artificer-infusions#cloak_of_invisibility", this, event)' onmouseover='showPopup("artificer-infusions#cloak_of_invisibility", this, event)' onmouseout='hidePopup("artificer-infusions#cloak_of_invisibility", event)'><span id="cloak-of-invisibility">Cloak of Invisibility</span></span></td><td align="center" ></td><td align="left" data-sort-token="a cloak">A cloak</td></tr>
+                    <tr><td align="center" data-sort-token="10"><span class="rainbow5">10th</span></td><td align="left" data-sort-token="death ward medallion"><span class="popupAnchor" data-injection-arg="artificer-infusions#death_ward_medallion" onclick='handleAnchorClick("artificer-infusions#death_ward_medallion", this, event)' onmouseover='showPopup("artificer-infusions#death_ward_medallion", this, event)' onmouseout='hidePopup("artificer-infusions#death_ward_medallion", event)'><span id="death-ward-medallion">Death Ward Medallion</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a medallion">A medallion</td></tr>
                     <tr><td align="center" data-sort-token="10"><span class="rainbow5">10th</span></td><td align="left" data-sort-token="longshot gun"><span class="popupAnchor" data-injection-arg="artificer-infusions#longshot_gun" onclick='handleAnchorClick("artificer-infusions#longshot_gun", this, event)' onmouseover='showPopup("artificer-infusions#longshot_gun", this, event)' onmouseout='hidePopup("artificer-infusions#longshot_gun", event)'><span id="longshot-gun">Longshot Gun</span></span></td><td align="center" ></td><td align="left" data-sort-token="sheet metal worth at least 100 gp">Sheet metal worth at least 100 gp</td></tr>
                     <tr><td align="center" data-sort-token="10"><span class="rainbow5">10th</span></td><td align="left" data-sort-token="power armor"><span class="popupAnchor" data-injection-arg="artificer-infusions#power_armor" onclick='handleAnchorClick("artificer-infusions#power_armor", this, event)' onmouseover='showPopup("artificer-infusions#power_armor", this, event)' onmouseout='hidePopup("artificer-infusions#power_armor", event)'><span id="power-armor">Power Armor</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a suit of armor">A suit of armor</td></tr>
                     <tr><td align="center" data-sort-token="10"><span class="rainbow5">10th</span></td><td align="left" data-sort-token="resistant armor"><span class="popupAnchor" data-injection-arg="artificer-infusions#resistant_armor" onclick='handleAnchorClick("artificer-infusions#resistant_armor", this, event)' onmouseover='showPopup("artificer-infusions#resistant_armor", this, event)' onmouseout='hidePopup("artificer-infusions#resistant_armor", event)'><span id="resistant-armor">Resistant Armor</span></span></td><td align="center" data-sort-token="attunement"><span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span></td><td align="left" data-sort-token="a suit of armor">A suit of <a href="/rules/2d/player-options/equipment.html#armor-table">armor</a></td></tr>
@@ -12947,18 +13291,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <li>When the wearer makes a Strength check or a Strength saving throw, it can expend 1 charge to add a bonus to the roll equal to its Intelligence score.</li>
         <li>If the wearer would be knocked <a href="/rules/2d/glossary/conditions.html#prone">prone</a>, it can use a reaction to expend 1 charge to avoid being knocked prone.</li>
     </ul>
-</div>`},"artificer-infusions#boots_of_the_winding_path":{title:"Boots of the Winding Path",associated_url:"/rules/2d/player-options/classes/artificer.html#boots-of-the-winding-path",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Boots of the Winding Path</h1>
-            <div class="card-subheader">6th-level artificer infusion</div>
-        </div>
-        <div class="tags">
-            <span class="attunement-tag"><a href="/rules/2d/player-options/equipment/magic-items.html#attunement">attunement</a></span>
-        </div>
-    </div>
-    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">a pair of boots</div></div>
-    <div class="p">While wearing these boots, a creature can use a minor action to <span class="popupAnchor" data-injection-arg="movement-modes#teleporting" onclick='handleAnchorClick("movement-modes#teleporting", this, event)' onmouseover='showPopup("movement-modes#teleporting", this, event)' onmouseout='hidePopup("movement-modes#teleporting", event)'>teleport</span> to an unoccupied space the creature can see. The creature must have occupied that space at some point during the current turn.</div>
 </div>`},"artificer-infusions#ever_filling_brew":{title:"Ever-Filling Brew",associated_url:"/rules/2d/player-options/classes/artificer.html#ever-filling-brew",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13397,14 +13729,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="p">The weapon also has the following special property: when the attacker hits a target with a ranged attack using this weapon, the target is <span class="popupAnchor" data-injection-arg="conditions#grappled" onclick='handleAnchorClick("conditions#grappled", this, event)' onmouseover='showPopup("conditions#grappled", this, event)' onmouseout='hidePopup("conditions#grappled", event)'>grappled</span> from a distance. The usual grapple rules affecting movement only apply to movement that would increase the distance separating the wielder and target, as the grapple is mediated by a rope, and the grappler has no control over the target's position except by pulling. The rope automatically retracts as the distance between the wielder and target closes. The wielder can also use a free action to retract the rope up to 30 feet and optionally release the grappled target at any point during the retraction. The weapon can't be fired again until the rope is fully retracted.</div>
     <div class="p">This weapon can be used to grapple objects and walls, although it may cause damage in doing so. If the harpoon is lodged into a solid object (or creature), retracting the rope might cause the wielder to be pulled towards the target.</div>
     <div class="p">A creature can attune to this weapon, although attunement is not required for it to function. A creature is proficient with the weapon while attuned.</div>
-</div>`},"weapon-properties#heavy":{title:"Heavy",associated_url:"/rules/2d/player-options/equipment/properties.html#heavy",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Heavy</h1>
-            <div class="card-subheader">Weapon property</div>
-        </div>
-    </div>
-    <div class="p">Due to their weight distribution, <span class="tooltipWrapper"><span class="tooltipAnchor">Small creatures</span><span class="tooltip">Except those with the <a href="/settings/four-corners/player-options/feats.html#powerful-build">Powerful Build</a> trait</span></span> have disadvantage on attack rolls with heavy weapons.</div>
 </div>`},"artificer-infusions#helm_of_awareness":{title:"Helm of Awareness",associated_url:"/rules/2d/player-options/classes/artificer.html#helm-of-awareness",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13530,41 +13854,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         </div>
     </div>
     <div class="p">This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.</div>
-</div>`},"artificer-infusions#longshot_gun":{title:"Longshot Gun",associated_url:"/rules/2d/player-options/classes/artificer.html#longshot-gun",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Longshot Gun</h1>
-            <div class="card-subheader">10th-level artificer infusion</div>
-        </div>
-    </div>
-    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal worth at least 100 gp</div></div>
-    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#longshot_gun" onclick='handleAnchorClick("special-weapons#longshot_gun", this, event)' onmouseover='showPopup("special-weapons#longshot_gun", this, event)' onmouseout='hidePopup("special-weapons#longshot_gun", event)'>longshot gun</span>. You are proficient with it.</div>
-    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
-    <ul>
-        <li>The attuned creature is proficient with the weapon.</li>
-        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
-    </ul>
-</div>`},"special-weapons#longshot_gun":{title:"Longshot Gun",associated_url:"undefined",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Longshot Gun</h1>
-            <div class="card-subheader">Unique ranged weapon</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">gun</span>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d12 piercing</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">1,000 gp</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 300/1,200 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#heavy" onclick='handleAnchorClick("weapon-properties#heavy", this, event)' onmouseover='showPopup("weapon-properties#heavy", this, event)' onmouseout='hidePopup("weapon-properties#heavy", event)'>heavy</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (1), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (1,200 ft.), two-handed</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">10 lb.</div></div>
-        </div>
-    </div>
-    <div class="p">A ranged attack made against a target within 120 feet of the attacker ignores <span class="popupAnchor" data-injection-arg="environment#cover.subitems.half" onclick='handleAnchorClick("environment#cover.subitems.half", this, event)' onmouseover='showPopup("environment#cover.subitems.half", this, event)' onmouseout='hidePopup("environment#cover.subitems.half", event)'>half cover</span>, and a ranged attack made against a target within 30 feet of the attacker also ignores <span class="popupAnchor" data-injection-arg="environment#cover.subitems.three_quarters" onclick='handleAnchorClick("environment#cover.subitems.three_quarters", this, event)' onmouseover='showPopup("environment#cover.subitems.three_quarters", this, event)' onmouseout='hidePopup("environment#cover.subitems.three_quarters", event)'>three-quarters cover</span>.</div>
 </div>`},"artificer-infusions#magic_detector":{title:"Magic Detector",associated_url:"/rules/2d/player-options/classes/artificer.html#magic-detector",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13623,20 +13912,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         <li>The wearer's <a href="/rules/2d/glossary/movement.html#walk">walk</a> speed can't be less than 30 feet, unless it is set to 0 feet.</li>
         <li>The armor includes gauntlets, each of which is a melee weapon that can be wielded only when the hand is holding nothing. The wearer is proficient with the gauntlets, and each one deals 1d8 bludgeoning damage on a hit and has the <span class="popupAnchor" data-injection-arg="weapon-properties#thrown" onclick='handleAnchorClick("weapon-properties#thrown", this, event)' onmouseover='showPopup("weapon-properties#thrown", this, event)' onmouseout='hidePopup("weapon-properties#thrown", event)'>thrown</span> (20/60 ft.) property. When thrown, the gauntlet detaches and flies at the attack's target, then immediately returns to the wearer and reattaches.</li>
         <li>If the wearer is missing any limbs, the armor replaces those limbs-hands, arms, feet, legs, or similar appendages. The replacements function identically to the body parts they replace.</li>
-    </ul>
-</div>`},"artificer-infusions#quickshot_gun":{title:"Quickshot Gun",associated_url:"/rules/2d/player-options/classes/artificer.html#quickshot-gun",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Quickshot Gun</h1>
-            <div class="card-subheader">6th-level artificer infusion</div>
-        </div>
-    </div>
-    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal and wood stock worth at least 10 gp</div></div>
-    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#quickshot_gun" onclick='handleAnchorClick("special-weapons#quickshot_gun", this, event)' onmouseover='showPopup("special-weapons#quickshot_gun", this, event)' onmouseout='hidePopup("special-weapons#quickshot_gun", event)'>quickshot gun</span>. You are proficient with it.</div>
-    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
-    <ul>
-        <li>The attuned creature is proficient with the weapon.</li>
-        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
     </ul>
 </div>`},"artificer-infusions#radiant_weapon":{title:"Radiant Weapon",associated_url:"/rules/2d/player-options/classes/artificer.html#radiant-weapon",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -13732,41 +14007,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="p">This weapon gains the <span class="popupAnchor" data-injection-arg="weapon-properties#thrown" onclick='handleAnchorClick("weapon-properties#thrown", this, event)' onmouseover='showPopup("weapon-properties#thrown", this, event)' onmouseout='hidePopup("weapon-properties#thrown", event)'>thrown</span> (20/60 ft.) property. If it already had the thrown property, its normal and long <a href="/rules/2d/systems/attacking.html#range">ranges</a> are doubled instead.</div>
     <div class="p">As a repeatable free action, if the weapon is within the long range of its thrown property and not being held by another creature, the attuned creature can cause the weapon to fly harmlessly through the air in a straight line towards itself. The weapon falls if it is blocked by any physical barrier, such as a wall or another creature. Otherwise, the weapon ends its movement safely in the attuned creature's free hand or in its <a href="/rules/2d/glossary/environment.html#space">space</a>.</div>
     <div class="p">The attuned creature can also produce the above effect as an attack. In this case, only total cover blocks the weapon's movement, and each target in its path must succeed on a Dexterity saving throw against your spell save DC or take damage equal to a roll of the weapon's damage dice.</div>
-</div>`},"artificer-infusions#scattershot_gun":{title:"Scattershot Gun",associated_url:"/rules/2d/player-options/classes/artificer.html#scattershot-gun",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Scattershot Gun</h1>
-            <div class="card-subheader">6th-level artificer infusion</div>
-        </div>
-    </div>
-    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal and wood stock worth at least 20 gp</div></div>
-    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#scattershot_gun" onclick='handleAnchorClick("special-weapons#scattershot_gun", this, event)' onmouseover='showPopup("special-weapons#scattershot_gun", this, event)' onmouseout='hidePopup("special-weapons#scattershot_gun", event)'>scattershot gun</span>. You are proficient with it.</div>
-    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
-    <ul>
-        <li>The attuned creature is proficient with the weapon.</li>
-        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
-    </ul>
-</div>`},"special-weapons#scattershot_gun":{title:"Scattershot Gun",associated_url:"undefined",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Scattershot Gun</h1>
-            <div class="card-subheader">Unique ranged weapon</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">gun</span>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">2d4 piercing</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">200 gp</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 30/120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#heavy" onclick='handleAnchorClick("weapon-properties#heavy", this, event)' onmouseover='showPopup("weapon-properties#heavy", this, event)' onmouseout='hidePopup("weapon-properties#heavy", event)'>heavy</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (1), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (120 ft.), two-handed</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">6 lb.</div></div>
-        </div>
-    </div>
-    <div class="p">When a ranged attack is made with this weapon, the attacker selects a point they can see within the target's space. Each other creature and object within 5 feet of that point takes 1d4 piercing damage if it doesn't have <span class="popupAnchor" data-injection-arg="environment#cover.subitems.total" onclick='handleAnchorClick("environment#cover.subitems.total", this, event)' onmouseover='showPopup("environment#cover.subitems.total", this, event)' onmouseout='hidePopup("environment#cover.subitems.total", event)'>total cover</span> from the attacker and the original attack roll would have hit it.</div>
 </div>`},"artificer-infusions#shoulder_cannon":{title:"Shoulder Cannon",associated_url:"/rules/2d/player-options/classes/artificer.html#shoulder-cannon",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13814,18 +14054,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">mechanical or biological materials worth at least 100 gp</div></div>
     <div class="p">When you create this infusion, choose a size Medium or smaller. This arm can attach to an attuned creature of that size. While attached, the arm functions as an extra arm. It is controlled by the attuned creature and uses their proficiencies, except the arm has Strength and Dexterity scores of 4.</div>
     <div class="p">The attuned creature can attach or detach the arm as a major action. The arm can't be attached or detached in any other way.</div>
-</div>`},"classes#artificer.features.artificer_combat_tactics_i":{title:"Artificer Combat Tactics I",associated_url:"/rules/2d/player-options/classes.html#artificer-combat-tactics-i",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Artificer Combat Tactics I</h1>
-            <div class="card-subheader">2nd-level artificer feature</div>
-        </div>
-    </div>
-    <div class="p">Choose Martial Tactics or Magic Tactics. Your choice gives you benefits now, described below, and later at 5th and 9th levels.</div>
-    <h4 class="noHeaderID">Martial Tactics I</h4>
-    <div class="p">You gain proficiency with martial <a href="/rules/2d/player-options/equipment.html#weapons-table">weapons</a>, heavy <a href="/rules/2d/player-options/equipment.html#armor-table">armor</a>, and heavy <a href="/rules/2d/player-options/equipment.html#shields-table">shields</a>.</div>
-    <h4 class="noHeaderID">Magic Tactics I</h4>
-    <div class="p">You learn one cantrip of your choice from the <a href="/rules/2d/player-options/classes/artificer.html#artificer-spells">artificer</a>, <a href="/rules/2d/player-options/classes/druid.html#druid-spells">druid</a>, or <a href="/rules/2d/player-options/classes/wizard.html#wizard-spells">wizard</a> spell list. The cantrip counts as an artificer spell for you.</div>
 </div>`},"classes#artificer.features.artificer_specialist":{title:"Artificer Specialist",associated_url:"/rules/2d/player-options/classes.html#artificer-specialist",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13834,14 +14062,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         </div>
     </div>
     <div class="p">Choose a specialization, which represents your area of expertise as an artificer. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.</div>
-</div>`},"classes#artificer.features.sustaining_attunement":{title:"Sustaining Attunement",associated_url:"/rules/2d/player-options/classes.html#sustaining-attunement",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Sustaining Attunement</h1>
-            <div class="card-subheader">3rd-level artificer feature</div>
-        </div>
-    </div>
-    <div class="p">When another creature is attuned to one or more of your <a href="/rules/2d/player-options/classes/artificer.html#infusions">infusions</a>, one of those infusions doesn't count against the number of infusions you can have active at a time, as the infusion can draw magical power from the attuned creature instead of you. You still can't have more than one of a given infusion in existence at a time, however.</div>
 </div>`},"classes#artificer.features.ability_score_improvement":{title:"Ability Score Improvement",associated_url:"/rules/2d/player-options/classes.html#ability-score-improvement",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13850,18 +14070,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
         </div>
     </div>
     <div class="p">You can increase one ability score of your choice by 1, to a maximum of 5. You can do so again at 8th, 12th, and 16th level.</div>
-</div>`},"classes#artificer.features.artificer_combat_tactics_ii":{title:"Artificer Combat Tactics II",associated_url:"/rules/2d/player-options/classes.html#artificer-combat-tactics-ii",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Artificer Combat Tactics II</h1>
-            <div class="card-subheader">5th-level artificer feature</div>
-        </div>
-    </div>
-    <div class="p">You gain one of the following features based on your choice at 2nd level.</div>
-    <h4 class="noHeaderID">Martial Tactics II</h4>
-    <div class="p">Each time you spend at least 2 AP to take the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action and use a magic weapon for the attack, you can take the Attack action once later that turn as a free action. The secondary attack must also be made with a magic weapon, which can be the same weapon or a different one.</div>
-    <h4 class="noHeaderID">Magic Tactics II</h4>
-    <div class="p">When you use a major action to create a <a href="/rules/2d/player-options/classes/artificer.html#makeshift-magic">spell object</a>, you can create two spell objects instead of one. You only expend one spell slot, but if any material components are expended, you must expend them separately for each spell object.</div>
 </div>`},"classes#artificer.features.tool_expertise":{title:"Tool Expertise",associated_url:"/rules/2d/player-options/classes.html#tool-expertise",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13869,7 +14077,7 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
             <div class="card-subheader">6th-level artificer feature</div>
         </div>
     </div>
-    <div class="p">Your proficiency bonus is now doubled for any ability check you make that uses your proficiency with a tool.</div>
+    <div class="p">Pick any two <a href="/rules/2d/player-options/equipment.html#tools">tools</a>. You gain proficiency with those tools. If you were already proficient with a chosen tool, you gain expertise instead.</div>
 </div>`},"classes#artificer.features.flash_of_genius":{title:"Flash of Genius",associated_url:"/rules/2d/player-options/classes.html#flash-of-genius",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -13977,32 +14185,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
             <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">45 lb.</div></div>
         </div>
     </div>
-</div>`},"spells#conjure_volley":{title:"<i>Conjure Volley</i>",associated_url:"/rules/2d/player-options/spells.html#conjure-volley",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Conjure Volley</h1>
-            <div class="card-subheader">5th-level conjuration spell</div>
-        </div>
-        <div class="tags">
-            
-            
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (one piece of ammunition or one thrown weapon)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Cylinder (40 ft. radius, 20 ft. tall) emanating downwards from a point within range</div></div>
-        </div>
-    </div>
-    <div class="p">You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon into the air. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in the spell's area must make a Dexterity saving throw. A creature takes 8d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon.</div>
-    <div class="card-footer">
-        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Ranger</div></div>
-        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
-    </div>
 </div>`},"spell-creatures(spell)#steel_defender":{title:"Steel Defender",associated_url:"undefined",content_html:`<div class="medium-card">
     <h1 class="noHeaderID">Steel Defender</h1>
     <div class="card-subheader">Medium Construct</div>
@@ -14060,64 +14242,6 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="multi-p">
         <div class="p"><b><i>Deflect Attack.</i></b> <i>Trigger: a creature within 5 feet of the defender that it can see makes an attack against a creature other than the defender.</i> The defender imposes disadvantage on the triggering attack roll.</div>
     </div>
-</div>`},"artificer-infusions-special#hand_cannon":{title:"Hand Cannon",associated_url:"/rules/2d/player-options/classes/artificer.html#hand-cannon",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hand Cannon</h1>
-            <div class="card-subheader">3rd-level artificer infusion</div>
-        </div>
-    </div>
-    <div class="card-prerequisite"><div class="card-prerequisite-header">item</div><div class="card-prerequisite-text">sheet metal worth at least 20 gp</div></div>
-    <div class="p">You create a <span class="popupAnchor" data-injection-arg="special-weapons#hand_cannon" onclick='handleAnchorClick("special-weapons#hand_cannon", this, event)' onmouseover='showPopup("special-weapons#hand_cannon", this, event)' onmouseout='hidePopup("special-weapons#hand_cannon", event)'>hand cannon</span>. You are proficient with it.</div>
-    <div class="p">A creature can attune to the weapon, although attunement is not required for it to function. Attunement grants the following benefits:</div>
-    <ul>
-        <li>The attuned creature is proficient with the weapon.</li>
-        <li>When the attuned creature loads the weapon (as per its <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> property), it can do so with magically-created ammunition, and it doesn't need a free hand. The magically-created ammunition disappears after being used to make an attack or if removed by some other means.</li>
-    </ul>
-</div>`},"special-weapons#hand_cannon":{title:"Hand Cannon",associated_url:"undefined",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Hand Cannon</h1>
-            <div class="card-subheader">Unique ranged weapon</div>
-        </div>
-        <div class="tags">
-            <span class="misc-tag">gun</span>
-        </div>
-    </div>
-    <div class="card-stats">
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Damage</div><div class="card-stats-row-item-text">1d6 piercing</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Cost</div><div class="card-stats-row-item-text">50 gp</div></div>
-        </div>
-        <div class="card-stats-row">
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Properties</div><div class="card-stats-row-item-text"><span class="popupAnchor" data-injection-arg="weapon-properties#ammunition" onclick='handleAnchorClick("weapon-properties#ammunition", this, event)' onmouseover='showPopup("weapon-properties#ammunition", this, event)' onmouseout='hidePopup("weapon-properties#ammunition", event)'>Ammunition</span> (<span class="popupAnchor" data-injection-arg="items#ball_bearings" onclick='handleAnchorClick("items#ball_bearings", this, event)' onmouseover='showPopup("items#ball_bearings", this, event)' onmouseout='hidePopup("items#ball_bearings", event)'>ball bearings</span>; 30/120 ft.), <span class="popupAnchor" data-injection-arg="weapon-properties#light" onclick='handleAnchorClick("weapon-properties#light", this, event)' onmouseover='showPopup("weapon-properties#light", this, event)' onmouseout='hidePopup("weapon-properties#light", event)'>light</span>, <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (1), <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> (120 ft.)</div></div>
-            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Weight</div><div class="card-stats-row-item-text">4 lb.</div></div>
-        </div>
-    </div>
-</div>`},"classes#artificer.subclasses.gunsmith.features.gun_modifications":{title:"Gun Modifications",associated_url:"/rules/2d/player-options/classes.html#gun-modifications",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Gun Modifications</h1>
-            <div class="card-subheader">3rd-level gunsmith feature</div>
-        </div>
-    </div>
-    <div class="p">When you make a <span class="misc-tag">gun</span> weapon with one of your artificer infusions, you can permanently modify it with one of the following modifications.</div>
-    <div class="p"><b><i>Silenced.</i></b> Thanks to magical silencing, the gun lacks the <span class="popupAnchor" data-injection-arg="weapon-properties#loud" onclick='handleAnchorClick("weapon-properties#loud", this, event)' onmouseover='showPopup("weapon-properties#loud", this, event)' onmouseout='hidePopup("weapon-properties#loud", event)'>loud</span> property. Additionally, when you or a creature attuned to the gun makes a ranged attack with the gun while <span class="popupAnchor" data-injection-arg="conditions#hidden" onclick='handleAnchorClick("conditions#hidden", this, event)' onmouseover='showPopup("conditions#hidden", this, event)' onmouseout='hidePopup("conditions#hidden", event)'>hidden</span>, that creature doesn't reveal its position.</div>
-    <div class="p"><b><i>Bladed.</i></b> An arcane blade can magically extend from the gun. Any creature holding the gun can extend or retract the blade as a repeatable free action. While the blade is extended, the gun doubles as a melee weapon with the <span class="popupAnchor" data-injection-arg="weapon-properties#finesse" onclick='handleAnchorClick("weapon-properties#finesse", this, event)' onmouseover='showPopup("weapon-properties#finesse", this, event)' onmouseout='hidePopup("weapon-properties#finesse", event)'>finesse</span> property and a d8 damage die. Choose the blade's damage type when you create the gun. Additionally, when you or a creature attuned to the gun makes an attack with the blade, that creature gains advantage on the next ranged attack it makes with the gun against the same target before the end of its next turn.</div>
-    <div class="p"><b><i>Aimed.</i></b> The gun's normal and long ranges are doubled. Additionally, when you or a creature attuned to the gun takes the <span class="popupAnchor" data-injection-arg="actions#attack" onclick='handleAnchorClick("actions#attack", this, event)' onmouseover='showPopup("actions#attack", this, event)' onmouseout='hidePopup("actions#attack", event)'>Attack</span> action to make a ranged attack with the gun, that creature can spend 1 additional AP to add your Intelligence score to the attack roll</div>
-    <div class="p"><b><i>Loaded.</i></b> The gun has the <span class="popupAnchor" data-injection-arg="weapon-properties#loading" onclick='handleAnchorClick("weapon-properties#loading", this, event)' onmouseover='showPopup("weapon-properties#loading", this, event)' onmouseout='hidePopup("weapon-properties#loading", event)'>loading</span> (12) property, replacing its normal loading property if it has one. The gun also has a separate chamber that has the loading (1) property. Only you or a creature attuned to the gun can fire from or load the smaller chamber, and once loaded, it can't be loaded again for 1 hour. When a creature fires the ammunition in the smaller chamber, the ammunition is automatically empowered with the Arcing or Slug option (its choice) without expending one of your bullet charges.</div>
-</div>`},"classes#artificer.subclasses.gunsmith.features.well_armed":{title:"Well-armed",associated_url:"/rules/2d/player-options/classes.html#well-armed",content_html:`<div class="small-card">
-    <div class="header-and-tags">
-        <div>
-            <h1 class="noHeaderID">Well-armed</h1>
-            <div class="card-subheader">3rd-level gunsmith feature</div>
-        </div>
-    </div>
-    <div class="p">You learn the <span class="popupAnchor" data-injection-arg="artificer-infusions-special#hand_cannon" onclick='handleAnchorClick("artificer-infusions-special#hand_cannon", this, event)' onmouseover='showPopup("artificer-infusions-special#hand_cannon", this, event)' onmouseout='hidePopup("artificer-infusions-special#hand_cannon", event)'><i>hand cannon</i></span> infusion, which doesn't count against the number of artificer infusions you can know. This infusion—and other infusions available at higher artificer levels—can be used to create a <span class="misc-tag">gun</span> weapon. As a gunsmith, you gain the following benefits with such infusions:</div>
-    <ul>
-        <li>You can have 2 additional gun infusions active at a time. They don't count against your maximum number of active infusions.</li>
-        <li>You can have 2 of the same gun infusion active at a time.</li>
-    </ul>
 </div>`},"classes#bard.features.bardic_inspiration":{title:"Bardic Inspiration",associated_url:"/rules/2d/player-options/classes.html#bardic-inspiration",content_html:`<div class="small-card">
     <div class="header-and-tags">
         <div>
@@ -16774,6 +16898,32 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
     <div class="card-footer">
         <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Sorcerer, wizard</div></div>
         <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">EEPC, XGE, 2D</div></div>
+    </div>
+</div>`},"spells#conjure_volley":{title:"<i>Conjure Volley</i>",associated_url:"/rules/2d/player-options/spells.html#conjure-volley",content_html:`<div class="small-card">
+    <div class="header-and-tags">
+        <div>
+            <h1 class="noHeaderID">Conjure Volley</h1>
+            <div class="card-subheader">5th-level conjuration spell</div>
+        </div>
+        <div class="tags">
+            
+            
+        </div>
+    </div>
+    <div class="card-stats">
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Components</div><div class="card-stats-row-item-text">V, S, M (one piece of ammunition or one thrown weapon)</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Duration</div><div class="card-stats-row-item-text">Instantaneous</div></div>
+        </div>
+        <div class="card-stats-row">
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Casting Time</div><div class="card-stats-row-item-text">1 standard action</div></div>
+            <div class="card-stats-row-item"><div class="card-stats-row-item-header">Range / Area</div><div class="card-stats-row-item-text">150 feet / Cylinder (40 ft. radius, 20 ft. tall) emanating downwards from a point within range</div></div>
+        </div>
+    </div>
+    <div class="p">You fire a piece of nonmagical ammunition from a ranged weapon or throw a nonmagical weapon into the air. Hundreds of duplicates of the ammunition or weapon fall in a volley from above and then disappear. Each creature in the spell's area must make a Dexterity saving throw. A creature takes 8d8 damage on a failed save, or half as much damage on a successful one. The damage type is the same as that of the ammunition or weapon.</div>
+    <div class="card-footer">
+        <div class="card-footer-item flex-left"><div class="card-footer-item-header">Available to</div><div class="card-footer-item-text">Ranger</div></div>
+        <div class="card-footer-item flex-right"><div class="card-footer-item-header">Source</div><div class="card-footer-item-text">PHB, 2D</div></div>
     </div>
 </div>`},"fighting-styles#thrown_weapon_fighting":{title:"Thrown Weapon Fighting",associated_url:"undefined",content_html:`<div class="small-card">
     <div class="header-and-tags">
@@ -29016,10 +29166,12 @@ window.POPUP_DATA={"classes#cleric.features.spellcasting":{title:"Spellcasting",
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="erupting earth"><span class="popupAnchor" data-injection-arg="spells#erupting_earth" onclick='handleAnchorClick("spells#erupting_earth", this, event)' onmouseover='showPopup("spells#erupting_earth", this, event)' onmouseout='hidePopup("spells#erupting_earth", event)'><span id="erupting-earth">Erupting Earth</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="kinesis">Kinesis</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="fear"><span class="popupAnchor" data-injection-arg="spells#fear" onclick='handleAnchorClick("spells#fear", this, event)' onmouseover='showPopup("spells#fear", this, event)' onmouseout='hidePopup("spells#fear", event)'><span id="fear">Fear</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="illusion">Illusion</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="feign death"><span class="popupAnchor" data-injection-arg="spells#feign_death" onclick='handleAnchorClick("spells#feign_death", this, event)' onmouseover='showPopup("spells#feign_death", this, event)' onmouseout='hidePopup("spells#feign_death", event)'><span id="feign-death">Feign Death</span></span></td><td align="center" data-sort-token="ritual"><span class="ritual-tag"><a href="/rules/2d/player-options/spells.html#rituals">ritual</a></span></td><td align="center" ></td><td align="left" data-sort-token="necromancy">Necromancy</td><td align="left" ></td></tr>
+                    <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="fire burst"><span class="popupAnchor" data-injection-arg="spells#fire_burst" onclick='handleAnchorClick("spells#fire_burst", this, event)' onmouseover='showPopup("spells#fire_burst", this, event)' onmouseout='hidePopup("spells#fire_burst", event)'><span id="fire-burst">Fire Burst</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="evocation">Evocation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="flame arrows"><span class="popupAnchor" data-injection-arg="spells#flame_arrows" onclick='handleAnchorClick("spells#flame_arrows", this, event)' onmouseover='showPopup("spells#flame_arrows", this, event)' onmouseout='hidePopup("spells#flame_arrows", event)'><span id="flame-arrows">Flame Arrows</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="transmutation">Transmutation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="flaming stride"><span class="popupAnchor" data-injection-arg="spells#flaming_stride" onclick='handleAnchorClick("spells#flaming_stride", this, event)' onmouseover='showPopup("spells#flaming_stride", this, event)' onmouseout='hidePopup("spells#flaming_stride", event)'><span id="flaming-stride">Flaming Stride</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="augmentation">Augmentation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="fly"><span class="popupAnchor" data-injection-arg="spells#fly" onclick='handleAnchorClick("spells#fly", this, event)' onmouseover='showPopup("spells#fly", this, event)' onmouseout='hidePopup("spells#fly", event)'><span id="fly">Fly</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="kinesis">Kinesis</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="force anvil"><span class="popupAnchor" data-injection-arg="spells#force_anvil" onclick='handleAnchorClick("spells#force_anvil", this, event)' onmouseover='showPopup("spells#force_anvil", this, event)' onmouseout='hidePopup("spells#force_anvil", event)'><span id="force-anvil">Force Anvil</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="evocation">Evocation</td><td align="left" ></td></tr>
+                    <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="frost burst"><span class="popupAnchor" data-injection-arg="spells#frost_burst" onclick='handleAnchorClick("spells#frost_burst", this, event)' onmouseover='showPopup("spells#frost_burst", this, event)' onmouseout='hidePopup("spells#frost_burst", event)'><span id="frost-burst">Frost Burst</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="evocation">Evocation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="gaseous form"><span class="popupAnchor" data-injection-arg="spells#gaseous_form" onclick='handleAnchorClick("spells#gaseous_form", this, event)' onmouseover='showPopup("spells#gaseous_form", this, event)' onmouseout='hidePopup("spells#gaseous_form", event)'><span id="gaseous-form">Gaseous Form</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="transmutation">Transmutation</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="glyph of warding"><span class="popupAnchor" data-injection-arg="spells#glyph_of_warding" onclick='handleAnchorClick("spells#glyph_of_warding", this, event)' onmouseover='showPopup("spells#glyph_of_warding", this, event)' onmouseout='hidePopup("spells#glyph_of_warding", event)'><span id="glyph-of-warding">Glyph of Warding</span></span></td><td align="center" ></td><td align="center" ></td><td align="left" data-sort-token="abjuration">Abjuration</td><td align="left" ></td></tr>
                     <tr><td align="center" data-sort-token="3"><span class="rainbow3">3rd</span></td><td align="left" data-sort-token="grim apparitions"><span class="popupAnchor" data-injection-arg="spells#grim_apparitions" onclick='handleAnchorClick("spells#grim_apparitions", this, event)' onmouseover='showPopup("spells#grim_apparitions", this, event)' onmouseout='hidePopup("spells#grim_apparitions", event)'><span id="grim-apparitions">Grim Apparitions</span></span></td><td align="center" ></td><td align="center" data-sort-token="concentration"><span class="concentration-tag"><a href="/rules/2d/player-options/spells.html#concentration">concentration</a></span></td><td align="left" data-sort-token="necromancy">Necromancy</td><td align="left" ></td></tr>
